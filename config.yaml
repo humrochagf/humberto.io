@@ -1,0 +1,24 @@
+baseURL: https://humberto.io/
+DefaultContentLanguage: en
+title: Humberto Rocha
+theme: minimalcoder
+
+params:
+  author: Humberto Rocha
+  description: A blog for developers and people who are interested at content about automation, frontend, backend, python, devops, javascript game dev and much more.
+  twitter: humrochagf
+  themeColor: "#000000"
+  siteLogo100: /img/me-100x100.jpg
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+  pt-br:
+    languageName: Português Brasileiro
+    weight: 2
+    params:
+      description: Um blog para programadores e interessados em conteúdo sobre automação, frontend, backend, python, devops, javascript, desenvolvimento de jogos e muito mais.
+  fr:
+    languageName: Français
+    weight: 3
