@@ -1,13 +1,14 @@
 ---
-title: Hi!
-linkTitle: About
+title: Bonjour!
+linkTitle: À propos
+slug: a-propos
 weight: 1
 menu:
   main: {}
 draft: true
 
 ---
-My name is **Humberto Rocha Gonçalves Filho**.
+Je m'appelle **Humberto Rocha Gonçalves Filho**.
 
 I'm a bachelor's degree in **Computer Science** currently working as **CTO/Full Stack Developer** at [Configr](https://configr.com).
 

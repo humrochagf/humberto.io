@@ -1,13 +1,14 @@
 ---
-title: Cientista da Computação, pythonista e curioso
-date: '2019-07-22T14:14:24.000+00:00'
+title: Olá!
 linkTitle: Sobre
+slug: sobre
+weight: 1
 menu:
   main: {}
 draft: true
 
 ---
-Olá, meu nome é **Humberto Rocha Gonçalves Filho**.
+Meu nome é **Humberto Rocha Gonçalves Filho**.
 
 Sou formado em **Ciência da Computação** e atualmente sou **Desenvolvedor FullStack** e **CTO** na [Configr](https://configr.com).
 

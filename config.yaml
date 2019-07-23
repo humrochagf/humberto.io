@@ -8,10 +8,11 @@ menu:
     - identifier: blog
       name: Blog
       url: /blog/
+      weight: 2
 
 params:
   author: Humberto Rocha
-  description: A blog for developers and people who are interested at content about automation, frontend, backend, python, devops, javascript game dev and much more.
+  description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
   twitter: humrochagf
   themeColor: "#000000"
   siteLogo100: /img/me-100x100.jpg
@@ -24,7 +25,9 @@ languages:
     languageName: Português Brasileiro
     weight: 2
     params:
-      description: Um blog para programadores e interessados em conteúdo sobre automação, frontend, backend, python, devops, javascript, desenvolvimento de jogos e muito mais.
+      description: Um blog para programadores e interessados em conteúdo sobre automação, frontend, backend, Python, devops, javascript, desenvolvimento de jogos e muito mais.
   fr:
     languageName: Français
     weight: 3
+    params:
+      description: Un blog pour les développeurs et les personnes intéressées par le contenu relatif à l’automatisation, au frontend, au backend, au Python, aux devops, au développement de jeux javascript, etc.
