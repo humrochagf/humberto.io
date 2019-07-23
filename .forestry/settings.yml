@@ -10,6 +10,18 @@ sections:
   create: all
   match: "*"
 - type: directory
+  path: content/blog
+  label: Posts - English
+  create: all
+  match: "*.en.md"
+  new_doc_ext: ".en.md"
+- type: directory
+  path: content/blog
+  label: Posts - Português
+  create: all
+  match: "*.pt-br.md"
+  new_doc_ext: ".pt-br.md"
+- type: directory
   path: content
   label: Pages
   create: all
