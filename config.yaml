@@ -3,6 +3,12 @@ DefaultContentLanguage: en
 title: Humberto Rocha
 theme: minimalcoder
 
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /blog/
+
 params:
   author: Humberto Rocha
   description: A blog for developers and people who are interested at content about automation, frontend, backend, python, devops, javascript game dev and much more.

@@ -2,6 +2,8 @@
 title: Cientista da Computação, pythonista e curioso
 date: 2019-07-22T11:14:24-03:00
 draft: true
+menu: main
+linkTitle: Sobre
 ---
 
 Olá, meu nome é **Humberto Rocha Gonçalves Filho**.

@@ -2,6 +2,8 @@
 title: Computer scientist, pythonist and curious
 date: 2019-07-22T11:14:24-03:00
 draft: true
+menu: main
+linkTitle: About
 ---
 
 Hi, my name is **Humberto Rocha Gonçalves Filho**.
