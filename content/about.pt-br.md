@@ -1,11 +1,12 @@
 ---
 title: Cientista da Computação, pythonista e curioso
-date: 2019-07-22T11:14:24-03:00
-draft: true
-menu: main
+date: '2019-07-22T14:14:24.000+00:00'
 linkTitle: Sobre
----
+menu:
+  main: {}
+draft: true
 
+---
 Olá, meu nome é **Humberto Rocha Gonçalves Filho**.
 
 Sou formado em **Ciência da Computação** e atualmente sou **Desenvolvedor FullStack** e **CTO** na [Configr](https://configr.com).

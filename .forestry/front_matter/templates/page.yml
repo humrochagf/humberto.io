@@ -8,3 +8,5 @@ fields:
 - type: text
   name: linkTitle
   label: linkTitle
+pages:
+- content/about.pt-br.md
