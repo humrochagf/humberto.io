@@ -9,4 +9,5 @@ fields:
   name: linkTitle
   label: linkTitle
 pages:
+- content/about.en.md
 - content/about.pt-br.md

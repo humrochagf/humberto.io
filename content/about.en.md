@@ -1,11 +1,12 @@
 ---
 title: Computer scientist, pythonist and curious
-date: 2019-07-22T11:14:24-03:00
-draft: true
-menu: main
+date: '2019-07-22T14:14:24.000+00:00'
 linkTitle: About
----
+menu:
+  main: {}
+draft: true
 
+---
 Hi, my name is **Humberto Rocha Gonçalves Filho**.
 
 I'm a bachelor's degree in **Computer Science** currently working as **CTO/Full Stack Developer** at [Configr](https://configr.com).
