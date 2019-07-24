@@ -1,7 +1,7 @@
 baseURL: https://humberto.io/
 DefaultContentLanguage: en
 title: Humberto Rocha
-theme: minimalcoder
+theme: colordrop
 
 menu:
   main:
