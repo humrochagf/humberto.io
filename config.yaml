@@ -9,6 +9,23 @@ menu:
       name: Blog
       url: /blog/
       weight: 2
+  footer:
+    - identifier: github
+      name: Github
+      url: https://github.com/humrochagf/
+      weight: 1
+    - identifier: twitter
+      name: Twitter
+      url: https://twitter.com/humrochagf/
+      weight: 2
+    - identifier: linkedin
+      name: LinkedIn
+      url: https://linkedin.com/in/humrochagf/
+      weight: 3
+    - identifier: email
+      name: Email
+      url: mailto:humrochagf@gmail.com
+      weight: 4
 
 params:
   author: Humberto Rocha
