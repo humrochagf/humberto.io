@@ -11,19 +11,19 @@ menu:
       weight: 2
   footer:
     - identifier: github
-      name: Github
+      name: github
       url: https://github.com/humrochagf/
       weight: 1
     - identifier: twitter
-      name: Twitter
+      name: twitter
       url: https://twitter.com/humrochagf/
       weight: 2
     - identifier: linkedin
-      name: LinkedIn
+      name: linkedin
       url: https://linkedin.com/in/humrochagf/
       weight: 3
     - identifier: email
-      name: Email
+      name: email
       url: mailto:humrochagf@gmail.com
       weight: 4
 
