@@ -12,6 +12,10 @@ menu:
       name: Blog
       url: /blog/
       weight: 2
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
   footer:
     - identifier: github
       name: github
