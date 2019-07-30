@@ -3,6 +3,7 @@ title: Bonjour le monde!
 description: Post de présentation de le blog
 publishDate: 2016-04-21
 slug: bonjour-le-monde
+shareImage: /img/bonjour.png
 draft: false
 
 ---

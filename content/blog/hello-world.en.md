@@ -2,6 +2,7 @@
 title: Hello World!
 description: Blog presentation post
 publishDate: 2016-04-21
+shareImage: /img/hello.png
 draft: false
 
 ---

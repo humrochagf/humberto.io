@@ -2,6 +2,7 @@ baseURL: https://humberto.io/
 DefaultContentLanguage: en
 title: Humberto Rocha
 theme: colordrop
+pygmentsUseClasses: true
 
 taxonomies:
   tag: tags
