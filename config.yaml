@@ -3,6 +3,9 @@ DefaultContentLanguage: en
 title: Humberto Rocha
 theme: colordrop
 
+taxonomies:
+  tag: tags
+
 menu:
   main:
     - identifier: blog
