@@ -36,18 +36,25 @@ menu:
       weight: 4
 
 params:
-  author: Humberto Rocha
   description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
-  twitter: humrochagf
   themeColor: "#000000"
+  themeInverseColor: "#ffffff"
+  siteLogo: /img/me.jpg
   siteLogo100: /img/me-100x100.jpg
+  author:
+    name: Humberto Rocha
+    jobTitle: Online Programmer
+    gender: male
+    image: /img/me.jpg
+    github: humrochagf
+    twitter: humrochagf
+    linkedin: humrochagf
   license:
     name: Attribuition-ShareAlike
     type: by-sa
     version: "4.0"
     locale: en
     size: 88x31
-
 
 languages:
   en:
