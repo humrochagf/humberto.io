@@ -5,7 +5,10 @@ name: Humberto Rocha
 jobTitle: Online Programmer
 locationName: Brasília, Brasil
 locationLink: https://goo.gl/maps/tQjUhUex5cy
-profile: Formado em **Ciência da Computação** apaixonado por **Open Source** e programação com um gosto pela tipografia. Também sou um membro ativo na [comunidade Brasileira de Python](https://python.org.br) e um entusiasta da **cultura maker** que adora compartilhar ideias sobre tecnologia, comunidade e automação.
+profile: |
+
+    Formado em **Ciência da Computação** apaixonado por **Open Source** e programação com um gosto pela tipografia. Também sou um membro ativo na [comunidade Brasileira de Python](https://python.org.br) e um entusiasta da **cultura maker** que adora compartilhar ideias sobre tecnologia, comunidade e automação.
+
 contact:
   - identifier: email
     svg: email
@@ -23,129 +26,125 @@ contact:
     svg: linkedin
     display: humrochagf
     url: https://linkedin.com/in/humrochagf/
-employment: "
+employment: |
 
-### Configr.com
-*CTO & FullStack Developer | fevereiro 2015 até hoje*
+    ### Configr.com
+    *CTO & FullStack Developer | fevereiro 2015 até hoje*
 
-Na Configr eu comecei como FullStack Developer usando Django para Backend e Django Template Engine e Bootstrap para o Frontend do produto principal da empresa. Minha primeira tarefa foi construir do zero o sistema de gestão de DNS convertendo a [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) em uma ferramenta amigável e automatizada que conversava com os demais produtos montando as configurações de DNS sem que o usuário precisasse entender de DNS.
+    Na Configr eu comecei como FullStack Developer usando Django para Backend e Django Template Engine e Bootstrap para o Frontend do produto principal da empresa. Minha primeira tarefa foi construir do zero o sistema de gestão de DNS convertendo a [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) em uma ferramenta amigável e automatizada que conversava com os demais produtos montando as configurações de DNS sem que o usuário precisasse entender de DNS.
 
-Por ser uma empresa de cloud computing focada em automação eu também pude trabalhar construindo, mantendo e corrigindo as automações e os processos de deploy no sistema usando Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd, Puppet entre outros.
+    Por ser uma empresa de cloud computing focada em automação eu também pude trabalhar construindo, mantendo e corrigindo as automações e os processos de deploy no sistema usando Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd, Puppet entre outros.
 
-Por volta de setembro de 2017 eu assumi o cargo de CTO e passei a ser encarregado de toda a stack de tecnologia da empresa e do gerenciando o time. Eu liderei o processo de migração do produto principal para as versões mais novas do Django e a transformação de sua arquitetura para a arquitetura de API com Django REST Framework e frontend em Angular.
+    Por volta de setembro de 2017 eu assumi o cargo de CTO e passei a ser encarregado de toda a stack de tecnologia da empresa e do gerenciando o time. Eu liderei o processo de migração do produto principal para as versões mais novas do Django e a transformação de sua arquitetura para a arquitetura de API com Django REST Framework e frontend em Angular.
 
-Também projetei o novo sistema de pagamentos e o sistema de white-label para o modelo de revenda da empresa. Atualmente estou a frente do projeto de separação do produto principal em serviços independentes.
+    Também projetei o novo sistema de pagamentos e o sistema de white-label para o modelo de revenda da empresa. Atualmente estou a frente do projeto de separação do produto principal em serviços independentes.
 
-### Caixa Econômica Federal
-*Estagiário |  agosto 2013 até agosto 2014*
+    ### Caixa Econômica Federal
+    *Estagiário |  agosto 2013 até agosto 2014*
 
-Na Caixa eu trabalhei como estagiário desenvolvendo uma aplicação desktop com C# para converter um grande volume de dados das contas telefônicas de todas as agências do banco alimentando o sistema interno responsável por rodar as validações internas.
+    Na Caixa eu trabalhei como estagiário desenvolvendo uma aplicação desktop com C# para converter um grande volume de dados das contas telefônicas de todas as agências do banco alimentando o sistema interno responsável por rodar as validações internas.
 
-Também trabalhei mantendo algumas da procedures e view do SQL Server do sistema interno e em seguida fui convidado para trabalhar com o processo de ETL para fazer uma migração de dados interna usando Pentaho.
-"
-education: "
+    Também trabalhei mantendo algumas da procedures e view do SQL Server do sistema interno e em seguida fui convidado para trabalhar com o processo de ETL para fazer uma migração de dados interna usando Pentaho.
 
-### Bacharelado em Computer Science
-*janeiro 2011 até janeiro 2015*
+education: |
 
-Um curso onde eu pude construir uma sólida compreensão de todos os aspectos da computação a partir do zero.
-"
-community: "
+    ### Bacharelado em Computer Science
+    *janeiro 2011 até janeiro 2015*
 
-### Diretor de Tecnologia da Associação Python Brasil
-*Diretor de Tecnologia | outubro 2017 até hoje*
+    Um curso onde eu pude construir uma sólida compreensão de todos os aspectos da computação a partir do zero.
 
-A Associação Python Brasil é uma entidade que trabalha como uma interface para promover a comunidade Python através do país. Eu trabalho como voluntário eleito pelo concelho para manter a infraestrutura da associação (Websites, DNS, Plataforma Discourse, Organização no Github entre outros).
+community: |
 
-### Prêmio Dorneles Treméa
-*outubro 2018*
+    ### Diretor de Tecnologia da Associação Python Brasil
+    *Diretor de Tecnologia | outubro 2017 até hoje*
 
-O Prêmio Dorneles Treméa é entregue todo ano na Conferência Python Brasil para os membros da comunidade brasileira que mantém vivo o espírito de colaboração, empreendedorismo e entrega a comunidade. O prêmio foi nomeado para homenagear um dos fundadores da comunidade brasileira de Python que infelizmente faleceu em 2011.
+    A Associação Python Brasil é uma entidade que trabalha como uma interface para promover a comunidade Python através do país. Eu trabalho como voluntário eleito pelo concelho para manter a infraestrutura da associação (Websites, DNS, Plataforma Discourse, Organização no Github entre outros).
 
-### Calango Hacker Clube
-*Membro e Apoiador*
+    ### Prêmio Dorneles Treméa
+    *outubro 2018*
 
-O Calango é um hackerspace localizado em Brasília, capital do Brasil e é um lugar onde seus membros podem compartilhar seus conhecimentos sobre liberdade, software livre, open source, open hardware, cultura maker e exercitar sua curiosidade.
-"
-languages: "
+    O Prêmio Dorneles Treméa é entregue todo ano na Conferência Python Brasil para os membros da comunidade brasileira que mantém vivo o espírito de colaboração, empreendedorismo e entrega a comunidade. O prêmio foi nomeado para homenagear um dos fundadores da comunidade brasileira de Python que infelizmente faleceu em 2011.
 
-- Português (Nativo)
+    ### Calango Hacker Clube
+    *Membro e Apoiador*
 
-- Inglês (Avançado)
+    O Calango é um hackerspace localizado em Brasília, capital do Brasil e é um lugar onde seus membros podem compartilhar seus conhecimentos sobre liberdade, software livre, open source, open hardware, cultura maker e exercitar sua curiosidade.
 
-- Francês (Básico)
+languages: |
 
-"
-techSkills: "
+    - Português (Nativo)
+    - Inglês (Avançado)
+    - Francês (Básico)
 
-Ordenadas por proficiência
+techSkills: |
 
-**Linguagens**
+    Ordenadas por proficiência
 
-- Python
-- JavaScript
-- TypeScript
-- Sass
-- C/C++
-- C#
-- Go
-- PHP
-- ShellScript
-- Elm
+    **Linguagens**
 
-**Frameworks**
+    - Python
+    - JavaScript
+    - TypeScript
+    - Sass
+    - C/C++
+    - C#
+    - Go
+    - PHP
+    - ShellScript
+    - Elm
 
-- Django
-- Django REST
-- Angular
-- Lektor
-- Flask
-- .NET
+    **Frameworks**
 
-**Bancos de dados**
+    - Django
+    - Django REST
+    - Angular
+    - Lektor
+    - Flask
+    - .NET
 
-- PostgreSQL
-- MySQL
-- MongoDB
-- SQL Server
+    **Bancos de dados**
 
-**Servidor / Deployment**
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - SQL Server
 
-- Fabric
-- Nginx
-- Docker
-- Bind
-- Upstart/Systemd
-- Puppet
-- Exim
+    **Servidor / Deployment**
 
-**Outros**
+    - Fabric
+    - Nginx
+    - Docker
+    - Bind
+    - Upstart/Systemd
+    - Puppet
+    - Exim
 
-- Linux
-- Gulp
-- Webpack
-- Bootstrap
-- RabbitMQ
-- Lets Encrypt
-"
-softSkills: "
+    **Outros**
 
-Geek por aprender novas tecnologias </br>
-Apaixonado por resolver problemas </br>
-Bom em projetar soluções </br>
-Ótimo em ensinar iniciantes </br>
-Amor por programar e escrever sobre programação </br>
-Bom em tomar decisões e pronto para dizer não quando necessário </br>
-"
-openSource: "
+    - Linux
+    - Gulp
+    - Webpack
+    - Bootstrap
+    - RabbitMQ
+    - Lets Encrypt
 
-- [revelation](https://github.com/humrochagf/revelation)
-- [utmkeeper](https://github.com/humrochagf/utmkeeper)
-- [python.org.br](https://python.org.br)
-- [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
-- [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
-- [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
-- [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
-"
+softSkills: |
+
+    Geek por aprender novas tecnologias </br>
+    Apaixonado por resolver problemas </br>
+    Bom em projetar soluções </br>
+    Ótimo em ensinar iniciantes </br>
+    Amor por programar e escrever sobre programação </br>
+    Bom em tomar decisões e pronto para dizer não quando necessário </br>
+
+openSource: |
+
+    - [revelation](https://github.com/humrochagf/revelation)
+    - [utmkeeper](https://github.com/humrochagf/utmkeeper)
+    - [python.org.br](https://python.org.br)
+    - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
+    - [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
+    - [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
+    - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
 
 ---
