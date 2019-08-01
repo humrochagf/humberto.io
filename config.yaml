@@ -3,6 +3,7 @@ DefaultContentLanguage: en
 title: Humberto Rocha
 theme: colordrop
 pygmentsUseClasses: true
+enableRobotsTXT: true
 
 taxonomies:
   tag: tags
@@ -30,10 +31,13 @@ menu:
       name: linkedin
       url: https://linkedin.com/in/humrochagf/
       weight: 3
+    - identifier: rss
+      name: rss
+      weight: 4
     - identifier: email
       name: email
       url: mailto:humrochagf@gmail.com
-      weight: 4
+      weight: 5
 
 params:
   description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
