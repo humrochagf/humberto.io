@@ -4,6 +4,9 @@ description: Post de apresentação do blog
 publishDate: 2016-04-21
 slug: ola-mundo
 shareImage: /img/ola.png
+aliases: [
+    "/blog/ola-mundo"
+]
 draft: false
 
 ---
