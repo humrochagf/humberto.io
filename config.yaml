@@ -34,10 +34,14 @@ menu:
     - identifier: rss
       name: rss
       weight: 4
+    - identifier: curriculum
+      name: curriculum
+      url: /curriculum/
+      weight: 5
     - identifier: email
       name: email
       url: mailto:humrochagf@gmail.com
-      weight: 5
+      weight: 6
 
 params:
   description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
