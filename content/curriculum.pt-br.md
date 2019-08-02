@@ -2,7 +2,7 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Online Programmer
+jobTitle: Developer
 locationName: Brasília, Brasil
 locationLink: https://goo.gl/maps/tQjUhUex5cy
 profile: |
