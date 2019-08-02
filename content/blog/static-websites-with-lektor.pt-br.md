@@ -2,7 +2,8 @@
 title: Sites Estáticos com Lektor
 description: Introdução a construção de sites estáticos com lektor
 publishDate: 2016-04-23
-shareImage: /img/meusite-admin.png
+images:
+  - /img/meusite-admin.png
 slug: sites-estaticos-com-lektor
 tags: ["python", "lektor", "framework", "blog", "static-sites", "gh-pages"]
 aliases: [
