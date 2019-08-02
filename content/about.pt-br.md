@@ -5,7 +5,7 @@ slug: sobre
 weight: 1
 menu:
   main: {}
-draft: true
+draft: false
 
 ---
 Meu nome é **Humberto Rocha Gonçalves Filho**.

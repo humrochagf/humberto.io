@@ -5,7 +5,7 @@ slug: a-propos
 weight: 1
 menu:
   main: {}
-draft: true
+draft: false
 
 ---
 Je m'appelle **Humberto Rocha Gonçalves Filho**.
