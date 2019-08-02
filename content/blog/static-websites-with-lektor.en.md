@@ -4,7 +4,7 @@ description: Introduction to building static sites with lektor
 publishDate: 2016-04-23
 images: 
   - /img/mywebsite-admin.png
-tags: ["python", "lektor", "framework", "blog", "static-sites", "gh-pages"]
+tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
 draft: false
 
 ---

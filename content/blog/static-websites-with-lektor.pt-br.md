@@ -5,7 +5,7 @@ publishDate: 2016-04-23
 images:
   - /img/meusite-admin.png
 slug: sites-estaticos-com-lektor
-tags: ["python", "lektor", "framework", "blog", "static-sites", "gh-pages"]
+tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
 aliases: [
     "/blog/sites-estaticos-com-lektor"
 ]
