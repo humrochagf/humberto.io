@@ -3,7 +3,7 @@ title: Django Generic ManyToMany Relations
 description: How to solve the issue of dealing with generic many to many relations on Django
 publishDate: 2016-04-29
 images: 
-  - /img/django.png
+  - /img/generics/django.png
 tags: ["python", "django", "frameworks"]
 draft: false
 

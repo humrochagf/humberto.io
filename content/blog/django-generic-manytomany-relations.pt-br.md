@@ -3,7 +3,7 @@ title: Relacionamentos ManyToMany genéricos com Django
 description: Dicas de como resolver este problema com o django
 publishDate: 2016-04-29
 images: 
-  - /img/django.png
+  - /img/generics/django.png
 slug: relacionamentos-manytomany-genericos-com-django
 tags: ["python", "django", "frameworks"]
 aliases: [
