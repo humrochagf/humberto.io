@@ -7,7 +7,7 @@ images:
 slug: sites-estaticos-com-lektor
 tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
 aliases: [
-    "/blog/sites-estaticos-com-lektor"
+  "/blog/sites-estaticos-com-lektor"
 ]
 draft: false
 

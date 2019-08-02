@@ -7,7 +7,7 @@ images:
 slug: github-pages-com-pelican-e-travis-ci
 tags: ["python", "pelican", "frameworks", "blog", "static-sites", "gh-pages", "travis-ci"]
 aliases: [
-    "/blog/github-pages-com-pelican-e-travis-ci"
+  "/blog/github-pages-com-pelican-e-travis-ci"
 ]
 draft: false
 

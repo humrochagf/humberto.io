@@ -7,7 +7,7 @@ images:
 slug: relacionamentos-manytomany-genericos-com-django
 tags: ["python", "django", "frameworks"]
 aliases: [
-    "/blog/relacionamentos-manytomany-genericos-com-django"
+  "/blog/relacionamentos-manytomany-genericos-com-django"
 ]
 draft: false
 

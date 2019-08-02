@@ -6,7 +6,7 @@ slug: ola-mundo
 images:
   - /img/hello-world/ola.png
 aliases: [
-    "/blog/ola-mundo"
+  "/blog/ola-mundo"
 ]
 draft: false
 
