@@ -2,7 +2,6 @@ baseURL: https://humberto.io/
 DefaultContentLanguage: en
 title: Humberto Rocha
 theme: colordrop
-pygmentsUseClasses: true
 enableRobotsTXT: true
 disqusShortname: humrochagf
 googleAnalytics: UA-62093919-2
