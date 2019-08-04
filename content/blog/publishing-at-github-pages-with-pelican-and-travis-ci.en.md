@@ -2,7 +2,7 @@
 title: Publishing at GitHub Pages with Pelican and Travis-CI
 description: Create your first static website using Pelican and hosting at GitHub Pages using Travis-CI to automate the deploy process
 publishDate: 2016-05-05
-images: 
+images:
   - /img/publishing-at-github-pages-with-pelican-and-travis-ci/pelican-fist-post.png
 tags: ["python", "pelican", "frameworks", "blog", "static-sites", "gh-pages", "travis-ci"]
 draft: false
@@ -17,7 +17,7 @@ This guide assumes that the reader have an account at  [GitHub](http://github.co
 
 {{% tip class="info" %}}
 The images have a little of Portuguese due to the original language publication
-{{% /tip %}} 
+{{% /tip %}}
 
 ## GitHub Pages
 
@@ -49,13 +49,13 @@ Pelican is a static website generator for blog creation. Here I will demonstrate
 
 To install pelican run the command:
 
-```console
+{{< highlight console >}}
 $ pip install pelican==3.6
-```
+{{< / highlight >}}
 
 To create a pelican project run the command:
 
-```console
+{{< highlight console >}}
 $ mkdir humrochagf.github.io
 $ cd humrochagf.github.io
 $ pelican-quickstart
@@ -85,40 +85,40 @@ needed by Pelican.
 > Do you want to upload your website using GitHub Pages? (y/N) y
 > Is this your personal page (username.github.io)? (y/N) y
 Done. Your new project is available at /path/to/humrochagf.github.io
-```
+{{< / highlight >}}
 
 Start a repository at this directory and push the data to the **pelican branch**:
 
-```console
+{{< highlight console >}}
 $ git init
 $ git remote add origin git@github.com:humrochagf/humrochagf.github.io.git
 $ git checkout -b pelican
 $ git add .
 $ git commit -m 'Starting pelican branch'
 $ git push origin pelican
-```
+{{< / highlight >}}
 
 To publish the content at the **master bransh** we need the `ghp-import` module:
 
-```console
+{{< highlight console >}}
 $ pip install ghp-import
 $ echo 'pelican==3.6\nghp-import' > requirements.txt
 $ git add requirements.txt
 $ git commit -m 'Adding requirements'
 $ git push origin pelican
-```
+{{< / highlight >}}
 
 Publishing the blog:
 
-```console
+{{< highlight console >}}
 $ make github
-```
+{{< / highlight >}}
 
 ![First post at pelican blog](/img/publishing-at-github-pages-with-pelican-and-travis-ci/pelican-blog.png)
 
 {{% tip class="info" %}}
 At the project page case change the content of the variable `GITHUB_PAGES_BRANCH` on the makefile from `master` to `gh-pages`.
-{{% /tip %}} 
+{{% /tip %}}
 
 Now that we have the blog up and running at gh pages lets automate the task of static pages generation to update the blog content with new posts without needing to be on a machine with the pelican environment installed.
 
@@ -136,18 +136,18 @@ After that go to the repository settings at Travis-CI and disable the **Build pu
 
 The next step is to create a **Deploy Key** to enable Travis-CI to publish the content at GitHub after finishing the build and to do that you must create a **ssh key** at the root of your local repository:
 
-```console
+{{< highlight console >}}
 $ ssh-keygen -f publish-key
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in publish-key.
 Your public key has been saved in publish-key.pub.
-```
+{{< / highlight >}}
 
 With the key let's cipher it using a tool called [Travis-CLI](https://github.com/travis-ci/travis.rb) (certifique-se de que esteja instalada em sua máquina)  to publish safely at the repository without exposing the content of the **private key**:
 
-```console
+{{< highlight console >}}
 $ travis encrypt-file publish-key
 Detected repository as humrochagf/humrochagf.github.io, is this correct? |yes| yes
 encrypting publish-key for humrochagf/humrochagf.github.io
@@ -163,19 +163,19 @@ Pro Tip: You can add it automatically by running with --add.
 Make sure to add publish-key.enc to the git repository.
 Make sure not to add publish-key to the git repository.
 Commit all changes to your .travis.yml.
-```
+{{< / highlight >}}
 
 Like sad before at the command output we can add an option `--add` to add the content right to `.travis.yml` file although, to keep us from overriding some command that already exists at the file I recommend to add manually.
 
 In our case we will create the file:
 
-```console
+{{< highlight console >}}
 $ touch .travis.yml
-```
+{{< / highlight >}}
 
 And add the following content:
 
-```yaml
+{{< highlight yaml >}}
 sudo: false
 branches:
   only:
@@ -201,25 +201,25 @@ install:
 - pip install -r requirements.txt
 script:
 - make github
-```
+{{< / highlight >}}
 
 Remove the non encrypted private key to prevent us from publishing it at the repo:
 
-```console
+{{< highlight console >}}
 $ rm publish-key
-```
+{{< / highlight >}}
 
 {{% tip class="danger" %}}
 **ATENTION**:  Under no circumstances add the **publish-key** file in your repository as it contains an non encrypted private key that have power to commit in your repository. Add only the **publish-key.enc** file and if you added it by mistake, redo the key generation and encryption steps to generate a new key.
-{{% /tip %}} 
+{{% /tip %}}
 
 Now we add the files to the repo:
 
-```console
+{{< highlight console >}}
 $ git add .travis.yml publish-key.enc
 $ git commit -m 'Adding Travis-CI files'
 $ git push origin pelican
-```
+{{< / highlight >}}
 
 To enable Travis-CI access we add the **deploy key** on GitHub using the content of the public key **publish-key.pub**:
 

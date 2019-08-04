@@ -47,7 +47,7 @@ The simulator was made to test the game logic, and it was placed at the `simulat
 
 The dojo challenge was the following, write a function `game_of_life` that receives a seed as a 50x50 matrix and return a matrix with the next generation computed:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 def cell_check(section):
@@ -121,11 +121,11 @@ def game_of_life(seed):
 
     # returns the next generation
     return next_gen
-```
+{{< / highlight >}}
 
 As you can see the `game.py` code computes only the next generation of the seed which is perfect to use at the `simulator.py` because we can compute the next generation to display on the screen and then feed the computed generation as a seed to the next one and so forth:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 import random
@@ -227,7 +227,7 @@ while True:
 
     # waits a brief moment until going to the next generation
     time.sleep(0.05)
-```
+{{< / highlight >}}
 
 The first drawing is separate from the game loop so the user can see the starting state before running the interactions on a faster pace. Entering inside the game loop we have the input processing step where quit conditions are checked so, moving to the game update step, the next generation is computed, and then, on the drawing step, the new generation is displayed at the screen.
 

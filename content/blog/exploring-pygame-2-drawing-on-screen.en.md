@@ -25,7 +25,7 @@ At pygame there's a little change, the drawing space will use the coordinates **
 
 Start by creating a file `draw.py` with the following content:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 import time
@@ -73,7 +73,7 @@ screen.blit(text, [250, 200])
 pygame.display.flip()
 
 time.sleep(5)
-```
+{{< / highlight >}}
 
 The program starts by defining the values of the colors that will be used later. Following it initializes pygame like at the previous post and then it loads the font at `pygame.font.SysFont` to be ready to use later.
 

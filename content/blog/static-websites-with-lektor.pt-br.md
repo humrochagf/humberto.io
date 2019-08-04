@@ -40,50 +40,50 @@ Como descrito no próprio [site](https://www.getlektor.com/docs/what) ele bebeu 
 
 O Lektor roda em Python 2.7 ou superior e depende das bibliotecas `python-dev`, `libssl-dev`, `libffi-dev` e `imagemagick` que você pode facilmente instalar rodando:
 
-```console
+{{< highlight console >}}
 $ sudo apt-get install python-dev libssl-dev libffi-dev imagemagick
-```
+{{< / highlight >}}
 
 {{% tip class="info" %}}
 No Mac você pode dar uma olhada nos pacotes do **brew**, no Windows o **chocolatey** en os outros gerenciadores de pacotes das outras distribuições Linux, ambos possuem suas versões das bibliotecas citadas
-{{% /tip %}} 
+{{% /tip %}}
 
 A instalação do Lektor é bem direta:
 
-```console
+{{< highlight console >}}
 $ curl -sf https://www.getlektor.com/install.sh | sh
-```
+{{< / highlight >}}
 
 Este comando instala diretamente no sistema, se você prefere instalar em sua virtualenv:
 
-```console
+{{< highlight console >}}
 $ virtualenv venv
 $ . venv/bin/activate
 $ pip install Lektor
-```
+{{< / highlight >}}
 
 Esta forma é desencorajada pelos desenvolvedores pois o lektor gerencia virtualenvs internamente para instalação de seus plugins, portanto caso seja desenvolvedor e quer ter mais controle sobre o lektor instale a versão de desenvolvimento e esteja pronto para sujar as mãos quando for preciso, e quem sabe até contribuir com o desenvolvimento do lektor:
 
-```console
+{{< highlight console >}}
 $ git clone https://github.com/lektor/lektor
 $ cd lektor
 $ make build-js
 $ virtualenv venv
 $ . venv/bin/activate
 $ pip install --editable .
-```
+{{< / highlight >}}
 
 {{% tip class="info" %}}
 requer `npm` instalado para montar a interface de administração.
-{{% /tip %}} 
+{{% /tip %}}
 
 ## Criando o Site
 
 Após a instalação para criar o seu site basta utilizar o comando de criação de projeto:
 
-```console
+{{< highlight console >}}
 $ lektor quickstart
-```
+{{< / highlight >}}
 
 Ele irá te fazer algumas perguntas e criar um projeto com o nome que você informou.
 
@@ -91,14 +91,14 @@ Ele irá te fazer algumas perguntas e criar um projeto com o nome que você info
 
 Esta é a estrutura básica de um site gerado pelo lektor:
 
-```console
+{{< highlight console >}}
 meusite
 ├── assets/
 ├── content/
 ├── templates/
 ├── models/
 └── meusite.lektorproject
-```
+{{< / highlight >}}
 
 - **assets:** Pasta onde ficam os arquivos  .css, .js, .ico entre outros recursos estáticos;
 - **content:** Pasta onde ficam os arquivos que iram gerar as páginas do site, cada subpasta corresponde a uma página no site gerado;
@@ -110,10 +110,10 @@ meusite
 
 Para rodar o site em sua máquina basta entrar no diretório criado e iniciar o servidor local:
 
-```console
+{{< highlight console >}}
 $ cd meusite
 $ lektor server
-```
+{{< / highlight >}}
 
 Com o servidor rodando acesse [localhost:5000](http://localhost:5000) para ver o resultado:
 
@@ -129,16 +129,16 @@ Para acessar o admin clique na imagem de lápis no canto superior direito da pá
 
 Exitem duas maneiras de se fazer o deploy do site construído com o lektor, a manual, que é basicamente rodar o comando `build` e copiar manualmente os arquivos para o servidor:
 
-```console
+{{< highlight console >}}
 $ lektor build --output-path destino
-```
+{{< / highlight >}}
 
 E a forma automática, que pode ser feita (neste caso para o GitHub Pages) adicionando a seguinte configuração no arquivo `.lektorproject`:
 
-```ini
+{{< highlight ini >}}
 [servers.production]
 target = ghpages://usuario/repositorio
-```
+{{< / highlight >}}
 
 {{% tip class="warning" %}}
 O deploy faz um force push na branch `master` ou `gh-pages` dependendo do tipo de repositório, portanto, cuidado para não sobrescrever os dados de seu repositório. Mantenha o código fonte em uma branch separada, você pode dar uma conferida no [meu repositório](https://github.com/humrochagf/humrochagf.github.io) para ter uma ideia.
@@ -146,16 +146,16 @@ O deploy faz um force push na branch `master` ou `gh-pages` dependendo do tipo d
 
 No caso de hospedagem cloud:
 
-```ini
+{{< highlight ini >}}
 [servers.production]
 name = Production
 target = rsync://usuario@servidor.dominio.com.br/srv/meusite/www
-```
+{{< / highlight >}}
 
 E rodando em seguida o comando:
 
-```console
+{{< highlight console >}}
 $ lektor deploy
-```
+{{< / highlight >}}
 
 Para informações mais detalhadas você pode acessar a [documentação do lektor](https://www.getlektor.com/docs) e também ficar de olho nas próximas postagens.

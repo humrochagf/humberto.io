@@ -2,7 +2,7 @@
 title: Relacionamentos ManyToMany genéricos com Django
 description: Dicas de como resolver este problema com o django
 publishDate: 2016-04-29
-images: 
+images:
   - /img/generics/django.png
 slug: relacionamentos-manytomany-genericos-com-django
 tags: ["python", "django", "frameworks"]
@@ -19,7 +19,7 @@ Recentemente, precisei implementar um **N:N** com um lado genérico, e encontrei
 
 {{% tip class="info" %}}
 As versões em que já implementei esta modelagem foram django 1.8 e 1.9 com python 2.7 e 3.4
-{{% /tip %}} 
+{{% /tip %}}
 
 ## Modelagem
 
@@ -27,7 +27,7 @@ Para demonstrar esta modelagem iremos usar a ideia de uma biblioteca  digital on
 
 Neste caso teremos do lado N os usuários e do lado N genérico as mídias. E seus models no django sem aplicar o relacionamento são:
 
-```python
+{{< highlight python >}}
 from django.db import models
 
 class Usuario(models.Model):
@@ -46,32 +46,32 @@ class Video(models.Model):
 class Texto(models.Model):
     titulo = models.CharField(max_length=60)
     num_paginas = models.PositiveSmallIntegerField()
-```
+{{< / highlight >}}
 
 ## Instalação
 
 Para instalar o django-gm2m rode em sua virtualenv ou ambiente do seu projeto:
 
-```console
+{{< highlight console >}}
 $ pip install django-gm2m
-```
+{{< / highlight >}}
 
 Em seguida certifique-se de ter em seus `INSTALLED_APPS` o `django.contrib.contenttypes` e adicione `gm2m`:
 
-```python
+{{< highlight python >}}
 INSTALLED_APPS = [
    ...
    'django.contrib.contenttypes',
    ...
    'gm2m',
 ]
-```
+{{< / highlight >}}
 
 ## Montando o Relacionamento
 
 Para criar o relacionamento insira do lado não genérico o campo `GM2MField`:
 
-```python
+{{< highlight python >}}
 from gm2m import GM2MField
 
 class Usuario(models.Model):
@@ -79,15 +79,15 @@ class Usuario(models.Model):
     midias = GM2MField(
         'Video', 'Audio', 'Texto', through='Aluguel', related_name='usuarios'
     )
-```
+{{< / highlight >}}
 
 {{% tip class="info" %}}
 O parâmetro `related_name` é o nome com o qual você vai acessar a relação inversa, ou seja, acessar os usuários através da mídia. Se você não usar este atributo ele assume o nome padrão que é `<model>_set`.
-{{% /tip %}} 
+{{% /tip %}}
 
 {{% tip class="info" %}}
 Outro ponto importante são os parâmetros posicionais do `GM2MField`, que são os models no qual você quer que o django monte o relacionamento inverso automaticamente,  caso não seja informado a vinculação funciona da mesma forma, porém, o acesso aos usuários através da mídia não será montado.
-{{% /tip %}} 
+{{% /tip %}}
 
 Feito isso já estaria pronto e você adicionaria uma mídia a um usuário através de `usuario.midias.add(video)`.
 
@@ -95,7 +95,7 @@ Porém, eventualmente será necessário adicionar algum campo no model intermedi
 
 Para evitar isso, se você possuí planos de incrementar esta modelagem (que é o nosso caso) já crie da forma que será demonstrada, que é passando o parâmetro `through` para o campo e criando o model intermediário, que no nosso caso chamaremos de `Aluguel`:
 
-```python
+{{< highlight python >}}
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 
@@ -114,15 +114,15 @@ class Aluguel(models.Model):
     # campos extras
     alugado_em = models.DateField(auto_now_add=True)
     vencido_em = models.DateField(null=True)
-```
+{{< / highlight >}}
 
 Observe que para o lado genérico é utilizado o mesmo padrão de [relacionamento genérico](https://docs.djangoproject.com/en/1.9/ref/contrib/contenttypes/#generic-relations) descrito na documentação oficial do django. Uma `GenericForeignKey` composta de uma `ForeignKey` para `ContentType` e um `PositiveIntegerField` para guardar o id da instância do model referenciado.
 
 Para vincular um usuário a uma mídia basta criar e salvar um aluguél da seguinte forma:
 
-```python
+{{< highlight python >}}
 >>> Aluguel(usuario=usuario, midia=video).save()
-```
+{{< / highlight >}}
 
 ## Conclusão
 

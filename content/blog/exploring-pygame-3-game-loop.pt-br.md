@@ -2,7 +2,7 @@
 title: Desbravando o pygame 3 - Game Loop
 description: Saiba mais sobre como funciona o game loop e como implementa-lo no pygame
 publishDate: 2017-08-24
-images: 
+images:
   - /img/exploring-pygame/game-loop-pt-br.png
 slug: desbravando-o-pygame-3-game-loop
 tags: ["python", "pygame", "gamedev"]
@@ -31,15 +31,15 @@ Durante a execução jogo está sempre:
 
 - **Desenhando na tela** o resultado de toda a interação anterior.
 
-Diferente de um loop de eventos de uma aplicação de desktop por exemplo em que o programa fica parado até que você tome alguma ação, no loop de jogo continua sua execução independente da entrada do usuário atualizando elementos independentes como, música, física, inteligência artificial, etc. 
+Diferente de um loop de eventos de uma aplicação de desktop por exemplo em que o programa fica parado até que você tome alguma ação, no loop de jogo continua sua execução independente da entrada do usuário atualizando elementos independentes como, música, física, inteligência artificial, etc.
 
-Um outro ponto importante que não está nos itens acima mas está presente na grande maioria dos jogos é o controle de atualização do loop. Mas este tópico ficará para uma próxima postagem. 
+Um outro ponto importante que não está nos itens acima mas está presente na grande maioria dos jogos é o controle de atualização do loop. Mas este tópico ficará para uma próxima postagem.
 
 ## Implementação
 
 Para demonstrar o game loop em funcionamento faremos um programa que desenha uma bola que quica pelos cantos da tela:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 import pygame
@@ -102,7 +102,7 @@ while True:
 
     # atualizando a tela
     pygame.display.flip()
-```
+{{< / highlight >}}
 
 É assim, bem direto ao ponto, o loop definido em `while True:` irá rodar o código indefinidamente realizando as etapas de processamento de entrada, atualização do jogo e desenho a cada ciclo que passa.
 
@@ -114,7 +114,7 @@ E finalmente na etapa de desenho usamos as funções [previamente apresentadas](
 
 {{% tip class="info" %}}
 Note que sempre pintamos o fundo de preto, caso contrário o rastro da bola ficaria na tela.
-{{% /tip %}} 
+{{% /tip %}}
 
 ## Concluindo
 

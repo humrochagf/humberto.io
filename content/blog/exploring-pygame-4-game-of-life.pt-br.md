@@ -49,7 +49,7 @@ O simulador foi feito para testar a lógica do jogo e se encontra no arquivo `si
 
 O desafio foi o seguinte, criar uma função `game_of_life` que recebesse uma seed em forma de uma matriz 50x50 e devolvesse a geração seguinte desta matriz como resultado:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 def cell_check(section):
@@ -124,11 +124,11 @@ def game_of_life(seed):
 
     # devolve a geração seguinte
     return next_gen
-```
+{{< / highlight >}}
 
 Como visto na implementação o código de `game.py` executa somente uma geração do game of life, o que é excelente para o nosso `simulador.py`, pois ele utilizará do nosso conceito de loop de jogo e a cada ciclo atualiza o jogo com a geração seguinte e desenha seu estado na tela:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 import random
@@ -228,7 +228,7 @@ while True:
 
     # espera um breve momento antes de partir para o próximo ciclo
     time.sleep(0.05)
-```
+{{< / highlight >}}
 
 Desenhamos uma vez a seed na tela antes de iniciar o loop para dar tempo do usuário ver o estado inicial na tela. Em seguida damos início ao loop de jogo checando por eventos como feito anteriormente mas com a adição da condição de parada utilizando a tecla `ESC` para finalizar o programa. Na etapa de atualização do jogo rodamos a função `game_of_life` do arquivo `game.py` para processar a geração seguinte e finalizamos com a etapa de desenho, agora com um tempo de espera menor entre os ciclos para ter uma visão mais dinâmica da evolução da nossa seed.
 

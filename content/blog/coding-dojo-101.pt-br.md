@@ -2,7 +2,7 @@
 title: Coding Dojo 101
 description: Descubra o que é e como organizar um Coding Dojo em sua faculdade ou comunidade local
 publishDate: 2016-12-02
-images: 
+images:
   - /img/coding-dojo-101/flow.jpg
 tags: ["dojo", "learning"]
 draft: false
@@ -87,7 +87,7 @@ Na realização dos testes costumo utilizar a biblioteca padrão de testes do Py
 
 Para escrever testes com a **unittest** basta criar uma classe que extende `unittest.TestCase`:
 
-```python
+{{< highlight python >}}
 import unittest
 
 def incremento(x):
@@ -96,15 +96,15 @@ def incremento(x):
 class MeuTeste(unittest.TestCase):
     def testa_incremento(self):
         self.assertEqual(incremento(3), 4)
-```
+{{< / highlight >}}
 
 O exemplo acima implementa um método em `MeuTeste` que verifica se a função `incremento` com o parâmetro `3` retorna o valor esperado `4`.
 
 Rodando os testes com o **nose**:
 
-```console
+{{< highlight console >}}
 $ nosetests arquivo.py
-```
+{{< / highlight >}}
 
 Ele buscará em seu arquivo todas classes que extendem `unittest.TestCase` e rodar os testes automaticamente.
 
@@ -118,13 +118,13 @@ O semáforo que eu gosto de utilizar é o [dose](https://github.com/danilobellin
 
 Ele funciona tanto com python quanto com outras linguagens além de integrar bem com o **nose**, basta rodar o comando:
 
-```console
+{{< highlight console >}}
 $ dose nosetests arquivo.py
-```
+{{< / highlight >}}
 
 {{% tip class="warning" %}}
 Caso tenha problemas no processo de instalação dê uma olhada na postagem que eu fiz sobre [dependências dev python](/blog/tldr-dependencias-dev-python-no-ubuntu/), talvez ela possa lhe ajudar nesta questão.
-{{% /tip %}} 
+{{% /tip %}}
 
 ## Concluindo
 

@@ -2,7 +2,7 @@
 title: Exploring pygame 3 - Game Loop
 description: Learn more about how the game loop works and how to implement it at pygame
 publishDate: 2017-08-24
-images: 
+images:
   - /img/exploring-pygame/game-loop-en.png
 tags: ["python", "pygame", "gamedev"]
 draft: false
@@ -35,7 +35,7 @@ Another important point that isn't present above is the time step control that k
 
 To show the **game loop** running we will write a program that draws a ball that bounces through the screen:
 
-```python
+{{< highlight python "linenos=table" >}}
 # -*- coding: utf-8 -*-
 
 import pygame
@@ -98,7 +98,7 @@ while True:
 
     # update the screen
     pygame.display.flip()
-```
+{{< / highlight >}}
 
 The game loop is created with  `while True:` and will run indefinitely doing the game steps of input, processing and drawing at every cycle.
 
@@ -110,7 +110,7 @@ And finally, at the **drawing step** we use the methods from the [previous post]
 
 {{% tip class="info" %}}
 Note that we always fill the background with black before to draw the ball, if we don't do that, the ball will leave a trace on the screen from the previous draws.
-{{% /tip %}} 
+{{% /tip %}}
 
 ## Conclusion
 
