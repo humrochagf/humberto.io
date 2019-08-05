@@ -3,7 +3,7 @@ title: Static Websites with Lektor
 description: Introduction to building static sites with lektor
 publishDate: 2016-04-23
 images:
-  - /img/static-websites-with-lektor/lektor-mywebsite-admin.png
+  - /img/static-websites-lektor/lektor-mywebsite-admin.png
 tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
 draft: false
 
@@ -115,13 +115,13 @@ $ lektor server
 
 With the server running access [localhost:5000](http://localhost:5000) to see the result:
 
-![fist Lektor website running locally](/img/static-websites-with-lektor/lektor-mywebsite.png)
+![fist Lektor website running locally](/img/static-websites-lektor/lektor-mywebsite.png)
 
 ### Accessing the Admin
 
 To access the admin interface just click at the pencil icon at the top right corner of the page that you opened or go to [localhost:5000/admin](http://localhost:5000/admin):
 
-![Lektor admin page](/img/static-websites-with-lektor/lektor-mywebsite-admin.png)
+![Lektor admin page](/img/static-websites-lektor/lektor-mywebsite-admin.png)
 
 ## Publishing the Website
 

@@ -3,7 +3,7 @@ title: Sites Estáticos com Lektor
 description: Introdução a construção de sites estáticos com lektor
 publishDate: 2016-04-23
 images:
-  - /img/static-websites-with-lektor/lektor-meusite-admin.png
+  - /img/static-websites-lektor/lektor-meusite-admin.png
 slug: sites-estaticos-com-lektor
 tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
 aliases: [
@@ -117,13 +117,13 @@ $ lektor server
 
 Com o servidor rodando acesse [localhost:5000](http://localhost:5000) para ver o resultado:
 
-![primeiro site rodando com Lektor](/img/static-websites-with-lektor/lektor-meusite.png)
+![primeiro site rodando com Lektor](/img/static-websites-lektor/lektor-meusite.png)
 
 ### Acessando o Admin
 
 Para acessar o admin clique na imagem de lápis no canto superior direito da página que você criou ou acesse [localhost:5000](http://localhost:5000/admin)
 
-![página de admin do Lektor](/img/static-websites-with-lektor/lektor-meusite-admin.png)
+![página de admin do Lektor](/img/static-websites-lektor/lektor-meusite-admin.png)
 
 ## Publicando o Site
 
