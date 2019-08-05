@@ -4,7 +4,7 @@ description: Descubra o que é e como organizar um Coding Dojo em sua faculdade 
 publishDate: 2016-12-02
 images:
   - /img/coding-dojo-101/flow.jpg
-tags: ["dojo", "learning"]
+tags: ["dojo", "learning", "python"]
 draft: false
 
 ---

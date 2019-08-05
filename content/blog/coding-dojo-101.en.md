@@ -4,7 +4,7 @@ description: Discover what is a Coding Dojo and how to start it at you college o
 publishDate: 2016-12-02
 images:
   - /img/coding-dojo-101/flow-en.jpg
-tags: ["dojo", "learning"]
+tags: ["dojo", "learning", "python"]
 draft: false
 
 ---
