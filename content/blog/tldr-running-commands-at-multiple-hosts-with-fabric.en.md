@@ -1,4 +1,4 @@
---- 
+---
 title: "TLDR: Running commands at multiple hosts with Fabric"
 description: Discover how to use Fabric to automate repetitive tasks at your servers
 publishDate: 2018-02-17
