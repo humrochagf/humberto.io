@@ -139,7 +139,7 @@ target = ghpages://user/repo
 {{< / highlight >}}
 
 {{% tip class="warning" %}}
-The deploy will make a force push ath the `master` or `gh-pages` branch based on the type of repository, so watch out to not override your data. Keep the source code at a separate branch. You can check my repository at [github](https://github.com/humrochagf/humrochagf.github.io) to see how its configured.
+The deploy will make a force push ath the `master` or `gh-pages` branch based on the type of repository, so watch out to not override your data. Keep the source code at a separate branch. You can check my repository at [github](https://github.com/humrochagf/humberto.io-lektor) to see how its configured.
 {{% /tip %}}
 
 Or at the cloud hosted case:

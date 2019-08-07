@@ -141,7 +141,7 @@ target = ghpages://usuario/repositorio
 {{< / highlight >}}
 
 {{% tip class="warning" %}}
-O deploy faz um force push na branch `master` ou `gh-pages` dependendo do tipo de repositório, portanto, cuidado para não sobrescrever os dados de seu repositório. Mantenha o código fonte em uma branch separada, você pode dar uma conferida no [meu repositório](https://github.com/humrochagf/humrochagf.github.io) para ter uma ideia.
+O deploy faz um force push na branch `master` ou `gh-pages` dependendo do tipo de repositório, portanto, cuidado para não sobrescrever os dados de seu repositório. Mantenha o código fonte em uma branch separada, você pode dar uma conferida no [meu repositório](https://github.com/humrochagf/humberto.io-lektor) para ter uma ideia.
 {{% /tip %}}
 
 No caso de hospedagem cloud:
