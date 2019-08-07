@@ -92,7 +92,7 @@ This authentication mechanism is **stateless** and does not require session regi
 
 Now, let's go to the coding!
 
-![coding cat](/img/memes/coding-cat.gif)
+{{< videogif "/img/memes/coding-cat.webm" "/img/memes/coding-cat.gif" >}}
 
 So for that, we use as starting point the application created at the previous post ["Separating Frontend from Backend with Angular and Django"](/en/blog/separating-frontend-from-backend-with-angular-and-django/).
 
