@@ -23,7 +23,7 @@ ImproperlyConfigured: Error loading either pysqlite2 or sqlite3 modules (tried i
 
 Para resolver estes problemas basta instalar esta dependência externa que normalmente o sistema já reconfigura tudo para você, mas para quem trabalha múltiplas versões do python e com [pyenv](https://github.com/pyenv/pyenv) é preciso recompilar todas as versões do python toda vez que lembra de uma dependência externa.
 
-![e lá vamos nós](/img/memes/here-we-go-woodpecker-witch.gif)
+{{< videogif "/img/memes/here-we-go-woodpecker-witch.webm" >}}
 
 Para não sofrer com este problema, após instalar o sistema operacional e antes de preparar o ambiente de desenvolvimento eu já instalo as principais dependências que costumo utilizar:
 

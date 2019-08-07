@@ -58,7 +58,7 @@ $ python manage.py runserver
 
 Then we start the browser at [localhost:8000](http://localhost:8000) to see the Django new application success screen.
 
-![new project screen](/img/angular-django/django-startproject.gif)
+{{< videogif "/img/angular-django/django-startproject.webm" >}}
 
 The next step is to install the Django Rest Framework:
 
@@ -433,7 +433,7 @@ export class AppComponent implements OnInit {
 
 Now we have our shopping list done:
 
-![shopping list](/img/angular-django/frontend-done.gif)
+{{< videogif "/img/angular-django/frontend-done.webm" >}}
 
 ## Conclusion
 

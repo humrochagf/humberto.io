@@ -236,7 +236,7 @@ Desenhamos uma vez a seed na tela antes de iniciar o loop para dar tempo do usu�
 
 Para demonstrar o simulador em funcionamento utilizei o [glider](https://goo.gl/jzm5UZ) que é o padrão mais famoso dentro do game of life e foi absorvido pela comunidade hacker como seu emblema. Ele é o menor padrão cíclico que realiza deslocamento pelo, plano:
 
-![glider](/img/exploring-pygame/glider.gif)
+{{< videogif "/img/exploring-pygame/glider.webm" >}}
 
 {{% tip class="info" %}}
 Obs.: Note que existem alguns padrões comentados no código do simulador, você pode remover o comentário de qualquer um deles para ver padrões diferentes em ação.

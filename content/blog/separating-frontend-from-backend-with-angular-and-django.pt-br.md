@@ -62,7 +62,7 @@ $ python manage.py runserver
 
 Ao iniciar o navegador em [localhost:8000](http://localhost:8000) veremos a nova tela de sucesso de criação de aplicação do Django 2 mostrando que a inicialização da sua nova aplicação foi um sucesso (muito bonita a nova tela né?!).
 
-![novo projeto](/img/angular-django/django-startproject.gif)
+{{< videogif "/img/angular-django/django-startproject.webm" >}}
 
 O próximo passo é instalar o Django Rest Framework, para montar a api do nosso backend:
 
@@ -437,7 +437,7 @@ export class AppComponent implements OnInit {
 
 E agora sim, temos a lista de compras completa e funcionando:
 
-![lista de compras](/img/angular-django/frontend-done.gif)
+{{< videogif "/img/angular-django/frontend-done.webm" >}}
 
 ## Conclusão
 

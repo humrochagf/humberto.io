@@ -235,7 +235,7 @@ The first drawing is separate from the game loop so the user can see the startin
 
 To demonstrate the simulator working, I choose the [glider](https://goo.gl/jzm5UZ) there is the most famous pattern inside the game of life. The hacker community absorbed it as their emblem, and it is the smaller cyclic pattern that moves on the plane:
 
-![glider](/img/exploring-pygame/glider.gif)
+{{< videogif "/img/exploring-pygame/glider.webm" >}}
 
 {{% tip class="info" %}}
 Note there are some commented patterns at the simulator code, you can uncomment them to see different patterns in action.

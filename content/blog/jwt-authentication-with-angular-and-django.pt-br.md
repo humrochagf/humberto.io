@@ -95,7 +95,7 @@ Este é um mecanismo de autenticação que não guarda estado, ou seja, não req
 
 Agora, com todo este conhecimento é hora da implementação!!!
 
-{{< videogif "/img/memes/coding-cat.webm" "/img/memes/coding-cat.gif" >}}
+{{< videogif "/img/memes/coding-cat.webm" >}}
 
 E para isso, utilizaremos como base a aplicação desenvolvida na postagem anterior ["Separando o Frontend do Backend com Angular e Django"](/blog/separando-o-frontend-do-backend-com-angular-e-django/).
 
@@ -567,7 +567,7 @@ export class LoginComponent implements OnInit {
 
 Com a aplicação rodando agora podemos visualizar processo de login funcionando \o/:
 
-![auth](/img/angular-django/auth.gif)
+{{< videogif "/img/angular-django/auth.webm" >}}
 
 ![it works](/img/memes/amazed-cat.jpg)
 
