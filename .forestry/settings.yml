@@ -31,6 +31,8 @@ sections:
   create: all
   match: "*.fr.md"
   new_doc_ext: fr.md
+  templates:
+  - blog-post-portugues
 - type: directory
   path: content
   label: Pages
