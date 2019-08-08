@@ -1,6 +1,5 @@
 +++
-description = ""
-draft = true
+description = "Discover pipx! An awesome python library to keep your python tools safe, updated, and organized"
 images = ["/img/awesome-libs/pipx.png"]
 linkTitle = ""
 publishDate = "2019-08-08T03:00:00+00:00"
@@ -19,3 +18,20 @@ If you like organization, stability and to not repeat yourself [pipx](https://pi
 Pipx is a handy tool to isolate your Python programs into separate environments, exposing their entry points so you can run them from anywhere.
 
 You can also easily upgrade the installed packages without having a conflict between dependencies and have some useful tools like [nox](https://nox.thea.codes/en/stable/), [flake8](http://flake8.pycqa.org/en/latest/), and [black](https://black.readthedocs.io/en/stable/) installed once on your system (no more installing it on every single virtualenv that you create).
+
+To install pipx you have to run:
+
+{{< highlight console >}}
+$ python3 -m pip install --user pipx
+$ python3 -m pipx ensurepath
+{{< / highlight >}}
+
+The second command is to ensure that you'll have CLI access to run the programs installed with pipx.
+
+Now, you can install your favorite python tools in isolated environments and have fun:
+
+{{< highlight lang >}}
+$ pipx install pyjokes
+$ pyjoke
+There are two ways to write error-free programs; only the third one works.
+{{< / highlight >}}
