@@ -24,13 +24,15 @@ sections:
   match: "*.pt-br.md"
   new_doc_ext: pt-br.md
   templates:
-  - blog-post-portugues
+  - blog-post
 - type: directory
   path: content/blog
   label: Posts - Français
   create: all
   match: "*.fr.md"
   new_doc_ext: fr.md
+  templates:
+  - blog-post
 - type: directory
   path: content
   label: Pages
