@@ -5,7 +5,7 @@ linkTitle = ""
 publishDate = "2019-08-08T03:00:00+00:00"
 tags = ["awesome-libs", "python", "pipx"]
 title = "Libs Incríveis: pipx"
-slug = libs-incriveis
+slug = "libs-incriveis"
 
 +++
 Estou começando esta série para dar dicas sobre bibliotecas que podem ser muito úteis no seu dia a dia, e também para apresentar bibliotecas interessantes que você deveria dar uma olhada.
