@@ -15,7 +15,7 @@ How many times did you install some python CLI tool inside of a python virtualen
 
 If you like organization, stability and to not repeat yourself [pipx](https://pipxproject.github.io/pipx/) is an **awesome lib** for you.
 
-![organized kittens image](/img/organized-kittens.jpg)
+![organized kittens image](/img/memes/organized-kittens.jpg)
 
 Pipx is a handy tool to isolate your Python programs into separate environments, exposing their entry points so you can run them from anywhere.
 
