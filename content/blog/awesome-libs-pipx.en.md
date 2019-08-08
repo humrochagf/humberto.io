@@ -1,7 +1,7 @@
 +++
 description = ""
 draft = true
-images = []
+images = ["/img/awesome-libs/pipx.png"]
 linkTitle = ""
 publishDate = "2019-08-08T03:00:00+00:00"
 tags = ["pipx", "python", "awsome-libs"]
