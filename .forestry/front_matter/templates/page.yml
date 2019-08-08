@@ -9,5 +9,6 @@ fields:
   name: linkTitle
   label: linkTitle
 pages:
-- content/about.en.md
+- content/blog/awesome-libs-pipx.en.md
 - content/about.pt-br.md
+- content/about.en.md
