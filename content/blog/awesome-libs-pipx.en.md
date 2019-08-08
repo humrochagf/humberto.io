@@ -1,6 +1,10 @@
 +++
+description = ""
 draft = true
+images = []
 linkTitle = ""
+publishDate = "2019-08-08T03:00:00+00:00"
+tags = ["pipx", "python", "awsome-libs"]
 title = "Awesome Libs: pipx"
 
 +++
