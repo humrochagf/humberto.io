@@ -9,11 +9,13 @@ title = "Awesome Libs: pipx"
 +++
 I'm starting this series of posts to give you tips on libraries that can be handy on your day to day as a Developer and also to present libraries I think you should keep on eye on.
 
-One of the perks of a good Developer is having a proper tool-set available on your belt, and nothing more appropriate to start this series than a library that installs other libraries :)
+One of the perks of a good Developer is having a proper tool-set available on your belt, and nothing more appropriate to start this series than a library that installs other libraries!
 
 How many times did you install some python CLI tool inside of a python virtualenv? Have you ever updated some tool dependency and if make another library stop working because it relied on a common dependency?
 
-If you like organization, stability and to not repeat yourself [pipx](https://pipxproject.github.io/pipx/) is an "awesome lib" for you.
+If you like organization, stability and to not repeat yourself [pipx](https://pipxproject.github.io/pipx/) is an **awesome lib** for you.
+
+![organized kittens image](/img/organized-kittens.jpg)
 
 Pipx is a handy tool to isolate your Python programs into separate environments, exposing their entry points so you can run them from anywhere.
 
@@ -28,7 +30,7 @@ $ python3 -m pipx ensurepath
 
 The second command is to ensure that you'll have CLI access to run the programs installed with pipx.
 
-Now, you can install your favorite python tools in isolated environments and have fun:
+Now, you can install your favorite python tools in isolated environments and have fun \\o/
 
 {{< highlight lang >}}
 $ pipx install pyjokes
