@@ -1,0 +1,25 @@
+---
+label: Blog Post Portugues
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: slug
+  label: slug
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: aliases
+  label: aliases
