@@ -5,7 +5,7 @@ description: Make your kick start at pygame, learn how to install, use and write
 publishDate: 2019-08-08
 images:
   - /img/awesome-libs/pipx.png
-tags: ["python", "pipx", "awesome-libs"]
+tags: ["awesome-libs", "python", "pipx"]
 
 +++
 One of the main perks of a good Developer is having a proper tool-set available on your belt.
