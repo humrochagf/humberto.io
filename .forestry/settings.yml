@@ -15,12 +15,16 @@ sections:
   create: all
   match: "*.en.md"
   new_doc_ext: en.md
+  templates:
+  - blog-post-english
 - type: directory
   path: content/blog
   label: Posts - Português
   create: all
   match: "*.pt-br.md"
   new_doc_ext: pt-br.md
+  templates:
+  - blog-post-portugues
 - type: directory
   path: content/blog
   label: Posts - Français
