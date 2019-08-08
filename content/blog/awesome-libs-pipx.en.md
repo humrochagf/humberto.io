@@ -1,7 +1,11 @@
 +++
 draft = true
-linkTitle = ""
 title = "Awesome Libs: pipx"
+description: Make your kick start at pygame, learn how to install, use and write your first program with the pygame library
+publishDate: 2019-08-08
+images:
+  - /img/awesome-libs/pipx.png
+tags: ["python", "pipx", "awesome-libs"]
 
 +++
 One of the main perks of a good Developer is having a proper tool-set available on your belt.
