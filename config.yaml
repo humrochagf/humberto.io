@@ -61,7 +61,6 @@ params:
   themeColor: "#000000"
   themeInverseColor: "#ffffff"
   siteLogo: /img/me-100x100.jpg
-  addthis: ra-5ad8f2e22f59cc18
 
   license:
     name: Attribuition-ShareAlike

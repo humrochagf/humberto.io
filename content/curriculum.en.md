@@ -35,9 +35,9 @@ employment: |
 
     Also as a cloud computing company focused on automation I worked with the cloud automation building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd and so fouth.
 
-    About September 2017 a became CTO to be encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
+    About September 2017 I became CTO to be encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
 
-    I also designed the new, billing system and the white-label system to the reseller's business model. Right now I ahead of the splitting of the main product intro independent services.
+    I also designed the new, billing system and the white-label system to the reseller's business model. Now I ahead of the splitting of the main product intro independent services.
 
     ### Caixa Econômica Federal
     *Intern |  August 2013 to August 2014*
@@ -51,7 +51,7 @@ education: |
     ### Bachelor's degree in Computer Science
     *January 2011 to January 2015*
 
-    A course where I could build a solid understanding of all aspects of computation from the ground up.
+    A course where I could build a solid understanding of all aspects about computer science from the ground up.
 
 community: |
 
@@ -132,7 +132,7 @@ softSkills: |
 
     Geek to learn new technologies </br>
     Passion to solve problems </br>
-    Good at design solutions </br>
+    Good at designing solutions </br>
     Great at mentoring newcomers </br>
     Love for coding and to write about it </br>
     Good decision maker and able to say no when necessary </br>
