@@ -3,7 +3,7 @@ description = "Um pouco sobre minha história, a comunidade Python, o universo e
 draft = true
 images = ["/img/people-technology/trip.jpg"]
 publishDate = "2019-08-30T00:00:00-03:00"
-slug: pessoas-maior-que-tecnologia
+slug: "pessoas-maior-que-tecnologia"
 tags: ["thoughts"]
 title = "Pessoas > Tecnologia"
 
