@@ -41,17 +41,21 @@ menu:
       name: linkedin
       url: https://linkedin.com/in/humrochagf/
       weight: 3
+    - identifier: keybase
+      name: keybase
+      url: https://keybase.io/humrochagf/
+      weight: 4
     - identifier: rss
       name: rss
-      weight: 4
+      weight: 5
     - identifier: curriculum
       name: curriculum
       url: /curriculum/
-      weight: 5
+      weight: 6
     - identifier: email
       name: email
       url: mailto:humrochagf@gmail.com
-      weight: 6
+      weight: 7
 
 params:
   title: Humberto Rocha
