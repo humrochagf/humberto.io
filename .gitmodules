@@ -1,0 +1,3 @@
+[submodule "themes/colordrop"]
+	path = themes/colordrop
+	url = https://github.com/humrochagf/colordrop
