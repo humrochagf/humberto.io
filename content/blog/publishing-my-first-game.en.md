@@ -5,6 +5,7 @@ linkTitle = ""
 publishDate = "2019-08-27T03:00:00+00:00"
 tags = [ "python", "pyxel", "gamedev"]
 title = "Publishing my first Game"
+draft = true
 
 +++
 Games is something that connected me with technology since the beginning.
