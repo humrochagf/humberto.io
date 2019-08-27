@@ -22,7 +22,7 @@ I love pixel art games, so I decided to take the holidays to write my first game
 
 {{< videogif "/img/first-game/pyxel-lander-landing.webm" >}}
 
-The theme choice was meaningful to me, not only because I played when I was little, but also because I've coded it with a friend at one of my [projects](https://github.com/ravishi/lunar-lander-ex/commits/master) at my Computer Science course. 
+The theme choice was meaningful to me, not only because I played when I was little, but also because I've coded it with a friend at one of my [projects](https://github.com/ravishi/lunar-lander-ex/commits/master) at my Computer Science course.
 
 The process of building the game was quite fun, and at the end of the day, I got the lunar module flying on the screen. The day after I dove into the procedural moon surface building and then when I was about to figure out the collision detection my holiday time was over, the day to day rush came back and my project stale.
 
@@ -36,7 +36,7 @@ I love coding and blogging and usually have fun on my day to day coding, but som
 
 I've had uncountable RPG Maker unfinished games when I was young, and many others with different tools. What is so different from my work, or from my Open Source projects that makes me finish then, but not my Game projects?
 
-I decided to finish the game to understand what was holding me back and... I've got the game finished, and published \o/. You can check it out and play it at:
+I decided to finish the game to understand what was holding me back and... I've got the game finished, and published \\o/. You can check it out and play it at:
 
 <iframe class="itchio" src="https://itch.io/embed/471797?linkback=true" width="552" height="167" frameborder="0"></iframe>
 
@@ -46,7 +46,8 @@ Also, I released it as Open Source, and anyone interested to see the code can go
 
 Going through this whole process made me realize somethings:
 
-- Game development can be like a hydra. When you are solving one thing, your mind is creating new features on the go, so like any other field of software development, focus on the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product), and keep new features to the next releases or projects.
-- If it's your first game, try to not over complicate things, it's more important to go through the whole experience from the idea to the publishing, instead of making the perfect game.
-- Tools with clear and limited scope like Pyxel are great to make your first game. It helps you a lot to keep it simple.
-- The coding just for fun thing is fantastic to learn new things and have fun in the process, let's do more of those.
+* Game development can be like a hydra. When you are solving one thing, your mind is creating new features on the go, so like any other field of software development, focus on the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product), and keep new features to the next releases or projects.
+* If it's your first game, try to not over complicate things, it's more important to go through the whole experience from the idea to the publishing, instead of making the perfect game.
+* Tools with clear and limited scope like Pyxel are great to make your first game. It helps you a lot to keep it simple.
+* Call your friends when you need some help. Thanks [Jairo Jair](https://jairojair.com/) for the help with the MacOS build.
+* The coding just for fun thing is fantastic to learn new things and have fun in the process, let's do more of those.
