@@ -1,11 +1,11 @@
 +++
 description = "A brief tale about my journey of publishing my first game"
+draft = true
 images = ["/img/first-game/pyxel-lander-splash-screen.png"]
 linkTitle = ""
 publishDate = "2019-08-27T03:00:00+00:00"
-tags = [ "python", "pyxel", "gamedev"]
+tags = ["python", "pyxel", "gamedev"]
 title = "Publishing my first Game"
-draft = true
 
 +++
 Games is something that connected me with technology since the beginning.
@@ -26,7 +26,7 @@ The theme choice was meaningful to me, not only because I played when I was litt
 
 The process of building the game was quite fun, and at the end of the day, I got the lunar module flying on the screen. The day after I dove into the procedural moon surface building and then when I was about to figure out the collision detection my holiday time was over, the day to day rush came back and my project stale.
 
-More time passed, during a lunch break, I answered a [tweet](https://twitter.com/jgvarandas/status/1162932464169472001) with the following question:
+More time passed, during a lunch break, I answered a tweet with the following question:
 
 {{< tweet 1162932464169472001 >}}
 
