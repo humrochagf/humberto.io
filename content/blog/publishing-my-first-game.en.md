@@ -29,7 +29,7 @@ More time passed, during a lunch break, I answered a tweet asking the following 
 
 {{< tweet 1162932464169472001 >}}
 
-I love coding and blogging and most of the time I have fun on my day to day coding, but something 100% for fun reminded me that Christmas codding day so I answered:
+I love coding and blogging, and most of the time I have fun on my day to day doing it, but something 100% for fun reminded me that Christmas codding day so I answered:
 
 {{< tweet 1163084951518175232 >}}
 
