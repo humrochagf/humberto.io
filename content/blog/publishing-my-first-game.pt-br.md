@@ -2,7 +2,7 @@
 description = "Um breve conto sobre a jornada de publicar meu primeiro jogo"
 images = ["/img/first-game/pyxel-lander-splash-screen.png"]
 linkTitle = ""
-publishDate = "2019-08-27T03:00:00+00:00"
+publishDate = "2019-08-28T00:00:00-03:00"
 slug = "publicando-meu-primeiro-jogo"
 tags = ["python", "pyxel", "gamedev"]
 title = "Publicando meu primeiro Jogo"
