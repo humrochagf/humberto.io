@@ -7,7 +7,7 @@ tags = ["python", "pyxel", "gamedev"]
 title = "Publishing my first Game"
 
 +++
-Games is something that connected me with technology since the beginning.
+Games always connected me with technology since the beginning.
 
 My father and I, we built our first computer (a Pentium 286) and the first thing that I remember to do was to play some DOS games like Prince of Persia and Lunar Lander. I learned a bunch of CLI commands just to play my favorite games.
 
