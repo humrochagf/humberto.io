@@ -1,9 +1,8 @@
 +++
 description = "A brief tale about my journey of publishing my first game"
-draft = true
 images = ["/img/first-game/pyxel-lander-splash-screen.png"]
 linkTitle = ""
-publishDate = "2019-08-27T03:00:00+00:00"
+publishDate = "2019-08-28T00:00:00-03:00"
 tags = ["python", "pyxel", "gamedev"]
 title = "Publishing my first Game"
 
