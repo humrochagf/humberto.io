@@ -241,4 +241,4 @@ Note there are some commented patterns at the simulator code, you can uncomment 
 
 The Game of Life is a great topic to learn programming concepts, and I recommend you to watch the [interview with its creator by the Numberphile](https://www.youtube.com/playlist?list=PLt5AfwLFPxWIL8XA1npoNAHseS-j1y-7V) youtube channel.
 
-The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/blob/master/04-game-of-life).
+The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/04-game-of-life).

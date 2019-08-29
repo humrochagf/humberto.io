@@ -88,4 +88,4 @@ And at the end, the screen refresh is called followed by a 5 seconds sleep and t
 
 There are many ways to draw on the screen with pygame, you can see the other methods with details from the [library documentation](https://www.pygame.org/docs/ref/draw.html).
 
-The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/blob/master/02-drawing).
+The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/02-drawing).

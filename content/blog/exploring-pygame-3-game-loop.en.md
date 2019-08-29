@@ -112,4 +112,4 @@ Note that we always fill the background with black before to draw the ball, if w
 
 ## Conclusion
 
-With that, we finish the brief ride into the **game loop**. Don't forget that all the code will be available at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/03-game-loop).
+With that, we finish the brief ride into the **game loop**. Don't forget that all the code will be available at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/03-game-loop).
