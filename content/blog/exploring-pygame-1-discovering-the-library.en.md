@@ -2,7 +2,7 @@
 title: Exploring pygame 1 - Discovering the library
 description: Make your kick start at pygame, learn how to install, use and write your first program with the pygame library
 publishDate: 2017-01-15
-images: 
+images:
   - /img/exploring-pygame/hello.png
 tags: ["python", "pygame", "gamedev"]
 draft: false
@@ -97,8 +97,6 @@ And then, to finish the command `sleep` from the library `time` makes the progra
 
 ## Conclusion
 
-Now we finish our first chapter by presenting the library and writing our first program. The code of it can be checked at this repositóry: [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame/tree/master/01-introducao).
-
-**Note**: The original post is in Portuguese, that's why the name of the repository.
+Now we finish our first chapter by presenting the library and writing our first program. The code of it can be checked at this repositóry: [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/01-introduction).
 
 We meet again at the nexts chapters were we will describe the base concepts of game development inside pygame.

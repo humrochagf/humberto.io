@@ -9,7 +9,7 @@ draft: false
 
 ---
 
-A while ago, I made a post on [how to organize a coding dojo](/blog/en/coding-dojo-101/) that was published right after the Python DF community anniversary dojo where I prepared a challenge to create the [game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) from John Horton Conway.
+A while ago, I made a post on [how to organize a coding dojo](/blog/coding-dojo-101/) that was published right after the Python DF community anniversary dojo where I prepared a challenge to create the [game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) from John Horton Conway.
 
 To let the challenge more dynamic, I prepared a graphic simulator using pygame so everyone could see the code running visually. The simulator uses all the concepts that we saw on the last posts of this series.
 
@@ -48,8 +48,6 @@ The simulator was made to test the game logic, and it was placed at the `simulat
 The dojo challenge was the following, write a function `game_of_life` that receives a seed as a 50x50 matrix and return a matrix with the next generation computed:
 
 {{< highlight python "linenos=table" >}}
-# -*- coding: utf-8 -*-
-
 def cell_check(section):
     '''
     Run the game of life rules at a 3x3 section to compute
@@ -126,8 +124,6 @@ def game_of_life(seed):
 As you can see the `game.py` code computes only the next generation of the seed which is perfect to use at the `simulator.py` because we can compute the next generation to display on the screen and then feed the computed generation as a seed to the next one and so forth:
 
 {{< highlight python "linenos=table" >}}
-# -*- coding: utf-8 -*-
-
 import random
 import time
 
@@ -244,3 +240,5 @@ Note there are some commented patterns at the simulator code, you can uncomment 
 ## Conclusion
 
 The Game of Life is a great topic to learn programming concepts, and I recommend you to watch the [interview with its creator by the Numberphile](https://www.youtube.com/playlist?list=PLt5AfwLFPxWIL8XA1npoNAHseS-j1y-7V) youtube channel.
+
+The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/blob/master/04-game-of-life).

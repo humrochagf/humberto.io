@@ -2,7 +2,7 @@
 title: Exploring pygame 2 -  Drawing on Screen
 description: Learn how drawing works at pygame and how to write your first drawing codes
 publishDate: 2017-02-03
-images: 
+images:
   - /img/exploring-pygame/drawing-axis.jpg
 tags: ["python", "pygame", "gamedev"]
 draft: false
@@ -26,13 +26,11 @@ At pygame there's a little change, the drawing space will use the coordinates **
 Start by creating a file `draw.py` with the following content:
 
 {{< highlight python "linenos=table" >}}
-# -*- coding: utf-8 -*-
-
 import time
 
 import pygame
 
-# defining colors
+# defining the colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
@@ -42,12 +40,11 @@ RED = (255, 0, 0)
 pygame.init()
 
 screen = pygame.display.set_mode((640, 480))
-# loading font
+# loading the font to be used at drawing time
 font = pygame.font.SysFont(None, 55)
 
-pygame.display.set_caption('Olá mundo')
+pygame.display.set_caption('Drawing')
 
-# filling the background with black
 screen.fill(BLACK)
 
 # drawing at the surface
@@ -56,20 +53,17 @@ pygame.draw.rect(screen, BLUE, [200, 210, 40, 20])
 pygame.draw.ellipse(screen, RED, [300, 200, 40, 40])
 pygame.draw.polygon(screen, GREEN, [[420, 200], [440, 240], [400, 240]])
 
-# refreshing the screen
 pygame.display.flip()
 
 time.sleep(5)
 
-# covering everything with black
 screen.fill(BLACK)
 
-# setting the text
+# writing pygame at the buffer
 text = font.render('pygame', True, WHITE)
-# copying the text to the surface
+# coping the text to the screen
 screen.blit(text, [250, 200])
 
-# refreshing the screen
 pygame.display.flip()
 
 time.sleep(5)
@@ -94,4 +88,4 @@ And at the end, the screen refresh is called followed by a 5 seconds sleep and t
 
 There are many ways to draw on the screen with pygame, you can see the other methods with details from the [library documentation](https://www.pygame.org/docs/ref/draw.html).
 
-The code of this chapter can be found at the repo [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame/blob/master/02-desenhando/draw.py).
+The code of this chapter can be found at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/blob/master/02-drawing).

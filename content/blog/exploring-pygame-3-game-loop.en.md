@@ -36,8 +36,6 @@ Another important point that isn't present above is the time step control that k
 To show the **game loop** running we will write a program that draws a ball that bounces through the screen:
 
 {{< highlight python "linenos=table" >}}
-# -*- coding: utf-8 -*-
-
 import pygame
 
 # define colors
@@ -114,4 +112,4 @@ Note that we always fill the background with black before to draw the ball, if w
 
 ## Conclusion
 
-With that, we finish the brief ride into the **game loop**. Don't forget that all the code will be available at the repo [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame).
+With that, we finish the brief ride into the **game loop**. Don't forget that all the code will be available at the repo [exploring-pygame](https://github.com/humrochagf/exploring-pygame/03-game-loop).
