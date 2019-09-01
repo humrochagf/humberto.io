@@ -29,15 +29,23 @@ contact:
 employment: |
 
     ### Configr.com
-    *CTO & FullStack Developer | February 2015 to present*
+    *February 2015 to August 2019*
+
+    **Lead Developer | July 2019 to August 2019**
+
+    After passing the title forward and preparing the team to my leave, I had the chance to give back my focus to coding by designing and developing the new structure to generate and renew certificates Let's Encrypt, migrating from ACME V1 to V2, and also by adding support to wildcard certificates.
+
+    **CTO | September 2017 to July 2019**
+
+    By becoming CTO, I was encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
+
+    I also designed the new, billing system and the white-label system to the reseller business model. Now I ahead of the splitting of the main product intro independent services.
+
+    **FullStack Developer | February 2015 to September 2017**
 
     At Configr I started as FullStack Developer working with Django as Backend and Django Template Engine and Bootstrap for the Frontend of the main product. My first task was to build ground up the company DNS manager by parsing the [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) into a user-friendly and automated tool that talks with the other products and builds the right DNS rules without the user having to understand DNS.
 
-    Also as a cloud computing company focused on automation I worked with the cloud automation building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd and so fouth.
-
-    About September 2017 I became CTO to be encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
-
-    I also designed the new, billing system and the white-label system to the reseller's business model. Now I ahead of the splitting of the main product intro independent services.
+    Also, I worked with the cloud automation by building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd and so fouth.
 
     ### Caixa Econômica Federal
     *Intern |  August 2013 to August 2014*

@@ -29,15 +29,23 @@ contact:
 employment: |
 
     ### Configr.com
-    *CTO & FullStack Developer | Février 2015 au présent*
+    *Février 2015 au Août 2019*
+
+    **Lead Developer | Juillet 2019 au Août 2019**
+
+    Après avoir passé le titre en avant et avoir préparé l’équipe pour mon congé, j’ai eu la chance de redonner mon attention au codage en concevant et développant la nouvelle structure pour générer et renouveler les certificats Let’s Encrypt, en passant d’ACME V1 à V2, et aussi en ajoutant le support aux certificats wildcard.
+
+    **CTO | Septembre 2017 au Juillet 2019**
+
+    Prise en charge de CTO, je suis chargé de toute la pile de technologie de l’entreprise et de gérer l’équipe. Je dirige le processus de migration du produit principal de la nouvelle version de Django et de transformer son architecture en une architecture API avec Django REST Framework comme Backend et Angular comme Frontend.
+
+    J’ai également conçu le nouveau système de facturation et le système de whitelabel en fonction du modèle d’affaires du revendeur. Maintenant, je devance la scission du produit principal introduire des services indépendants.
+
+    **FullStack Developer | Février 2015 au Septembre 2017**
 
     Chez Configr, j'ai commencé en tant que développeur FullStack, travaillant avec Django en tant que backend et moteur de template Django et bootstrap pour le frontend du produit principal. Ma première tâche consistait à renforcer le gestionnaire DNS en convertant la [RFC 1035] (https://www.ietf.org/rfc/rfc1035.txt) dans une interface convivial et automatisé communiquant avec les autres produits.
 
     En tant qu’entreprise d’informatique en nuage axée sur l’automatisation, j’ai travaillé avec le bâtiment d’automatisation en nuage, en maintenant et en fixant l’automatisation et les processus de déploiement en travaillant avec Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd parmi d'autres.
-
-    Vers Septembre 2017 Je suis devenu CTO pour être enchargé de toute la pile de technologie de l’entreprise et de gérer l’équipe. Je dirige le processus de migration du produit principal de la nouvelle version de Django et de transformer son architecture en une architecture API avec Django REST Framework comme Backend et Angular comme Frontend.
-
-    J’ai également conçu le nouveau système de facturation et le système de whitelabel en fonction du modèle d’affaires du revendeur. Maintenant, je devance la scission du produit principal introduire des services indépendants.
 
     ### Caixa Econômica Federal
     *Stagiaire |  Août 2013 au Août 2014*
