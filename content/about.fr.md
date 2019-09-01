@@ -10,18 +10,18 @@ draft: false
 ---
 Je m'appelle **Humberto Rocha Gonçalves Filho**.
 
-I'm a bachelor's degree in **Computer Science** currently working as **CTO/Full Stack Developer** at [Configr](https://configr.com).
+Je suis bachelier en **informatique**, passionné par le développement de logiciels.
 
-As an active member of the [Brazilian Python community](http://python.org.br), I'm an **Open Source** advocate, both personal and professionally.
+En tant que membre actif de la [communauté brésilienne Python](http://python.org.br), je suis un défenseur de l’Open Source, à la fois personnel et professionnel.
 
-I'm also holding the position of **Technology Director** at [Associação Python Brasil (APyB)](https://associados.python.org.br) which is the Python Brazil Association.
+J’occupe également le poste de **directeur de la technologie** à [l’Associação Python Brasil (Apyb)](https://associados.python.org.br) qui est l’Association Python Brésil.
 
-As an enthusiast of the **maker culture**, I also participate in [Calango Hacker Clube](http://calango.club), a hackerspace of Brasília.
+En tant que passionné de la **culture du créateur**, je participe également à [Calango Hacker Clube](http://calango.club), un espace de hacker de Brasília.
 
-My best skills are web application development, process and pattern automation, **REST API** design, systems integration and static site creation like this one.
+Mes meilleures compétences sont le développement d’applications Web, l’automatisation des processus et des modèles, la conception de l’API REST, l’intégration des systèmes et la création de sites statiques comme celui-ci.
 
-The technologies that I'm fluent are [Python](https://www.python.org), [Django](https://www.djangoproject.com), [Flask](http://flask.pocoo.org), [Lektor](https://www.getlektor.com), [PostgreSQL](https://www.postgresql.org/), [TypeScript](https://www.typescriptlang.org) and [Angular](https://angular.io).
+Les technologies que je maîtrise sont [Python](https://www.python.org), [Django](https://www.djangoproject.com), [Flask](http://flask.pocoo.org), [Lektor](https://www.getlektor.com), [PostgreSQL](https://www.postgresql.org/), [TypeScript](https://www.typescriptlang.org) et [Angular](https://angular.io).
 
-My favorite tools are the command line, the **VIM** CLI editor and the Operational System that I love to work with is **Linux**.
+Mes outils préférés sont la ligne de commande, l’éditeur **VIM** CLI et le système opérationnel avec lequel j’aime travailler est **Linux**.
 
-You can find me as **@humrochagf** at [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf), [instagram](https://www.instagram.com/humrochagf) and [telegram](https://t.me/humrochagf).
+Vous pouvez me trouver comme **@humrochagf** à [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf), [instagram](https://www.instagram.com/humrochagf) et [telegram](https://t.me/humrochagf).

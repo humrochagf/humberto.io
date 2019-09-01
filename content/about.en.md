@@ -9,7 +9,7 @@ draft: false
 ---
 My name is **Humberto Rocha Gonçalves Filho**.
 
-I'm a bachelor's degree in **Computer Science** currently working as **CTO/Full Stack Developer** at [Configr](https://configr.com).
+I'm a bachelor's degree in **Computer Science** passionate about Software Development.
 
 As an active member of the [Brazilian Python community](http://python.org.br), I'm an **Open Source** advocate, both personal and professionally.
 

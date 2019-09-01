@@ -10,7 +10,7 @@ draft: false
 ---
 Meu nome é **Humberto Rocha Gonçalves Filho**.
 
-Sou formado em **Ciência da Computação** e atualmente sou **Desenvolvedor FullStack** e **CTO** na [Configr](https://configr.com).
+Sou formado em **Ciência da Computação** apaixonado por desenvovimento de software.
 
 Ocupo o cargo de **Diretor de Tecnologia** na [Associação Python Brasil (APyB)](https://associados.python.org.br).
 
