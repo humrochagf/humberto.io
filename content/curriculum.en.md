@@ -35,7 +35,7 @@ employment: |
 
     After passing the title forward and preparing the team to my leave, I had the chance to give back my focus to coding by designing and developing the new structure to generate and renew certificates Let's Encrypt, migrating from ACME V1 to V2, and also by adding support to wildcard certificates.
 
-    **CTO | September 2017 to July 2019**
+    **Chief Technology Officer | September 2017 to July 2019**
 
     By becoming CTO, I was encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
 

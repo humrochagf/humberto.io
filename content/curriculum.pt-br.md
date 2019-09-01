@@ -31,17 +31,17 @@ employment: |
     ### Configr.com
     *fevereiro 2015 até agosto 2019*
 
-    *Lead Developer | julho 2019 até agosto 2019*
+    **Lead Developer | julho 2019 até agosto 2019**
 
     Após passar o cargo e preparar a equipe para a minha saída, tive a chance de voltar meu foco para o desenvolvimento projetando e implementando o novo fluxo de geração e renovação de certificados Let's Encrypt migrando de ACME V1 para V2 e adicionando suporte a certificados wildcard. 
 
-    *CTO | setembro 2017 até julho 2019*
+    **Chief Technology Officer | setembro 2017 até julho 2019**
 
     Assumindo o cargo de CTO, passei a ser encarregado de toda a stack de tecnologia da empresa e do gerenciando o time. Eu liderei o processo de migração do produto principal para as versões mais novas do Django e a transformação de sua arquitetura para a arquitetura de API com Django REST Framework e frontend em Angular.
 
     Também projetei o novo sistema de pagamentos e o sistema de white-label para o modelo de revenda da empresa. Atualmente estou a frente do projeto de separação do produto principal em serviços independentes.
 
-    *FullStack Developer | fevereiro 2015 até setembro 2017*
+    **FullStack Developer | fevereiro 2015 até setembro 2017**
 
     Na Configr eu comecei como FullStack Developer usando Django para Backend e Django Template Engine e Bootstrap para o Frontend do produto principal da empresa. Minha primeira tarefa foi construir do zero o sistema de gestão de DNS convertendo a [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) em uma ferramenta amigável e automatizada que conversava com os demais produtos montando as configurações de DNS sem que o usuário precisasse entender de DNS.
 

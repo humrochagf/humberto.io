@@ -35,7 +35,7 @@ employment: |
 
     Après avoir passé le titre en avant et avoir préparé l’équipe pour mon congé, j’ai eu la chance de redonner mon attention au codage en concevant et développant la nouvelle structure pour générer et renouveler les certificats Let’s Encrypt, en passant d’ACME V1 à V2, et aussi en ajoutant le support aux certificats wildcard.
 
-    **CTO | Septembre 2017 au Juillet 2019**
+    **Chief Technology Officer | Septembre 2017 au Juillet 2019**
 
     Prise en charge de CTO, je suis chargé de toute la pile de technologie de l’entreprise et de gérer l’équipe. Je dirige le processus de migration du produit principal de la nouvelle version de Django et de transformer son architecture en une architecture API avec Django REST Framework comme Backend et Angular comme Frontend.
 
