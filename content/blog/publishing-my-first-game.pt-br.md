@@ -34,11 +34,11 @@ Eu amo programar e escrever no meu blog e na maior parte do tempo me divirto faz
 
 {{< tweet 1163084951518175232 >}}
 
-Já perdi as contas de quantos jogos de RPG Maker incompletos eu tive quando era mais novo, além dos que tentei fazer com outras ferramentas. O que tem de tão diferente do meu trabalho e dos meus projetos Open Source que me impedia de concluir um jogo? 
+Já perdi as contas de quantos jogos de RPG Maker incompletos eu tive quando era mais novo, além dos que tentei fazer com outras ferramentas. O que tem de tão diferente do meu trabalho e dos meus projetos Open Source que me impedia de concluir um jogo?
 
 Decidi seguir em frente e concluir aquele jogo para entender o que estava me segurando e... Eu consegui concluir e publicar o jogo \\o/. Vocês podem dar uma olhada e jogá-lo em:
 
-<iframe class="itchio" src="[https://itch.io/embed/471797?linkback=true](https://itch.io/embed/471797?linkback=true "https://itch.io/embed/471797?linkback=true")" width="552" height="167" frameborder="0"></iframe>
+<iframe class="itchio" src="https://itch.io/embed/471797?linkback=true" width="552" height="167" frameborder="0"></iframe>
 
 Eu também o publiquei como um projeto Open Source, então se alguém estiver interessado em dar uma olhada no código basta acessar [https://github.com/humrochagf/pyxel-lander](https://github.com/humrochagf/pyxel-lander "https://github.com/humrochagf/pyxel-lander")
 
