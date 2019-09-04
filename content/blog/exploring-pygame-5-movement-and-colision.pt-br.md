@@ -6,6 +6,8 @@ publishDate = "2019-08-30T00:00:00-03:00"
 slug = "desbravando-o-pygame-5-movimento-e-colisao"
 tags = ["python", "pygame", "gamedev"]
 title = "Desbravando o pygame 5 - Movimento e Colisão"
+katex = true
+markup = "mmark"
 
 +++
 O movimento é uma característica que está presente na maioria dos jogos. Ao saltar entre plataformas, atirar contra a horda de inimigos, pilotar uma nave espacial e correr pelas estradas estamos exercendo movimento, interagindo com o ambiente do jogo, aplicando ações e causando reações.
@@ -49,7 +51,6 @@ event = pygame.event.poll()
     pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
     
     pygame.display.flip()
-
 {{< / highlight >}}
 
 O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição da bola no eixo x.
@@ -62,7 +63,7 @@ Esta abordagem possuí um problema. Você não consegue ter controle sobre a vel
 
 Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
 
-S = Si + V*dT
+$$S = S_{i} + v \Delta t$$
 
 Sua aplicação no código ficará desta forma:
 
@@ -109,4 +110,18 @@ while True:
     pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
 
     pygame.display.flip()
-{{< highlight >}}
+{{< / highlight >}}
+
+Começamos definindo a velocidade da bola no eixo x para 100 pixels por segundo na **linha 16**.
+
+Em seguida na **linha 19** capturamos o tempo inicial para o cálculo do delta de tempo, que é quanto tempo se passou entre os ciclos do loop.
+
+Entrando no loop capturamos o tempo final na **linha 24** e logo em seguida na **linha 26** calculamos o `dt` subtraindo o tempo final pelo inicial.
+
+Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá-lo no próximo ciclo.
+
+Por fim calculamos o deslocamento que será feito na **linha 36**.
+
+Rodando o programa podemos ver que agora é possível ter controle sob a velocidade da bola:
+
+{{< videogif "/img/exploring-pygame/ball-velocity.webm" >}}
