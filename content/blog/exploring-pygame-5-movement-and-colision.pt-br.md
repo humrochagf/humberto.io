@@ -41,15 +41,15 @@ event = pygame.event.poll()
 
     if event.type == pygame.QUIT:
         break
-    
-    # moves the ball one pixel per cicle
+
+    # move a bola 1 pixel por ciclo
     position_x += 1
-    
+
     screen.fill(BLACK)
-    
-    # draws the ball with the incremented position
+
+    # desenha a bola na posição incrementada
     pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
-    
+
     pygame.display.flip()
 {{< / highlight >}}
 
@@ -82,19 +82,19 @@ screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption('Velocity')
 
 position_x = 0
-# 10 pyxels per second
+# 100 pixels por segundo
 velocity_x = 100
 
-# capture the initial time
+# captura o tempo inicial
 ti = time.time()
 
 while True:
-    # get how much time has passed
-    # beetween the cycles
+    # captura o tempo
+    # deste ciclo
     tf = time.time()
-    # calculate the delta
+    # calcula o delta
     dt = (tf - ti)
-    # sets final time as the initial time
+    # atribui o tempo final como tempo inicial
     ti = tf
 
     event = pygame.event.poll()
@@ -102,7 +102,7 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # moves the ball one pixel per cicle
+    # move a bola na velocidade média definida
     position_x += velocity_x * dt
 
     screen.fill(BLACK)
@@ -138,3 +138,53 @@ Ter este controle implementado em seu jogo trás uma série de benefícios:
 - Aumenta a previsibilidade e facilita o planejamento do seu jogo. Coisas do tipo para um computador com os requisitos mínimos, quanta coisa eu consigo processar no intervalo de um frame para outro?
 
 No desenvolvimento de jogos o mais comum é encontrar uma taxa de atualização entre 30 e 60 fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
+
+{{< highlight python "linenos=table,hl_lines=16 19 24" >}}
+import pygame
+
+BLACK = pygame.Color(0, 0, 0)
+RED = pygame.Color(255, 0, 0)
+
+pygame.init()
+
+screen = pygame.display.set_mode((640, 480))
+
+pygame.display.set_caption('FPS')
+
+position_x = 0
+# como o relógio do pygame trabalha
+# em milissegundos, dividimos por 1000
+# para manter os 100 pixels por segundo
+velocity_x = 0.1
+
+# criamos uma instância do relógio
+clock = pygame.time.Clock()
+
+while True:
+    # chamamos o tick do relógio para 30 fps
+    # e armazenamos o delta de tempo
+    dt = clock.tick(30)
+
+    event = pygame.event.poll()
+
+    if event.type == pygame.QUIT:
+        break
+
+    position_x += velocity_x * dt
+
+    screen.fill(BLACK)
+
+    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+
+    pygame.display.flip()
+{{< / highlight >}}
+
+Graças a implementação de relógio da classe `Clock` do pygame, não tivemos muito trabalho com a implementação, na verdade o código fica até mais curto. Primeiramente trocamos a velocidade de `100` para `0.1` na **linha 16**, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por `1000`.
+
+Na **linha 19** instanciamos o `Clock` e logo mais, na **linha 24** chamamos sua função `tick` passando como argumento a quantidade de **FPS** que queremos limitar nosso loop de jogo.
+
+A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha sido muito rápido ela para a execução do programa por um breve tempo para manter a frequência desejada. Como resultado, esta função retorna o delta de tempo entre esta e a vez anterior em que ela foi chamada.
+
+{{% tip class="info" %}}
+Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), ela possuí uma questão quanto a precisão entre plataformas, mas existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo. 
+{{% /tip %}}
