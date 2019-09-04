@@ -35,20 +35,21 @@ pygame.display.set_caption('Simple Movement')
 position_x = 0
 
 while True:
-    event = pygame.event.poll()
+event = pygame.event.poll()
 
     if event.type == pygame.QUIT:
         break
-
+    
     # moves the ball one pixel per cicle
     position_x += 1
-
+    
     screen.fill(BLACK)
-
+    
     # draws the ball with the incremented position
     pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
-
+    
     pygame.display.flip()
+
 {{< / highlight >}}
 
 O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição da bola no eixo x.
@@ -58,3 +59,54 @@ Dentro do loop sua posição é incrementada em um pixel a cada ciclo e a bola �
 Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento da bola. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
 
 {{< videogif "/img/exploring-pygame/fast-ball.webm" >}}
+
+Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
+
+S = Si + V*dT
+
+Sua aplicação no código ficará desta forma:
+
+{{< highlight python "linenos=table,hl_lines=16 19 24 26 28 36" >}}
+import time
+
+import pygame
+
+BLACK = pygame.Color(0, 0, 0)
+RED = pygame.Color(255, 0, 0)
+
+pygame.init()
+
+screen = pygame.display.set_mode((640, 480))
+
+pygame.display.set_caption('Velocity')
+
+position_x = 0
+# 10 pyxels per second
+velocity_x = 100
+
+# capture the initial time
+ti = time.time()
+
+while True:
+    # get how much time has passed
+    # beetween the cycles
+    tf = time.time()
+    # calculate the delta
+    dt = (tf - ti)
+    # sets final time as the initial time
+    ti = tf
+
+    event = pygame.event.poll()
+
+    if event.type == pygame.QUIT:
+        break
+
+    # moves the ball one pixel per cicle
+    position_x += velocity_x * dt
+
+    screen.fill(BLACK)
+
+    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+
+    pygame.display.flip()
+{{< highlight >}}
