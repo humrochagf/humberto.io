@@ -122,6 +122,19 @@ Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá
 
 Por fim calculamos o deslocamento que será feito na **linha 36**.
 
-Rodando o programa podemos ver que agora é possível ter controle sob a velocidade da bola:
-
 {{< videogif "/img/exploring-pygame/ball-velocity.webm" >}}
+
+Como podemos ver agora é possível controlar a velocidade da bola. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
+
+## FPS
+
+O controle de atualização de tela é uma prática comum dentro do mundo do áudio visual e sua unidade de medida é o **FPS** (**F**rames **P**er **S**econd).
+
+Ter este controle implementado em seu jogo trás uma série de benefícios:
+
+- Reduz o uso desnecessário do uso dos recursos da máquina
+- Facilita a sincronização de jogos multiplayer
+- Diminui a as perdas em operação de ponto flutuante. Por realizar muitas operações com frações de tempo muito pequenas em uma frequência exagerada erros de operação de ponto flutuante crescem muito mais rápido (existem técnicas mais sofisticadas para mitigar este tipo de problema mas para quem está começando isso não se preocupe com isto neste momento)
+- Aumenta a previsibilidade e facilita o planejamento do seu jogo. Coisas do tipo para um computador com os requisitos mínimos, quanta coisa eu consigo processar no intervalo de um frame para outro?
+
+No desenvolvimento de jogos o mais comum é encontrar uma taxa de atualização entre 30 e 60 fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
