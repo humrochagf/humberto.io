@@ -37,18 +37,18 @@ pygame.display.set_caption('Simple Movement')
 position_x = 0
 
 while True:
-event = pygame.event.poll()
+    event = pygame.event.poll()
 
     if event.type == pygame.QUIT:
         break
 
-    # move a bola 1 pixel por ciclo
+    # move o quadrado um pixel por ciclo
     position_x += 1
 
     screen.fill(BLACK)
 
-    # desenha a bola na posição incrementada
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
+    # desenha o quadrado em sua nova posição
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -59,7 +59,7 @@ Dentro do loop sua posição é incrementada em um pixel a cada ciclo e a bola �
 
 Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento da bola. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
 
-{{< videogif "/img/exploring-pygame/ball-fast.webm" >}}
+{{< videogif "/img/exploring-pygame/square-fast.webm" >}}
 
 Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
 
@@ -102,12 +102,12 @@ while True:
     if event.type == pygame.QUIT:
         break
 
-    # move a bola na velocidade média definida
+    # move o quadrado na velocidade média definida
     position_x += velocity_x * dt
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -122,7 +122,7 @@ Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá
 
 Por fim calculamos o deslocamento que será feito na **linha 36**.
 
-{{< videogif "/img/exploring-pygame/ball-velocity.webm" >}}
+{{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
 
 Como podemos ver agora é possível controlar a velocidade da bola. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
 
@@ -174,7 +174,7 @@ while True:
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, WHITE, [position_x, 200, 40, 40])
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -209,12 +209,12 @@ screen = pygame.display.set_mode((640, 480))
 
 pygame.display.set_caption('Collision')
 
-# cria o Rect para a bola
-ball = pygame.Rect(300, 220, 40, 40)
+# cria o Rect para o quadrado
+square = pygame.Rect(300, 230, 20, 20)
 
 # cria o Rect para os pads
-left_pad = pygame.Rect(20, 200, 20, 80)
-right_pad = pygame.Rect(600, 200, 20, 80)
+left_pad = pygame.Rect(20, 210, 20, 60)
+right_pad = pygame.Rect(600, 210, 20, 60)
 
 pads = [left_pad, right_pad]
 
@@ -231,16 +231,16 @@ while True:
         break
 
     # usa a função move inplace
-    ball.move_ip(velocity_x * dt, 0)
+    square.move_ip(velocity_x * dt, 0)
 
     # checa por colisão com os pads
-    if ball.collidelist(pads) >= 0:
+    if square.collidelist(pads) >= 0:
         velocity_x = -velocity_x
 
     screen.fill(BLACK)
 
-    # desenha a bola usando o Rect
-    pygame.draw.ellipse(screen, WHITE, ball)
+    # desenha o quadrado usando o Rect
+    pygame.draw.rect(screen, WHITE, square)
 
     # desenha os pads
     for pad in pads:
@@ -261,6 +261,6 @@ E por fim a bola e os pads são desenhados na tela utilizando suas instâncias d
 
 ## Conclusão
 
-Com estes conceitos de movimentação e colisão já é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando como proposta que você utilize estes conceitos para implementá-lo. 
+Com estes conceitos de movimentação e colisão já é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando como proposta que você utilize estes conceitos para implementá-lo.
 
 Os códigos utilizados nesta postagem estão disponíveis em [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/05-movement-and-collision).

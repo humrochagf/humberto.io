@@ -36,21 +36,20 @@ pygame.display.set_caption('Simple Movement')
 position_x = 0
 
 while True:
-event = pygame.event.poll()
+    event = pygame.event.poll()
 
     if event.type == pygame.QUIT:
         break
-    
-    # move a bola 1 pixel por ciclo
-    position_x += 1
-    
-    screen.fill(BLACK)
-    
-    # desenha a bola na posição incrementada
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
-    
-    pygame.display.flip()
 
+    # moves the square one pixel per cycle
+    position_x += 1
+
+    screen.fill(BLACK)
+
+    # draws the square with the incremented position
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
+
+    pygame.display.flip()
 {{< / highlight >}}
 
 O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição da bola no eixo x.
@@ -59,7 +58,7 @@ Dentro do loop sua posição é incrementada em um pixel a cada ciclo e a bola �
 
 Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento da bola. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
 
-{{< videogif "/img/exploring-pygame/ball-fast.webm" >}}
+{{< videogif "/img/exploring-pygame/square-fast.webm" >}}
 
 Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
 
@@ -82,38 +81,34 @@ screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption('Velocity')
 
 position_x = 0
-
-# 100 pixels por segundo
-
+# 100 pixels per second
 velocity_x = 100
 
-# captura o tempo inicial
-
+# capture the initial time
 ti = time.time()
 
 while True:
-\# captura o tempo
-\# deste ciclo
-tf = time.time()
-\# calcula o delta
-dt = (tf - ti)
-\# atribui o tempo final como tempo inicial
-ti = tf
+    # gets the time for
+    # this cycle
+    tf = time.time()
+    # calculate the delta
+    dt = (tf - ti)
+    # sets final time as the initial time
+    ti = tf
 
     event = pygame.event.poll()
-    
+
     if event.type == pygame.QUIT:
         break
-    
-    # move a bola na velocidade média definida
-    position_x += velocity_x * dt
-    
-    screen.fill(BLACK)
-    
-    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
-    
-    pygame.display.flip()
 
+    # moves the square at the velocity defined
+    position_x += velocity_x * dt
+
+    screen.fill(BLACK)
+
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
+
+    pygame.display.flip()
 {{< / highlight >}}
 
 Começamos definindo a velocidade da bola no eixo x para 100 pixels por segundo na **linha 16**.
@@ -126,7 +121,7 @@ Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá
 
 Por fim calculamos o deslocamento que será feito na **linha 36**.
 
-{{< videogif "/img/exploring-pygame/ball-velocity.webm" >}}
+{{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
 
 Como podemos ver agora é possível controlar a velocidade da bola. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
 
@@ -156,37 +151,31 @@ screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption('FPS')
 
 position_x = 0
-
-# como o relógio do pygame trabalha
-
-# em milissegundos, dividimos por 1000
-
-# para manter os 100 pixels por segundo
-
+# since pygame clock returns its value
+# in milliseconds, we divide the velocity
+# by 1000 to keep the 100 pixel per seconds
 velocity_x = 0.1
 
-# criamos uma instância do relógio
-
+# create pygame clock
 clock = pygame.time.Clock()
 
 while True:
-\# chamamos o tick do relógio para 30 fps
-\# e armazenamos o delta de tempo
-dt = clock.tick(30)
+    # call the clock tick for 30 fps
+    # and store the delta time
+    dt = clock.tick(30)
 
     event = pygame.event.poll()
-    
+
     if event.type == pygame.QUIT:
         break
-    
-    position_x += velocity_x * dt
-    
-    screen.fill(BLACK)
-    
-    pygame.draw.ellipse(screen, WHITE, [position_x, 200, 40, 40])
-    
-    pygame.display.flip()
 
+    position_x += velocity_x * dt
+
+    screen.fill(BLACK)
+
+    pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
+
+    pygame.display.flip()
 {{< / highlight >}}
 
 Graças a implementação de relógio da classe `Clock` do pygame, não tivemos muito trabalho com a implementação, na verdade o código fica até mais curto. Primeiramente trocamos a velocidade de `100` para `0.1` na **linha 16**, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por `1000`.
@@ -219,47 +208,44 @@ screen = pygame.display.set_mode((640, 480))
 
 pygame.display.set_caption('Collision')
 
-# cria o Rect para a bola
+# create the square Rect
+square = pygame.Rect(300, 230, 20, 20)
 
-ball = pygame.Rect(300, 220, 40, 40)
+# create the pads Rect
+left_pad = pygame.Rect(20, 210, 20, 60)
+right_pad = pygame.Rect(600, 210, 20, 60)
 
-# cria o Rect para os pads
-
-left_pad = pygame.Rect(20, 200, 20, 80)
-right_pad = pygame.Rect(600, 200, 20, 80)
-
-pads = \[left_pad, right_pad\]
+pads = [left_pad, right_pad]
 
 velocity_x = 0.1
 
 clock = pygame.time.Clock()
 
 while True:
-dt = clock.tick(30)
+    dt = clock.tick(30)
 
     event = pygame.event.poll()
-    
+
     if event.type == pygame.QUIT:
         break
-    
-    # usa a função move inplace
-    ball.move_ip(velocity_x * dt, 0)
-    
-    # checa por colisão com os pads
-    if ball.collidelist(pads) >= 0:
+
+    # use the move function inplace
+    square.move_ip(velocity_x * dt, 0)
+
+    # check for collision with the pads
+    if square.collidelist(pads) >= 0:
         velocity_x = -velocity_x
-    
+
     screen.fill(BLACK)
-    
-    # desenha a bola usando o Rect
-    pygame.draw.ellipse(screen, WHITE, ball)
-    
-    # desenha os pads
+
+    # draw using the rect
+    pygame.draw.rect(screen, WHITE, square)
+
+    # draw the pads
     for pad in pads:
         pygame.draw.rect(screen, WHITE, pad)
-    
-    pygame.display.flip()
 
+    pygame.display.flip()
 {{< / highlight >}}
 
 A técnica de detecção de colisão mais simples é a de tratar todos os elementos como áreas retangulares e o pygame implementa esta mecânica através da classe `Rect` que foi utilizada a partir da **linha 12** onde foi criada uma área retangular para a bola seguida da criação de dois blocos com os quais a bola irá se colidir.
@@ -270,7 +256,7 @@ Na **linha 37** a função `collidelist` verifica se ocorreu alguma colisão com
 
 E por fim a bola e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
 
-{{< videogif "/img/exploring-pygame/ball-collision.webm" >}}
+{{< videogif "/img/exploring-pygame/square-collision.webm" >}}
 
 ## Conclusão
 
