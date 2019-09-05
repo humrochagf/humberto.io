@@ -99,6 +99,6 @@ Para finalizar o comando `sleep` da biblioteca `time` faz o programa esperar 5 s
 
 ## Concluindo
 
-Com isso, chegamos ao final deste primeiro capítulo apresentando a biblioteca e escrevendo nosso primeiro programa. O código deste capítulo encontra-se disponível neste repositório: [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame/tree/master/01-introducao).
+Com isso, chegamos ao final deste primeiro capítulo apresentando a biblioteca e escrevendo nosso primeiro programa. O código deste capítulo encontra-se disponível neste repositório: [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/01-introduction).
 
 Fique de olho nos próximos capítulos onde iremos descrever conceitos do desenvolvimento de jogos e sua aplicação dentro do pygame.

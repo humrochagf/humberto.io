@@ -1,5 +1,5 @@
 +++
-description = "Aprenda como movimentar os objetos na tela e escreva sua primeira detecção de colisão"
+description = "Aprenda como movimentar os objetos na tela e escreva sua primeira detecção de colisão com pygame"
 draft = true
 images = []
 publishDate = "2019-08-30T00:00:00-03:00"
@@ -26,7 +26,7 @@ Para começar, vamos escrever a forma mais básica de movimentação de um objet
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
-RED = pygame.Color(255, 0, 0)
+WHITE = pygame.Color(255, 255, 255)
 
 pygame.init()
 
@@ -48,7 +48,7 @@ event = pygame.event.poll()
     screen.fill(BLACK)
 
     # desenha a bola na posição incrementada
-    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -59,7 +59,7 @@ Dentro do loop sua posição é incrementada em um pixel a cada ciclo e a bola �
 
 Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento da bola. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
 
-{{< videogif "/img/exploring-pygame/fast-ball.webm" >}}
+{{< videogif "/img/exploring-pygame/ball-fast.webm" >}}
 
 Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
 
@@ -73,7 +73,7 @@ import time
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
-RED = pygame.Color(255, 0, 0)
+WHITE = pygame.Color(255, 255, 255)
 
 pygame.init()
 
@@ -107,7 +107,7 @@ while True:
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 220, 40, 40])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -143,7 +143,7 @@ No desenvolvimento de jogos o mais comum é encontrar uma taxa de atualização 
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
-RED = pygame.Color(255, 0, 0)
+WHITE = pygame.Color(255, 255, 255)
 
 pygame.init()
 
@@ -174,7 +174,7 @@ while True:
 
     screen.fill(BLACK)
 
-    pygame.draw.ellipse(screen, RED, [position_x, 300, 40, 40])
+    pygame.draw.ellipse(screen, WHITE, [position_x, 200, 40, 40])
 
     pygame.display.flip()
 {{< / highlight >}}
@@ -186,5 +186,81 @@ Na **linha 19** instanciamos o `Clock` e logo mais, na **linha 24** chamamos sua
 A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha sido muito rápido ela para a execução do programa por um breve tempo para manter a frequência desejada. Como resultado, esta função retorna o delta de tempo entre esta e a vez anterior em que ela foi chamada.
 
 {{% tip class="info" %}}
-Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), ela possuí uma questão quanto a precisão entre plataformas, mas existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo. 
+Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), ela possuí uma questão quanto a precisão entre plataformas, mas existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo.
 {{% /tip %}}
+
+Agora que temos nossa bola percorrendo a tela a uma velocidade constante podemos seguir para a etapa de detecção de colisão.
+
+## Colisão
+
+A colisão é o produto da interação dos objetos do seu jogo. Esta interação pode ocorrer entre si e com o ambiente. A detecção de colisão costuma crescer em complexidade na medida em que mais elementos de diferentes formatos são adicionados em cena.
+
+Em nosso exemplo vamos nos ater aos conceitos básicos fazendo a bola interagir com os limites da tela mudando de direção ao colidir com suas extremidades:
+
+{{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
+import pygame
+
+BLACK = pygame.Color(0, 0, 0)
+WHITE = pygame.Color(255, 255, 255)
+
+pygame.init()
+
+screen = pygame.display.set_mode((640, 480))
+
+pygame.display.set_caption('Collision')
+
+# cria o Rect para a bola
+ball = pygame.Rect(300, 220, 40, 40)
+
+# cria o Rect para os pads
+left_pad = pygame.Rect(20, 200, 20, 80)
+right_pad = pygame.Rect(600, 200, 20, 80)
+
+pads = [left_pad, right_pad]
+
+velocity_x = 0.1
+
+clock = pygame.time.Clock()
+
+while True:
+    dt = clock.tick(30)
+
+    event = pygame.event.poll()
+
+    if event.type == pygame.QUIT:
+        break
+
+    # usa a função move inplace
+    ball.move_ip(velocity_x * dt, 0)
+
+    # checa por colisão com os pads
+    if ball.collidelist(pads) >= 0:
+        velocity_x = -velocity_x
+
+    screen.fill(BLACK)
+
+    # desenha a bola usando o Rect
+    pygame.draw.ellipse(screen, WHITE, ball)
+
+    # desenha os pads
+    for pad in pads:
+        pygame.draw.rect(screen, WHITE, pad)
+
+    pygame.display.flip()
+{{< / highlight >}}
+
+A técnica de detecção de colisão mais simples é a de tratar todos os elementos como áreas retangulares e o pygame implementa esta mecânica através da classe `Rect` que foi utilizada a partir da **linha 12** onde foi criada uma área retangular para a bola seguida da criação de dois blocos com os quais a bola irá se colidir.
+
+Com a criação do `Rect` para a bola, passamos a usar a função `move_ip` para deslocá-la na **linha 34**. Esta função altera a posição do objeto que a chama, diferentemente da função `move` que retorna uma cópia do objeto com sua posição alterada.
+
+Na **linha 37** a função `collidelist` verifica se ocorreu alguma colisão com um dos elementos da lista, retornado seu índice em caso positivo e `-1` em caso negativo.
+
+E por fim a bola e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
+
+{{< videogif "/img/exploring-pygame/ball-collision.webm" >}}
+
+## Conclusão
+
+Com estes conceitos de movimentação e colisão já é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando como proposta que você utilize estes conceitos para implementá-lo. 
+
+Os códigos utilizados nesta postagem estão disponíveis em [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/05-movement-and-collision).

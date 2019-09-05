@@ -118,4 +118,4 @@ Note que sempre pintamos o fundo de preto, caso contrário o rastro da bola fica
 
 ## Concluindo
 
-E com isso finalizamos nosso breve passeio pelo game loop. Não se esqueça que todo código estará disponível no repositório [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame).
+E com isso finalizamos nosso breve passeio pelo game loop. Não se esqueça que todo código estará disponível no repositório [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/03-game-loop).

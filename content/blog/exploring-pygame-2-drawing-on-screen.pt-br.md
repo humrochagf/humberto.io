@@ -98,4 +98,4 @@ Por fim, atualizamos a tela com o novo conteúdo, esperamos mais 5 segundos e fi
 
 Existem diversas formas de se desenhar na tela com pygame, você pode ver estes e outras funções de desenho com mais detalhes na [documentação](https://www.pygame.org/docs/ref/draw.html) da biblioteca. 
 
-O código deste capítulo encontra-se disponível no repositório [desbravando-pygame](https://github.com/humrochagf/desbravando-pygame/blob/master/02-desenhando/draw.py).
+O código deste capítulo encontra-se disponível no repositório [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/02-drawing).

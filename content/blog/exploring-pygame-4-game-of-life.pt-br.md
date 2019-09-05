@@ -246,4 +246,4 @@ Obs.: Note que existem alguns padrões comentados no código do simulador, você
 
 O game of life é um conceito muito bom para se aprender conceitos da computação, recomendo assistir as entrevistas com seu criador pelo canal [Numberphile](https://www.youtube.com/playlist?list=PLt5AfwLFPxWIL8XA1npoNAHseS-j1y-7V) no youtube.
 
-E como sempre o código está disponível no [repositório](https://github.com/humrochagf/desbravando-pygame) para todos.
+E como sempre o código está disponível no repositório [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/04-game-of-life) para todos.
