@@ -53,11 +53,11 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição da bola no eixo x.
+O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição do quadrado no eixo x.
 
-Dentro do loop sua posição é incrementada em um pixel a cada ciclo e a bola é desenhada novamente em sua nova posição.
+Dentro do loop sua posição é incrementada em um pixel a cada ciclo ele é desenhado novamente em sua nova posição.
 
-Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento da bola. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
+Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento do quadrado. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
 
 {{< videogif "/img/exploring-pygame/square-fast.webm" >}}
 
@@ -112,7 +112,7 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-Começamos definindo a velocidade da bola no eixo x para 100 pixels por segundo na **linha 16**.
+Começamos definindo a velocidade no eixo x para 100 pixels por segundo na **linha 16**.
 
 Em seguida na **linha 19** capturamos o tempo inicial para o cálculo do delta de tempo, que é quanto tempo se passou entre os ciclos do loop.
 
@@ -124,7 +124,7 @@ Por fim calculamos o deslocamento que será feito na **linha 36**.
 
 {{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
 
-Como podemos ver agora é possível controlar a velocidade da bola. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
+Como podemos ver agora é possível controlar a velocidade de movimentação dos objetos. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
 
 ## FPS
 
@@ -189,13 +189,13 @@ A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha si
 Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), ela possuí uma questão quanto a precisão entre plataformas, mas existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo.
 {{% /tip %}}
 
-Agora que temos nossa bola percorrendo a tela a uma velocidade constante podemos seguir para a etapa de detecção de colisão.
+Agora que temos o quadrado percorrendo a tela a uma velocidade constante podemos seguir para a etapa de detecção de colisão.
 
 ## Colisão
 
 A colisão é o produto da interação dos objetos do seu jogo. Esta interação pode ocorrer entre si e com o ambiente. A detecção de colisão costuma crescer em complexidade na medida em que mais elementos de diferentes formatos são adicionados em cena.
 
-Em nosso exemplo vamos nos ater aos conceitos básicos fazendo a bola interagir com os limites da tela mudando de direção ao colidir com suas extremidades:
+Em nosso exemplo vamos nos ater aos conceitos básicos fazendo o quadrado interagir com os limites da tela mudando de direção ao colidir com suas extremidades:
 
 {{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
 import pygame
@@ -249,13 +249,13 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-A técnica de detecção de colisão mais simples é a de tratar todos os elementos como áreas retangulares e o pygame implementa esta mecânica através da classe `Rect` que foi utilizada a partir da **linha 12** onde foi criada uma área retangular para a bola seguida da criação de dois blocos com os quais a bola irá se colidir.
+A técnica de detecção de colisão mais simples é a de tratar todos os elementos como áreas retangulares e o pygame implementa esta mecânica através da classe `Rect` que foi utilizada a partir da **linha 12** onde foi criada uma área retangular para o quadrado seguida da criação de dois blocos com os quais irá se colidir.
 
-Com a criação do `Rect` para a bola, passamos a usar a função `move_ip` para deslocá-la na **linha 34**. Esta função altera a posição do objeto que a chama, diferentemente da função `move` que retorna uma cópia do objeto com sua posição alterada.
+Com a criação do `Rect`, passamos a usar a função `move_ip` para deslocá-lo na **linha 34**. Esta função altera a posição do objeto que a chama, diferentemente da função `move` que retorna uma cópia do objeto com sua posição alterada.
 
 Na **linha 37** a função `collidelist` verifica se ocorreu alguma colisão com um dos elementos da lista, retornado seu índice em caso positivo e `-1` em caso negativo.
 
-E por fim a bola e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
+E por fim o quadrado e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
 
 {{< videogif "/img/exploring-pygame/ball-collision.webm" >}}
 
