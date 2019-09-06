@@ -12,17 +12,15 @@ markup = "mmark"
 +++
 O movimento é uma característica que está presente na maioria dos jogos. Ao saltar entre plataformas, atirar contra a horda de inimigos, pilotar uma nave espacial e correr pelas estradas estamos exercendo movimento, interagindo com o ambiente do jogo, aplicando ações e causando reações.
 
-Neste capítulo iremos conhecer os conceitos básicos de movimentação de objetos na tela e de sua interação com outros elementos através da detecção de colisão.
+Neste capítulo iremos conhecer os conceitos básicos de movimentação de objetos na tela e sua interação com outros elementos através da detecção de colisão.
 
 ## Movimento
 
-Se você vem acompanhando esta série de postagens, você já viu um exemplo de movimentação na postagem sobre [game loop](https://humberto.io/pt-br/blog/desbravando-o-pygame-3-game-loop/) onde implementamos uma bola que se movimentava quicando pela tela.
+Se você vem acompanhando esta série de postagens, teve um breve exemplo de movimentação na postagem sobre [game loop](https://humberto.io/pt-br/blog/desbravando-o-pygame-3-game-loop/), onde uma bola que se movimentava quicando pela tela foi implementada.
 
-Desta vez nós revisitaremos este código detalhando o processo de geração de movimento e também acrescentando novos conceitos.
+Desta vez veremos um código similar, detalhando o processo de movimentação, acrescentando novos conceitos. Começando pela forma mais básica de movimentação de um objeto na tela:
 
-Para começar, vamos escrever a forma mais básica de movimentação de um objeto na tela:
-
-{{< highlight python "linenos=table,hl_lines=21 26" >}}
+{{< highlight python "linenos=table,hl_lines=12 21 26" >}}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -53,19 +51,21 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O código é bem direto ao ponto, criamos a variável `position_x` para guardar a posição do quadrado no eixo x.
+O código é bem direto, é criada uma variável `position_x` para guardar a posição do quadrado no eixo x.
 
 Dentro do loop sua posição é incrementada em um pixel a cada ciclo ele é desenhado novamente em sua nova posição.
 
-Esta abordagem possuí um problema. Você não consegue ter controle sobre a velocidade de movimento do quadrado. Em computadores mais rápidos mais loops por segundo serão processados e nos mais lentos o contrário e eventualmente terá resultados como este:
+Este loop de desenho do objeto cria o efeito cinemático de deslocamento na tela, porém, esta implementação possuí um problema.
+
+Não é possível controlar a velocidade de movimento do objeto e, em computadores mais potentes, mais loops por segundo serão processados causando eventualmente resultados como este:
 
 {{< videogif "/img/exploring-pygame/square-fast.webm" >}}
 
-Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **M**ovimento **R**etilíneo **U**niforme. Para garantirmos uma velocidade constante usaremos a seguinte fórmula:
+Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **MRU** (**M**ovimento **R**etilíneo **U**niforme) e, para garantirmos uma velocidade constante, usaremos a seguinte fórmula:
 
 $$S = S_{i} + v \Delta t$$
 
-Sua aplicação no código ficará desta forma:
+Sua aplicação no código ficará assim:
 
 {{< highlight python "linenos=table,hl_lines=16 19 24 26 28 36" >}}
 import time
@@ -112,11 +112,11 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-Começamos definindo a velocidade no eixo x para 100 pixels por segundo na **linha 16**.
+Começamos definindo a velocidade no eixo x para 100 pixels por segundo.
 
-Em seguida na **linha 19** capturamos o tempo inicial para o cálculo do delta de tempo, que é quanto tempo se passou entre os ciclos do loop.
+Em seguida, capturamos o tempo inicial para o cálculo do delta de tempo, que é quanto tempo se passou entre os ciclos do loop.
 
-Entrando no loop capturamos o tempo final na **linha 24** e logo em seguida na **linha 26** calculamos o `dt` subtraindo o tempo final pelo inicial.
+Dentro do loop, capturamos o tempo final e logo em seguida calculamos sua variação `dt` (delta de tempo) subtraindo o tempo final pelo inicial.
 
 Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá-lo no próximo ciclo.
 
@@ -124,20 +124,20 @@ Por fim calculamos o deslocamento que será feito na **linha 36**.
 
 {{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
 
-Como podemos ver agora é possível controlar a velocidade de movimentação dos objetos. Porém, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
+Como podemos ver, agora é possível controlar a velocidade de movimentação dos objetos mas, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor vai conseguir acompanhar um volume exagerado te atualizações consecutivas além da sobrecarga desnecessária do processador.
 
 ## FPS
 
-O controle de atualização de tela é uma prática comum dentro do mundo do áudio visual e sua unidade de medida é o **FPS** (**F**rames **P**er **S**econd).
+Cada ciclo de desenho na tela é comumente chamado de **frame**, e o controle de atualização da tela é uma prática comum dentro do mundo do áudio visual, tendo como unidade de medida o **FPS** (**F**rames **P**er **S**econd).
 
-Ter este controle implementado em seu jogo trás uma série de benefícios:
+Implementar este controle em seu jogo trás uma série de benefícios:
 
 - Reduz o uso desnecessário do uso dos recursos da máquina
 - Facilita a sincronização de jogos multiplayer
-- Diminui a as perdas em operação de ponto flutuante. Por realizar muitas operações com frações de tempo muito pequenas em uma frequência exagerada erros de operação de ponto flutuante crescem muito mais rápido (existem técnicas mais sofisticadas para mitigar este tipo de problema mas para quem está começando isso não se preocupe com isto neste momento)
-- Aumenta a previsibilidade e facilita o planejamento do seu jogo. Coisas do tipo para um computador com os requisitos mínimos, quanta coisa eu consigo processar no intervalo de um frame para outro?
+- Diminui a [propagação de erro em operação de ponto flutuante](https://floating-point-gui.de/errors/propagation/) (existem técnicas para mitigar este tipo de problema mas se você está começando, não se preocupe com isto neste momento)
+- Aumenta a previsibilidade e facilita o planejamento do seu jogo. Passa a ser possível saber quanta coisa eu consigo processar no intervalo de um frame para outro dado os requisitos mínimos para seu jogo rodar.
 
-No desenvolvimento de jogos o mais comum é encontrar uma taxa de atualização entre 30 e 60 fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
+É comum encontrar taxas de atualização entre 30 e 60fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
 
 {{< highlight python "linenos=table,hl_lines=16 19 24" >}}
 import pygame
@@ -179,9 +179,9 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-Graças a implementação de relógio da classe `Clock` do pygame, não tivemos muito trabalho com a implementação, na verdade o código fica até mais curto. Primeiramente trocamos a velocidade de `100` para `0.1` na **linha 16**, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por `1000`.
+O controle de FPS é bem tranquilo graças a classe `Clock` do pygame, na verdade o código fica até mais curto. Primeiramente trocamos a velocidade de `100` para `0.1`, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por `1000`.
 
-Na **linha 19** instanciamos o `Clock` e logo mais, na **linha 24** chamamos sua função `tick` passando como argumento a quantidade de **FPS** que queremos limitar nosso loop de jogo.
+Em seguida, instanciamos o `Clock` antes de entrar no loop, e chamamos sua função `tick` dentro, passando como argumento a quantidade de **FPS** para limitá-lo.
 
 A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha sido muito rápido ela para a execução do programa por um breve tempo para manter a frequência desejada. Como resultado, esta função retorna o delta de tempo entre esta e a vez anterior em que ela foi chamada.
 
