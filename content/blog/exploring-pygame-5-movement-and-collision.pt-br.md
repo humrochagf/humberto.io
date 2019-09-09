@@ -1,7 +1,9 @@
 +++
 description = "Aprenda como movimentar os objetos na tela e escreva sua primeira detecção de colisão com pygame"
 draft = true
-images = []
+images = [
+  "/img/exploring-pygame/movement-collision.png"
+]
 publishDate = "2019-08-30T00:00:00-03:00"
 slug = "desbravando-o-pygame-5-movimento-e-colisao"
 tags = ["python", "pygame", "gamedev"]
