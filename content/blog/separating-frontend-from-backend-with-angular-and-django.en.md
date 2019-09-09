@@ -5,6 +5,9 @@ publishDate: 2018-02-13
 images:
   - /img/angular-django/django-startproject.gif
 tags: ["python", "django", "typescript", "angular", "api"]
+aliases: [
+  /en/blog/separating-frontend-from-backend-with-angular-and-django/
+]
 draft: false
 
 ---
