@@ -13,7 +13,7 @@ title = "Exploring pygame 5 - Movement and Collision"
 +++
 Movement is part of a large portion of games. When jumping between platforms, shooting against a horde of enemies, piloting a space ship and running through the streets, we are causing movement and interacting with the game environment, applying action and causing reactions.
 
-This chapter is to describe the basic concepts of moving objects across the screen and their interaction with other elements through collision detection.
+This chapter is to describe the basics of moving objects across the screen and their interaction with other elements through collision detection.
 
 ## Movement
 
@@ -52,21 +52,21 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O código é bem direto, é criada uma variável `position_x` para guardar a posição do quadrado no eixo x.
+The code is pretty straight forward. We create a variable `position_x` to hold the square position on x.
 
-Dentro do loop sua posição é incrementada em um pixel a cada ciclo ele é desenhado novamente em sua nova posição.
+Inside the loop, we increment its position by one pixel per cycle and then it's drawn again at its new position.
 
-Este loop de desenho do objeto cria o efeito cinemático de deslocamento na tela, porém, esta implementação possuí um problema.
+The drawing loop creates a cinematic effect of movement on the screen, but this implementation has a problem.
 
-Não é possível controlar a velocidade de movimento do objeto e, em computadores mais potentes, mais loops por segundo serão processados causando eventualmente resultados como este:
+You can't control the object movement velocity, and powerful the computer, more loops are processed, causing results like that:
 
 {{< videogif "/img/exploring-pygame/square-fast.webm" >}}
 
-Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **MRU** (**M**ovimento **R**etilíneo **U**niforme) e, para garantirmos uma velocidade constante, usaremos a seguinte fórmula:
+To fix this issue, we need to go back to physics class, when we learned about **linear motion**. To ensure constant velocity, we'll use the following formula:
 
-$$S = S_{i} + v \Delta t$$
+$$d = d_{i} + v \Delta t$$
 
-Sua aplicação no código ficará assim:
+Applying it to the code, we'll have this:
 
 {{< highlight python "linenos=table,hl_lines=16 19 24 26 28 36" >}}
 import time
@@ -113,19 +113,19 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-Começamos definindo a velocidade no eixo x para 100 pixels por segundo.
+We start defining the velocity at the x-axis to 100 pixels per second.
 
-Em seguida, capturamos o tempo inicial para o cálculo do delta de tempo, que é quanto tempo se passou entre os ciclos do loop.
+Then we get the initial time to be used at the delta time calculation.
 
-Dentro do loop, capturamos o tempo final e logo em seguida calculamos sua variação `dt` (delta de tempo) subtraindo o tempo final pelo inicial.
+Inside the loop, we capture the final time and at the next line, the `dt` (delta time) subtracting the final time by the initial time.
 
-Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá-lo no próximo ciclo.
+At **line 28**, the initial time receives the final time to be used at the next loop cycle.
 
-Por fim calculamos o deslocamento que será feito na **linha 36**.
+In the end, we calculate the displacement at **line 36**.
 
 {{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
 
-Como podemos ver, agora é possível controlar a velocidade de movimentação dos objetos mas, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor conseguem acompanhar um volume exagerado de atualizações consecutivas além da sobrecarga desnecessária do processador.
+As we can see, it is possible to control the object movement velocity, but that solves only the visible part of the issue, the loop executes much more than the necessary generating noting more than overhead.
 
 ## FPS
 
