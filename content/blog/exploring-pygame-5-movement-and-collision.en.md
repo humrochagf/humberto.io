@@ -1,12 +1,12 @@
 +++
 description = "Learn how to move the objects on the screen and write you first collision detection with pygame"
-draft = true
+draft = false
 images = [
   "/img/exploring-pygame/movement-collision.png"
 ]
 katex = true
 markup = "mmark"
-publishDate = "2019-08-30T00:00:00-03:00"
+publishDate = "2019-09-10T00:00:00-03:00"
 tags = ["python", "pygame", "gamedev"]
 title = "Exploring pygame 5 - Movement and Collision"
 
