@@ -181,7 +181,9 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto. Começamos trocando a velocidade de `100` para `0.1`, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por mil.
+O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto.
+
+Começamos trocando a velocidade de `100` para `0.1`, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por mil.
 
 Em seguida, instanciamos `Clock` antes de entrar no loop, e chamamos sua função `tick` em seu interior, passando como argumento a quantidade de **FPS** para limitá-lo.
 
@@ -197,7 +199,7 @@ Agora que temos o quadrado percorrendo a tela a uma velocidade constante podemos
 
 A colisão é o produto da interação dos objetos do seu jogo podendo ocorrer entre si ou com o ambiente. A detecção de colisão costuma crescer em complexidade na medida em que mais elementos de diferentes formatos são adicionados em cena.
 
-No exemplo vamos nos ater aos conceitos básicos, fazendo o quadrado interagir com os limites da tela, mudando de direção ao colidir com suas extremidades:
+No exemplo vamos nos ater aos conceitos básicos, fazendo o quadrado interagir com os pads na tela, mudando de direção após sua colisão:
 
 {{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
 import pygame
@@ -263,6 +265,6 @@ Por fim, o quadrado e os pads são desenhados na tela utilizando suas instância
 
 ## Conclusão
 
-Com estes conceitos de movimentação e colisão é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando como proposta que você utilize estes conceitos para implementá-lo.
+Com estes conceitos de movimentação e colisão é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando um desafio para você. Utilize estes conceitos para implementar uma versão completa do Pong.
 
 Os códigos utilizados nesta postagem estão disponíveis em [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/05-movement-and-collision).

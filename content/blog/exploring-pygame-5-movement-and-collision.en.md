@@ -129,16 +129,16 @@ As we can see, it is possible to control the object movement velocity, but that 
 
 ## FPS
 
-Cada ciclo de desenho na tela é conhecido como **frame**, o controle de atualização de frames na tela é uma prática comum no universo do áudio visual, tendo como unidade de medida o **FPS** (**F**rames **P**er **S**econd).
+These drawing cycles are also known as **frames**, and the frame rate control is a common practice among the audio-visual professionals. The measuring unit used on this kind of control is the **FPS** (**F**rames **P**er **S**econd).
 
-Implementar este controle em seu jogo trás uma série de benefícios:
+Implementing this frame control gives you some benefits:
 
-- Reduz o uso desnecessário dos recursos da máquina
-- Facilita a sincronização de jogos multiplayer
-- Diminui a [propagação de erro em operação de ponto flutuante](https://floating-point-gui.de/errors/propagation/) (existem técnicas para mitigar este tipo de problema mas se você está começando, não se preocupe com isso neste momento)
-- Aumenta a previsibilidade e facilita o planejamento do seu jogo. Passa a ser possível saber quanta coisa eu consigo processar no intervalo de um frame para outro dado os requisitos mínimos para seu jogo.
+- Reduces de unnecessary machine overload
+- Makes the multiplayer game sync easier to implement
+- Reduces the [error propagation of the floating-point operation](https://floating-point-gui.de/errors/propagation/) (there are techniques to mitigate this kind of issue, but if you are starting, don't spend time on that yet)
+- Increases the predictability and facilitates the process of planning your game. Now you can calculate how many processing you can have during a frame interval once you know the minimum requirements of your game.
 
-A taxa de atualização tradicional para filmes é de 24fps, já em jogos ela costuma variar entre 30 e 60fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
+The traditional refresh rate for movies is 24fps, and in games, it can change from 30 to 60fps. In our case, we'll use the 30fps refresh rate.
 
 {{< highlight python "linenos=table,hl_lines=16 19 24" >}}
 import pygame
@@ -180,23 +180,27 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto. Começamos trocando a velocidade de `100` para `0.1`, pois diferentemente da biblioteca `time` do Python que trabalha com segundos, o `Clock` do pygame trabalha em milissegundos e para garantir a mesma velocidade de cem pixels por segundo precisamos dividir a velocidade por mil.
+O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto.
 
-Em seguida, instanciamos `Clock` antes de entrar no loop, e chamamos sua função `tick` em seu interior, passando como argumento a quantidade de **FPS** para limitá-lo.
+Different than Python's `time` library that works on a scale of seconds, pygame's `Clock` works on milliseconds, so we changed the velocity from `100` to `0.1` to ensure the same velocity of a hundred pixels per second.
 
-A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha sido muito rápido ela suspende sua execução por um breve tempo para manter a frequência desejada. Como resultado a função retorna o delta de tempo entre esta e sua chamada anterior.
+Next, we instantiate `Clock` before entering the loop, and then, inside the loop, we call the `tick` function passing as argument the amount of **FPS** to limit the loop.
+
+The `tick` function must be called on each cycle, so if a cycle runs faster than the expected rate, it sleeps for a brief moment to ensure the defined rate. As a result, the function returns the delta time between this loop and the previous one.
 
 {{% tip class="info" %}}
-Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), pois ela possuí uma diferença de precisão entre plataformas. Entretanto, existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo.
+Take a look at the [`tick` function documentation](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick). It has a difference of precision across platforms, but there is an alternate version of this function that is more precise (unfortunately uses much CPU), and you can use it if this level of precision is important to your game.
 {{% /tip %}}
 
-Agora que temos o quadrado percorrendo a tela a uma velocidade constante podemos seguir para a etapa de detecção de colisão.
+We have the square sliding through the screen on a constant speed, so let's proceed to the collision detection.
 
-## Colisão
+## Collision
 
-A colisão é o produto da interação dos objetos do seu jogo podendo ocorrer entre si ou com o ambiente. A detecção de colisão costuma crescer em complexidade na medida em que mais elementos de diferentes formatos são adicionados em cena.
+The collision is the product of the interaction between the objects of your game. Their interaction can produce it, or the interaction with the environment.
 
-No exemplo vamos nos ater aos conceitos básicos, fazendo o quadrado interagir com os limites da tela, mudando de direção ao colidir com suas extremidades:
+The collision detection tends to grow on complexity as long as you add more elements with different formats to the scene.
+
+At the example below, we'll see its basic concept by making the square interact with two pads, changing direction after colliding with them.
 
 {{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
 import pygame
@@ -250,18 +254,18 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-A técnica de detecção de colisão mais simples consiste em tratar todos os elementos como áreas retangulares que no pygame esta mecânica é facilitada pela classe `Rect`, utilizada no código para criar uma área retangular para o quadrado e os pads com os quais irá se colidir.
+The most straightforward collision detection consists of treating all elements as rectangular areas. Pygame has it implemented on the `Rect` class. It was used at the code to create a rectangular area to the square and for the pads.
 
-Com a criação do `Rect`, passamos a usar a função `move_ip` para deslocá-lo. Esta função altera a posição de seu objeto, diferentemente da função `move` que retorna uma cópia de si com a posição alterada.
+With the creation of `Rect` we start to use the function `move_ip` to move it. This function changes the caller position in place, different from the `move` function that produces a new object with the position changed.
 
-Na **linha 37** a função `collidelist` verifica se ocorreu alguma colisão com um dos elementos da lista, retornado seu índice em caso positivo e `-1` em caso negativo.
+At **line 37** the `collidelist` function checks if any collision happened to return the collided object index from the list passed. In case there is no collision, it returns `-1`.
 
-Por fim, o quadrado e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
+In the end, the square and the pads are drawn to the screen using their `Rect` instances to produce the following result:
 
 {{< videogif "/img/exploring-pygame/square-collision.webm" >}}
 
-## Conclusão
+## Conclusion
 
-Com estes conceitos de movimentação e colisão é possível criar jogos bem interessantes como o [Pong](https://pt.wikipedia.org/wiki/Pong). Vou encerrar esta postagem deixando como proposta que você utilize estes conceitos para implementá-lo.
+With these concepts of movement and collision, you can create some exciting games like [Pong](https://en.wikipedia.org/wiki/Pong). I'll end this post with a challenge to you. Use these concepts to implement the Pong game.
 
-Os códigos utilizados nesta postagem estão disponíveis em [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/05-movement-and-collision).
+The code used to make this post is available at [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/05-movement-and-collision).
