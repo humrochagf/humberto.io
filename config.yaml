@@ -10,7 +10,7 @@ author:
   name: Humberto Rocha
   job: Developer
   gender: male
-  image: /img/me.jpg
+  image: img/me.jpg
   github: humrochagf
   twitter: humrochagf
   linkedin: humrochagf
@@ -22,11 +22,11 @@ menu:
   main:
     - identifier: blog
       name: Blog
-      url: /blog/
+      url: blog/
       weight: 2
     - identifier: tags
       name: Tags
-      url: /tags/
+      url: tags/
       weight: 3
   footer:
     - identifier: github
@@ -50,7 +50,7 @@ menu:
       weight: 5
     - identifier: curriculum
       name: curriculum
-      url: /curriculum/
+      url: curriculum/
       weight: 6
     - identifier: email
       name: email
@@ -61,10 +61,10 @@ params:
   title: Humberto Rocha
   description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
   images:
-    - /img/me.jpg
+    - img/me.jpg
   themeColor: "#000000"
   themeInverseColor: "#ffffff"
-  siteLogo: /img/me-100x100.jpg
+  siteLogo: img/me-100x100.jpg
 
   license:
     name: Attribuition-ShareAlike
