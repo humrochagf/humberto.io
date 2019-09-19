@@ -180,7 +180,7 @@ while True:
     pygame.display.flip()
 {{< / highlight >}}
 
-O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto.
+Thanks to pygame's `Clock` implementation we could simplify things a little.
 
 Different than Python's `time` library that works on a scale of seconds, pygame's `Clock` works on milliseconds, so we changed the velocity from `100` to `0.1` to ensure the same velocity of a hundred pixels per second.
 
