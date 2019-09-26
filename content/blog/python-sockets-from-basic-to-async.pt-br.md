@@ -9,14 +9,13 @@ tags = ["sockets", "python", "async", "asyncio"]
 title = "Python Sockets do Básico ao Async"
 
 +++
+Comunicação é uma das bases da computação. Os processos estão constantemente se comunicando com o sistema operacional durante seu tempo de execução.
 
-A comunicação é uma das bases da computação, os processos estão constantemente se comunicando com o sistema operacional 
-
-Uma das formas mais básicas de se comunicar com outros programas é através de um socket
+A forma mais básicas de comunicação entre processos se dá através de um socket.
 
 ## Socket
 
-De modo geral **socket** é uma palavra que vem do inglês que é usada para denominar um buraco feito para envolver ou encaixar algo, como um ponto de conexão. Indo mais a fundo e buscando em sua etimologia a [origem mais primitiva](https://en.wiktionary.org/wiki/socket) da palavra quer dizer literalmente **focinho de porco**.
+A palavra **socket** vem do inglês que é usada para denominar um buraco feito para envolver ou encaixar algo, como um ponto de conexão. Indo mais a fundo e buscando em sua etimologia a [origem mais primitiva](https://en.wiktionary.org/wiki/socket) da palavra quer dizer literalmente **focinho de porco**.
 
 ![Muppet Piggy Chocada](/img/memes/chocked.gif)
 
@@ -28,4 +27,4 @@ E em seguida, a computação adotou a palavra para denominar o ponto final no fl
 
 Dentro do modelo [TCP/IP](https://pt.wikipedia.org/wiki/TCP/IP) o socket é a ponte entre a camada de aplicação e a camada de transporte, é em cima dele que os protocolos de aplicação como o [HTTP](https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol) são construídos.
 
-Sockets podem ser utilizados tanto para a comunicação entre processos através da rede onde normalmente as comunicação são 
+Sockets podem ser utilizados tanto para a comunicação entre processos através da rede onde normalmente as comunicação são
