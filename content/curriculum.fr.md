@@ -3,8 +3,8 @@ type: curriculum
 title: Curriculum
 name: Humberto Rocha
 jobTitle: Programmeur
-locationName: Brasília, Brésil
-locationLink: https://goo.gl/maps/tQjUhUex5cy
+locationName: Québec, Canada
+locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
     Je suis titulaire d’un **Baccalauréat en Informatique** passionné par l’Open Source, le codage et le goût de la typographie. Je suis également un membre actif de la [communauté Python brésilienne](http://python.org.br) et un passionné de la **culture maker** qui aime partager des idées sur la technologie, la communauté et l’automatisation.

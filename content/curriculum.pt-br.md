@@ -3,8 +3,8 @@ type: curriculum
 title: Curriculum
 name: Humberto Rocha
 jobTitle: Developer
-locationName: Brasília, Brasil
-locationLink: https://goo.gl/maps/tQjUhUex5cy
+locationName: Québec, Canadá
+locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
     Formado em **Ciência da Computação** apaixonado por **Open Source** e programação com um gosto pela tipografia. Também sou um membro ativo na [comunidade Brasileira de Python](https://python.org.br) e um entusiasta da **cultura maker** que adora compartilhar ideias sobre tecnologia, comunidade e automação.

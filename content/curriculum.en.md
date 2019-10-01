@@ -3,8 +3,8 @@ type: curriculum
 title: Curriculum
 name: Humberto Rocha
 jobTitle: Developer
-locationName: Brasilia, Brazil
-locationLink: https://goo.gl/maps/tQjUhUex5cy
+locationName: Quebec, Canada
+locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
     I'm a bachelor's degree in **Computer Science** passionated by Open Source, Coding and with a taste for typography. I'm also an active member of the [Brazilian Python community](http://python.org.br) and an enthusiast of the **maker culture** that loves share thoughts about technology, community, and automation.
