@@ -2,13 +2,13 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Developer
+jobTitle: Online Programmer
 locationName: Quebec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    I'm a bachelor's degree in **Computer Science** passionated by Open Source, Coding and with a taste for typography. I'm also an active member of the [Brazilian Python community](http://python.org.br) and an enthusiast of the **maker culture** that loves share thoughts about technology, community, and automation.
-
+    I'm a bachelor's degree in **Computer Science** with substantial experience in server-side automation, software integration, and API design. I'm passionate about software development and always looking for ways to expand my knowledge.
+    
 contact:
   - identifier: email
     svg: email
@@ -26,14 +26,20 @@ contact:
     svg: linkedin
     display: humrochagf
     url: https://linkedin.com/in/humrochagf/
+
 employment: |
+
+    ### Ubisoft Quebec City
+    *October 2019 to present*
+    
+    As part of the Online team, I'm responsible for creating, debugging, maintaining, and optimizing the game's online services also its related tools.
 
     ### Configr.com
     *February 2015 to August 2019*
 
     **Lead Developer | July 2019 to August 2019**
 
-    After passing the title forward and preparing the team to my leave, I had the chance to give back my focus to coding by designing and developing the new structure to generate and renew certificates Let's Encrypt, migrating from ACME V1 to V2, and also by adding support to wildcard certificates.
+    After passing the CTO title forward and preparing the team to my leave, I had the chance to give back my focus to coding by designing and developing the new structure to generate and renew certificates Let's Encrypt, migrating from ACME V1 to V2, and also by adding support to wildcard certificates.
 
     **Chief Technology Officer | September 2017 to July 2019**
 
@@ -64,7 +70,7 @@ education: |
 community: |
 
     ### Python Brazil Association Director
-    *Technology Director | October 2017 to present*
+    *Technology Director | October 2017 to October 2019*
 
     The Python Brasil Association in an entity that works as an interface to promote Python communities across the country. I work as a volunteer elected by the council to maintain the association's infrastructure (Websites, DNS, Email, Discourse platform, Github organization, and others).
 
@@ -72,11 +78,6 @@ community: |
     *October 2018*
 
     The Dorneles Treméa prize is an award given every year at the Python Brazil Conference to members of the Brazilian Python community that keeps alive the spirit of collaboration, entrepreneurship, and commitment to the community. It was named in honor of one of the founders of the Brazilian Python community who sadly passed away at 2011.
-
-    ### Calango Hacker Club
-    *Member and Supporter*
-
-    Calango is a hackerspace located at Brasília capital of Brazil that is a place where its members can share its pieces of knowledge about freedom, free software, open source, open hardware, maker culture and exercise their curiosity.
 
 languages: |
 
