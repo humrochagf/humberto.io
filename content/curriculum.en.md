@@ -30,7 +30,7 @@ contact:
 employment: |
 
     ### Ubisoft Quebec City
-    *October 2019 to present*
+    *Online Programmer | October 2019 to present*
     
     As part of the Online team, I'm responsible for creating, debugging, maintaining, and optimizing the game's online services also its related tools.
 
