@@ -2,12 +2,12 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Programmeur
+jobTitle: Programmeur Online
 locationName: Québec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Je suis titulaire d’un **Baccalauréat en Informatique** passionné par l’Open Source, le codage et le goût de la typographie. Je suis également un membre actif de la [communauté Python brésilienne](http://python.org.br) et un passionné de la **culture maker** qui aime partager des idées sur la technologie, la communauté et l’automatisation.
+    Je suis titulaire d’un **Baccalauréat en Informatique** avec une expérience considérable de l'automatisation server-side, de l'intégration de logiciels et de la conception d'API. Je suis passionné par le développement logiciel et cherche toujours des moyens d'élargir mes connaissances.
 
 contact:
   - identifier: email
@@ -26,8 +26,14 @@ contact:
     svg: linkedin
     display: humrochagf
     url: https://linkedin.com/in/humrochagf/
-employment: |
 
+employment: |
+    
+    ### Ubisoft Quebec City
+    *Octobre 2019 au présent*
+    
+    En tant que membre de l'équipe Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services Online du jeu, ainsi que des outils associés.
+    
     ### Configr.com
     *Février 2015 au Août 2019*
 
@@ -64,7 +70,7 @@ education: |
 community: |
 
     ### Directeur de l'association Python Brésil
-    *Directeur de la Technologie | Octobre 2017 au présent*
+    *Directeur de la Technologie | Octobre 2017 au Octobre 2019*
 
     La Python Brasil Association dans une entité qui fonctionne comme une interface pour promouvoir les communautés Python à travers le pays. Je travaille comme bénévole élu par le conseil pour maintenir l’infrastructure de l’association (sites Web, DNS, courriel, plateforme de discours, organisation Github et autres).
 
@@ -72,11 +78,6 @@ community: |
     *Octobre 2018*
 
     Le prix Dorneles Treméa est un prix décerné chaque année à la Conférence Python Brésil aux membres de la communauté Python brésilienne qui maintient en vie l’esprit de collaboration, d’entrepreneuriat et d’engagement envers la communauté. Il a été nommé en l’honneur de l’un des fondateurs de la communauté brésilienne Python qui est malheureusement décédé en 2011.
-
-    ### Calango Hacker Club
-    *Membre et Supporter*
-
-    Calango est un espace hacker situé à Brasília capitale du Brésil qui est un endroit où ses membres peuvent partager ses morceaux de connaissances sur la liberté, le logiciel libre, open source, matériel ouvert, la culture du fabricant et exercer leur curiosité.
 
 languages: |
 
