@@ -30,7 +30,7 @@ contact:
 employment: |
 
     ### Ubisoft Quebec City
-    *October 2019 até o presente*
+    *Online Programmer | outubro 2019 ao presente*
     
     Como parte do time de Online estou encaregado de criar, debugar, manter e otimizar os serviços online dos jogos bem como suas ferramentas de apoio.
     
