@@ -2,12 +2,12 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Developer
+jobTitle: Online Programmer
 locationName: Québec, Canadá
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Formado em **Ciência da Computação** apaixonado por **Open Source** e programação com um gosto pela tipografia. Também sou um membro ativo na [comunidade Brasileira de Python](https://python.org.br) e um entusiasta da **cultura maker** que adora compartilhar ideias sobre tecnologia, comunidade e automação.
+    Formado em **Ciência da Computação** com um sólido conhecimento em server side automation, integração de software e API design. Sou apaixonado por desenvolvimento de software e estou sempre buscando aumentar meu conhecimento na área.
 
 contact:
   - identifier: email
@@ -26,8 +26,14 @@ contact:
     svg: linkedin
     display: humrochagf
     url: https://linkedin.com/in/humrochagf/
+
 employment: |
 
+    ### Ubisoft Quebec City
+    *October 2019 até o presente*
+    
+    Como parte do time de Online estou encaregado de criar, debugar, manter e otimizar os serviços online dos jogos bem como suas ferramentas de apoio.
+    
     ### Configr.com
     *fevereiro 2015 até agosto 2019*
 
@@ -65,7 +71,7 @@ education: |
 community: |
 
     ### Diretor de Tecnologia da Associação Python Brasil
-    *Diretor de Tecnologia | outubro 2017 até hoje*
+    *Diretor de Tecnologia | outubro 2017 até outubro de 2019*
 
     A Associação Python Brasil é uma entidade que trabalha como uma interface para promover a comunidade Python através do país. Eu trabalho como voluntário eleito pelo concelho para manter a infraestrutura da associação (Websites, DNS, Plataforma Discourse, Organização no Github entre outros).
 
@@ -73,11 +79,6 @@ community: |
     *outubro 2018*
 
     O Prêmio Dorneles Treméa é entregue todo ano na Conferência Python Brasil para os membros da comunidade brasileira que mantém vivo o espírito de colaboração, empreendedorismo e entrega a comunidade. O prêmio foi nomeado para homenagear um dos fundadores da comunidade brasileira de Python que infelizmente faleceu em 2011.
-
-    ### Calango Hacker Clube
-    *Membro e Apoiador*
-
-    O Calango é um hackerspace localizado em Brasília, capital do Brasil e é um lugar onde seus membros podem compartilhar seus conhecimentos sobre liberdade, software livre, open source, open hardware, cultura maker e exercitar sua curiosidade.
 
 languages: |
 
