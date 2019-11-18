@@ -30,7 +30,7 @@ contact:
 employment: |
     
     ### Ubisoft Quebec City
-    *Octobre 2019 au présent*
+    *Programmeur Online | Octobre 2019 au présent*
     
     En tant que membre de l'équipe Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services Online du jeu, ainsi que des outils associés.
     
