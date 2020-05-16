@@ -9,7 +9,6 @@ slug = "desbravando-o-pygame-5-movimento-e-colisao"
 tags = ["python", "pygame", "gamedev"]
 title = "Desbravando o pygame 5 - Movimento e Colisão"
 katex = true
-markup = "mmark"
 
 +++
 O movimento é uma característica que está presente na maioria dos jogos. Ao saltar entre plataformas, atirar contra a horda de inimigos, pilotar uma nave espacial e correr pelas estradas estamos exercendo movimento, interagindo com o ambiente do jogo, aplicando ações e causando reações.

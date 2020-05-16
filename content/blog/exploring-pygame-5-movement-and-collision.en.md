@@ -5,7 +5,6 @@ images = [
   "/img/exploring-pygame/movement-collision.png"
 ]
 katex = true
-markup = "mmark"
 publishDate = "2019-09-10T00:00:00-03:00"
 tags = ["python", "pygame", "gamedev"]
 title = "Exploring pygame 5 - Movement and Collision"
