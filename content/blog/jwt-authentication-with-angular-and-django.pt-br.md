@@ -15,7 +15,7 @@ draft: false
 
 Quase todo sistema que opera na internet e armazena dados de usuário hoje em dia depende de uma camada de autenticação. E com o crescimento do modelo de API`s e separação do **frontend** do **backend** a implementação desta camada cresceu em complexidade.
 
-Esta postagem tem como foco mostrar o caminho das pedras em uma stack de frontend **Angular 6** e backend **Django 2** utilizando o modelo de separação discutido na postagem ["Separando o Frontend do Backend com Angular e Django"](/blog/separando-o-frontend-do-backend-com-angular-e-django/).
+Esta postagem tem como foco mostrar o caminho das pedras em uma stack de frontend **Angular 6** e backend **Django 2** utilizando o modelo de separação discutido na postagem ["Separando o Frontend do Backend com Angular e Django"](/pt-bt/blog/separando-o-frontend-do-backend-com-angular-e-django/).
 
 Os repositórios com o código desta postagem são:
 
@@ -97,7 +97,7 @@ Agora, com todo este conhecimento é hora da implementação!!!
 
 {{< videogif "/img/memes/coding-cat.webm" >}}
 
-E para isso, utilizaremos como base a aplicação desenvolvida na postagem anterior ["Separando o Frontend do Backend com Angular e Django"](/blog/separando-o-frontend-do-backend-com-angular-e-django/).
+E para isso, utilizaremos como base a aplicação desenvolvida na postagem anterior ["Separando o Frontend do Backend com Angular e Django"](/pt-br/blog/separando-o-frontend-do-backend-com-angular-e-django/).
 
 ## Backend
 

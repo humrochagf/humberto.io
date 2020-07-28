@@ -9,7 +9,7 @@ draft: false
 
 ---
 
-Now that we learned how to draw on the screen ([previous post](/en/blog/exploring-pygame-2-drawing-on-screen/)) would be good that our game keeps running until someone closes it, and to do that we will use one of the basic concepts of game development with is the Game Loop.
+Now that we learned how to draw on the screen ([previous post](/blog/exploring-pygame-2-drawing-on-screen/)) would be good that our game keeps running until someone closes it, and to do that we will use one of the basic concepts of game development with is the Game Loop.
 
 ## Concept
 
@@ -104,7 +104,7 @@ At the **input processing step** we use `pygame.event.poll()` to catch an event 
 
 During the **game update step** we move the ball on the axis, x and y, checking if it collides with the corners and if that happens we change its direction.
 
-And finally, at the **drawing step** we use the methods from the [previous post](/en/blog/exploring-pygame-2-drawing-on-screen/) to draw the ball on the screen.
+And finally, at the **drawing step** we use the methods from the [previous post](/blog/exploring-pygame-2-drawing-on-screen/) to draw the ball on the screen.
 
 {{% tip class="info" %}}
 Note that we always fill the background with black before to draw the ball, if we don't do that, the ball will leave a trace on the screen from the previous draws.

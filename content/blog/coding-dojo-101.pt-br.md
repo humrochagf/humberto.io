@@ -123,7 +123,7 @@ $ dose nosetests arquivo.py
 {{< / highlight >}}
 
 {{% tip class="warning" %}}
-Caso tenha problemas no processo de instalação dê uma olhada na postagem que eu fiz sobre [dependências dev python](/blog/tldr-dependencias-dev-python-no-ubuntu/), talvez ela possa lhe ajudar nesta questão.
+Caso tenha problemas no processo de instalação dê uma olhada na postagem que eu fiz sobre [dependências dev python](/pt-br/blog/tldr-dependencias-dev-python-no-ubuntu/), talvez ela possa lhe ajudar nesta questão.
 {{% /tip %}}
 
 ## Concluindo

@@ -31,7 +31,7 @@ As described at its [website](https://www.getlektor.com/docs/what) **Lektor** le
 
 - **Static**: The final product is a static website that allows you to host is anywhere.
 - **CMS**: A local admin interface that allows a publishing pipeline different from coding easy to non programmers to use.
-- **Framework**: It has a models system on plain text files and a template system with Jinja2 that creates an environment that is fammiliar to developers that uses Django, Flask and other Python web frameworks.
+- **Framework**: It has a models system on plain text files and a template system with Jinja2 that creates an environment that is familiar to developers that uses Django, Flask and other Python web frameworks.
 - **Deploy**: The deploy system is just a single configuration file that helps you to deploy your content to production.
 
 ## Lektor Installation

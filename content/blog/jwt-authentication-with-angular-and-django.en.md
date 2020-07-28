@@ -11,7 +11,7 @@ draft: false
 
 Almost every system that runs on the internet and stores user data has an authentication layer. With the API architecture becoming popular nowadays, the complexity of the authentication layer also grew.
 
-This post was made to explain the authentication process between a frontend written in **Angular 6** and a backend written in **Django 2** using the architecture proposed on my previous post ["Separating Frontend from Backend with Angular and Django"](/en/blog/separating-frontend-from-backend-with-angular-and-django/).
+This post was made to explain the authentication process between a frontend written in **Angular 6** and a backend written in **Django 2** using the architecture proposed on my previous post ["Separating Frontend from Backend with Angular and Django"](/blog/separating-frontend-from-backend-with-angular-and-django/).
 
 The repositories with this post code are:
 
@@ -94,7 +94,7 @@ Now, let's go to the coding!
 
 {{< videogif "/img/memes/coding-cat.webm" >}}
 
-So for that, we use as starting point the application created at the previous post ["Separating Frontend from Backend with Angular and Django"](/en/blog/separating-frontend-from-backend-with-angular-and-django/).
+So for that, we use as starting point the application created at the previous post ["Separating Frontend from Backend with Angular and Django"](/blog/separating-frontend-from-backend-with-angular-and-django/).
 
 ## Backend
 

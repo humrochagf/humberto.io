@@ -13,7 +13,7 @@ draft: false
 
 ---
 
-A um tempo atrás eu fiz uma postagem sobre [como organizar um coding dojo](/blog/coding-dojo-101/) publicada logo após um dojo de aniversário da comunidade python aqui do DF no qual eu preparei o desafio de implementar o [jogo da vida](https://pt.wikipedia.org/wiki/Jogo_da_vida) (game of life) do matemático John Horton Conway.
+A um tempo atrás eu fiz uma postagem sobre [como organizar um coding dojo](/pt-br/blog/coding-dojo-101/) publicada logo após um dojo de aniversário da comunidade python aqui do DF no qual eu preparei o desafio de implementar o [jogo da vida](https://pt.wikipedia.org/wiki/Jogo_da_vida) (game of life) do matemático John Horton Conway.
 
 Para deixar este desafio mais interativo preparei um simulador visual com pygame para testar nossa implementação. Este simulador utiliza de todos os conceitos que vimos até agora nesta série e aproveitando o interesse que ressurgiu no Grupy-DF sobre o assunto decidi reforçar os tópicos até então apresentados com a demonstração desta implementação.
 

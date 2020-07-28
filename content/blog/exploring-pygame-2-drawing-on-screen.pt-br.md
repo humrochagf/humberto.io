@@ -2,7 +2,7 @@
 title: Desbravando o pygame 2 -  Desenhando na Tela
 description: Aprenda como funciona o plano de desenho no pygame e como desenhar na tela
 publishDate: 2017-02-03
-images: 
+images:
   - /img/exploring-pygame/drawing-axis.jpg
 slug: desbravando-o-pygame-2-desenhando-na-tela
 tags: ["python", "pygame", "gamedev"]
@@ -54,7 +54,7 @@ pygame.display.set_caption('Olá mundo')
 # preenchendo o fundo com preto
 screen.fill(BLACK)
 
-# desenhando na superfície 
+# desenhando na superfície
 pygame.draw.line(screen, WHITE, [10, 100], [630, 100], 5)
 pygame.draw.rect(screen, BLUE, [200, 210, 40, 20])
 pygame.draw.ellipse(screen, RED, [300, 200, 40, 40])
@@ -96,6 +96,6 @@ Por fim, atualizamos a tela com o novo conteúdo, esperamos mais 5 segundos e fi
 
 ## Concluindo
 
-Existem diversas formas de se desenhar na tela com pygame, você pode ver estes e outras funções de desenho com mais detalhes na [documentação](https://www.pygame.org/docs/ref/draw.html) da biblioteca. 
+Existem diversas formas de se desenhar na tela com pygame, você pode ver estes e outras funções de desenho com mais detalhes na [documentação](https://www.pygame.org/docs/ref/draw.html) da biblioteca.
 
 O código deste capítulo encontra-se disponível no repositório [exploring-pygame](https://github.com/humrochagf/exploring-pygame/tree/master/02-drawing).

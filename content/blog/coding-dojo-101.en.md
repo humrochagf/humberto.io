@@ -1,15 +1,18 @@
 ---
 title: Coding Dojo 101
-description: Discover what is a Coding Dojo and how to start it at you college or at you local comunity
+description: Discover what is a Coding Dojo and how to start it at you college or at you local community
 publishDate: 2016-12-02
 images:
   - /img/coding-dojo-101/flow-en.jpg
 tags: ["dojo", "learning", "python"]
+aliases: [
+  "/en/blog/coding-dojo-101"
+]
 draft: false
 
 ---
 
-My first **Coding Dojo** happened right after my first contact with the **Python** language at college. A class mate ([Dirley](https://github.com/ravishi)) that had back from **Python Brasil** conference where he discovered the concept of Coding Dojo and was excited to put that to practice. That was a realy fun day and probably the most important moment that started a spark on me to learn more about Python.
+My first **Coding Dojo** happened right after my first contact with the **Python** language at college. A classmate ([Dirley](https://github.com/ravishi)) that had back from **Python Brasil** conference where he discovered the concept of Coding Dojo and was excited to put that to practice. That was a really fun day and probably the most important moment that started a spark on me to learn more about Python.
 
 In the same way as that brought me to Python and after to the community, Coding Dojo can be an entry door to a lot of people to programming.
 
@@ -125,7 +128,7 @@ $ dose nosetests file.py
 {{< / highlight >}}
 
 {{% tip class="warning" %}}
-If you have any problem with the installation process check out this post that I made about [Python dev dependencies](/en/blog/tldr-python-dev-dependencies-on-ubuntu/).
+If you have any problem with the installation process check out this post that I made about [Python dev dependencies](/blog/tldr-python-dev-dependencies-on-ubuntu/).
 {{% /tip %}}
 
 ## Conclusion

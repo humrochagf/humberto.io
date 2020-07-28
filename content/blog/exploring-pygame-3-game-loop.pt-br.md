@@ -13,7 +13,7 @@ draft: false
 
 ---
 
-Agora que sabemos como desenhar na tela ([postagem anterior](/blog/desbravando-o-pygame-2-desenhando-na-tela/)) seria interessante que nosso jogo ficasse rodando até que alguém o feche. Para isso vamos utilizar um dos fundamentos do desenvolvimento de jogos que é o Game Loop.
+Agora que sabemos como desenhar na tela ([postagem anterior](/pt-br/blog/desbravando-o-pygame-2-desenhando-na-tela/)) seria interessante que nosso jogo ficasse rodando até que alguém o feche. Para isso vamos utilizar um dos fundamentos do desenvolvimento de jogos que é o Game Loop.
 
 ## Conceito
 
@@ -110,7 +110,7 @@ Na etapa de processamento de entrada usamos `pygame.event.poll()` para recuperar
 
 Durante a etapa de atualização do jogo movemos a nossa bola no eixo x e y verificando se a bola se encontra nas extremidades e alterando sua direção em caso positivo.
 
-E finalmente na etapa de desenho usamos as funções [previamente apresentadas](/blog/desbravando-o-pygame-2-desenhando-na-tela/) para mostrar nossa bola na tela.
+E finalmente na etapa de desenho usamos as funções [previamente apresentadas](/pt-br/blog/desbravando-o-pygame-2-desenhando-na-tela/) para mostrar nossa bola na tela.
 
 {{% tip class="info" %}}
 Note que sempre pintamos o fundo de preto, caso contrário o rastro da bola ficaria na tela.

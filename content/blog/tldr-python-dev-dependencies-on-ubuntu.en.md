@@ -5,6 +5,9 @@ publishDate: 2018-06-19
 images:
   - /img/generics/python-ubuntu.jpg
 tags: ["tldr", "python", "ubuntu"]
+aliases: [
+  "/en/blog/tldr-python-dev-dependencies-on-ubuntu"
+]
 draft: false
 
 ---
@@ -128,6 +131,6 @@ $ sudo apt-get install dpkg-dev \
                        libxtst-dev
 {{< / highlight >}}
 
-This group is used to install packages that work with window management and graphical interfaces like [wxPhoenix](https://github.com/wxWidgets/Phoenix). On a previous post, I taught [how to organize a coding dojo](/en/blog/coding-dojo-101/), and I told about a TDD semaphore called [dose](https://github.com/danilobellini/dose) that uses wxPhoenix to run at Python 3 environments.
+This group is used to install packages that work with window management and graphical interfaces like [wxPhoenix](https://github.com/wxWidgets/Phoenix). On a previous post, I taught [how to organize a coding dojo](/blog/coding-dojo-101/), and I told about a TDD semaphore called [dose](https://github.com/danilobellini/dose) that uses wxPhoenix to run at Python 3 environments.
 
 Installing these dependencies you'll be able to install it without problems.

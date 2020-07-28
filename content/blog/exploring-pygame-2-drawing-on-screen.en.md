@@ -5,6 +5,9 @@ publishDate: 2017-02-03
 images:
   - /img/exploring-pygame/drawing-axis.jpg
 tags: ["python", "pygame", "gamedev"]
+aliases: [
+  "/en/blog/exploring-pygame-2-drawing-on-screen"
+]
 draft: false
 
 ---

@@ -8,7 +8,7 @@ locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
     I'm a bachelor's degree in **Computer Science** with substantial experience in server-side automation, software integration, and API design. I'm passionate about software development and always looking for ways to expand my knowledge.
-    
+
 contact:
   - identifier: email
     svg: email
@@ -31,7 +31,7 @@ employment: |
 
     ### Ubisoft Quebec City
     *Online Programmer | October 2019 to present*
-    
+
     As part of the Online team, I'm responsible for creating, debugging, maintaining, and optimizing the game's online services also its related tools.
 
     ### Configr.com
@@ -51,7 +51,7 @@ employment: |
 
     At Configr I started as FullStack Developer working with Django as Backend and Django Template Engine and Bootstrap for the Frontend of the main product. My first task was to build ground up the company DNS manager by parsing the [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) into a user-friendly and automated tool that talks with the other products and builds the right DNS rules without the user having to understand DNS.
 
-    Also, I worked with the cloud automation by building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd and so fouth.
+    Also, I worked with the cloud automation by building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd among others.
 
     ### Caixa Econômica Federal
     *Intern |  August 2013 to August 2014*
