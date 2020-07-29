@@ -127,9 +127,9 @@ To run our tests with **nose** just call:
 $ dose nosetests file.py
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 If you have any problem with the installation process check out this post that I made about [Python dev dependencies](/blog/tldr-python-dev-dependencies-on-ubuntu/).
-{{% /tip %}}
+{{< /tip >}}
 
 ## Conclusion
 

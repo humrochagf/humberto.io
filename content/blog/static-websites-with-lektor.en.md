@@ -42,9 +42,9 @@ Lektor runs on python 2.7 and above and requires `python-dev`, `libssl-dev`, `li
 $ sudo apt-get install python-dev libssl-dev libffi-dev imagemagick
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 You can check for **brew** packages on Mac **chocolatey** on Windows and the other package managers for different distributions of Linux they have its versions of these packages
-{{% /tip %}}
+{{< /tip >}}
 
 The installation itself is pretty straight forward:
 
@@ -71,9 +71,9 @@ $ . venv/bin/activate
 $ pip install --editable .
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 It requires `node` installed to mount the admin interface.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Creating the Website
 
@@ -138,9 +138,9 @@ And the automatic way, that can be done by adding the following configuration at
 target = ghpages://user/repo
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 The deploy will make a force push ath the `master` or `gh-pages` branch based on the type of repository, so watch out to not override your data. Keep the source code at a separate branch. You can check my repository at [github](https://github.com/humrochagf/humberto.io-lektor) to see how its configured.
-{{% /tip %}}
+{{< /tip >}}
 
 Or at the cloud hosted case:
 

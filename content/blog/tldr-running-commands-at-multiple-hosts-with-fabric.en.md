@@ -21,9 +21,9 @@ To install Fabric you can use pip:
 $ pip install Fabric3
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 The original Fabric is at version 2, but your API changed utterly, and there is thing still to be implemented. Fabric 3 is a fork that has compatibility with the first version of Fabric.
-{{% /tip %}}
+{{< /tip >}}
 
 Then we create the `fabfile.py` with the following content:
 
@@ -37,13 +37,13 @@ def disk_usage():
     run('df -h')
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 The file must be called `fabfile.py` so Fabric can automatically discover him when we run the command.
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Fabric makes the ssh connection with the servers so that you will need an ssh key configured at your machine and its access allowed at the `allowed_hosts` file of the target servers.
-{{% /tip %}}
+{{< /tip >}}
 
 With the file ready, you need to run this command:
 
@@ -83,9 +83,9 @@ Fabric will run the task in sequence at the host list informed. If you want to r
 $ fab disk_usage -P
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Just remind that running things in parallel you don't have control of the server order.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Bonus
 

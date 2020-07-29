@@ -15,13 +15,13 @@ draft: false
 
 Esses dias tive a oportunidade de encarar um desafio de frontend lá na [Configr](https://configr.com/?utm_source=humberto&utm_campaign=post-utm&utm_content=link-intro) que consistiu em melhorar a rastreabilidade dos usuários novos (os famosos leads da galera do marketing) que entram no no sistema. Mais especificamente a rastreabilidade dos [parâmetros de utm](https://en.wikipedia.org/wiki/UTM_parameters) das campanhas de marketing da empresa.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **TLDR**: Eu criei uma biblioteca **javascript** chamada **utmkeeper** que faz a mágica para você e está disponível em [https://github.com/humrochagf/utmkeeper](https://github.com/humrochagf/utmkeeper)
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (21/09/2018)** Postagem atualizada para a cobrir a versão **0.3** do **utmkeeper**
-{{% /tip %}}
+{{< /tip >}}
 
 ## UTM
 

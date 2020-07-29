@@ -112,9 +112,9 @@ Durante a etapa de atualização do jogo movemos a nossa bola no eixo x e y veri
 
 E finalmente na etapa de desenho usamos as funções [previamente apresentadas](/pt-br/blog/desbravando-o-pygame-2-desenhando-na-tela/) para mostrar nossa bola na tela.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Note que sempre pintamos o fundo de preto, caso contrário o rastro da bola ficaria na tela.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Concluindo
 

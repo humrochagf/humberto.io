@@ -22,13 +22,13 @@ Os repositórios com o código desta postagem são:
 - **Backend**: [https://github.com/humrochagf/post-jwt-backend](https://github.com/humrochagf/post-jwt-backend)
 - **Frontend**: [https://github.com/humrochagf/post-jwt-frontend](https://github.com/humrochagf/post-jwt-frontend)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (18/09/2018)** Postagem atualizada e testada para utilizar Angular 6
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (05/07/2019)** Postagem atualizada com o processo de cadastro
-{{% /tip %}}
+{{< /tip >}}
 
 ## Autenticação
 

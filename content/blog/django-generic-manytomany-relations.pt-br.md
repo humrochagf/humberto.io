@@ -17,9 +17,9 @@ A documentação oficial do django cobre muito bem sua funcionalidade de relacio
 
 Recentemente, precisei implementar um **N:N** com um lado genérico, e encontrei uma biblioteca chamada [django-gm2m](http://django-gm2m.readthedocs.io/en/stable/index.html) que me foi muito útil nesta tarefa, e vou descrever aqui dando dicas de como implementar evitando possíveis dores de cabeça.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 As versões em que já implementei esta modelagem foram django 1.8 e 1.9 com python 2.7 e 3.4
-{{% /tip %}}
+{{< /tip >}}
 
 ## Modelagem
 
@@ -81,13 +81,13 @@ class Usuario(models.Model):
     )
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 O parâmetro `related_name` é o nome com o qual você vai acessar a relação inversa, ou seja, acessar os usuários através da mídia. Se você não usar este atributo ele assume o nome padrão que é `<model>_set`.
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Outro ponto importante são os parâmetros posicionais do `GM2MField`, que são os models no qual você quer que o django monte o relacionamento inverso automaticamente,  caso não seja informado a vinculação funciona da mesma forma, porém, o acesso aos usuários através da mídia não será montado.
-{{% /tip %}}
+{{< /tip >}}
 
 Feito isso já estaria pronto e você adicionaria uma mídia a um usuário através de `usuario.midias.add(video)`.
 

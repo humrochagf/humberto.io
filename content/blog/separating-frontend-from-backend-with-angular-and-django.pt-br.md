@@ -17,7 +17,7 @@ No mundo do desenvolvimento web as coisas vem evoluindo muito rápido e crescend
 
 Nos últimos anos tivemos um crescimento expressivo dos frameworks javascript e uma grande evolução do frontend como um todo, e estas novas tecnologias possuem ferramentas e fluxos de desenvolvimento próprios, o que vem tornando mais oneroso para um sistema só entregar o backend e o frontend.
 
-Ao mesmo tempo vem se popularizando e ficando mais interessante o uso de API`s e a separação do frontend do backend em diferentes projetos, o que trás a proposta de dar  mais autonomia aos times de desenvolvimento além de tornar a aplicação mais escalável.
+Ao mesmo tempo vem se popularizando e ficando mais interessante o uso de API's e a separação do frontend do backend em diferentes projetos, o que trás a proposta de dar  mais autonomia aos times de desenvolvimento além de tornar a aplicação mais escalável.
 
 Contudo, ao deparar com esta realidade muita gente (eu incluso em minha primeira tentativa de implementação) fica perdida em como botar em prática esta forma de se implementar sistemas web.
 
@@ -28,9 +28,9 @@ Os repositórios com o código desta postagem são:
 - **Backend**: [https://github.com/humrochagf/post-back-do-front-backend](https://github.com/humrochagf/post-back-do-front-backend)
 - **Frontend**: [https://github.com/humrochagf/post-back-do-front-frontend](https://github.com/humrochagf/post-back-do-front-frontend)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (22/08/2018)** Postagem atualizada e testada para utilizar Angular 6
-{{% /tip %}}
+{{< /tip >}}
 
 ## Separando as Responsabilidades
 
@@ -335,9 +335,9 @@ CORS_ORIGIN_WHITELIST = (
 )
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Lembre-se de colocar o `CorsMiddleware` o mais a cima o possível na lista de middlewares para que ele consiga adicionar o cabeçalho na requisição antes que ela seja tratada pelo backend.
-{{% /tip %}}
+{{< /tip >}}
 
 Em `CORS_ORIGIN_WHITELIST` colocamos somente a origem que queremos liberar o acesso que no nosso caso é `localhost:4200`, mas em ambiente de produção seria algo como `api.backend.com`.
 

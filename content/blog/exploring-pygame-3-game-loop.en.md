@@ -106,9 +106,9 @@ During the **game update step** we move the ball on the axis, x and y, checking 
 
 And finally, at the **drawing step** we use the methods from the [previous post](/blog/exploring-pygame-2-drawing-on-screen/) to draw the ball on the screen.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Note that we always fill the background with black before to draw the ball, if we don't do that, the ball will leave a trace on the screen from the previous draws.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Conclusion
 

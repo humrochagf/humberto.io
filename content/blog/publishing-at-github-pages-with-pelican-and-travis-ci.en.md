@@ -15,9 +15,9 @@ I'm making this post to help everyone who want to create their first website at 
 
 This guide assumes that the reader have an account at  [GitHub](http://github.com) and Travis-CI and have familiarity with the Python environment. The version of Pelican used at this post was 3.6.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 The images have a little of Portuguese due to the original language publication
-{{% /tip %}}
+{{< /tip >}}
 
 ## GitHub Pages
 
@@ -116,9 +116,9 @@ $ make github
 
 ![First post at pelican blog](/img/publishing-pelican-travis/pelican-blog.png)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 At the project page case change the content of the variable `GITHUB_PAGES_BRANCH` on the makefile from `master` to `gh-pages`.
-{{% /tip %}}
+{{< /tip >}}
 
 Now that we have the blog up and running at gh pages lets automate the task of static pages generation to update the blog content with new posts without needing to be on a machine with the pelican environment installed.
 
@@ -209,9 +209,9 @@ Remove the non encrypted private key to prevent us from publishing it at the rep
 $ rm publish-key
 {{< / highlight >}}
 
-{{% tip class="danger" %}}
+{{< tip class="danger" >}}
 **ATENTION**:  Under no circumstances add the **publish-key** file in your repository as it contains an non encrypted private key that have power to commit in your repository. Add only the **publish-key.enc** file and if you added it by mistake, redo the key generation and encryption steps to generate a new key.
-{{% /tip %}}
+{{< /tip >}}
 
 Now we add the files to the repo:
 

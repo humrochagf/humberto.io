@@ -53,6 +53,6 @@ The result is a code that runs in Python 2 and also in Python 3:
 
 ![running the code](/img/tldr/unicode-file.png)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 This tip works as well for another encoding type like `latin-1`.
-{{% /tip %}}
+{{< /tip >}}

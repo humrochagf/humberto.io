@@ -55,9 +55,9 @@ $ sudo apt-get install dpkg-dev \
                        libxtst-dev
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Este comando foi testado no **Ubuntu 18.04**, os nomes dos pacotes podem mudar de uma versão para outra.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Bônus
 

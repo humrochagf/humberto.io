@@ -13,9 +13,9 @@ Someday, during the Python Tuesdays event at [Calango Hacker Club](https://calan
 
 ![python email](/img/emails/python-mail.png)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 This post aims to someone that is starting with Python but also can be useful to knowledgeable users who haven't worked with email before. The version of Python used to make this post was 3.6.x.
-{{% /tip %}}
+{{< /tip >}}
 
 ## The email Protocols
 
@@ -53,9 +53,9 @@ server.sendmail(mail_from, mail_to, mail_subject, mail_message)
 server.quit()
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 To send emails as **localhost**, you need to have an email server installed at the machine where the code is running.
-{{% /tip %}}
+{{< /tip >}}
 
 The code above is a raw version of an email sent. We built the message from the text so you can see the basic structure of an email message, but Python has a library to create more complex emails.
 
@@ -255,6 +255,6 @@ In case the number of messages is too big, you can make a loop to group it into 
 
 For more elaborated searches using the search `search` command, you can look at the [RFC 3501](https://tools.ietf.org/html/rfc3501) that defines the **IMAP** protocol and describes all possible search parameters, and other commands with details.
 
-{{% tip class="danger" %}}
+{{< tip class="danger" >}}
 **WARNING:** Double-check your searches before doing any destructive operation like removal because you can't go back.
-{{% /tip %}}
+{{< /tip >}}

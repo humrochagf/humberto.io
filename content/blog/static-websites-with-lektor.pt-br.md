@@ -44,9 +44,9 @@ O Lektor roda em Python 2.7 ou superior e depende das bibliotecas `python-dev`, 
 $ sudo apt-get install python-dev libssl-dev libffi-dev imagemagick
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 No Mac você pode dar uma olhada nos pacotes do **brew**, no Windows o **chocolatey** en os outros gerenciadores de pacotes das outras distribuições Linux, ambos possuem suas versões das bibliotecas citadas
-{{% /tip %}}
+{{< /tip >}}
 
 A instalação do Lektor é bem direta:
 
@@ -73,9 +73,9 @@ $ . venv/bin/activate
 $ pip install --editable .
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 requer `npm` instalado para montar a interface de administração.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Criando o Site
 
@@ -140,9 +140,9 @@ E a forma automática, que pode ser feita (neste caso para o GitHub Pages) adici
 target = ghpages://usuario/repositorio
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 O deploy faz um force push na branch `master` ou `gh-pages` dependendo do tipo de repositório, portanto, cuidado para não sobrescrever os dados de seu repositório. Mantenha o código fonte em uma branch separada, você pode dar uma conferida no [meu repositório](https://github.com/humrochagf/humberto.io-lektor) para ter uma ideia.
-{{% /tip %}}
+{{< /tip >}}
 
 No caso de hospedagem cloud:
 

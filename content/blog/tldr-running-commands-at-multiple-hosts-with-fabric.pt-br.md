@@ -25,9 +25,9 @@ Para instalar o Fabric rode:
 $ pip install Fabric3
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 O Fabric original está na versão 2 porém sua API mudou completamente em relação a atual e muitas coisas precisam ser implementadas ainda, Fabric 3 é um fork que possuí compatibilidade com a versão 1 e suporta Python 3
-{{% /tip %}}
+{{< /tip >}}
 
 Agora vamos escrever o código para rodar o `df -h` nos servidores e salvar em um arquivo chamado `fabfile.py`:
 
@@ -41,13 +41,13 @@ def disk_usage():
     run('df -h')
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 O arquivo deve se chamar `fabfile.py` pois o Fabric busca automaticamente por este arquivo quando rodamos o comando
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 O Fabric faz uma conexão ssh com os servidores, portanto tenha uma chave ssh configurada  em sua máquina e liberada no allowed_hosts dos usuários dos servidores de destino
-{{% /tip %}}
+{{< /tip >}}
 
 Com o arquivo pronto é só rodar o comando definido no aquivo:
 
@@ -87,9 +87,9 @@ O Fabric roda a tarefa em sequência na lista de hosts informada. Caso queira ro
 $ fab disk_usage -P
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Lembrando que ao rodar a tarefa em paralelo você perde o controle da ordem de execução da sua lista de servidores
-{{% /tip %}}
+{{< /tip >}}
 
 ## Bônus
 

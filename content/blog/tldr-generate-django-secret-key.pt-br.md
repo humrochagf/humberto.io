@@ -31,6 +31,6 @@ Se não quiser nem ter o trabalho de abrir o shell do Python você pode executar
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Não se esqueça que é preciso ter o Django instalado no ambiente em que você for rodar o comando.
-{{% /tip %}}
+{{< /tip >}}

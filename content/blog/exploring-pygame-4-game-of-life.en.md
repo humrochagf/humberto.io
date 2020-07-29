@@ -95,8 +95,7 @@ def get_section(matrix, row, col):
     # runs through the plane section copying its values
     for sec_r, r in enumerate(range(row-1, row+2)):
         for sec_c, c in enumerate(range(col-1, col+2)):
-            if r >= 0 and c >= 0 and r < 50 and c < 50:
-                section[sec_r][sec_c] = matrix[r][c]
+            section[sec_r][sec_c] = matrix[r % 50][c % 50]
 
     # returns the copied 3x3 section
     return section
@@ -233,9 +232,9 @@ To demonstrate the simulator working, I choose the [glider](https://goo.gl/jzm5U
 
 {{< videogif "/img/exploring-pygame/glider.webm" >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Note there are some commented patterns at the simulator code, you can uncomment them to see different patterns in action.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Conclusion
 

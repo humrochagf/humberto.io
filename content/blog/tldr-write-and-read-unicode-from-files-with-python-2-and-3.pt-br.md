@@ -55,6 +55,6 @@ O resultado é um código que roda tanto em Python 2 quanto em Python 3:
 
 ![rodando o código](/img/tldr/unicode-file.png)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Esta dica também funciona para outros padrões de codificação como `latin-1` por exemplo
-{{% /tip %}}
+{{< /tip >}}

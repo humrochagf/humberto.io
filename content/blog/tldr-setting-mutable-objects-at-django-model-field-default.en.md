@@ -11,9 +11,9 @@ draft: false
 
 This post it the result of a **bug** that haunted me for three months until I finally could isolate the error properly, and get to the root of the issue.
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 **Disclaimer:** this information exists at the [Django](https://docs.djangoproject.com/en/2.2/ref/models/fields/#default) docs, however strengthening the importance of this info is vital to prevent people to spend a lot of time with this kind of bug.
-{{% /tip %}}
+{{< /tip >}}
 
 One of the core parameters of a Django **Model field** is the **default**. It sets the value of the **Field** when you don't pass a value to it at the **Model** instance creation. The default parameter can receive a **value** or a **callable**, and callable are functions or any object that implements the `__call__` method.
 

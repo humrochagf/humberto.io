@@ -17,9 +17,9 @@ Um dia na terça do Python no [Calango Hacker Clube](https://calango.club/) surg
 
 ![python email](/img/emails/python-mail.png)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Esta postagem tem como alvo o público iniciante mas também pode ser útil para quem já possuí experiência na linguagem mas nunca tinha trabalhado diretamente com envio e recebimento de emails. A versão do Python utilizada para publicar esta postagem foi a 3.6.x.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Os Protocolos de email
 
@@ -56,9 +56,9 @@ server.sendmail(mail_from, mail_to, mail_subject, mail_message)
 server.quit()
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Para enviar emails como **localhost** você precisa ter um servidor de emails instalado na máquina em que o código está rodando
-{{% /tip %}}
+{{< /tip >}}
 
 O código acima é a versão mais crua de um envido de email. Nele nós construímos a mensagem "na mão" com uma string, porém o Python possuí uma biblioteca para facilitar o nosso trabalho.
 
@@ -263,6 +263,6 @@ Caso o volume de emails seja muito grande é possível também fazer um loop agr
 
 Para buscas mais elaboradas com o comando `search` você pode acessar a [RFC 3501](https://tools.ietf.org/html/rfc3501) que define o protocolo **IMAP** e contém a descrição detalhada de todos os parâmetros de busca possíveis bem como mais detalhes para todos os outros comandos de manipulação de emails.
 
-{{% tip class="danger" %}}
+{{< tip class="danger" >}}
 **ATENÇÃO**: Teste bastante as buscas antes de realizar a remoção efetivamente pois esta remoção não tem volta.
-{{% /tip %}}
+{{< /tip >}}

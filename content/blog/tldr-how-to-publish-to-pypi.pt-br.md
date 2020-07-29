@@ -59,9 +59,9 @@ Antes de publicar o pacote é preciso empacotá-lo e a forma mais simples é faz
 $ python setup.py sdist
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Este modelo de empacotamento requer que o pip rode uma etapa de montagem após a instalação
-{{% /tip %}}
+{{< /tip >}}
 
 Para já empacotar o código montado rode:
 
@@ -69,9 +69,9 @@ Para já empacotar o código montado rode:
 $ python setup.py bdist_wheel
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Este comando empacota a versão montada para a versão do python em que você rodou o comando, para montar para python 2 e 3 rode duas vezes o comando (uma para cada versão do python)
-{{% /tip %}}
+{{< /tip >}}
 
 Com isso você terá tudo empacotado e pronto para a publicação na pasta `dist/`.
 
@@ -89,9 +89,9 @@ Em seguida basta rodar o seguinte comando:
 $ twine upload --username usuario-no-pypi dist/meu-pacote-1.0.0.tar.gz dist/meu-pacote-1.0.0-py2-none-any.whl dist/meu-pacote-1.0.0-py3-none-any.whl
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Não se esqueça de trocar o username e os nomes de arquivo para os seus.
-{{% /tip %}}
+{{< /tip >}}
 
 O comando vai pedir a senha e em seguida fazer o upload para o PyPI.
 

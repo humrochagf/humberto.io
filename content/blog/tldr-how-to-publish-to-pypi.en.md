@@ -55,9 +55,9 @@ Before publishing your package, you need to package it first, and the easiest wa
 $ python setup.py sdist
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 This packaging model creates a source distribution with everything that you need to build/compile your code at any platform. You will have a build phase every time you install it.
-{{% /tip %}}
+{{< /tip >}}
 
 To package it with a pre-compiled code you need to run:
 
@@ -65,9 +65,9 @@ To package it with a pre-compiled code you need to run:
 $ python setup.py bdist_wheel
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 This command packages a built distribution for the architecture that you run the command. For example, if your code supports Python 2 and 3 you need to run it on both Python versions.
-{{% /tip %}}
+{{< /tip >}}
 
 Done that, you will have everything packed up inside the folder `dist/`.
 
@@ -85,9 +85,9 @@ After installed run the following command:
 $ twine upload --username pypi-username dist/my-package-1.0.0.tar.gz dist/my-package-1.0.0-py2-none-any.whl dist/my-package-1.0.0-py3-none-any.whl
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Don't forget to replace the username and the file names with your username and file names.
-{{% /tip %}}
+{{< /tip >}}
 
 The command will ask for your password, and then, it will upload it to the PyPI.
 

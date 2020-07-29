@@ -11,13 +11,13 @@ draft: false
 
 Recently, I had the opportunity to face a frontend challenge at [Configr](https://configr.com/?utm_source=humberto&utm_campaign=post-utm&utm_content=link-intro). It consists of improving the tracking rate of the new users who come to the system (a.k.a. leads). More specifically, the tracking rate from the [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) of the marketing campaigns.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **TLDR**: I created a **javascript** library called **utmkeeper** that do the job for you, and it's available at  [https://github.com/humrochagf/utmkeeper](https://github.com/humrochagf/utmkeeper).
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (September 21, 2018)** Post updated to cover the  **0.3** version of **utmkeeper**.
-{{% /tip %}}
+{{< /tip >}}
 
 ## UTM
 

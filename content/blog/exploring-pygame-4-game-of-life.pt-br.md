@@ -188,8 +188,9 @@ def draw_matrix(matrix):
         for c, cell in enumerate(row):
             if cell:
                 # caso a célula esteja viva, a pinte de branco
-                pygame.draw.rect(screen, (255, 255, 255),
-                                 (11*c, 11*r, 10, 10))
+                pygame.draw.rect(
+                    screen, (255, 255, 255), (11*c, 11*r, 10, 10)
+                )
 
 
 # define a seed como um dos valores de exemplo do começo
@@ -238,9 +239,9 @@ Para demonstrar o simulador em funcionamento utilizei o [glider](https://goo.gl/
 
 {{< videogif "/img/exploring-pygame/glider.webm" >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Obs.: Note que existem alguns padrões comentados no código do simulador, você pode remover o comentário de qualquer um deles para ver padrões diferentes em ação.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Conclusão
 

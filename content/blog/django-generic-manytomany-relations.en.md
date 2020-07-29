@@ -13,9 +13,9 @@ Django's official documentation nicely covers its generic relationship functiona
 
 I recently had to implement an **N:N** with a generic side, and discovered a library called [django-gm2m](http://django-gm2m.readthedocs.io/en/stable/index.html) that was very useful to me in this task, and I will describe here giving tips on how to make this implementation and how to avoid possible headaches.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 This implementation was tested at Django 1.8 and 2.1 with python 2.7 and 3.7 respectively.
-{{% /tip %}}
+{{< /tip >}}
 
 ## Modeling
 
@@ -75,13 +75,13 @@ class Profile(models.Model):
     medias = GM2MField('Video', 'Audio', 'Text', related_name='profiles')
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 The parameter `related_name` will create the reverse relation at the other models so you can access the profiles trough any media instance. If you don't set it to anything it will follow the pattern `<model>_set`.
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Another important point are the positional parameters of  `GM2MField` that are the models that you want Django mount the reverse relations automatically. In case of not setting the classes there the field will work but the reverse relation will not be mounted.
-{{% /tip %}}
+{{< /tip >}}
 
 Now you are ready to add a media to a profile through `profile.medias.add(video)`.
 

@@ -188,9 +188,9 @@ Em seguida, instanciamos `Clock` antes de entrar no loop, e chamamos sua funçã
 
 A função `tick` deve ser chamada a cada ciclo e caso o ciclo anterior tenha sido muito rápido ela suspende sua execução por um breve tempo para manter a frequência desejada. Como resultado a função retorna o delta de tempo entre esta e sua chamada anterior.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Dê uma olhada na [documentação da função `tick`](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick), pois ela possuí uma diferença de precisão entre plataformas. Entretanto, existe uma função alternativa mais precisa (porém mais pesada) que pode realizar este trabalho caso esta precisão seja importante para o seu jogo.
-{{% /tip %}}
+{{< /tip >}}
 
 Agora que temos o quadrado percorrendo a tela a uma velocidade constante podemos seguir para a etapa de detecção de colisão.
 

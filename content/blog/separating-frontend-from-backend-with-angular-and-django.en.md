@@ -27,9 +27,9 @@ The repositories with the code for this are:
 - **Backend**: [https://github.com/humrochagf/post-back-do-front-backend](https://github.com/humrochagf/post-back-do-front-backend)
 - **Frontend**: [https://github.com/humrochagf/post-back-do-front-frontend](https://github.com/humrochagf/post-back-do-front-frontend)
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (August 22, 2018)** Post updated and tested to use Angular 6
-{{% /tip %}}
+{{< /tip >}}
 
 ## Splitting the Responsibilities
 
@@ -334,9 +334,9 @@ CORS_ORIGIN_WHITELIST = (
 )
 {{< / highlight >}}
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 Remember to place the `CorsMiddleware` the higher as possible at the middleware list so it can add the header before the backend parses it.
-{{% /tip %}}
+{{< /tip >}}
 
 At `CORS_ORIGIN_WHITELIST` we put only the origin that we want to allow access. On our case is `localhost:4200`, but on the production environment, it will be something like `api.backend.com`.
 

@@ -27,6 +27,6 @@ If you don't even want to have the work of stating the Python shell, you can exe
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 {{< / highlight >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Remember that you need Django installed at the environment to run this command.
-{{% /tip %}}
+{{< /tip >}}

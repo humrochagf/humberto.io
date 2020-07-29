@@ -187,9 +187,9 @@ Next, we instantiate `Clock` before entering the loop, and then, inside the loop
 
 The `tick` function must be called on each cycle, so if a cycle runs faster than the expected rate, it sleeps for a brief moment to ensure the defined rate. As a result, the function returns the delta time between this loop and the previous one.
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 Take a look at the [`tick` function documentation](https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick). It has a difference of precision across platforms, but there is an alternate version of this function that is more precise (unfortunately uses much CPU), and you can use it if this level of precision is important to your game.
-{{% /tip %}}
+{{< /tip >}}
 
 We have the square sliding through the screen on a constant speed, so let's proceed to the collision detection.
 

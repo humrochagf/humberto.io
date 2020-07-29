@@ -19,13 +19,13 @@ The repositories with this post code are:
 - **Frontend**: [https://github.com/humrochagf/post-jwt-frontend](https://github.com/humrochagf/post-jwt-frontend)
 
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (September 18, 2018)** Post updated and tested on Angular 6
-{{% /tip %}}
+{{< /tip >}}
 
-{{% tip class="info" %}}
+{{< tip class="info" >}}
 **UPDATE (July 5, 2019)** Post updated with the sign up process
-{{% /tip %}}
+{{< /tip >}}
 
 ## Authentication
 

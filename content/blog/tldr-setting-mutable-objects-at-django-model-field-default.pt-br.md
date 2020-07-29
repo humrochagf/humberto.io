@@ -15,9 +15,9 @@ draft: false
 
 Esta postagem é o resultado de um **bug** que me assombrou por uns três meses até conseguir isolar totalmente o erro e, por acontecer em condições muito específicas de temperatura e pressão, tomou muito tempo quebrando cabeça até perceber que o problema era este.
 
-{{% tip class="warning" %}}
+{{< tip class="warning" >}}
 **Disclaimer:** essa informação existe na documentação do [Django](https://docs.djangoproject.com/en/2.0/ref/models/fields/#default), porém reforçá-la pode lhe poupar um belo tempo de **debugging**.
-{{% /tip %}}
+{{< /tip >}}
 
 Um dos atributos básicos de um **Model field** do Django é o **default** que determina o valor padrão de um campo quando criamos uma instância do **Model**. Você pode atribuir um **valor** a ele ou um **callable** que nada mais é que uma função ou uma classe que implemente o método `__call__`.
 
