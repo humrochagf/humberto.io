@@ -38,7 +38,7 @@ Já perdi as contas de quantos jogos de RPG Maker incompletos eu tive quando era
 
 Decidi seguir em frente e concluir aquele jogo para entender o que estava me segurando e... Eu consegui concluir e publicar o jogo \\o/. Vocês podem dar uma olhada e jogá-lo em:
 
-<iframe class="itchio" src="https://itch.io/embed/471797?linkback=true" width="552" height="167" frameborder="0"></iframe>
+{{< itchio 471797 >}}
 
 Eu também o publiquei como um projeto Open Source, então se alguém estiver interessado em dar uma olhada no código basta acessar [https://github.com/humrochagf/pyxel-lander](https://github.com/humrochagf/pyxel-lander "https://github.com/humrochagf/pyxel-lander")
 

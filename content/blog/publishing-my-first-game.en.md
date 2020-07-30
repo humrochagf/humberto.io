@@ -37,7 +37,7 @@ I've had uncountable RPG Maker unfinished games when I was young, and many other
 
 I decided to finish the game to understand what was holding me back and... I've got the game finished, and published \\o/. You can check it out and play it at:
 
-<iframe class="itchio" src="https://itch.io/embed/471797?linkback=true" width="552" height="167" frameborder="0"></iframe>
+{{< itchio 471797 >}}
 
 Also, I released it as Open Source, and anyone interested to see the code can go to https://github.com/humrochagf/pyxel-lander
 
