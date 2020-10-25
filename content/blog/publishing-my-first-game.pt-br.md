@@ -26,13 +26,11 @@ A escolha do tema foi significante para mim, não só por ser um dos primeiros j
 
 O processo de criação do jogo foi bem divertido, e no final do dia, eu tinha o módulo lunar voando na tela. No dia seguinte eu mergulhei na geração procedural da superfície da lua e quando eu estava quase compreendendo a detecção de colisão meu feriado acabou, a correria do dia a dia retornou e o projeto estagnou.
 
-O tempo foi passando e, durante uma pausa para o almoço, eu respondi um tweet fazendo a seguinte pergunta:
+O tempo foi passando, eu já tinha esquecido do projeto, porém, durante uma pausa para o almoço, navegando no twitter eu me deparei com a seguinte pergunta:
 
-{{< tweet 1162932464169472001 >}}
+> "Qual foi a ultima vez que desenvolveu algo só por diversão?"
 
-Eu amo programar e escrever no meu blog e na maior parte do tempo me divirto fazendo isso no meu dia a dia, mas pensando em algo 100% por diversão me lembrou aqueles dias de programação no Natal, então respondi:
-
-{{< tweet 1163084951518175232 >}}
+Eu amo programar e escrever no meu blog e na maior parte do tempo me divirto fazendo isso no meu dia a dia, mas pensando em algo 100% por diversão me lembrou aqueles dias de programação no Natal.
 
 Já perdi as contas de quantos jogos de RPG Maker incompletos eu tive quando era mais novo, além dos que tentei fazer com outras ferramentas. O que tem de tão diferente do meu trabalho e dos meus projetos Open Source que me impedia de concluir um jogo?
 

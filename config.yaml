@@ -6,6 +6,11 @@ enableRobotsTXT: true
 disqusShortname: humrochagf
 googleAnalytics: UA-62093919-2
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 author:
   name: Humberto Rocha
   job: Developer

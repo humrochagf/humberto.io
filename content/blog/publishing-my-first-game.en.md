@@ -25,13 +25,11 @@ The theme choice was meaningful to me, not only because I played when I was litt
 
 The process of building the game was quite fun, and at the end of the day, I got the lunar module flying on the screen. The day after I dived into the procedural moon surface building, and then when I was about to figure out the collision detection my holiday time was over, the day to day rush came back and my project stale.
 
-More time passed, during a lunch break, I answered a tweet asking the following question:
+More time passed, I forgot about that project, then, during a lunch break, scrolling on Twitter I saw the following question:
 
-{{< tweet 1162932464169472001 >}}
+> "When was the last time you coded something just for fun?"
 
-I love coding and blogging, and most of the time I have fun on my day to day doing it, but something 100% for fun reminded me that Christmas codding day so I answered:
-
-{{< tweet 1163084951518175232 >}}
+I love coding and blogging, and most of the time I have fun on my day to day doing it, but something 100% for fun reminded me that Christmas codding day.
 
 I've had uncountable RPG Maker unfinished games when I was young, and many others with different tools. What is so different from my work, or from my Open Source projects that makes me finish then, but not my Game projects?
 
