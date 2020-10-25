@@ -1,5 +1,5 @@
 ---
-title: Hi!
+title: $ whoami
 linkTitle: About
 weight: 1
 menu:
@@ -7,20 +7,16 @@ menu:
 draft: false
 
 ---
-My name is **Humberto Rocha Gonçalves Filho**.
+Hello, my name is **Humberto Rocha Gonçalves Filho**.
 
-I'm a bachelor's degree in **Computer Science** passionate about Software Development.
+I'm a **Computer Scientist** / **Open Source** enthusiast specialized on problem solving currently living in **Quebec, Canada**.
 
-As an active member of the [Brazilian Python community](http://python.org.br), I'm an **Open Source** advocate, both personal and professionally.
+Despite working with a wide range of technologies, my favorite tools are the **commandline**, the **VIM** editor, and my OS of choice is **Linux**.
 
-I'm also holding the position of **Technology Director** at [Associação Python Brasil (APyB)](https://associados.python.org.br) which is the Python Brazil Association.
+Other than writing in this blog, my hobbies are diverse. Starting at gastronomy and pastry passing through pixel art, video games, kung fu, emoji, memes, and spoil my cats, finishing by learning new languages (programming languages or not 😜).
 
-As an enthusiast of the **maker culture**, I also participate in [Calango Hacker Clube](http://calango.club), a hackerspace of Brasília.
+This blog is the place were I put into words a portion of my knowledge, synthesizing my personal discovery's and learning's but with no ambition of being the absolute source of truth to anything. I hope you find here something that can help you as it helped me before ☺️
 
-My best skills are web application development, process and pattern automation, **REST API** design, systems integration and static site creation like this one.
+You can also find me at [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) or [telegram](https://t.me/humrochagf).
 
-The technologies that I'm fluent are [Python](https://www.python.org), [Django](https://www.djangoproject.com), [Flask](http://flask.pocoo.org), [Lektor](https://www.getlektor.com), [PostgreSQL](https://www.postgresql.org/), [TypeScript](https://www.typescriptlang.org) and [Angular](https://angular.io).
-
-My favorite tools are the command line, the **VIM** CLI editor and the Operational System that I love to work with is **Linux**.
-
-You can find me as **@humrochagf** at [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf), [instagram](https://www.instagram.com/humrochagf) and [telegram](https://t.me/humrochagf).
+And always remember: **Be kind**, **People > Technology** and **stay hydrated**!

@@ -1,5 +1,5 @@
 ---
-title: Olá!
+title: $ whoami
 linkTitle: Sobre
 slug: sobre
 weight: 1
@@ -8,20 +8,16 @@ menu:
 draft: false
 
 ---
-Meu nome é **Humberto Rocha Gonçalves Filho**.
+Olá, meu nome é **Humberto Rocha Gonçalves Filho**.
 
-Sou formado em **Ciência da Computação** apaixonado por desenvovimento de software.
+Eu sou um **Cientista da Computação** entusiasta do **Open Source** especializado em resolver problemas, atualmente morando em **Québec, Canadá**.
 
-Ocupo o cargo de **Diretor de Tecnologia** na [Associação Python Brasil (APyB)](https://associados.python.org.br).
+Apesar de trabalhar com uma vasta gama de tecnologias no meu dia a dia, minhas ferramentas prediletas são a **linha de comando**, o editor **VIM** e meu sistema operacional do coração é o **Linux**.
 
-Participo da comunidade [Python](http://python.org.br) incentivando o uso da linguagem e do **Open Source** tanto no âmbito pessoal como profissional.
+Além de escrever aqui, meus hobbies são bem variados e vão de gastronomia e confeitaria passando por pixel art, videogames, kung fu, emoji, memes e mimar meus gatos até aprender novas línguagens (de programação ou não 😜).
 
-Também sou participante do [Calango Hacker Clube](http://calango.club) e entusiasta da **cultura maker**.
+Este blog é o lugar onde eu coloco em palavras parte do conhecimento que está em minha mente, sintetizando minhas pesquisas e aprendizados pessoais, sem ambição de ser a fonte da verdade absoluta de nada. Espero que você encontre aqui algo que possa lhe ajudar, assim como esse conhecimento já me ajudou um dia ☺️
 
-Dentre minhas especialidades estão o desenvolvimento de aplicações web, automação de padrões e processos, design de **API`s REST**, integração entre sistemas e criação de sites estáticos como este.
+Você também pode me encontrar no [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) ou [telegram](https://t.me/humrochagf).
 
-As tecnologias em que sou mais fluente são, [Python](https://www.python.org), [Django](https://www.djangoproject.com), [Flask](http://flask.pocoo.org), [Lektor](https://www.getlektor.com), [PostgreSQL](https://www.postgresql.org/), [TypeScript](https://www.typescriptlang.org) e [Angular](https://angular.io).
-
-Minhas ferramentas prediletas são a linha de comando e o editor **VIM** e meu sistema operacional do coração é o **Linux**.
-
-Você pode me encontrar como **@humrochagf** no [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf), [instagram](https://www.instagram.com/humrochagf) e [telegram](https://t.me/humrochagf).
+E lembre-se sempre: **Seja gentil**, **Pessoas > Tecnologia** e **hidrate-se**!
