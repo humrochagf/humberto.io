@@ -64,7 +64,7 @@ menu:
 
 params:
   title: Humberto Rocha
-  description: A blog for developers and people who are interested at content about automation, frontend, backend, Python, devops, javascript game dev and much more.
+  description: A blog to put into words a portion of my knowledge about coding, technology, and much more. I hope you find here something that can help you as it helped me before 😊
   images:
     - img/me.jpg
   themeColor: "#000000"
@@ -86,7 +86,7 @@ languages:
     languageName: Português Brasileiro
     weight: 2
     params:
-      description: Um blog para programadores e interessados em conteúdo sobre automação, frontend, backend, Python, devops, javascript, desenvolvimento de jogos e muito mais.
+      description: Um blog onde eu coloco em palavras um pouco do meu conhecimento sobre programação, tecnologia e muito mais. Espero que você encontre aqui algo que possa lhe ajudar, assim como esse conhecimento já me ajudou um dia 😊
       license:
         name: Atribuição-CompartilhaIgual
         type: by-sa
@@ -97,7 +97,7 @@ languages:
     languageName: Français
     weight: 3
     params:
-      description: Un blog pour les développeurs et les personnes intéressées par le contenu relatif à l’automatisation, au frontend, au backend, au Python, aux devops, au développement de jeux javascript, etc.
+      description: Un blog ou je met en mot une partie de mon savoir a propos de la programmation, de la technologie et plus. J'espère que vous trouvez des choses qui puisse vous aider comme ça m'a déjà aidé 😊
       license:
         name: Attribution - Partage dans les Mêmes Conditions
         type: by-sa

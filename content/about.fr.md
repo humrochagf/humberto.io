@@ -16,7 +16,7 @@ Malgré que travaillant avec une vaste assortiment des technologies, mes outils 
 
 En plus d'écrire ici, mes hobbies sont très diversifiés, allant de la gastronomie et la pâtisserie, à traversant de la pixel art, les jeux vidéo, le kung fu, les emoji, les memes et gâter mes chats, jusqu'à l’apprentissage des nouvelles langages (de programmation ou non 😜).
 
-Ce blog est l'endroit ou je met en mot une partie de mon savoir qui est dans ma tête, en faisant la synthèse de mes découvertes et mes apprentissages personnelles, sans ambition d'être la source de la vérité absolue de quelque chose. J'espère que vous trouvez des choses qui puisse vous aider comme ça m'a déjà aidé.
+Ce blog est l'endroit ou je met en mot une partie de mon savoir qui est dans ma tête, en faisant la synthèse de mes découvertes et mes apprentissages personnelles, sans ambition d'être la source de la vérité absolue de quelque chose. J'espère que vous trouvez des choses qui puisse vous aider comme ça m'a déjà aidé 😊
 
 Vous pouvez me trouver chez [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) ou [telegram](https://t.me/humrochagf).
 
