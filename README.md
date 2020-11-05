@@ -1,3 +1,3 @@
 # humberto.io
 
-Hugo version of my blog
+My personal blog running with [Hugo](https://gohugo.io/)
