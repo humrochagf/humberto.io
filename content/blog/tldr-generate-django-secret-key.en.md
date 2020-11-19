@@ -30,3 +30,36 @@ python -c 'from django.core.management.utils import get_random_secret_key; print
 {{< tip class="info" >}}
 Remember that you need Django installed at the environment to run this command.
 {{< /tip >}}
+
+## Update for Python 3.6+
+
+Thanks to [@ChristianHeimes](https://twitter.com/ChristianHeimes) and [@pauloxnet](https://twitter.com/pauloxnet) interaction at [@aclark4life](https://twitter.com/aclark4life) post on twitter. I leaned that starting from Python 3.6 version the lib [secrets](https://docs.python.org/3/library/secrets.html) was added to help with the generation of cryptographically strong random numbers suitable for managing data such as passwords, account authentication, security tokens, and related secrets.
+
+Its a cool **batteries included** solution to generate your `SECRET_KEY` without Django dependency:
+
+{{< highlight python >}}
+import secrets
+
+print(secrets.token_urlsafe())
+{{< / highlight >}}
+
+You can also do it from terminal command:
+
+{{< highlight console >}}
+python -c "import secrets; print(secrets.token_urlsafe())"
+{{< / highlight >}}
+
+And in case you got curious on how Django does that nowadays guess what? They are using it as well. 🎉
+
+Starting from tag version 3.1.3 this is what `get_random_secret_key` do on background:
+
+{{< highlight python >}}
+import secrets
+
+length = 50
+chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
+
+secret_key = ''.join(secrets.choice(chars) for i in range(length))
+
+print(secret_key)
+{{< / highlight >}}
