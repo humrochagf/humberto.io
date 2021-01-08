@@ -29,3 +29,8 @@ HUGO_VERSION = "ç"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
+[[headers]]
+  for = "/.well-known/stellar.toml"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    content-type = "text/plain"
