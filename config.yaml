@@ -15,7 +15,7 @@ author:
   name: Humberto Rocha
   job: Developer
   gender: male
-  image: img/me.jpg
+  image: img/me.png
   github: humrochagf
   twitter: humrochagf
   linkedin: humrochagf
@@ -66,10 +66,10 @@ params:
   title: Humberto Rocha
   description: A blog to put into words a portion of my knowledge about coding, technology, and much more. I hope you find here something that can help you as it helped me before 😊
   images:
-    - img/me.jpg
+    - img/me.png
   themeColor: "#000000"
   themeInverseColor: "#ffffff"
-  siteLogo: img/me-100x100.jpg
+  siteLogo: img/me-100x100.png
 
   license:
     name: Attribuition-ShareAlike
