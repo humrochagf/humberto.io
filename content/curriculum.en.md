@@ -7,7 +7,7 @@ locationName: Quebec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    I'm a bachelor's degree in **Computer Science** with substantial experience in server-side automation, software integration, and API design. I'm passionate about software development and always looking for ways to expand my knowledge.
+    I'm a Software Developer with a solid background in architecture, development, support and automation of online solutions. I'm passionate about software development and always looking for ways to expand my knowledge.
 
 contact:
   - identifier: email
@@ -32,7 +32,11 @@ employment: |
     ### Ubisoft Quebec City
     *Online Programmer | October 2019 to present*
 
-    As part of the Online team, I'm responsible for creating, debugging, maintaining, and optimizing the game's online services also its related tools.
+    As an Online Programmer I'm responsible for creating, debugging, maintaining, and optimizing the online services for the game client, the servers, and also for its related tools.
+
+    Worked on:
+
+    - Immortals Fenyx Rising | Online Team (Released in 2020)
 
     ### Configr.com
     *February 2015 to August 2019*
@@ -82,8 +86,8 @@ community: |
 languages: |
 
     - Portuguese (Native)
-    - English (Advanced)
-    - French (Basic)
+    - English (Fluent)
+    - French (Conversational)
 
 techSkills: |
 
@@ -92,30 +96,29 @@ techSkills: |
     **Languages**
 
     - Python
+    - C/C++
     - JavaScript
     - TypeScript
-    - Sass
-    - C/C++
     - C#
+    - Rust
     - Go
-    - PHP
-    - ShellScript
     - Elm
+    - Haskell
 
     **Frameworks**
 
     - Django
     - Django REST
+    - FastAPI
+    - .NETCore
     - Angular
-    - Lektor
     - Flask
-    - .NET
 
     **Databases**
 
     - PostgreSQL
-    - MySQL
     - MongoDB
+    - MySQL
     - SQL Server
 
     **Server / Deployment**
@@ -131,9 +134,8 @@ techSkills: |
     **Others**
 
     - Linux
-    - Gulp
+    - ImGui
     - Webpack
-    - Bootstrap
     - RabbitMQ
     - Lets Encrypt
 
@@ -149,12 +151,12 @@ softSkills: |
 openSource: |
 
     - [revelation](https://github.com/humrochagf/revelation)
+    - [thoth](https://github.com/humrochagf/thoth.git)
     - [utmkeeper](https://github.com/humrochagf/utmkeeper)
     - [python.org.br](https://python.org.br)
     - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
     - [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
     - [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
     - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
-
 
 ---

@@ -7,7 +7,7 @@ locationName: Québec, Canadá
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Formado em **Ciência da Computação** com um sólido conhecimento em server side automation, integração de software e API design. Sou apaixonado por desenvolvimento de software e estou sempre buscando aumentar meu conhecimento na área.
+    Eu sou um Programador de Software com experiência consolidada em arquitetura, desenvolvimento, manutenção, e automação de soluções online. Sou apaixonado por desenvolvimento de software e estou sempre em busca de atualizar e expandir meu conhecimento na área.
 
 contact:
   - identifier: email
@@ -31,15 +31,19 @@ employment: |
 
     ### Ubisoft Quebec City
     *Online Programmer | outubro 2019 ao presente*
-    
-    Como parte do time de Online estou encaregado de criar, debugar, manter e otimizar os serviços online dos jogos bem como suas ferramentas de apoio.
-    
+
+    Como Online Programmer estou encarregado de criar, manter e otimizar os serviços online dos jogos do lado do cliente de jogo e do lado do servidor, bem como suas ferramentas de apoio.
+
+    Trabalhei em:
+
+    - Immortals Fenyx Rising | Time de Online (Lançado em 2020)
+
     ### Configr.com
     *fevereiro 2015 até agosto 2019*
 
     **Lead Developer | julho 2019 até agosto 2019**
 
-    Após passar o cargo e preparar a equipe para a minha saída, tive a chance de voltar meu foco para o desenvolvimento projetando e implementando o novo fluxo de geração e renovação de certificados Let's Encrypt migrando de ACME V1 para V2 e adicionando suporte a certificados wildcard. 
+    Após passar o cargo e preparar a equipe para a minha saída, tive a chance de voltar meu foco para o desenvolvimento projetando e implementando o novo fluxo de geração e renovação de certificados Let's Encrypt migrando de ACME V1 para V2 e adicionando suporte a certificados wildcard.
 
     **Chief Technology Officer | setembro 2017 até julho 2019**
 
@@ -83,8 +87,8 @@ community: |
 languages: |
 
     - Português (Nativo)
-    - Inglês (Avançado)
-    - Francês (Básico)
+    - Inglês (Fluente)
+    - Francês (Intermediário)
 
 techSkills: |
 
@@ -93,30 +97,29 @@ techSkills: |
     **Linguagens**
 
     - Python
+    - C/C++
     - JavaScript
     - TypeScript
-    - Sass
-    - C/C++
     - C#
+    - Rust
     - Go
-    - PHP
-    - ShellScript
     - Elm
+    - Haskell
 
     **Frameworks**
 
     - Django
     - Django REST
+    - FastAPI
+    - .NETCore
     - Angular
-    - Lektor
     - Flask
-    - .NET
 
     **Bancos de dados**
 
     - PostgreSQL
-    - MySQL
     - MongoDB
+    - MySQL
     - SQL Server
 
     **Servidor / Deployment**
@@ -132,9 +135,8 @@ techSkills: |
     **Outros**
 
     - Linux
-    - Gulp
+    - ImGui
     - Webpack
-    - Bootstrap
     - RabbitMQ
     - Lets Encrypt
 
@@ -150,6 +152,7 @@ softSkills: |
 openSource: |
 
     - [revelation](https://github.com/humrochagf/revelation)
+    - [thoth](https://github.com/humrochagf/thoth.git)
     - [utmkeeper](https://github.com/humrochagf/utmkeeper)
     - [python.org.br](https://python.org.br)
     - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)

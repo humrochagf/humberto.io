@@ -7,7 +7,7 @@ locationName: Québec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Je suis titulaire d’un **Baccalauréat en Informatique** avec une expérience considérable de l'automatisation server-side, de l'intégration de logiciels et de la conception d'API. Je suis passionné par le développement logiciel et cherche toujours des moyens d'élargir mes connaissances.
+    Je suis un Développeur de Logiciels avec une solide expérience d'architecture, développement, support et automation de solutions en ligne. Je suis passionné par le développement de logiciel et je suis toujours à la recherche des moyens d'augmenter mes connaissances.
 
 contact:
   - identifier: email
@@ -28,12 +28,16 @@ contact:
     url: https://linkedin.com/in/humrochagf/
 
 employment: |
-    
+
     ### Ubisoft Quebec City
     *Programmeur Online | Octobre 2019 au présent*
-    
-    En tant que membre de l'équipe Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services Online du jeu, ainsi que des outils associés.
-    
+
+    En tant Programeur Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services Online du jeu, ainsi que des outils associés.
+
+    J'ai travaillé sur:
+
+    - Immortals Fenyx Rising | Online Team (Sorti en 2020)
+
     ### Configr.com
     *Février 2015 au Août 2019*
 
@@ -83,7 +87,7 @@ languages: |
 
     - Portugais (Natif)
     - Anglais (Avancé)
-    - Français (Débutant)
+    - Français (Intermédiaire)
 
 techSkills: |
 
@@ -92,30 +96,29 @@ techSkills: |
     **Langages de programmation**
 
     - Python
+    - C/C++
     - JavaScript
     - TypeScript
-    - Sass
-    - C/C++
     - C#
+    - Rust
     - Go
-    - PHP
-    - ShellScript
     - Elm
+    - Haskell
 
     **Frameworks**
 
     - Django
     - Django REST
+    - FastAPI
+    - .NETCore
     - Angular
-    - Lektor
     - Flask
-    - .NET
 
     **Databases**
 
     - PostgreSQL
-    - MySQL
     - MongoDB
+    - MySQL
     - SQL Server
 
     **Server / Deployment**
@@ -131,9 +134,8 @@ techSkills: |
     **Autres**
 
     - Linux
-    - Gulp
+    - ImGui
     - Webpack
-    - Bootstrap
     - RabbitMQ
     - Lets Encrypt
 
@@ -149,12 +151,12 @@ softSkills: |
 openSource: |
 
     - [revelation](https://github.com/humrochagf/revelation)
+    - [thoth](https://github.com/humrochagf/thoth.git)
     - [utmkeeper](https://github.com/humrochagf/utmkeeper)
     - [python.org.br](https://python.org.br)
     - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
     - [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
     - [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
     - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
-
 
 ---
