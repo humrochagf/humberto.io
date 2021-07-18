@@ -13,7 +13,7 @@ Raise your hand if you never versioned the Django's `SECRET_KEY` at the beginnin
 
 This **TLDR** is a quick reminder of how to generate a secret key locally, without going to some website on the internet to generate it for you.
 
-Django generates a secret key every time that you create a new project, sou this function already exists at its code, and you can access it in this way:
+Django generates a secret key every time that you create a new project, so this function already exists at its code, and you can access it in this way:
 
 {{< highlight python >}}
 from django.core.management.utils import get_random_secret_key
