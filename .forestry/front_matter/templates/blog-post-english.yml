@@ -18,5 +18,4 @@ fields:
   name: tags
   label: tags
 pages:
-- content/blog/letsencrypt-acme-v2-autopsy.en.md
 - content/blog/awesome-libs-pipx.en.md
