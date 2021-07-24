@@ -1,11 +1,13 @@
 ---
-title: Exploring pygame 4 - Game of Life
-description: Learn how to create a game of life implementation made for coding dojos
+title: "Exploring pygame 4 - Game of Life"
+description: "Learn how to create a game of life implementation made for coding dojos"
 publishDate: 2017-08-27
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/rule-one.png
-tags: ["python", "pygame", "gamedev"]
-draft: false
 
 ---
 

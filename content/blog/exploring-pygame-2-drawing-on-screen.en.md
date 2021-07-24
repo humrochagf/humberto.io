@@ -1,14 +1,15 @@
 ---
-title: Exploring pygame 2 -  Drawing on Screen
-description: Learn how drawing works at pygame and how to write your first drawing codes
+title: "Exploring pygame 2 -  Drawing on Screen"
+description: "Learn how drawing works at pygame and how to write your first drawing codes"
 publishDate: 2017-02-03
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/drawing-axis.jpg
-tags: ["python", "pygame", "gamedev"]
-aliases: [
-  "/en/blog/exploring-pygame-2-drawing-on-screen"
-]
-draft: false
+aliases:
+  - /en/blog/exploring-pygame-2-drawing-on-screen
 
 ---
 

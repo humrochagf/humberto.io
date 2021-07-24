@@ -1,11 +1,13 @@
 ---
-title: Django Generic ManyToMany Relations
-description: How to solve the issue of dealing with generic many to many relations on Django
+title: "Django Generic ManyToMany Relations"
+description: "How to solve the issue of dealing with generic many to many relations on Django"
 publishDate: 2016-04-29
+tags:
+  - python
+  - django
+  - frameworks
 images:
   - /img/generics/django.png
-tags: ["python", "django", "frameworks"]
-draft: false
 
 ---
 

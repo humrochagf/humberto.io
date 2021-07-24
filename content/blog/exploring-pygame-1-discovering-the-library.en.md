@@ -1,11 +1,13 @@
 ---
-title: Exploring pygame 1 - Discovering the library
-description: Make your kick start at pygame, learn how to install, use and write your first program with the pygame library
+title: "Exploring pygame 1 - Discovering the library"
+description: "Make your kick start at pygame, learn how to install, use and write your first program with the pygame library"
 publishDate: 2017-01-15
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/hello.png
-tags: ["python", "pygame", "gamedev"]
-draft: false
 
 ---
 

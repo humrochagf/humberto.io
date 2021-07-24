@@ -1,11 +1,13 @@
 ---
-title: Exploring pygame 3 - Game Loop
-description: Learn more about how the game loop works and how to implement it at pygame
+title: "Exploring pygame 3 - Game Loop"
+description: "Learn more about how the game loop works and how to implement it at pygame"
 publishDate: 2017-08-24
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/game-loop-en.png
-tags: ["python", "pygame", "gamedev"]
-draft: false
 
 ---
 

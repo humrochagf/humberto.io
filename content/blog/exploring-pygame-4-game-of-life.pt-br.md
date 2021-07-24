@@ -1,15 +1,17 @@
 ---
-title: Desbravando o pygame 4 - Game of Life
-description: Demonstrando a implementação do game of life, feita para o dojo
+title: "Desbravando o pygame 4 - Game of Life"
+description: "Demonstrando a implementação do game of life, feita para o dojo"
 publishDate: 2017-08-27
+slug: desbravando-o-pygame-4-game-of-life
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/rule-one.png
-slug: desbravando-o-pygame-4-game-of-life
-tags: ["python", "pygame", "gamedev"]
-aliases: [
-  "/blog/desbravando-o-pygame-4-game-of-life"
-]
-draft: false
+aliases:
+  - exploring-pygame-4-game-of-life
+  - /blog/desbravando-o-pygame-4-game-of-life
 
 ---
 

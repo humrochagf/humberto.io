@@ -1,14 +1,15 @@
 ---
-title: Coding Dojo 101
-description: Discover what is a Coding Dojo and how to start it at you college or at you local community
+title: "Coding Dojo 101"
+description: "Discover what is a Coding Dojo and how to start it at you college or at you local community"
 publishDate: 2016-12-02
+tags:
+  - dojo
+  - learning
+  - python
 images:
   - /img/coding-dojo-101/flow-en.jpg
-tags: ["dojo", "learning", "python"]
-aliases: [
-  "/en/blog/coding-dojo-101"
-]
-draft: false
+aliases:
+  - /en/blog/coding-dojo-101
 
 ---
 

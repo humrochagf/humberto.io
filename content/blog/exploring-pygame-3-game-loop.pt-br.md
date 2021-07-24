@@ -1,15 +1,17 @@
 ---
-title: Desbravando o pygame 3 - Game Loop
-description: Saiba mais sobre como funciona o game loop e como implementa-lo no pygame
+title: "Desbravando o pygame 3 - Game Loop"
+description: "Saiba mais sobre como funciona o game loop e como implementa-lo no pygame"
 publishDate: 2017-08-24
+slug: desbravando-o-pygame-3-game-loop
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/game-loop-pt-br.png
-slug: desbravando-o-pygame-3-game-loop
-tags: ["python", "pygame", "gamedev"]
-aliases: [
-  "/blog/desbravando-o-pygame-3-game-loop"
-]
-draft: false
+aliases:
+  - exploring-pygame-3-game-loop
+  - /blog/desbravando-o-pygame-3-game-loop
 
 ---
 

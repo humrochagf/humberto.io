@@ -1,15 +1,17 @@
 ---
-title: Desbravando o pygame 1 - Conhecendo a Biblioteca
-description: Um pouco sobre o que é o pygame, como instalar usar e escrever seu primeiro programa com esta biblioteca
+title: "Desbravando o pygame 1 - Conhecendo a Biblioteca"
+description: "Um pouco sobre o que é o pygame, como instalar usar e escrever seu primeiro programa com esta biblioteca"
 publishDate: 2017-01-15
+slug: desbravando-o-pygame-1-conhecendo-a-biblioteca
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/hello.png
-slug: desbravando-o-pygame-1-conhecendo-a-biblioteca
-tags: ["python", "pygame", "gamedev"]
-aliases: [
-  "/blog/desbravando-o-pygame-1-conhecendo-a-biblioteca"
-]
-draft: false
+aliases:
+  - exploring-pygame-1-discovering-the-library
+  - /blog/desbravando-o-pygame-1-conhecendo-a-biblioteca
 
 ---
 

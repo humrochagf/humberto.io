@@ -1,15 +1,17 @@
 ---
-title: Desbravando o pygame 2 -  Desenhando na Tela
-description: Aprenda como funciona o plano de desenho no pygame e como desenhar na tela
+title: "Desbravando o pygame 2 -  Desenhando na Tela"
+description: "Aprenda como funciona o plano de desenho no pygame e como desenhar na tela"
 publishDate: 2017-02-03
+slug: desbravando-o-pygame-2-desenhando-na-tela
+tags:
+  - python
+  - pygame
+  - gamedev
 images:
   - /img/exploring-pygame/drawing-axis.jpg
-slug: desbravando-o-pygame-2-desenhando-na-tela
-tags: ["python", "pygame", "gamedev"]
-aliases: [
-  "/blog/desbravando-o-pygame-2-desenhando-na-tela"
-]
-draft: false
+aliases:
+  - exploring-pygame-2-drawing-on-screen
+  - /blog/desbravando-o-pygame-2-desenhando-na-tela
 
 ---
 

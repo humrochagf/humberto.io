@@ -1,15 +1,17 @@
-+++
-description = "Learn how to move the objects on the screen and write you first collision detection with pygame"
-draft = false
-images = [
-  "/img/exploring-pygame/movement-collision.png"
-]
-katex = true
-publishDate = "2019-09-10T00:00:00-03:00"
-tags = ["python", "pygame", "gamedev"]
-title = "Exploring pygame 5 - Movement and Collision"
+---
+title: "Exploring pygame 5 - Movement and Collision"
+description: "Learn how to move the objects on the screen and write you first collision detection with pygame"
+publishDate: 2019-09-10
+katex: true
+tags:
+  - python
+  - pygame
+  - gamedev
+images:
+  - /img/exploring-pygame/movement-collision.png
 
-+++
+---
+
 Movement is part of a large portion of games. When jumping between platforms, shooting against a horde of enemies, piloting a space ship and running through the streets, we are causing movement and interacting with the game environment, applying action and causing reactions.
 
 This chapter is to describe the basics of moving objects across the screen and their interaction with other elements through collision detection.

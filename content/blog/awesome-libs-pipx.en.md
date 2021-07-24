@@ -1,12 +1,16 @@
-+++
-description = "Discover pipx! An awesome Python library to keep your Python tools safe, updated, and organized"
-images = ["/img/awesome-libs/pipx.png"]
-linkTitle = ""
-publishDate = "2019-08-08T03:00:00+00:00"
-tags = ["awesome-libs", "python", "pipx"]
-title = "Awesome Libs: pipx"
+---
+title: "Awesome Libs: pipx"
+description: "Discover pipx! An awesome Python library to keep your Python tools safe, updated, and organized"
+publishDate: 2019-08-08
+tags:
+  - awesome-libs
+  - python
+  - pipx
+images:
+  - /img/awesome-libs/pipx.png
 
-+++
+---
+
 I'm starting this series of posts to give you tips on libraries that can be handy on your day to day as a Developer and also to present libraries I think you should keep on eye on.
 
 One of the perks of a good Developer is having a proper tool-set available on your belt, and nothing more appropriate to start this series than a library that installs other libraries!

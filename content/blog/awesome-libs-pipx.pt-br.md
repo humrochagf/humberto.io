@@ -1,13 +1,20 @@
-+++
-description = "Conheça o pipx! Uma lib fantástica para manter seus pacotes Python seguros, atualizados e organizados"
-images = ["/img/awesome-libs/pipx.png"]
-linkTitle = ""
-publishDate = "2019-08-08T03:00:00+00:00"
-slug = "libs-fantasticas"
-tags = ["awesome-libs", "python", "pipx"]
-title = "Libs Fantásticas: pipx"
+---
+title: "Libs Fantásticas: pipx"
+description: "Conheça o pipx! Uma lib fantástica para manter seus pacotes Python seguros, atualizados e organizados"
+publishDate: 2019-08-08
+slug: libs-fantasticas-pipx
+tags:
+  - awesome-libs
+  - python
+  - pipx
+images:
+  - /img/awesome-libs/pipx.png
+aliases:
+  - awesome-libs-pipx
+  - libs-fantasticas
 
-+++
+---
+
 Estou começando esta série para dar dicas sobre bibliotecas que podem ser muito úteis no seu dia a dia, e também para apresentar bibliotecas interessantes nas quais que você deveria ficar de olho.
 
 Uma das habilidades de um bom Programador é ter a ferramenta certa para realizar seu trabalho, e nada mais apropriado que começar esta série com uma ferramenta que instala outras ferramentas!

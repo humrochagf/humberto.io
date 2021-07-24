@@ -1,11 +1,13 @@
 ---
-title: Coding Dojo 101
-description: Descubra o que é e como organizar um Coding Dojo em sua faculdade ou comunidade local
+title: "Coding Dojo 101"
+description: "Descubra o que é e como organizar um Coding Dojo em sua faculdade ou comunidade local"
 publishDate: 2016-12-02
+tags:
+  - dojo
+  - learning
+  - python
 images:
   - /img/coding-dojo-101/flow.jpg
-tags: ["dojo", "learning", "python"]
-draft: false
 
 ---
 
