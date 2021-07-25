@@ -5,9 +5,9 @@ slug: a-propos
 weight: 1
 menu:
   main: {}
-draft: false
 
 ---
+
 Salut, je m'appelle **Humberto Rocha Gonçalves Filho**.
 
 Je suis un **Informaticien** enthousiaste à **Open Source** spécialisé dans la résolution de problèmes qui habite actuellement au **Québec, Canada**.

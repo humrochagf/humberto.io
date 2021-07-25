@@ -4,9 +4,9 @@ linkTitle: About
 weight: 1
 menu:
   main: {}
-draft: false
 
 ---
+
 Hello, my name is **Humberto Rocha Gonçalves Filho**.
 
 I'm a **Computer Scientist** / **Open Source** enthusiast specialized on problem solving currently living in **Quebec, Canada**.

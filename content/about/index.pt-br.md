@@ -5,9 +5,9 @@ slug: sobre
 weight: 1
 menu:
   main: {}
-draft: false
 
 ---
+
 Olá, meu nome é **Humberto Rocha Gonçalves Filho**.
 
 Eu sou um **Cientista da Computação** entusiasta do **Open Source** especializado em resolver problemas, atualmente morando em **Québec, Canadá**.
