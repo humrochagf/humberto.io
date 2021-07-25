@@ -15,7 +15,7 @@ I'm starting this series of posts to give you tips on libraries that can be hand
 
 One of the perks of a good Developer is having a proper tool-set available on your belt, and nothing more appropriate to start this series than a library that installs other libraries!
 
-How many times did you install some Python CLI tool inside of a Python virtualenv? Have you ever updated some tool dependency and if make another library stop working because it relied on a common dependency?
+How many times did you install some Python CLI tool inside of a Python virtualenv? Have you ever updated some tool and broke another library because it relied on a common dependency?
 
 If you like organization, stability and to not repeat yourself [pipx](https://pipxproject.github.io/pipx/) is an **awesome lib** for you.
 
