@@ -8,7 +8,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/movement-collision.png
+  - /img/posts/exploring-pygame-5-movement-and-collision.png
 
 ---
 
@@ -61,7 +61,7 @@ The drawing loop creates a cinematic effect of movement on the screen, but this 
 
 You can't control the object movement velocity, and powerful the computer, more loops are processed, causing results like that:
 
-{{< videogif "/img/exploring-pygame/square-fast.webm" >}}
+{{< videogif "assets/square-fast.webm" >}}
 
 To fix this issue, we need to go back to physics class, when we learned about **linear motion**. To ensure constant velocity, we'll use the following formula:
 
@@ -124,7 +124,7 @@ At **line 28**, the initial time receives the final time to be used at the next 
 
 In the end, we calculate the displacement at **line 36**.
 
-{{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
+{{< videogif "assets/square-velocity.webm" >}}
 
 As we can see, it is possible to control the object movement velocity, but that solves only the visible part of the issue, the loop executes much more than the necessary generating noting more than overhead.
 
@@ -263,7 +263,7 @@ At **line 37** the `collidelist` function checks if any collision happened to re
 
 In the end, the square and the pads are drawn to the screen using their `Rect` instances to produce the following result:
 
-{{< videogif "/img/exploring-pygame/square-collision.webm" >}}
+{{< videogif "assets/square-collision.webm" >}}
 
 ## Conclusion
 

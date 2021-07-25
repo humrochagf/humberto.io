@@ -6,13 +6,13 @@ tags:
   - python
   - emails
 images:
-  - /img/emails/python-mail.png
+  - /img/posts/sending-and-receiving-emails-with-python.png
 
 ---
 
 Someday, during the Python Tuesdays event at [Calango Hacker Club](https://calango.club/), one of the participants came with a question on how to automate its email reading process at Gmail categorizing their messages into something that could be important and something that is not. That question motivated me looking after how to that, and then into this post that maybe can help someone that is trying to do something similar with Python.
 
-![python email](/img/emails/python-mail.png)
+![python email](assets/python-mail.png)
 
 {{< tip class="info" >}}
 This post aims to someone that is starting with Python but also can be useful to knowledgeable users who haven't worked with email before. The version of Python used to make this post was 3.6.x.
@@ -102,11 +102,11 @@ Google blocks access from apps that it judges as not following its security stan
 
 That said if you are facing this issue, you can enable access to make your tests by accessing  [https://myaccount.google.com/u/0/security?hl=en](https://myaccount.google.com/u/0/security?hl=en):
 
-![Less secure access](/img/emails/less-secure.png)
+![Less secure access](assets/less-secure-access.png)
 
 Now we can use Google as our **gateway** to send the messages, but keep in mind that even with Google as your **gateway** there is a policy of email sending, so be careful with **SPAMS**.
 
-![SPAM](/img/memes/spam.jpg)
+![SPAM](assets/spam.jpg)
 
 ## Receiving emails
 

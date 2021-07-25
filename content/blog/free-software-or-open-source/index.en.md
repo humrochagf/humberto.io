@@ -5,7 +5,7 @@ publishDate: 2016-05-25
 tags:
   - thoughts
 images:
-  - /img/generics/opensource-freesoftware.jpg
+  - /img/posts/free-software-or-open-source.jpg
 
 ---
 

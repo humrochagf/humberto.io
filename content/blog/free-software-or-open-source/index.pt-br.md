@@ -6,7 +6,7 @@ slug: software-livre-ou-codigo-aberto
 tags:
   - thoughts
 images:
-  - /img/generics/opensource-freesoftware.jpg
+  - /img/posts/free-software-or-open-source.jpg
 aliases:
   - free-software-or-open-source
   - /blog/software-livre-ou-codigo-aberto

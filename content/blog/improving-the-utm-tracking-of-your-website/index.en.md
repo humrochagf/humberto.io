@@ -6,7 +6,7 @@ tags:
   - javascript
   - utm
 images:
-  - /img/utmkeeper/utm.png
+  - /img/posts/improving-the-utm-tracking-of-your-website.png
 
 ---
 
@@ -103,6 +103,6 @@ utmkeeper.load({
 
 The following graph is a slice of the transition period of the **utmkeeper** configuration at  [Configr](https://configr.com/?utm_source=humberto&utm_campaign=post-utm&utm_content=link-resultado) landing pages. The **blue** color is the total of leads coming to the login/signup, the **red** color is the number of leads **without UTM**, and the **green** is the number of leads **with UTM** :
 
-![utm graph](/img/utmkeeper/utm-graph.png)
+![utm graph](assets/utm-graph.png)
 
 The easy to integrate feature from **utmkeeper** helped a lot to put the solution to production, bringing a quick result to the tracking metrics.

@@ -3,7 +3,7 @@ title: "Hello World!"
 description: "Blog presentation post"
 publishDate: 2016-04-21
 images:
-  - /img/hello-world/hello.png
+  - /img/posts/hello-world.png
 
 ---
 

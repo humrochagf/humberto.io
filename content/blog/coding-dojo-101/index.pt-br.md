@@ -7,7 +7,7 @@ tags:
   - learning
   - python
 images:
-  - /img/coding-dojo-101/flow.jpg
+  - /img/posts/coding-dojo-101.pt-br.jpg
 
 ---
 
@@ -41,7 +41,7 @@ Para organizar um dojo não é preciso de muita coisa:
 
 A dinâmica acontece seguindo este fluxo:
 
-![a dinamica de um coding dojo](/img/coding-dojo-101/flow.jpg)
+![a dinamica de um coding dojo](assets/flow.pt-br.jpg)
 
 O fluxo é composto de ciclos de 5 a 7 minutos, este tempo é flexível, porém para iniciantes não é recomendado que seja muito extenso para evitar que a pessoa fique travada e para estimular mais pessoas a participar (eu pessoalmente sempre uso 5 minutos).
 
@@ -116,7 +116,7 @@ Para saber se os testes estão passando teríamos que ficar rodando o comando de
 
 O semáforo que eu gosto de utilizar é o [dose](https://github.com/danilobellini/dose) do [Danilo Bellini](https://twitter.com/danilobellini):
 
-![python dose semáforo de testes para coding dojo](/img/coding-dojo-101/dose.png)
+![python dose semáforo de testes para coding dojo](assets/dose.png)
 
 Ele funciona tanto com python quanto com outras linguagens além de integrar bem com o **nose**, basta rodar o comando:
 

@@ -8,7 +8,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/rule-one.png
+  - /img/posts/exploring-pygame-4-game-of-life.png
 aliases:
   - exploring-pygame-4-game-of-life
   - /blog/desbravando-o-pygame-4-game-of-life
@@ -29,19 +29,19 @@ A  configuração inicial é chamada de semente (seed) e pode ser pré-definida 
 
 1. Toda célula com menos de dois vizinhos vivos morre por baixa população;
 
-    ![regra um](/img/exploring-pygame/rule-one.png)
+    ![regra um](assets/rule-one.png)
 
 2. Toda célula com dois ou três vizinhos vivos sobrevive para a próxima geração;
 
-    ![regra dois](/img/exploring-pygame/rule-two.png)
+    ![regra dois](assets/rule-two.png)
 
 3. Toda célula com mais de três vizinhos vivos morre por superpopulação;
 
-    ![regra tres](/img/exploring-pygame/rule-three.png)
+    ![regra tres](assets/rule-three.png)
 
 4. Toda célula morta com exatamente três vizinhos vivos se torna uma célula viva por reprodução.
 
-    ![regra quatro](/img/exploring-pygame/rule-four.png)
+    ![regra quatro](assets/rule-four.png)
 
 Não há interação entre gerações, ou seja, se por exemplo uma célula nasce, ao se calcular a célula vizinha ela não é levada em conta pois ela não existia na geração vigente.
 
@@ -239,7 +239,7 @@ Desenhamos uma vez a seed na tela antes de iniciar o loop para dar tempo do usu�
 
 Para demonstrar o simulador em funcionamento utilizei o [glider](https://goo.gl/jzm5UZ) que é o padrão mais famoso dentro do game of life e foi absorvido pela comunidade hacker como seu emblema. Ele é o menor padrão cíclico que realiza deslocamento pelo, plano:
 
-{{< videogif "/img/exploring-pygame/glider.webm" >}}
+{{< videogif "assets/glider.webm" >}}
 
 {{< tip class="info" >}}
 Obs.: Note que existem alguns padrões comentados no código do simulador, você pode remover o comentário de qualquer um deles para ver padrões diferentes em ação.

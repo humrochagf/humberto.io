@@ -8,7 +8,7 @@ tags:
   - python
   - django
 images:
-  - /img/generics/django.png
+  - /img/posts/tldr-setting-mutable-objects-at-django-model-field-default.png
 aliases:
   - tldr-setting-mutable-objects-at-django-model-field-default
   - /blog/tldr-configurando-corretamente-o-default-de-um-model-field-do-django

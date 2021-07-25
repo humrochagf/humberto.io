@@ -12,7 +12,7 @@ tags:
   - gh-pages
   - travis-ci
 images:
-  - /img/publishing-pelican-travis/pelican-fist-post.png
+  - /img/posts/publishing-at-github-pages-with-pelican-and-travis-ci.png
 aliases:
   - publishing-at-github-pages-with-pelican-and-travis-ci
   - /blog/github-pages-com-pelican-e-travis-ci
@@ -37,7 +37,7 @@ Resumidamente existem duas formas de se criar uma página pelo gh pages:
 
 Para este tipo de página crie um repositório com o nome `usuario.github.io`, onde `usuario` é o nome de usuário ou organização da conta em que o repositório será criado:
 
-![Repositório da página de usuário](/img/publishing-pelican-travis/github-user-page.png)
+![Repositório da página de usuário](assets/github-user-page.png)
 
 O conteúdo a ser publicado deve ser colocado na **branch master** e os arquivos do pelican na **branch pelican**.
 
@@ -45,7 +45,7 @@ O conteúdo a ser publicado deve ser colocado na **branch master** e os arquivos
 
 Para este tipo de página crie um repositório com o nome `meuprojeto`, onde `meuprojeto` é o nome desejado para o projeto que será publicado em `usuario.github.io`:
 
-![Repositório da página de projeto](/img/publishing-pelican-travis/github-project-page.png)
+![Repositório da página de projeto](assets/github-project-page.png)
 
 O conteúdo a ser publicado deve ser colocado na **branch gh-pages** e os arquivos do pelican na **branch pelican**.
 
@@ -122,7 +122,7 @@ Publicando o blog:
 $ make github
 {{< / highlight >}}
 
-![Primeira publicação do blog](/img/publishing-pelican-travis/pelican-blog.png)
+![Primeira publicação do blog](assets/pelican-blog.png)
 
 {{< tip class="info" >}}
 Para publicar no caso da página de projeto altere o conteúdo da variável `GITHUB_PAGES_BRANCH` do makefile de `master` para `gh-pages`.
@@ -136,11 +136,11 @@ O Travis-CI é uma plataforma de Integração Contínua que monta e testa projet
 
 A Primeira coisa a ser feita é ir ao Travis-CI e habilitar seu repositório.
 
-![Habilitando repositório no travis](/img/publishing-pelican-travis/travis-repo1.png)
+![Habilitando repositório no travis](assets/travis-repo1.png)
 
 Em seguida vá nas configurações do repositório no travis e desabilite a opção **Build pull requests** para seu blog não ser atualizado quando alguém abrir um pull request e habilite o **Build only if .travis.yml is present** para que somente a branch que possuir o arquivo .travis.yml gerar atualização no blog.
 
-![Configurando remositório no travis](/img/publishing-pelican-travis/travis-repo2.png)
+![Configurando remositório no travis](assets/travis-repo2.png)
 
 O próximo passo é criar uma **Deploy Key** para que o travis possa publicar conteúdo no github. Para isso gere uma chave ssh na raiz do repositório local:
 
@@ -231,14 +231,14 @@ $ git push origin pelican
 
 Para liberar o acesso do travis adicionaremos a deploy key no github com o conteúdo da chave pública **publish-key.pub**:
 
-![Adicionando a deploy key no github](/img/publishing-pelican-travis/github-deploy-key.png)
+![Adicionando a deploy key no github](assets/github-deploy-key.png)
 
 Pronto, agora podemos publicar conteúdo em nosso blog sem a necessidade de ter o pelican instalado na máquina:
 
-![Fazendo a primeira postagem](/img/publishing-pelican-travis/github-edit-post.png)
+![Fazendo a primeira postagem](assets/github-edit-post.png)
 
 Que o travis irá publicar para você:
 
-![Blog com a primeira postagem](/img/publishing-pelican-travis/pelican-first-post.png)
+![Blog com a primeira postagem](assets/pelican-first-post.png)
 
 Caso você tenha animado de criar seu blog pessoal e quer saber mais sobre pelican você pode acompanhar a série do [Mind Bending](http://mindbending.org/pt/series/migrando-para-o-pelican) sobre o assunto.

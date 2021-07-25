@@ -7,7 +7,7 @@ tags:
   - python
   - unicode
 images:
-  - /img/tldr/encode-decode.png
+  - /img/posts/tldr-write-and-read-unicode-from-files-with-python-2-and-3.png
 
 ---
 
@@ -29,7 +29,7 @@ Changing to Python 3, where **byte** and **string** are distinct types, the code
 
 The solution to write a code that runs across both versions is to follow the [zen of python](https://www.python.org/dev/peps/pep-0020/) where it says that "Explicit is better than implicit" and always define what is **byte** from what is **string**:
 
-![encode decode](/img/tldr/encode-decode.png)
+![encode decode](assets/encode-decode.png)
 
 The following code opens a temporary file to write in **byte**  mode and writes the content of a **string** that was encoded into **byte** using the [utf-8](https://en.wikipedia.org/wiki/UTF-8) encoding. Then, the inverse process is done, opening the file for reading in **byte** and decoded to **string** to print to the terminal:
 
@@ -53,7 +53,7 @@ with open(unicode_file, 'rb') as f:
 
 The result is a code that runs in Python 2 and also in Python 3:
 
-![running the code](/img/tldr/unicode-file.png)
+![running the code](assets/unicode-file.png)
 
 {{< tip class="info" >}}
 This tip works as well for another encoding type like `latin-1`.

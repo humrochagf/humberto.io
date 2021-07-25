@@ -8,7 +8,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/hello.png
+  - /img/posts/exploring-pygame-1-discovering-the-library.png
 aliases:
   - exploring-pygame-1-discovering-the-library
   - /blog/desbravando-o-pygame-1-conhecendo-a-biblioteca
@@ -83,7 +83,7 @@ $ python hello.py
 
 O resultado será este:
 
-![hello](/img/exploring-pygame/hello.png)
+![hello](assets/hello.png)
 
 Ainda está longe de ser um jogo, mas já temos alguns conceitos básicos importantes a serem comentados.
 

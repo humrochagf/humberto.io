@@ -7,7 +7,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/game-loop-en.png
+  - /img/posts/exploring-pygame-3-game-loop.png
 
 ---
 
@@ -19,7 +19,7 @@ The concept of loop is something very common at computing, it is nothing but a s
 
 The loop used at game development is called **Game Loop** and is a key component at the structure of a game. On a simplified manner, we have the following structure:
 
-![basic loop](/img/exploring-pygame/game-loop-en.png)
+![basic loop](assets/game-loop.png)
 
 During the execution the game is always:
 

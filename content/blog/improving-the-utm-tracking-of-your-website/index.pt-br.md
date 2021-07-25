@@ -7,7 +7,7 @@ tags:
   - javascript
   - utm
 images:
-  - /img/utmkeeper/utm.png
+  - /img/posts/improving-the-utm-tracking-of-your-website.png
 aliases:
   - improving-the-utm-tracking-of-your-website
   - /blog/melhorando-a-rastreabilidade-de-utm-no-seu-site
@@ -105,6 +105,6 @@ utmkeeper.load({
 
 O gráfico a seguir é um recorte do período de transição em que foi feita a aplicação do **utmkeeper** nas landing pages da [Configr](https://configr.com/?utm_source=humberto&utm_campaign=post-utm&utm_content=link-resultado) sendo representado pela cor **azul** o total de usuários cadastrados por dia, em **vermelho** o total que chegavam ao cadastro sem a **utm** e em **verde** o total de usuários que chegavam ao cadastro com **utm**:
 
-![gráfico de utm](/img/utmkeeper/utm-graph.png)
+![gráfico de utm](assets/utm-graph.png)
 
 A facilidade de aplicação do **utmkeeper** ajudou bastante no processo de implantação da solução trazendo um rápido resultado nas métricas de rastreio.

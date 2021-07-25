@@ -7,7 +7,7 @@ tags:
   - pyxel
   - gamedev
 images:
-  - /img/first-game/pyxel-lander-splash-screen.png
+  - /img/posts/publishing-my-first-game.png
 
 ---
 
@@ -23,7 +23,7 @@ Then, last December during the holidays, I discovered [Pyxel](https://github.com
 
 I love pixel art games, so I decided to take the holidays to write my first complete game from the ground up until its publication. The game is a tribute to the old Lunar Lander DOS game that I played at my childhood.
 
-{{< videogif "/img/first-game/pyxel-lander-landing.webm" >}}
+{{< videogif "assets/pyxel-lander-landing.webm" >}}
 
 The theme choice was meaningful to me, not only because I played when I was little, but also because I've coded it with a friend at one of my [projects](https://github.com/ravishi/lunar-lander-ex/commits/master) at my Computer Science course.
 

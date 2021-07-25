@@ -8,7 +8,7 @@ tags:
   - python
   - django
 images:
-  - /img/tldr/secret-key.png
+  - /img/posts/tldr-generate-django-secret-key.png
 aliases:
   - tldr-generate-django-secret-key
 

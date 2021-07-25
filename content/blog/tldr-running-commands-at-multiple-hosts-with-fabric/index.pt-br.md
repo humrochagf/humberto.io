@@ -8,7 +8,7 @@ tags:
   - python
   - fabric
 images:
-  - /img/generics/fabric.png
+  - /img/posts/tldr-running-commands-at-multiple-hosts-with-fabric.png
 aliases:
   - /blog/tldr-executando-comandos-em-multiplos-hosts-com-fabric
 

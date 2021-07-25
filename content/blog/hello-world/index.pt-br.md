@@ -4,7 +4,7 @@ description: "Post de apresentação do blog"
 publishDate: 2016-04-21
 slug: ola-mundo
 images:
-  - /img/hello-world/ola.png
+  - /img/posts/hello-world.pt-br.png
 aliases:
   - hello-world
   - /blog/ola-mundo

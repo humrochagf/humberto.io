@@ -11,7 +11,7 @@ tags:
   - gh-pages
   - travis-ci
 images:
-  - /img/publishing-pelican-travis/pelican-fist-post.png
+  - /img/posts/publishing-at-github-pages-with-pelican-and-travis-ci.png
 
 ---
 
@@ -35,7 +35,7 @@ Briefly there are two ways to create a page at gh pages:
 
 To create this type of page you need to create a repository with the name `username.github.io` where the `username` is your GitHub account username or the organization handle where the repository will be created:
 
-![GitHub repository of the user](/img/publishing-pelican-travis/github-user-page.png)
+![GitHub repository of the user](assets/github-user-page.png)
 
 The content to be published needs to be placed at the **master branch** and the Pelican files at the **pelican branch**.
 
@@ -43,7 +43,7 @@ The content to be published needs to be placed at the **master branch** and the 
 
 On this kind of page create a repository with the name `myproject` where `myproject` is the name that you what your project to be called at `username.github.io`:
 
-![Project page GitHub repository](/img/publishing-pelican-travis/github-project-page.png)
+![Project page GitHub repository](assets/github-project-page.png)
 
 The content to be published must be placed at **gh-pages branch** and the Pelican files at **pelican branch**.
 
@@ -120,7 +120,7 @@ Publishing the blog:
 $ make github
 {{< / highlight >}}
 
-![First post at pelican blog](/img/publishing-pelican-travis/pelican-blog.png)
+![Pelican blog page](assets/pelican-blog.png)
 
 {{< tip class="info" >}}
 At the project page case change the content of the variable `GITHUB_PAGES_BRANCH` on the makefile from `master` to `gh-pages`.
@@ -134,11 +134,11 @@ Travis-CI is a Continuous Integration platform that mounts and tests projects th
 
 The first thing to be done is to go at Travis-CI to enable your repository.
 
-![Enabling the project at Travis-CI](/img/publishing-pelican-travis/travis-repo1.png)
+![Enabling the project at Travis-CI](assets/travis-repo1.png)
 
 After that go to the repository settings at Travis-CI and disable the **Build pull requests** option to keep your blog from being updated when someone opens a **pull request** and enable the **Build only if .travis.yml is present** option to alloy only the branch that has this file to trigger the build.
 
-![Sentting up Travis-CI](/img/publishing-pelican-travis/travis-repo2.png)
+![Sentting up Travis-CI](assets/travis-repo2.png)
 
 The next step is to create a **Deploy Key** to enable Travis-CI to publish the content at GitHub after finishing the build and to do that you must create a **ssh key** at the root of your local repository:
 
@@ -229,14 +229,14 @@ $ git push origin pelican
 
 To enable Travis-CI access we add the **deploy key** on GitHub using the content of the public key **publish-key.pub**:
 
-![Adding the deploy key at GitHub](/img/publishing-pelican-travis/github-deploy-key.png)
+![Adding the deploy key at GitHub](assets/github-deploy-key.png)
 
 Done, now we can publish content at our blog without the need of having Pelican installed at our machine:
 
-![Making the first post](/img/publishing-pelican-travis/github-edit-post.png)
+![Making the first post](assets/github-edit-post.png)
 
 Travis-CI will publish the post for you:
 
-![Blog with the first post](/img/publishing-pelican-travis/pelican-first-post.png)
+![Blog with the first post](assets/pelican-first-post.png)
 
 If you liked and want to see it running you can go to the Brazilian community page to check out the code at [https://github.com/pythonbrasil/wiki](https://github.com/pythonbrasil/wiki).

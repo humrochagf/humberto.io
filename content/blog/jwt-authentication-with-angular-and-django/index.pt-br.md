@@ -12,7 +12,7 @@ tags:
   - jwt
   - auth
 images:
-  - /img/generics/jwt.jpg
+  - /img/posts/jwt-authentication-with-angular-and-django.jpg
 aliases:
   - jwt-authentication-with-angular-and-django
   - /blog/autenticacao-jwt-com-angular-e-django
@@ -101,7 +101,7 @@ Este é um mecanismo de autenticação que não guarda estado, ou seja, não req
 
 Agora, com todo este conhecimento é hora da implementação!!!
 
-{{< videogif "/img/memes/coding-cat.webm" >}}
+{{< videogif "assets/coding-cat.webm" >}}
 
 E para isso, utilizaremos como base a aplicação desenvolvida na postagem anterior ["Separando o Frontend do Backend com Angular e Django"](/pt-br/blog/separando-o-frontend-do-backend-com-angular-e-django/).
 
@@ -155,7 +155,7 @@ urlpatterns = [
 
 Como foi alterada a permissão padrão do sistema no `settings.py` para `IsAuthenticated` ao tentar acessar a lista de compra nos deparamos com a seguinte mensagem:
 
-![denied](/img/angular-django/denied.png)
+![denied](assets/denied.png)
 
 Agora que o acesso está sendo restrito a usuários logados chegou a hora de implementar a autenticação no **frontend**.
 
@@ -573,9 +573,9 @@ export class LoginComponent implements OnInit {
 
 Com a aplicação rodando agora podemos visualizar processo de login funcionando \o/:
 
-{{< videogif "/img/angular-django/auth.webm" >}}
+{{< videogif "assets/auth.webm" >}}
 
-![it works](/img/memes/amazed-cat.jpg)
+![it works](assets/amazed-cat.jpg)
 
 ## Processo de Cadastro
 

@@ -8,7 +8,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/drawing-axis.jpg
+  - /img/posts/exploring-pygame-2-drawing-on-screen.jpg
 aliases:
   - exploring-pygame-2-drawing-on-screen
   - /blog/desbravando-o-pygame-2-desenhando-na-tela
@@ -21,11 +21,11 @@ Ao longo de um jogo estamos constantemente desenhando na tela. E agora que já s
 
 Voltando nas aulas de matemática do ensino fundamental fomos apresentados ao plano cartesiano. O plano cartesiano e um espaço bidimensional orientado pelos eixos x e y onde x aumenta para o lado direito e diminui para o lado esquerdo enquanto y aumenta para cima e diminui para baixo:
 
-![plano cartesiano](/img/exploring-pygame/cartesian-axis.jpg)
+![plano cartesiano](assets/cartesian-axis.jpg)
 
 No pygame a coisa muda um pouco, o plano de desenho consiste também de dois eixos onde x aumenta para a direita  e diminui para a esquerda, entretanto o y aumenta para baixo e diminui para cima, o inverso do plano cartesiano, sendo a área visível da tela um espaço que parte de do ponto `x=0` e `y=0` no topo esquerdo da tela até o tamanho determinado no comando `pygame.display.set_mode((x, y))`:
 
-![plano de desenho](/img/exploring-pygame/drawing-axis.jpg)
+![plano de desenho](assets/drawing-axis.jpg)
 
 ## Desenhando
 

@@ -7,7 +7,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/rule-one.png
+  - /img/posts/exploring-pygame-4-game-of-life.png
 
 ---
 
@@ -27,19 +27,19 @@ The interaction cycle we call generation, and it is the result of the 4 interact
 
 1. Every cell with less than two live neighbors dies by underpopulation;
 
-    ![rule one](/img/exploring-pygame/rule-one.png)
+    ![rule one](assets/rule-one.png)
 
 2. Every live cell with two or three live neighbors survives to the next generation;
 
-    ![rule two](/img/exploring-pygame/rule-two.png)
+    ![rule two](assets/rule-two.png)
 
 3. Every live cell with more than three neighbors dies of overpopulation;
 
-    ![rule three](/img/exploring-pygame/rule-three.png)
+    ![rule three](assets/rule-three.png)
 
 4. Every dead cell with exactly three neighbors turns alive by reproduction.
 
-    ![rule four](/img/exploring-pygame/rule-four.png)
+    ![rule four](assets/rule-four.png)
 
 There's no interaction between generations, so if a new cell is born when you go to compute the next cell, it won't count since it wasn't alive on this generation.
 
@@ -232,7 +232,7 @@ The first drawing is separate from the game loop so the user can see the startin
 
 To demonstrate the simulator working, I choose the [glider](https://goo.gl/jzm5UZ) there is the most famous pattern inside the game of life. The hacker community absorbed it as their emblem, and it is the smaller cyclic pattern that moves on the plane:
 
-{{< videogif "/img/exploring-pygame/glider.webm" >}}
+{{< videogif "assets/glider.webm" >}}
 
 {{< tip class="info" >}}
 Note there are some commented patterns at the simulator code, you can uncomment them to see different patterns in action.

@@ -8,7 +8,7 @@ tags:
   - python
   - ubuntu
 images:
-  - /img/generics/python-ubuntu.jpg
+  - /img/posts/tldr-python-dev-dependencies-on-ubuntu.jpg
 aliases:
   - tldr-python-dev-dependencies-on-ubuntu
   - /blog/tldr-dependencias-dev-python-no-ubuntu
@@ -25,7 +25,7 @@ ImproperlyConfigured: Error loading either pysqlite2 or sqlite3 modules (tried i
 
 Para resolver estes problemas basta instalar esta dependência externa que normalmente o sistema já reconfigura tudo para você, mas para quem trabalha múltiplas versões do python e com [pyenv](https://github.com/pyenv/pyenv) é preciso recompilar todas as versões do python toda vez que lembra de uma dependência externa.
 
-{{< videogif "/img/memes/here-we-go-woodpecker-witch.webm" >}}
+{{< videogif "assets/here-we-go-woodpecker-witch.webm" >}}
 
 Para não sofrer com este problema, após instalar o sistema operacional e antes de preparar o ambiente de desenvolvimento eu já instalo as principais dependências que costumo utilizar:
 

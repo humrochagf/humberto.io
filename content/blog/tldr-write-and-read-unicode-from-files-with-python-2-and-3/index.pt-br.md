@@ -8,7 +8,7 @@ tags:
   - python
   - unicode
 images:
-  - /img/tldr/encode-decode-pt-br.png
+  - /img/posts/tldr-write-and-read-unicode-from-files-with-python-2-and-3.pt-br.png
 aliases:
   - tldr-write-and-read-unicode-from-files-with-python-2-and-3
   - /blog/tldr-leitura-e-escrita-de-unicode-em-arquivos-com-python-2-e-3
@@ -31,7 +31,7 @@ Mudando para Python 3, onde **byte** e **string** são tipos distintos, o códig
 
 A solução para escrever um código que rode em ambas versões sem comportamentos inesperados é seguir o [zen do python](https://www.python.org/dev/peps/pep-0020/) onde diz que explícito é melhor que implícito e sempre definir de forma clara o que é **byte** do que é **string** desta forma:
 
-![encode decode](/img/tldr/encode-decode-pt-br.png)
+![encode decode](assets/encode-decode.pt-br.png)
 
 O código abaixo abre um arquivo temporário para escrita em **byte** e escreve nele uma **string** que foi codificada em **byte** usando o padrão [utf-8](https://pt.wikipedia.org/wiki/UTF-8). Em seguida é feito o processo inverso, abrindo o arquivo para leitura em **byte** e decodificando seu conteúdo em **string** para imprimir na tela:
 
@@ -55,7 +55,7 @@ with open(unicode_file, 'rb') as f:
 
 O resultado é um código que roda tanto em Python 2 quanto em Python 3:
 
-![rodando o código](/img/tldr/unicode-file.png)
+![rodando o código](assets/unicode-file.png)
 
 {{< tip class="info" >}}
 Esta dica também funciona para outros padrões de codificação como `latin-1` por exemplo

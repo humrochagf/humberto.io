@@ -11,7 +11,7 @@ tags:
   - static-sites
   - gh-pages
 images:
-  - /img/static-websites-lektor/lektor-meusite-admin.png
+  - /img/posts/static-websites-with-lektor.pt-br.png
 aliases:
   - static-websites-with-lektor
   - /blog/sites-estaticos-com-lektor
@@ -24,7 +24,7 @@ Usando ferramentas como o WordPress o problema era a dificuldade de customizaç�
 
 Em seguida com o [GitHub Pages](https://pages.github.com) eu descobri o [Pelican](http://blog.getpelican.com) por indicação do [Magnun Leno](http://mindbending.org/pt) e comecei a fazer muita coisa com ele, mas da mesma forma com que eu ganhei em liberdade de customização, o processo autoral era o mesmo do desenvolvimento o que em um primeiro momento parece legal não é mesmo? Pois é, mas com o tempo você percebe que isso acaba virando um problema quando você para a escrita de uma postagem para arrumar um **bug** ou melhorar alguma coisa no layout e lá vamos nós novamente...
 
-![e lá vamos nós novamente](/img/memes/again.png)
+![e lá vamos nós novamente](assets/again.png)
 
 Eis que em uma conversa no [grupo de telegram da comunidade python](https://telegram.me/pythonbr) me citam o Lektor e aí começou a aventura.
 
@@ -122,13 +122,13 @@ $ lektor server
 
 Com o servidor rodando acesse [localhost:5000](http://localhost:5000) para ver o resultado:
 
-![primeiro site rodando com Lektor](/img/static-websites-lektor/lektor-meusite.png)
+![primeiro site rodando com Lektor](assets/website.pt-br.png)
 
 ### Acessando o Admin
 
 Para acessar o admin clique na imagem de lápis no canto superior direito da página que você criou ou acesse [localhost:5000](http://localhost:5000/admin)
 
-![página de admin do Lektor](/img/static-websites-lektor/lektor-meusite-admin.png)
+![página de admin do Lektor](assets/admin.pt-br.png)
 
 ## Publicando o Site
 

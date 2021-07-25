@@ -8,7 +8,7 @@ tags:
   - python
   - pypi
 images:
-  - /img/generics/pypi.png
+  - /img/posts/tldr-how-to-publish-to-pypi.png
 aliases:
   - /blog/tldr-publicando-no-pypi
 

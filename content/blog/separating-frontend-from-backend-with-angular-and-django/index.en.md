@@ -9,7 +9,7 @@ tags:
   - angular
   - api
 images:
-  - /img/angular-django/django-startproject.gif
+  - /img/posts/separating-frontend-from-backend-with-angular-and-django.gif
 aliases:
   - /en/blog/separating-frontend-from-backend-with-angular-and-django
 
@@ -64,7 +64,7 @@ $ python manage.py runserver
 
 Then we start the browser at [localhost:8000](http://localhost:8000) to see the Django new application success screen.
 
-{{< videogif "/img/angular-django/django-startproject.webm" >}}
+{{< videogif "assets/django-startproject.webm" >}}
 
 The next step is to install the Django Rest Framework:
 
@@ -94,7 +94,7 @@ urlpatterns = [
 
 Now it is possible to log in by accessing [localhost:8000/api-auth/login/](http://localhost:8000/api-auth/login/).
 
-![rest login](/img/angular-django/djangorestframework-login.png)
+![rest login](assets/djangorestframework-login.png)
 
 With the authentication ready, let's start the shopping list app:
 
@@ -177,7 +177,7 @@ $ python manage.py migrate
 
 And voilá, our backend is working:
 
-![shopping list](/img/angular-django/djangorestframework-shopping-list.png)
+![shopping list](assets/djangorestframework-shopping-list.png)
 
 
 ## Frontend Implementation
@@ -193,7 +193,7 @@ $ ng serve
 
 Now we can access the frontend at [localhost:4200](http://localhost:4200) to see the Angular new project page.
 
-![angular home](/img/angular-django/angular-startproject.png)
+![angular home](assets/angular-startproject.png)
 
 Then we create a **service** to access the API and a **view** to list the items at the shopping list:
 
@@ -293,17 +293,17 @@ export class AppModule { }
 
 Accessing [localhost:4200](http://localhost:4200) we can see our beautiful shopping lis...
 
-![ops](/img/angular-django/ops.png)
+![ops](assets/ops.png)
 
-![wtf](/img/memes/wtf.png)
+![wtf](assets/wtf.png)
 
 There is something wrong with our application, let's check the browser console:
 
-![cors error](/img/angular-django/cors-error.png)
+![cors error](assets/cors-error.png)
 
 Ding! Ding! Ding! It seems we found our problem!
 
-![sherlock holmes](/img/angular-django/sherlock-holmes.png)
+![sherlock holmes](assets/sherlock.png)
 
 # Cross-Origin Resource Sharing (CORS)
 
@@ -345,7 +345,7 @@ At `CORS_ORIGIN_WHITELIST` we put only the origin that we want to allow access. 
 
 With that done, we can go to the browser and see the communication between the frontend and the backend working \o/.
 
-![it works](/img/angular-django/it-works.png)
+![it works](assets/it-works.png)
 
 Then, to make it even cooler, let's add some interactivity to our shopping list:
 
@@ -439,7 +439,7 @@ export class AppComponent implements OnInit {
 
 Now we have our shopping list done:
 
-{{< videogif "/img/angular-django/frontend-done.webm" >}}
+{{< videogif "assets/frontend-done.webm" >}}
 
 ## Conclusion
 

@@ -10,7 +10,7 @@ tags:
   - angular
   - api
 images:
-  - /img/angular-django/django-startproject.gif
+  - /img/posts/separating-frontend-from-backend-with-angular-and-django.gif
 aliases:
   - separating-frontent-from-backend-with-angular-and-django
   - /blog/separando-o-frontend-do-backend-com-angular-e-django
@@ -66,7 +66,7 @@ $ python manage.py runserver
 
 Ao iniciar o navegador em [localhost:8000](http://localhost:8000) veremos a nova tela de sucesso de criação de aplicação do Django 2 mostrando que a inicialização da sua nova aplicação foi um sucesso (muito bonita a nova tela né?!).
 
-{{< videogif "/img/angular-django/django-startproject.webm" >}}
+{{< videogif "assets/django-startproject.webm" >}}
 
 O próximo passo é instalar o Django Rest Framework, para montar a api do nosso backend:
 
@@ -96,7 +96,7 @@ urlpatterns = [
 
 Agora podemos visualizar a tela de login acessando [localhost:8000/api-auth/login/](http://localhost:8000/api-auth/login/)
 
-![rest login](/img/angular-django/djangorestframework-login.png)
+![rest login](assets/djangorestframework-login.png)
 
 Com isso, daremos inicio a nossa aplicação de lista de compras:
 
@@ -179,7 +179,7 @@ $ python manage.py migrate
 
 E voilá, nosso backend está funcionando:
 
-![shopping list](/img/angular-django/djangorestframework-shopping-list.png)
+![shopping list](assets/djangorestframework-shopping-list.png)
 
 
 ## Implementando o frontend
@@ -195,7 +195,7 @@ $ ng serve
 
 Se tudo tiver corrido como esperado ao acessar [localhost:4200](http://localhost:4200) veremos a página inicial de um novo projeto Angular.
 
-![home angular](/img/angular-django/angular-startproject.png)
+![home angular](assets/angular-startproject.png)
 
 Agora criaremos um **service** para acessar nossa api e uma **view** para listar os itens da nossa lista de compras:
 
@@ -295,17 +295,17 @@ export class AppModule { }
 
 Acessando [localhost:4200](http://localhost:4200) veremos nossa belíssima lista de comp...
 
-![ops](/img/angular-django/ops.png)
+![ops](assets/ops.png)
 
-![wtf](/img/memes/wtf.png)
+![wtf](assets/wtf.png)
 
 Algo está errado com nossa aplicação, vamos dar uma olhada no console do browser:
 
-![cors error](/img/angular-django/cors-error.png)
+![cors error](assets/cors-error.png)
 
 Ding! ding! ding! parece que encontramos o problema!
 
-![xeroque holmes](/img/memes/xeroque-holmes.png)
+![xeroque holmes](assets/sherlock.pt-br.png)
 
 # Cross-Origin Resource Sharing (CORS)
 
@@ -347,7 +347,7 @@ Em `CORS_ORIGIN_WHITELIST` colocamos somente a origem que queremos liberar o ace
 
 Feito isso agora podemos ver que a comunicação entre frontend e backend está funcionando \o/.
 
-![funcionou](/img/angular-django/it-works.png)
+![funcionou](assets/it-works.png)
 
 Agora para finalizar vamos adicionar um pouco de interatividade em nossa lista de compras:
 
@@ -441,7 +441,7 @@ export class AppComponent implements OnInit {
 
 E agora sim, temos a lista de compras completa e funcionando:
 
-{{< videogif "/img/angular-django/frontend-done.webm" >}}
+{{< videogif "assets/frontend-done.webm" >}}
 
 ## Conclusão
 

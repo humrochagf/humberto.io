@@ -7,7 +7,7 @@ tags:
   - python
   - django
 images:
-  - /img/generics/django.png
+  - /img/posts/tldr-setting-mutable-objects-at-django-model-field-default.png
 
 ---
 

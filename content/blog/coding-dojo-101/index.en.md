@@ -7,7 +7,7 @@ tags:
   - learning
   - python
 images:
-  - /img/coding-dojo-101/flow-en.jpg
+  - /img/posts/coding-dojo-101.jpg
 aliases:
   - /en/blog/coding-dojo-101
 
@@ -43,7 +43,7 @@ To make a dojo you don't need much:
 
 The flow of a coding dojo is pretty much like that:
 
-![the flow of a coding dojo](/img/coding-dojo-101/flow-en.jpg)
+![the flow of a coding dojo](assets/flow.jpg)
 
 It has **cycles of 5 to 7 minutes**, which can be changed, but for beginners it's recommended that the cycle don't be too big to avoid someone getting stuck at some logic and also to invite more people to go to the computer to code (I personally like it to be of 5 minutes).
 
@@ -118,7 +118,7 @@ It will look into the file for classes that extends `unittest.TestCase` and will
 
 To keep everyone aware about if the tests are passing we will need to run the test command at each change to the code but, we can improve that and run the tests automatically and with a good visual feedback using a tests semaphore called [dose](https://github.com/danilobellini/dose) created by [Danilo Bellini](https://twitter.com/danilobellini):
 
-![dose coding dojo semaphore](/img/coding-dojo-101/dose.png)
+![dose coding dojo semaphore](assets/dose.png)
 
 It works with python and another languages too.
 

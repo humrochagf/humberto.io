@@ -9,7 +9,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/movement-collision.png
+  - /img/posts/exploring-pygame-5-movement-and-collision.png
 aliases:
   - exploring-pygame-5-movement-and-collision
 
@@ -64,7 +64,7 @@ Este loop de desenho do objeto cria o efeito cinemático de deslocamento na tela
 
 Não é possível controlar a velocidade de movimento do objeto e, em computadores mais potentes, mais loops por segundo serão processados causando eventualmente resultados como este:
 
-{{< videogif "/img/exploring-pygame/square-fast.webm" >}}
+{{< videogif "assets/square-fast.webm" >}}
 
 Para corrigir este problema precisamos voltar as aulas de física quando nos ensinaram sobre o **MRU** (**M**ovimento **R**etilíneo **U**niforme) e, para garantirmos uma velocidade constante, usaremos a seguinte fórmula:
 
@@ -127,7 +127,7 @@ Na **linha 28** o tempo inicial passa a ser o tempo final para que possamos usá
 
 Por fim calculamos o deslocamento que será feito na **linha 36**.
 
-{{< videogif "/img/exploring-pygame/square-velocity.webm" >}}
+{{< videogif "assets/square-velocity.webm" >}}
 
 Como podemos ver, agora é possível controlar a velocidade de movimentação dos objetos mas, isso só resolve a parte visível do problema, o loop continua sendo executado muito mais que o necessário. Nem o olho humano, nem a taxa de atualização do seu monitor conseguem acompanhar um volume exagerado de atualizações consecutivas além da sobrecarga desnecessária do processador.
 
@@ -264,7 +264,7 @@ Na **linha 37** a função `collidelist` verifica se ocorreu alguma colisão com
 
 Por fim, o quadrado e os pads são desenhados na tela utilizando suas instâncias de `Rect` produzindo o resultado a seguir:
 
-{{< videogif "/img/exploring-pygame/square-collision.webm" >}}
+{{< videogif "assets/square-collision.webm" >}}
 
 ## Conclusão
 

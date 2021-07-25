@@ -7,7 +7,7 @@ tags:
   - python
   - emails
 images:
-  - /img/emails/python-mail.png
+  - /img/posts/sending-and-receiving-emails-with-python.png
 aliases:
   - sending-and-receiving-emails-with-python
   - /blog/enviando-e-recebendo-emails-com-python
@@ -16,7 +16,7 @@ aliases:
 
 Um dia na terça do Python no [Calango Hacker Clube](https://calango.club/) surgiu uma dúvida de como ler emails do Gmail para poder categorizar as mensagens e automatizar o processo de leitura dos emails usando Python. Esta dúvida motivou esta postagem que tem o objetivo de ajudar a todos que tiverem dúvidas de como começar a interagir com sistemas de troca de emails utilizando Python.
 
-![python email](/img/emails/python-mail.png)
+![python email](assets/python-mail.png)
 
 {{< tip class="info" >}}
 Esta postagem tem como alvo o público iniciante mas também pode ser útil para quem já possuí experiência na linguagem mas nunca tinha trabalhado diretamente com envio e recebimento de emails. A versão do Python utilizada para publicar esta postagem foi a 3.6.x.
@@ -105,11 +105,11 @@ O google bloqueia acessos de aplicações que ele julgar como não seguindo os p
 
 Entretanto, para que isso não seja um empecilho em seus primeiros passos no mundo do envio e recebimento de emails, você pode liberar o acesso de apps mesmos seguros através das configurações de segurança da sua conta em [https://myaccount.google.com/u/0/security?hl=pt](https://myaccount.google.com/u/0/security?hl=pt):
 
-![Acesso a app menos seguro](/img/emails/menos-seguro.png)
+![Acesso a app menos seguro](assets/less-secure-access.pt-br.png)
 
 Com isso passaremos a utilizar o google como nosso intermediário (**gateway**) para enviar as mensagens de emails. Mas tenha em mente que mesmo com o google como seu **gateway** existe uma política de envio de mensagens de email, cuidado com os **SPAMS**.
 
-![SPAM](/img/memes/spam.jpg)
+![SPAM](assets/spam.jpg)
 
 ## Recebendo emails
 

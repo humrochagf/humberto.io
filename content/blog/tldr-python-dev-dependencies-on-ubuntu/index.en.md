@@ -7,7 +7,7 @@ tags:
   - python
   - ubuntu
 images:
-  - /img/generics/python-ubuntu.jpg
+  - /img/posts/tldr-python-dev-dependencies-on-ubuntu.jpg
 aliases:
   - /en/blog/tldr-python-dev-dependencies-on-ubuntu
 
@@ -23,7 +23,7 @@ ImproperlyConfigured: Error loading either pysqlite2 or sqlite3 modules (tried i
 
 To solve errors like that, you need to install the external library, and the system configures everything to you. However, if you work with multiple Python versions managed by [pyenv](https://github.com/pyenv/pyenv), you have to rebuild all python versions every time that you remember to install a new dependency.
 
-{{< videogif "/img/memes/here-we-go-woodpecker-witch.webm" >}}
+{{< videogif "assets/here-we-go-woodpecker-witch.webm" >}}
 
 To avoid suffering from that, after installing the OS, and before mounting your Python environment, I like to install all the main external dependencies that I'm used to using:
 

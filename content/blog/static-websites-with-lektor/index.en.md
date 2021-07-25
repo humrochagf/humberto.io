@@ -10,7 +10,7 @@ tags:
   - static-sites
   - gh-pages
 images:
-  - /img/static-websites-lektor/lektor-mywebsite-admin.png
+  - /img/posts/static-websites-with-lektor.png
 
 ---
 
@@ -22,7 +22,7 @@ Then I discovered [GitHub Pages](https://pages.github.com), and at the same time
 
 That was cool, but still, there some things that were bugging me. Even with the freedom to customize everything, the publishing was the same as the development pipeline. At first you say that this is a plus right? Yeah but that become a problem when you stop your writing because you found a bug or just seen something that can be improved and here we go again...
 
-![here we go again meme](/img/memes/again.png)
+![here we go again meme](assets/again.png)
 
 So a while ago, chatting with some friends at the [Brazilian Python community Telegram group](https://telegram.me/pythonbr) someone quoted **Lektor** as a new alternative to **Pelican** then my adventure at **Lektor** started.
 
@@ -120,13 +120,13 @@ $ lektor server
 
 With the server running access [localhost:5000](http://localhost:5000) to see the result:
 
-![fist Lektor website running locally](/img/static-websites-lektor/lektor-mywebsite.png)
+![fist Lektor website running locally](assets/website.png)
 
 ### Accessing the Admin
 
 To access the admin interface just click at the pencil icon at the top right corner of the page that you opened or go to [localhost:5000/admin](http://localhost:5000/admin):
 
-![Lektor admin page](/img/static-websites-lektor/lektor-mywebsite-admin.png)
+![Lektor admin page](assets/admin.png)
 
 ## Publishing the Website
 

@@ -8,7 +8,7 @@ tags:
   - python
   - pipx
 images:
-  - /img/awesome-libs/pipx.png
+  - /img/posts/awesome-libs-pipx.png
 aliases:
   - awesome-libs-pipx
   - libs-fantasticas
@@ -23,7 +23,7 @@ Quantas vezes você já teve que instalar algum programa Python em uma virtualen
 
 Se você gosta de manter as coisas organizadas, gosta de estabilidade e de não ter que ficar se repetindo toda hora [pipx](https://pipxproject.github.io/pipx/) é uma **lib fantástica** para você!
 
-![organized kittens image](/img/memes/organized-kittens.jpg)
+![organized kittens image](assets/organized-kittens.jpg)
 
 Pipx é uma ferramenta muito útil que serve para instalar programas Python em ambientes isolados expondo suas interfaces de linha de comando para que você possa executá-los de qualquer lugar.
 

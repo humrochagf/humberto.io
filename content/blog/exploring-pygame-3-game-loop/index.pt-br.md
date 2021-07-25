@@ -8,7 +8,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/game-loop-pt-br.png
+  - /img/posts/exploring-pygame-3-game-loop.pt-br.png
 aliases:
   - exploring-pygame-3-game-loop
   - /blog/desbravando-o-pygame-3-game-loop
@@ -23,7 +23,7 @@ Dentro da computação o conceito de ciclo é bastante recorrente, trata-se de u
 
 O ciclo dentro do desenvolvimento de jogos é chamado de Game Loop e é peça fundamental na estrutura de um jogo. De modo simplificado temos a seguinte estrutura:
 
-![loop basico](/img/exploring-pygame/game-loop-pt-br.png)
+![loop basico](assets/game-loop.pt-br.png)
 
 Durante a execução jogo está sempre:
 

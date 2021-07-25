@@ -8,7 +8,7 @@ tags:
   - django
   - frameworks
 images:
-  - /img/generics/django.png
+  - /img/posts/django-generic-manytomany-relations.png
 aliases:
   - django-generic-manytomany-relations
   - /blog/relacionamentos-manytomany-genericos-com-django

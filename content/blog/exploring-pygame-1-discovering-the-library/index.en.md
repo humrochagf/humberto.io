@@ -7,7 +7,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/hello.png
+  - /img/posts/exploring-pygame-1-discovering-the-library.png
 
 ---
 
@@ -81,7 +81,7 @@ $ python hello.py
 
 So the result will be this:
 
-![hello](/img/exploring-pygame/hello.png)
+![hello](assets/hello.png)
 
 It's still far from a game, but we can see some basic concepts to be discussed.
 

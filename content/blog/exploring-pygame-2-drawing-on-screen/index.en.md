@@ -7,7 +7,7 @@ tags:
   - pygame
   - gamedev
 images:
-  - /img/exploring-pygame/drawing-axis.jpg
+  - /img/posts/exploring-pygame-2-drawing-on-screen.jpg
 aliases:
   - /en/blog/exploring-pygame-2-drawing-on-screen
 
@@ -19,11 +19,11 @@ During a game lifetime, we are constantly drawing on the screen. Now that we lea
 
 Going back to math classes at high school we were introduced to the [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system). It is basically one bidimensional plane oriented by the axis **x** and **y** where the **x** values grow from left to right while **y** grows from bottom to top:
 
-![cartesian axis](/img/exploring-pygame/cartesian-axis.jpg)
+![cartesian axis](assets/cartesian-axis.jpg)
 
 At pygame there's a little change, the drawing space will use the coordinates **x** and **y** too but the **y** axis will follow the opposite direction from the cartesian coordinate system, **y** will grow from top to bottom and the visible area of the screen will be located starting from the point `x=0` and `y=0` as the top left corner of your program window going until the size defined at the command `pygame.display.set_mode((x, y))`:
 
-![drawing axis](/img/exploring-pygame/drawing-axis.jpg)
+![drawing axis](assets/drawing-axis.jpg)
 
 ## Let's Draw!
 

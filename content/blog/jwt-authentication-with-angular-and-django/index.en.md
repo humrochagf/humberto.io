@@ -11,7 +11,7 @@ tags:
   - jwt
   - auth
 images:
-  - /img/generics/jwt.jpg
+  - /img/posts/jwt-authentication-with-angular-and-django.jpg
 
 ---
 
@@ -98,7 +98,7 @@ This authentication mechanism is **stateless** and does not require session regi
 
 Now, let's go to the coding!
 
-{{< videogif "/img/memes/coding-cat.webm" >}}
+{{< videogif "assets/coding-cat.webm" >}}
 
 So for that, we use as starting point the application created at the previous post ["Separating Frontend from Backend with Angular and Django"](/blog/separating-frontend-from-backend-with-angular-and-django/).
 
@@ -152,7 +152,7 @@ urlpatterns = [
 
 The default permission to the resources changed at the `settings.py` to `IsAuthenticated`, so if you try to access the shopping list you get the following result:
 
-![denied](/img/angular-django/denied.png)
+![denied](assets/denied.png)
 
 Now that the resource access is allowed to logged users only let's implement the authentication at the **frontend**.
 
@@ -571,9 +571,9 @@ export class LoginComponent implements OnInit {
 
 With the app running, we can see the login process working \o/
 
-{{< videogif "/img/angular-django/auth.webm" >}}
+{{< videogif "assets/auth.webm" >}}
 
-![it works](/img/memes/amazed-cat.jpg)
+![it works](assets/amazed-cat.jpg)
 
 ## Signup process
 
