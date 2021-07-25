@@ -1,15 +1,16 @@
 ---
 title: "TLDR: Publicando no PyPI"
-description: Publique seu primeiro pacote no Python Package Index (PyPi)
+description: "Publique seu primeiro pacote no Python Package Index (PyPi)"
 publishDate: 2018-03-05
+slug: tldr-publicando-no-pypi
+tags:
+  - tldr
+  - python
+  - pypi
 images:
   - /img/generics/pypi.png
-slug: tldr-publicando-no-pypi
-tags: ["tldr", "python", "pypi"]
-aliases: [
-  "/blog/tldr-publicando-no-pypi"
-]
-draft: false
+aliases:
+  - /blog/tldr-publicando-no-pypi
 
 ---
 

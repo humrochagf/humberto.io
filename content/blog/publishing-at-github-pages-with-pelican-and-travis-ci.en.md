@@ -1,11 +1,17 @@
 ---
-title: Publishing at GitHub Pages with Pelican and Travis-CI
-description: Create your first static website using Pelican and hosting at GitHub Pages using Travis-CI to automate the deploy process
+title: "Publishing at GitHub Pages with Pelican and Travis-CI"
+description: "Create your first static website using Pelican and hosting at GitHub Pages using Travis-CI to automate the deploy process"
 publishDate: 2016-05-05
+tags:
+  - python
+  - pelican
+  - frameworks
+  - blog
+  - static-sites
+  - gh-pages
+  - travis-ci
 images:
   - /img/publishing-pelican-travis/pelican-fist-post.png
-tags: ["python", "pelican", "frameworks", "blog", "static-sites", "gh-pages", "travis-ci"]
-draft: false
 
 ---
 

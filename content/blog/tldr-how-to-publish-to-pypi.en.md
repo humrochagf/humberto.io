@@ -1,11 +1,13 @@
 ---
 title: "TLDR: How to Publish to PyPI"
-description: Publish your first package to the Python Package Index (PyPI)
+description: "Publish your first package to the Python Package Index (PyPI)"
 publishDate: 2018-03-05
+tags:
+  - tldr
+  - python
+  - pypi
 images:
   - /img/generics/pypi.png
-tags: ["tldr", "python", "pypi"]
-draft: false
 
 ---
 

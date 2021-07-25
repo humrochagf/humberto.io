@@ -1,11 +1,13 @@
 ---
 title: "TLDR: Setting mutable objects at Django Model Field default"
-description: Learn how to set mutable objects as default on Django Model Fields properly, and save you a lot of time with debugging
+description: "Learn how to set mutable objects as default on Django Model Fields properly, and save you a lot of time with debugging"
 publishDate: 2018-04-25
+tags:
+  - tldr
+  - python
+  - django
 images:
   - /img/generics/django.png
-tags: ["tldr", "python", "django"]
-draft: false
 
 ---
 

@@ -1,14 +1,17 @@
 ---
-title: Separating Frontend from Backend with Angular and Django
-description: Discover how to separate your stacks to get autonomy between frontend and backend using Angular 6 and Django 2
+title: "Separating Frontend from Backend with Angular and Django"
+description: "Discover how to separate your stacks to get autonomy between frontend and backend using Angular 6 and Django 2"
 publishDate: 2018-02-13
+tags:
+  - python
+  - django
+  - typescript
+  - angular
+  - api
 images:
   - /img/angular-django/django-startproject.gif
-tags: ["python", "django", "typescript", "angular", "api"]
-aliases: [
-  "/en/blog/separating-frontend-from-backend-with-angular-and-django/"
-]
-draft: false
+aliases:
+  - /en/blog/separating-frontend-from-backend-with-angular-and-django
 
 ---
 

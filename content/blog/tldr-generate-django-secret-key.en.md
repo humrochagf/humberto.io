@@ -1,11 +1,13 @@
 ---
 title: "TLDR: Generate Django Secret Key"
-description: Generate Django's secret key right from your terminal without needing to risk yourself on any website
+description: "Generate Django's secret key right from your terminal without needing to risk yourself on any website"
 publishDate: 2019-07-12
+tags:
+  - tldr
+  - python
+  - django
 images:
   - /img/tldr/secret-key.png
-tags: ["tldr", "python", "django"]
-draft: false
 
 ---
 

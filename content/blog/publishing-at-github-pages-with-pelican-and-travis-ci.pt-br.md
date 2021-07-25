@@ -1,15 +1,21 @@
 ---
-title: GitHub Pages com Pelican e Travis-CI
-description: Montando um site estático com Pelican e hospedando no Github Pages usando Travis-CI para o deploy automático
+title: "GitHub Pages com Pelican e Travis-CI"
+description: "Montando um site estático com Pelican e hospedando no Github Pages usando Travis-CI para o deploy automático"
 publishDate: 2016-05-05
+slug: github-pages-com-pelican-e-travis-ci
+tags:
+  - python
+  - pelican
+  - frameworks
+  - blog
+  - static-sites
+  - gh-pages
+  - travis-ci
 images:
   - /img/publishing-pelican-travis/pelican-fist-post.png
-slug: github-pages-com-pelican-e-travis-ci
-tags: ["python", "pelican", "frameworks", "blog", "static-sites", "gh-pages", "travis-ci"]
-aliases: [
-  "/blog/github-pages-com-pelican-e-travis-ci"
-]
-draft: false
+aliases:
+  - publishing-at-github-pages-with-pelican-and-travis-ci
+  - /blog/github-pages-com-pelican-e-travis-ci
 
 ---
 

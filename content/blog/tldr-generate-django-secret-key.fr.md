@@ -1,12 +1,16 @@
 ---
 title: "TLDR: Comment créer une Django Secret Key"
-description: Comment créer une nouvelle Secret Key dans la ligne de commande pour l'utiliser avec Django sans y recourir à un site web
+description: "Comment créer une nouvelle Secret Key dans la ligne de commande pour l'utiliser avec Django sans y recourir à un site web"
 publishDate: 2019-07-12
+slug: tldr-comment-creer-une-django-secret-key
+tags:
+  - tldr
+  - python
+  - django
 images:
   - /img/tldr/secret-key.png
-slug: tldr-comment-creer-une-django-secret-key
-tags: ["tldr", "python", "django"]
-draft: false
+aliases:
+  - tldr-generate-django-secret-key
 
 ---
 

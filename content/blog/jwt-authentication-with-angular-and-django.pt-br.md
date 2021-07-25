@@ -1,15 +1,21 @@
 ---
-title: Autenticação JWT com Angular e Django
-description: Implemente um modelo de autenticação JWT com frontend em Angular 6 e um backend de api em Django 2
+title: "Autenticação JWT com Angular e Django"
+description: "Implemente um modelo de autenticação JWT com frontend em Angular 6 e um backend de api em Django 2"
 publishDate: 2018-04-15
+slug: autenticacao-jwt-com-angular-e-django
+tags:
+  - python
+  - django
+  - typescript
+  - angular
+  - api
+  - jwt
+  - auth
 images:
   - /img/generics/jwt.jpg
-slug: autenticacao-jwt-com-angular-e-django
-tags: ["python", "django", "typescript", "angular", "api", "jwt", "auth"]
-aliases: [
-  "/blog/autenticacao-jwt-com-angular-e-django"
-]
-draft: false
+aliases:
+  - jwt-authentication-with-angular-and-django
+  - /blog/autenticacao-jwt-com-angular-e-django
 
 ---
 

@@ -1,13 +1,19 @@
-+++
-description = "Um breve conto sobre a jornada de publicar meu primeiro jogo"
-images = ["/img/first-game/pyxel-lander-splash-screen.png"]
-linkTitle = ""
-publishDate = "2019-08-28T00:00:00-03:00"
-slug = "publicando-meu-primeiro-jogo"
-tags = ["python", "pyxel", "gamedev"]
-title = "Publicando meu primeiro Jogo"
+---
+title: "Publicando meu primeiro Jogo"
+description: "Um breve conto sobre a jornada de publicar meu primeiro jogo"
+publishDate: 2019-08-28
+slug: publicando-meu-primeiro-jogo
+tags:
+  - python
+  - pyxel
+  - gamedev
+images:
+  - /img/first-game/pyxel-lander-splash-screen.png
+aliases:
+  - publishing-my-first-game
 
-+++
+---
+
 Jogos sempre me conectam com tecnologia desde o início.
 
 Eu e meu pai montamos nosso primeiro computador (um Pentium 286) e a primeira coisa que eu me lembro de fazer, foi jogar os jogos de DOS como Prince of Persia e Lunar Lander. Eu aprendi vários comandos de CLI só para poder jogar os meus jogos favoritos.

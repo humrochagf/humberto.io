@@ -1,15 +1,17 @@
 ---
 title: "TLDR: Dependências Dev Python no Ubuntu"
-description: Configure as principais dependencias externas de um ambiente de desenvolvimento python no Ubuntu
+description: "Configure as principais dependencias externas de um ambiente de desenvolvimento python no Ubuntu"
 publishDate: 2018-06-19
+slug: tldr-dependencias-dev-python-no-ubuntu
+tags:
+  - tldr
+  - python
+  - ubuntu
 images:
   - /img/generics/python-ubuntu.jpg
-slug: tldr-dependencias-dev-python-no-ubuntu
-tags: ["tldr", "python", "ubuntu"]
-aliases: [
-  "/blog/tldr-dependencias-dev-python-no-ubuntu"
-]
-draft: false
+aliases:
+  - tldr-python-dev-dependencies-on-ubuntu
+  - /blog/tldr-dependencias-dev-python-no-ubuntu
 
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: "TLDR: Write and Read Unicode from files with Python 2 and 3"
-description: Read and write Unicode characters on files keeping the consistency of code between Python 2 and Python 3 codebases
+description: "Read and write Unicode characters on files keeping the consistency of code between Python 2 and Python 3 codebases"
 publishDate: 2018-08-23
+tags:
+  - tldr
+  - python
+  - unicode
 images:
   - /img/tldr/encode-decode.png
-tags: ["tldr", "python", "unicode"]
-draft: false
 
 ---
 

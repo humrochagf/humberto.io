@@ -1,15 +1,15 @@
 ---
-title: Software Livre ou Código Aberto?
-description: Seriam eles a mesma coisa? o que tem de diferente nessas duas linhas de pensamento?
+title: "Software Livre ou Código Aberto?"
+description: "Seriam eles a mesma coisa? o que tem de diferente nessas duas linhas de pensamento?"
 publishDate: 2016-05-25
+slug: software-livre-ou-codigo-aberto
+tags:
+  - thoughts
 images:
   - /img/generics/opensource-freesoftware.jpg
-slug: software-livre-ou-codigo-aberto
-tags: ["thoughts"]
-aliases: [
-  "/blog/software-livre-ou-codigo-aberto"
-]
-draft: false
+aliases:
+  - free-software-or-open-source
+  - /blog/software-livre-ou-codigo-aberto
 
 ---
 

@@ -1,15 +1,17 @@
 ---
 title: "TLDR: Leitura e escrita de Unicode em arquivos com Python 2 e 3"
-description: Leia e escreva caracteres Unicode em arquivos com um código que roda tanto em Python 2 quanto em Python 3
+description: "Leia e escreva caracteres Unicode em arquivos com um código que roda tanto em Python 2 quanto em Python 3"
 publishDate: 2018-08-23
+slug: tldr-leitura-e-escrita-de-unicode-em-arquivos-com-python-2-e-3
+tags:
+  - tldr
+  - python
+  - unicode
 images:
   - /img/tldr/encode-decode-pt-br.png
-slug: tldr-leitura-e-escrita-de-unicode-em-arquivos-com-python-2-e-3
-tags: ["tldr", "python", "unicode"]
-aliases: [
-  "/blog/tldr-leitura-e-escrita-de-unicode-em-arquivos-com-python-2-e-3"
-]
-draft: false
+aliases:
+  - tldr-write-and-read-unicode-from-files-with-python-2-and-3
+  - /blog/tldr-leitura-e-escrita-de-unicode-em-arquivos-com-python-2-e-3
 
 ---
 

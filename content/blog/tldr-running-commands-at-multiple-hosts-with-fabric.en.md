@@ -1,11 +1,13 @@
 ---
 title: "TLDR: Running commands at multiple hosts with Fabric"
-description: Discover how to use Fabric to automate repetitive tasks at your servers
+description: "Discover how to use Fabric to automate repetitive tasks at your servers"
 publishDate: 2018-02-17
+tags:
+  - tldr
+  - python
+  - fabric
 images:
   - /img/generics/fabric.png
-tags: ["tldr", "python", "fabric"]
-draft: false
 
 ---
 

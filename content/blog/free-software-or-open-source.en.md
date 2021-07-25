@@ -1,11 +1,11 @@
 ---
-title: Free Software or Open Source?
-description: Is it the same thing? What's the difference between this two lines of thought?
+title: "Free Software or Open Source?"
+description: "Is it the same thing? What's the difference between this two lines of thought?"
 publishDate: 2016-05-25
-images: 
+tags:
+  - thoughts
+images:
   - /img/generics/opensource-freesoftware.jpg
-tags: ["thoughts"]
-draft: false
 
 ---
 

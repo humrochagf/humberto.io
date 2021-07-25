@@ -1,11 +1,16 @@
 ---
-title: Static Websites with Lektor
-description: Introduction to building static sites with lektor
+title: "Static Websites with Lektor"
+description: "Introduction to building static sites with lektor"
 publishDate: 2016-04-23
+tags:
+  - python
+  - lektor
+  - frameworks
+  - blog
+  - static-sites
+  - gh-pages
 images:
   - /img/static-websites-lektor/lektor-mywebsite-admin.png
-tags: ["python", "lektor", "frameworks", "blog", "static-sites", "gh-pages"]
-draft: false
 
 ---
 

@@ -1,15 +1,16 @@
 ---
-title: Melhorando a rastreabilidade de UTM no seu site
-description: Melhore a rastreabilidade dos parâmetros de UTM nas landing pages de seus site de forma fácil com o utmkeeper
+title: "Melhorando a rastreabilidade de UTM no seu site"
+description: "Melhore a rastreabilidade dos parâmetros de UTM nas landing pages de seus site de forma fácil com o utmkeeper"
 publishDate: 2018-09-14
+slug: melhorando-a-rastreabilidade-de-utm-no-seu-site
+tags:
+  - javascript
+  - utm
 images:
   - /img/utmkeeper/utm.png
-slug: melhorando-a-rastreabilidade-de-utm-no-seu-site
-tags: ["javascript", "utm"]
-aliases: [
-  "/blog/melhorando-a-rastreabilidade-de-utm-no-seu-site"
-]
-draft: false
+aliases:
+  - improving-the-utm-tracking-of-your-website
+  - /blog/melhorando-a-rastreabilidade-de-utm-no-seu-site
 
 ---
 

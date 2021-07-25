@@ -1,14 +1,13 @@
 ---
-title: Olá mundo!
-description: Post de apresentação do blog
+title: "Olá mundo!"
+description: "Post de apresentação do blog"
 publishDate: 2016-04-21
 slug: ola-mundo
 images:
   - /img/hello-world/ola.png
-aliases: [
-  "/blog/ola-mundo"
-]
-draft: false
+aliases:
+  - hello-world
+  - /blog/ola-mundo
 
 ---
 

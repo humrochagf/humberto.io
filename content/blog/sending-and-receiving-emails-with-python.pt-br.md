@@ -1,15 +1,16 @@
 ---
-title: Enviando e recebendo emails com Python
-description: Aprenda como começar a enviar e ler emails automaticamente com ajuda da linguagem Python
+title: "Enviando e recebendo emails com Python"
+description: "Aprenda como começar a enviar e ler emails automaticamente com ajuda da linguagem Python"
 publishDate: 2018-08-10
+slug: enviando-e-recebendo-emails-com-python
+tags:
+  - python
+  - emails
 images:
   - /img/emails/python-mail.png
-slug: enviando-e-recebendo-emails-com-python
-tags: ["python", "emails"]
-aliases: [
-  "/blog/enviando-e-recebendo-emails-com-python"
-]
-draft: false
+aliases:
+  - sending-and-receiving-emails-with-python
+  - /blog/enviando-e-recebendo-emails-com-python
 
 ---
 

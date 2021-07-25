@@ -1,14 +1,15 @@
 ---
 title: "TLDR: Python Dev Dependencies on Ubuntu"
-description: Discover the external dependencies to use at your Python development environment  on Ubuntu
+description: "Discover the external dependencies to use at your Python development environment on Ubuntu"
 publishDate: 2018-06-19
+tags:
+  - tldr
+  - python
+  - ubuntu
 images:
   - /img/generics/python-ubuntu.jpg
-tags: ["tldr", "python", "ubuntu"]
-aliases: [
-  "/en/blog/tldr-python-dev-dependencies-on-ubuntu"
-]
-draft: false
+aliases:
+  - /en/blog/tldr-python-dev-dependencies-on-ubuntu
 
 ---
 

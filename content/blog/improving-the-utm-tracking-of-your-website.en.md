@@ -1,11 +1,12 @@
 ---
-title: Improving the UTM tracking of your website
-description: Learn how to quickly improve the tracking from the UTM tags on your landing pages with utmkeeper
+title: "Improving the UTM tracking of your website"
+description: "Learn how to quickly improve the tracking from the UTM tags on your landing pages with utmkeeper"
 publishDate: 2018-09-14
+tags:
+  - javascript
+  - utm
 images:
   - /img/utmkeeper/utm.png
-tags: ["javascript", "utm"]
-draft: false
 
 ---
 
@@ -50,7 +51,7 @@ With these considerations in mind, I came with the **utmkeeper** (very descripti
 
 ## utmkeeper
 
-The **utmkeeper** is a javascript library with the single purpose of capture the **UTMs** and reapply them on every link and form of the page without affecting its navigability. 
+The **utmkeeper** is a javascript library with the single purpose of capture the **UTMs** and reapply them on every link and form of the page without affecting its navigability.
 
 With it, I can propagate the UTMs through the user navigation even if it happens across domains always keeping the UTM group that started that particular flow of navigation. It also is easy to apply on different platforms.
 

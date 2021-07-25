@@ -1,15 +1,17 @@
 ---
 title: "TLDR: Configurando corretamente o default de um Model Field do Django"
-description: Poupe muitas horas de debug em seu código com esta dica de como definir o valor default de um campo no Model do Django
+description: "Poupe muitas horas de debug em seu código com esta dica de como definir o valor default de um campo no Model do Django"
 publishDate: 2018-04-25
+slug: tldr-configurando-corretamente-o-default-de-um-model-field-do-django
+tags:
+  - tldr
+  - python
+  - django
 images:
   - /img/generics/django.png
-slug: tldr-configurando-corretamente-o-default-de-um-model-field-do-django
-tags: ["tldr", "python", "django"]
-aliases: [
-  "/blog/tldr-configurando-corretamente-o-default-de-um-model-field-do-django"
-]
-draft: false
+aliases:
+  - tldr-setting-mutable-objects-at-django-model-field-default
+  - /blog/tldr-configurando-corretamente-o-default-de-um-model-field-do-django
 
 ---
 

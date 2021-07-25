@@ -1,15 +1,17 @@
 ---
 title: "TLDR: Gerando Secret Key para o Django"
-description: Gere a Secret Key do Django direto do terminal sem precisar recorrer a um site na internet
+description: "Gere a Secret Key do Django direto do terminal sem precisar recorrer a um site na internet"
 publishDate: 2019-07-12
+slug: tldr-gerando-secret-key-para-o-django
+tags:
+  - tldr
+  - python
+  - django
 images:
   - /img/tldr/secret-key.png
-slug: tldr-gerando-secret-key-para-o-django
-tags: ["tldr", "python", "django"]
-aliases: [
-  "/blog/tldr-gerando-secret-key-para-o-django"
-]
-draft: false
+aliases:
+  - tldr-generate-django-secret-key
+  - /blog/tldr-gerando-secret-key-para-o-django
 
 ---
 

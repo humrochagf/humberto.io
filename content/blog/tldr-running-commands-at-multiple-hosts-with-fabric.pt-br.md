@@ -1,15 +1,16 @@
 ---
 title: "TLDR: Executando comandos em multiplos hosts com Fabric"
-description: Descubra utilizar o Fabric para automatizar tarefas repetitivas
+description: "Descubra utilizar o Fabric para automatizar tarefas repetitivas"
 publishDate: 2018-02-17
+slug: tldr-executando-comandos-em-multiplos-hosts-com-fabric
+tags:
+  - tldr
+  - python
+  - fabric
 images:
   - /img/generics/fabric.png
-slug: tldr-executando-comandos-em-multiplos-hosts-com-fabric
-tags: ["tldr", "python", "fabric"]
-aliases: [
-  "/blog/tldr-executando-comandos-em-multiplos-hosts-com-fabric"
-]
-draft: false
+aliases:
+  - /blog/tldr-executando-comandos-em-multiplos-hosts-com-fabric
 
 ---
 

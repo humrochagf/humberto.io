@@ -1,11 +1,12 @@
 ---
-title: Sending and receiving emails with Python
-description: Learn how to send, receive, and automate your email tasks using Python
+title: "Sending and receiving emails with Python"
+description: "Learn how to send, receive, and automate your email tasks using Python"
 publishDate: 2018-08-10
+tags:
+  - python
+  - emails
 images:
   - /img/emails/python-mail.png
-tags: ["python", "emails"]
-draft: false
 
 ---
 

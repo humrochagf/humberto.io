@@ -1,12 +1,16 @@
-+++
-description = "A brief tale about my journey of publishing my first game"
-images = ["/img/first-game/pyxel-lander-splash-screen.png"]
-linkTitle = ""
-publishDate = "2019-08-28T00:00:00-03:00"
-tags = ["python", "pyxel", "gamedev"]
-title = "Publishing my first Game"
+---
+title: "Publishing my first Game"
+description: "A brief tale about my journey of publishing my first game"
+publishDate: 2019-08-28
+tags:
+  - python
+  - pyxel
+  - gamedev
+images:
+  - /img/first-game/pyxel-lander-splash-screen.png
 
-+++
+---
+
 Games always connected me with technology since the beginning.
 
 My father and I, we built our first computer (a Pentium 286) and the first thing that I remember to do was to play some DOS games like Prince of Persia and Lunar Lander. I learned a bunch of CLI commands just to play my favorite games.
