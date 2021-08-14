@@ -8,7 +8,7 @@ menu:
 
 ---
 
-Salut, je m'appelle **Humberto Rocha Gonçalves Filho**.
+Salut, je m'appelle **Humberto**.
 
 Je suis un **Informaticien** enthousiaste à **Open Source** spécialisé dans la résolution de problèmes qui habite actuellement au **Québec, Canada**.
 

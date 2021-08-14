@@ -7,7 +7,7 @@ menu:
 
 ---
 
-Hello, my name is **Humberto Rocha Gonçalves Filho**.
+Hello, my name is **Humberto**.
 
 I'm a **Computer Scientist** / **Open Source** enthusiast specialized on problem solving currently living in **Quebec, Canada**.
 
