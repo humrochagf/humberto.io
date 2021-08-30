@@ -34,33 +34,25 @@ menu:
       url: tags/
       weight: 3
   footer:
-    - identifier: github
-      name: github
-      url: https://github.com/humrochagf/
+    - identifier: mastodon
+      name: mastodon
+      url: https://fosstodon.org/web/accounts/106533968271029035/
       weight: 1
     - identifier: twitter
       name: twitter
       url: https://twitter.com/humrochagf/
       weight: 2
-    - identifier: linkedin
-      name: linkedin
-      url: https://linkedin.com/in/humrochagf/
+    - identifier: github
+      name: github
+      url: https://github.com/humrochagf/
       weight: 3
-    - identifier: keybase
-      name: keybase
-      url: https://keybase.io/humrochagf/
+    - identifier: curriculum
+      name: curriculum
+      url: curriculum/
       weight: 4
     - identifier: rss
       name: rss
       weight: 5
-    - identifier: curriculum
-      name: curriculum
-      url: curriculum/
-      weight: 6
-    - identifier: email
-      name: email
-      url: mailto:humrochagf@gmail.com
-      weight: 7
 
 params:
   title: Humberto Rocha

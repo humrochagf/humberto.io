@@ -17,6 +17,6 @@ Other than writing in this blog, my hobbies are diverse. Starting at gastronomy 
 
 This blog is the place were I put into words a portion of my knowledge, synthesizing my personal discovery's and learning's but with no ambition of being the absolute source of truth to anything. I hope you find here something that can help you as it helped me before 😊
 
-You can also find me at [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) or [telegram](https://t.me/humrochagf).
+You can also find me at [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) or [mastodon](https://fosstodon.org/web/accounts/106533968271029035).
 
 And always remember: **Be kind**, **People > Technology** and **stay hydrated**!

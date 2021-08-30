@@ -18,6 +18,6 @@ En plus d'écrire ici, mes hobbies sont très diversifiés, allant de la gastron
 
 Ce blog est l'endroit ou je met en mot une partie de mon savoir qui est dans ma tête, en faisant la synthèse de mes découvertes et mes apprentissages personnelles, sans ambition d'être la source de la vérité absolue de quelque chose. J'espère que vous trouvez des choses qui puisse vous aider comme ça m'a déjà aidé 😊
 
-Vous pouvez me trouver chez [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) ou [telegram](https://t.me/humrochagf).
+Vous pouvez me trouver chez [github](https://github.com/humrochagf), [twitter](https://twitter.com/humrochagf) ou [mastodon](https://fosstodon.org/web/accounts/106533968271029035).
 
 Et n'oubliez jamais: **Soyez gentils**, **Personnes > Technologie** et **restez hydratés**!
