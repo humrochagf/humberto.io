@@ -60,7 +60,7 @@ params:
     - img/me.png
   themeColor: "#000000"
   themeInverseColor: "#ffffff"
-  siteLogo: img/me-100x100.png
+  siteLogo: img/me.png
 
   license:
     name: Attribuition-ShareAlike
