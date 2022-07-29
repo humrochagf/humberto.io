@@ -14,11 +14,11 @@ aliases:
 
 ---
 
-Enlevez la main qui n'a jamais ajouté une `SECRET_KEY` Django dans un commit au debout d'un projet e après, vous avez besoin de créer une nouvelle clé avant de l'envoyer à la prod?
+Levez la main ceux qui n'ont jamais ajouté une `SECRET_KEY` Django dans un commit au debut d'un projet e après, avoir besoin de créer une nouvelle clé avant de l'envoyer à la prod?
 
 Ce **TLDR** est un rappel rapide de comment créer une clé secrète, sans utiliser un site web pour le faire.
 
-Django crée une clé toujours quand on commence un nouveau projet, donc cette fonction est déjà là et on va l'utiliser de cette façon:
+Django toujours crée une clé quand on commence un nouveau projet, donc cette fonction est déjà là et on va l'utiliser de cette façon:
 
 {{< highlight python >}}
 from django.core.management.utils import get_random_secret_key
@@ -38,9 +38,9 @@ N'oubliez pas qu'il faut avoir installé Django dans votre environnement après 
 
 ## Actualisation Python 3.6+
 
-Grâce à interaction de [@ChristianHeimes](https://twitter.com/ChristianHeimes) et [@pauloxnet](https://twitter.com/pauloxnet) dans un postage de [@aclark4life](https://twitter.com/aclark4life) chez twitter. J'ai appris que à partir de la version Python 3.6 la bibliothèque [secrets](https://docs.python.org/3/library/secrets.html) a été ajoutée pour qui on puisse l'utiliser dans la création et manutention des chiffres aléatoires comme des clés secrètes.
+Grâce à interaction de [@ChristianHeimes](https://twitter.com/ChristianHeimes) et [@pauloxnet](https://twitter.com/pauloxnet) dans un post de [@aclark4life](https://twitter.com/aclark4life) sur twitter. J'ai appris qu'à partir de la version Python 3.6 la bibliothèque [secrets](https://docs.python.org/3/library/secrets.html) a été ajoutée pour qu'on puisse l'utiliser dans la création et manutention des chiffres aléatoires comme des clés secrètes.
 
-C'est une bonne solution qu'utilise le concept de **piles fournies** de Python et on peut l'utiliser pour créer la `SECRET_KEY` sans avoir Django installé:
+C'est une bonne solution qui utilise le concept de **piles fournies** de Python et on peut l'utiliser pour créer la `SECRET_KEY` sans avoir Django installé:
 
 {{< highlight python >}}
 import secrets

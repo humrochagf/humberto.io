@@ -16,7 +16,7 @@ aliases:
 
 Je commence cette série d'articles pour vous donner des conseils sur les bibliothèques qui peuvent vous être utiles au quotidien en tant que développeur et aussi pour présenter des bibliothèques que je pense que vous devriez surveiller.
 
-L'un des avantages d'un bon développeur est d'avoir un ensemble d'outils approprié disponible dans votre "ceinture utilitaire", et rien de plus approprié pour commencer cette série qu'une bibliothèque qui installe d'autres bibliothèques!
+L'un des avantages d'un bon développeur est d'avoir un ensemble d'outils appropriés disponibles dans votre "ceinture utilitaire", et rien de plus approprié pour commencer cette série qu'une bibliothèque qui installe d'autres bibliothèques!
 
 Combien de fois avez-vous installé les mêmes groupes de Python CLI dans un virtualenv Python? Avez-vous déjà mis à jour un outil et cassé une autre bibliothèque parce qu'elle partageait une dépendance en commun?
 

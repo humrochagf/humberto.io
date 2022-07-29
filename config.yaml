@@ -88,7 +88,7 @@ languages:
     languageName: Français
     weight: 3
     params:
-      description: Un blog ou je met en mot une partie de mon savoir a propos de la programmation, de la technologie et plus. J'espère que vous trouvez des choses qui puisse vous aider comme ça m'a déjà aidé 😊
+      description: Un blog ou je mets en mots une partie de mon savoir à propos de la programmation, de la technologie et plus encore. J'espère que vous trouvez des choses qui pourront vous aider comme ça m'a déjà aidé 😊
       license:
         name: Attribution - Partage dans les Mêmes Conditions
         type: by-sa
