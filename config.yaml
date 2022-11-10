@@ -35,7 +35,7 @@ menu:
   footer:
     - identifier: mastodon
       name: mastodon
-      url: https://fosstodon.org/web/accounts/106533968271029035/
+      url: https://fosstodon.org/@humrochagf
       weight: 1
     - identifier: twitter
       name: twitter
