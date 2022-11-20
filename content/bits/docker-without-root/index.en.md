@@ -18,18 +18,18 @@ Add your user to the `docker` group.
 sudo usermod -aG docker $USER
 ```
 
-Activate the changes to groups.
+Apply the changes to the group.
 
 ```shell
 newgrp docker
 ```
 
-Verify if you can run docker.
+Verify if you can run `docker`.
 
 ```shell
 docker version
 ```
 
 {{< tip class="warning" >}}
-Do not use this step to internet facing servers, keep docker privileges to the root user.
+This is not recommended on internet facing servers, keep `docker` privileges to the `root` user.
 {{< /tip >}}
