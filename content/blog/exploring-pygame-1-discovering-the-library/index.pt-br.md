@@ -33,21 +33,21 @@ O processo de instalação do pygame varia de acordo com o sistema operacional u
 
 Para instalar em sistemas linux baseados em debian você precisa instalar antes os pacotes externos ao python através de:
 
-{{< highlight console >}}
+```console
 $ sudo apt-get build-dep python-pygame
-{{< / highlight >}}
+```
 
 Em seguida, para instalar o pygame rode o seguinte comando em sua virtualenv:
 
-{{< highlight console >}}
+```console
 $ pip install pygame
-{{< / highlight >}}
+```
 
 Ou no próprio sistema:
 
-{{< highlight console >}}
+```console
 $ sudo pip install pygame
-{{< / highlight >}}
+```
 
 ### Olá mundo
 
@@ -55,7 +55,7 @@ Como de costume, ao aprender algo novo em programação vamos escrever um progra
 
 Para isso criaremos um arquivo `hello.py` com o seguinte conteúdo:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 # -*- coding: utf-8 -*-
 
 import time
@@ -73,13 +73,13 @@ screen.fill([0, 0, 0])
 pygame.display.flip()
 
 time.sleep(5)
-{{< / highlight >}}
+```
 
 Para rodar basta executar:
 
-{{< highlight console >}}
+```console
 $ python hello.py
-{{< / highlight >}}
+```
 
 O resultado será este:
 

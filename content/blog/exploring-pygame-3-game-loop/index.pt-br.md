@@ -41,7 +41,7 @@ Um outro ponto importante que não está nos itens acima mas está presente na g
 
 Para demonstrar o game loop em funcionamento faremos um programa que desenha uma bola que quica pelos cantos da tela:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 # -*- coding: utf-8 -*-
 
 import pygame
@@ -104,7 +104,7 @@ while True:
 
     # atualizando a tela
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 É assim, bem direto ao ponto, o loop definido em `while True:` irá rodar o código indefinidamente realizando as etapas de processamento de entrada, atualização do jogo e desenho a cada ciclo que passa.
 

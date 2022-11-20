@@ -22,7 +22,7 @@ If you are following this series of posts, you already saw an example of movemen
 
 This time we'll go through a similar code sample, adding more details to it and also, adding some new concepts:
 
-{{< highlight python "linenos=table,hl_lines=21 26" >}}
+```python {linenos=table, hl_lines=[12, 21, 26]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -51,7 +51,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 The code is pretty straight forward. We create a variable `position_x` to hold the square position on x.
 
@@ -69,7 +69,7 @@ $$d = d_{i} + v \Delta t$$
 
 Applying it to the code, we'll have this:
 
-{{< highlight python "linenos=table,hl_lines=16 19 24 26 28 36" >}}
+```python {linenos=table, hl_lines=[16, 19, 24, 26, 28, 36]}
 import time
 
 import pygame
@@ -112,7 +112,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 We start defining the velocity at the x-axis to 100 pixels per second.
 
@@ -141,7 +141,7 @@ Implementing this frame control gives you some benefits:
 
 The traditional refresh rate for movies is 24fps, and in games, it can change from 30 to 60fps. In our case, we'll use the 30fps refresh rate.
 
-{{< highlight python "linenos=table,hl_lines=16 19 24" >}}
+```python {linenos=table, hl_lines=[16, 19, 24]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -179,7 +179,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 Thanks to pygame's `Clock` implementation we could simplify things a little.
 
@@ -203,7 +203,7 @@ The collision detection tends to grow on complexity as long as you add more elem
 
 At the example below, we'll see its basic concept by making the square interact with two pads, changing direction after colliding with them.
 
-{{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
+```python {linenos=table, hl_lines=["12-19", "33-34", "36-38", "42-47"]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -253,7 +253,7 @@ while True:
         pygame.draw.rect(screen, WHITE, pad)
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 The most straightforward collision detection consists of treating all elements as rectangular areas. Pygame has it implemented on the `Rect` class. It was used at the code to create a rectangular area to the square and for the pads.
 

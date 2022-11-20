@@ -31,21 +31,21 @@ The **pygame** installation itself can be different from an **OS** and can be ch
 
 But, to install it into a **Debian** based system such as **Ubuntu** you must first make sure its dependencies are installed:
 
-{{< highlight console >}}
+```console
 $ sudo apt-get build-dep python-pygame
-{{< / highlight >}}
+```
 
 After that install **pygame** at your **virtualenv**:
 
-{{< highlight console >}}
+```console
 $ pip install pygame
-{{< / highlight >}}
+```
 
 Or system wide:
 
-{{< highlight console >}}
+```console
 $ sudo pip install pygame
-{{< / highlight >}}
+```
 
 ### Hello World
 
@@ -53,7 +53,7 @@ As usual, when we are learning something new in programming we start as small as
 
 To make that let's create a file called `hello.py` with the following content:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 # -*- coding: utf-8 -*-
 
 import time
@@ -71,13 +71,13 @@ screen.fill([0, 0, 0])
 pygame.display.flip()
 
 time.sleep(5)
-{{< / highlight >}}
+```
 
 Then we just need to run it:
 
-{{< highlight console >}}
+```console
 $ python hello.py
-{{< / highlight >}}
+```
 
 So the result will be this:
 

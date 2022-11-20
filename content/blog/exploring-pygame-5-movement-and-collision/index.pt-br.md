@@ -25,7 +25,7 @@ Se você vem acompanhando esta série de postagens, teve um breve exemplo de mov
 
 Desta vez veremos um código similar, detalhando o processo de movimentação, acrescentando novos conceitos. Começando pela forma mais básica de movimentação de um objeto na tela:
 
-{{< highlight python "linenos=table,hl_lines=12 21 26" >}}
+```python {linenos=table, hl_lines=[12, 21, 26]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -54,7 +54,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 O código é bem direto, é criada uma variável `position_x` para guardar a posição do quadrado no eixo x.
 
@@ -72,7 +72,7 @@ $$S = S_{i} + v \Delta t$$
 
 Sua aplicação no código ficará assim:
 
-{{< highlight python "linenos=table,hl_lines=16 19 24 26 28 36" >}}
+```python {linenos=table, hl_lines=[16, 19, 24, 26, 28, 36]}
 import time
 
 import pygame
@@ -115,7 +115,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 Começamos definindo a velocidade no eixo x para 100 pixels por segundo.
 
@@ -144,7 +144,7 @@ Implementar este controle em seu jogo trás uma série de benefícios:
 
 A taxa de atualização tradicional para filmes é de 24fps, já em jogos ela costuma variar entre 30 e 60fps. No nosso caso utilizaremos uma taxa de atualização de 30fps.
 
-{{< highlight python "linenos=table,hl_lines=16 19 24" >}}
+```python {linenos=table, hl_lines=[16, 19, 24]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -182,7 +182,7 @@ while True:
     pygame.draw.rect(screen, WHITE, [position_x, 230, 20, 20])
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 O controle de FPS foi simplificado graças a classe `Clock` do pygame, na verdade o código fica até mais curto.
 
@@ -204,7 +204,7 @@ A colisão é o produto da interação dos objetos do seu jogo podendo ocorrer e
 
 No exemplo vamos nos ater aos conceitos básicos, fazendo o quadrado interagir com os pads na tela, mudando de direção após sua colisão:
 
-{{< highlight python "linenos=table,hl_lines=12-19 33-34 36-38 42-47" >}}
+```python {linenos=table, hl_lines=["12-19", "33-34", "36-38", "42-47"]}
 import pygame
 
 BLACK = pygame.Color(0, 0, 0)
@@ -254,7 +254,7 @@ while True:
         pygame.draw.rect(screen, WHITE, pad)
 
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 A técnica de detecção de colisão mais simples consiste em tratar todos os elementos como áreas retangulares que no pygame esta mecânica é facilitada pela classe `Rect`, utilizada no código para criar uma área retangular para o quadrado e os pads com os quais irá se colidir.
 

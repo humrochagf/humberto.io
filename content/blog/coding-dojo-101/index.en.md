@@ -93,7 +93,7 @@ On a Python dojo I like to use for tests Python's standard library [unittest](ht
 
 To write a test with **unittest** you must create a class that extends `unittest.TestCase`:
 
-{{< highlight python >}}
+```python
 import unittest
 
 def increment(x):
@@ -102,15 +102,15 @@ def increment(x):
 class MyTest(unittest.TestCase):
     def test_increment(self):
         self.assertEqual(increment(3), 4)
-{{< / highlight >}}
+```
 
 The example above creates a test that tests a function called `increment` checking if we call the function passing `3` as parameter we will receive `4` as result.
 
 To run de tests with **nose** we call:
 
-{{< highlight console >}}
+```console
 $ nosetests file.py
-{{< / highlight >}}
+```
 
 It will look into the file for classes that extends `unittest.TestCase` and will run all of its methods that have `test` prefix automatically.
 
@@ -124,9 +124,9 @@ It works with python and another languages too.
 
 To run our tests with **nose** just call:
 
-{{< highlight console >}}
+```console
 $ dose nosetests file.py
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 If you have any problem with the installation process check out this post that I made about [Python dev dependencies](/blog/tldr-python-dev-dependencies-on-ubuntu/).

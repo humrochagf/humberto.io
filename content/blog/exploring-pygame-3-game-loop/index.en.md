@@ -37,7 +37,7 @@ Another important point that isn't present above is the time step control that k
 
 To show the **game loop** running we will write a program that draws a ball that bounces through the screen:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import pygame
 
 # define colors
@@ -98,7 +98,7 @@ while True:
 
     # update the screen
     pygame.display.flip()
-{{< / highlight >}}
+```
 
 The game loop is created with  `while True:` and will run indefinitely doing the game steps of input, processing and drawing at every cycle.
 

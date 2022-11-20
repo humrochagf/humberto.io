@@ -31,7 +31,7 @@ No pygame a coisa muda um pouco, o plano de desenho consiste também de dois eix
 
 Crie um arquivo `draw.py` com o seguinte conteúdo:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 # -*- coding: utf-8 -*-
 
 import time
@@ -79,7 +79,7 @@ screen.blit(text, [250, 200])
 pygame.display.flip()
 
 time.sleep(5)
-{{< / highlight >}}
+```
 
 Iniciamos nosso programa definindo os valores de cores para serem usados mais a frente. Em seguida inicializamos o pygame como feito anteriormente e carregamos uma fonte com `pygame.font.SysFont` para ser usada para escrever na tela.
 

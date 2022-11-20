@@ -29,7 +29,7 @@ Para demonstrar esta modelagem iremos usar a ideia de uma biblioteca  digital on
 
 Neste caso teremos do lado N os usuários e do lado N genérico as mídias. E seus models no django sem aplicar o relacionamento são:
 
-{{< highlight python >}}
+```python
 from django.db import models
 
 class Usuario(models.Model):
@@ -48,32 +48,32 @@ class Video(models.Model):
 class Texto(models.Model):
     titulo = models.CharField(max_length=60)
     num_paginas = models.PositiveSmallIntegerField()
-{{< / highlight >}}
+```
 
 ## Instalação
 
 Para instalar o django-gm2m rode em sua virtualenv ou ambiente do seu projeto:
 
-{{< highlight console >}}
+```console
 $ pip install django-gm2m
-{{< / highlight >}}
+```
 
 Em seguida certifique-se de ter em seus `INSTALLED_APPS` o `django.contrib.contenttypes` e adicione `gm2m`:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = [
    ...
    'django.contrib.contenttypes',
    ...
    'gm2m',
 ]
-{{< / highlight >}}
+```
 
 ## Montando o Relacionamento
 
 Para criar o relacionamento insira do lado não genérico o campo `GM2MField`:
 
-{{< highlight python >}}
+```python
 from gm2m import GM2MField
 
 class Usuario(models.Model):
@@ -81,7 +81,7 @@ class Usuario(models.Model):
     midias = GM2MField(
         'Video', 'Audio', 'Texto', through='Aluguel', related_name='usuarios'
     )
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 O parâmetro `related_name` é o nome com o qual você vai acessar a relação inversa, ou seja, acessar os usuários através da mídia. Se você não usar este atributo ele assume o nome padrão que é `<model>_set`.
@@ -97,7 +97,7 @@ Porém, eventualmente será necessário adicionar algum campo no model intermedi
 
 Para evitar isso, se você possuí planos de incrementar esta modelagem (que é o nosso caso) já crie da forma que será demonstrada, que é passando o parâmetro `through` para o campo e criando o model intermediário, que no nosso caso chamaremos de `Aluguel`:
 
-{{< highlight python >}}
+```python
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 
@@ -116,15 +116,15 @@ class Aluguel(models.Model):
     # campos extras
     alugado_em = models.DateField(auto_now_add=True)
     vencido_em = models.DateField(null=True)
-{{< / highlight >}}
+```
 
 Observe que para o lado genérico é utilizado o mesmo padrão de [relacionamento genérico](https://docs.djangoproject.com/en/1.9/ref/contrib/contenttypes/#generic-relations) descrito na documentação oficial do django. Uma `GenericForeignKey` composta de uma `ForeignKey` para `ContentType` e um `PositiveIntegerField` para guardar o id da instância do model referenciado.
 
 Para vincular um usuário a uma mídia basta criar e salvar um aluguél da seguinte forma:
 
-{{< highlight python >}}
+```python
 >>> Aluguel(usuario=usuario, midia=video).save()
-{{< / highlight >}}
+```
 
 ## Conclusão
 
