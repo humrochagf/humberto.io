@@ -22,9 +22,9 @@ Pois bem, para automatizar tarefas repetitivas tal como o tão falado processo d
 
 Para instalar o Fabric rode:
 
-{{< highlight console >}}
+```console
 $ pip install Fabric3
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 O Fabric original está na versão 2 porém sua API mudou completamente em relação a atual e muitas coisas precisam ser implementadas ainda, Fabric 3 é um fork que possuí compatibilidade com a versão 1 e suporta Python 3
@@ -32,7 +32,7 @@ O Fabric original está na versão 2 porém sua API mudou completamente em rela�
 
 Agora vamos escrever o código para rodar o `df -h` nos servidores e salvar em um arquivo chamado `fabfile.py`:
 
-{{< highlight python >}}
+```python
 from fabric.api import env, run
 
 env.hosts = ['user1@server1', 'user2@server2']
@@ -40,7 +40,7 @@ env.hosts = ['user1@server1', 'user2@server2']
 
 def disk_usage():
     run('df -h')
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 O arquivo deve se chamar `fabfile.py` pois o Fabric busca automaticamente por este arquivo quando rodamos o comando
@@ -52,7 +52,7 @@ O Fabric faz uma conexão ssh com os servidores, portanto tenha uma chave ssh co
 
 Com o arquivo pronto é só rodar o comando definido no aquivo:
 
-{{< highlight console >}}
+```console
 $ fab disk_usage
 [user1@server1] Executing task 'disk_usage'
 [user1@server1] run: df -h
@@ -80,13 +80,13 @@ $ fab disk_usage
 
 
 Done.
-{{< / highlight >}}
+```
 
 O Fabric roda a tarefa em sequência na lista de hosts informada. Caso queira rodar os comandos em paralelo é só passar a flag `-P` para o comando:
 
-{{< highlight console >}}
+```console
 $ fab disk_usage -P
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Lembrando que ao rodar a tarefa em paralelo você perde o controle da ordem de execução da sua lista de servidores
@@ -98,12 +98,12 @@ Dica do [@luizirber](https://twitter.com/luizirber) no twitter.
 
 O Fabric possuí um padrão de comando muito legal que nos permite executar o exemplo acima totalmente da linha de comando que é:
 
-{{< highlight console >}}
+```console
 $ fab [options] -- [shell command]
-{{< / highlight >}}
+```
 
 O comando ficaria desta forma:
 
-{{< highlight console >}}
+```console
 $ fab -H 'user1@server1, user2@server2' -- df -h
-{{< / highlight >}}
+```

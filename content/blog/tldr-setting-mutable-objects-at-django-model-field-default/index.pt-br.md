@@ -29,7 +29,7 @@ Nunca atribua um valor **mutável** a este campo. Pois isso irá fazer com que t
 
 Quando quiser atribuir um deles como **default** passe o **callable** como parâmetro:
 
-{{< highlight python >}}
+```python
 # Errado
 class SomeClass(models.Model):
     custom_data = JSONField(default={})
@@ -37,7 +37,7 @@ class SomeClass(models.Model):
 # Certo
 class SomeClass(models.Model):
     custom_data = JSONField(default=dict)
-{{< / highlight >}}
+```
 
 O maior problema deste erro é que ele muitas vezes é silencioso e só aparece em alguma sequência de criações e pode te deixar muito confuso.
 

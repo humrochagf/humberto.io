@@ -19,9 +19,9 @@ Now moving to the actual tip, to automate repetitive tasks like at the question 
 
 To install Fabric you can use pip:
 
-{{< highlight console >}}
+```console
 $ pip install Fabric3
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 The original Fabric is at version 2, but your API changed utterly, and there is thing still to be implemented. Fabric 3 is a fork that has compatibility with the first version of Fabric.
@@ -29,7 +29,7 @@ The original Fabric is at version 2, but your API changed utterly, and there is 
 
 Then we create the `fabfile.py` with the following content:
 
-{{< highlight python >}}
+```python
 from fabric.api import env, run
 
 env.hosts = ['user1@server1', 'user2@server2']
@@ -37,7 +37,7 @@ env.hosts = ['user1@server1', 'user2@server2']
 
 def disk_usage():
     run('df -h')
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 The file must be called `fabfile.py` so Fabric can automatically discover him when we run the command.
@@ -49,7 +49,7 @@ Fabric makes the ssh connection with the servers so that you will need an ssh ke
 
 With the file ready, you need to run this command:
 
-{{< highlight console >}}
+```console
 $ fab disk_usage
 [user1@server1] Executing task 'disk_usage'
 [user1@server1] run: df -h
@@ -77,13 +77,13 @@ $ fab disk_usage
 
 
 Done.
-{{< / highlight >}}
+```
 
 Fabric will run the task in sequence at the host list informed. If you want to run it in parallel use the `-P` flag:
 
-{{< highlight console >}}
+```console
 $ fab disk_usage -P
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Just remind that running things in parallel you don't have control of the server order.
@@ -95,12 +95,12 @@ Tip from [@luizirber](https://twitter.com/luizirber) at twitter.
 
 Fabric has a pattern to run its commands at the CLI without needing to write code:
 
-{{< highlight console >}}
+```console
 $ fab [options] -- [shell command]
-{{< / highlight >}}
+```
 
 The disk usage command woud be:
 
-{{< highlight console >}}
+```console
 $ fab -H 'user1@server1, user2@server2' -- df -h
-{{< / highlight >}}
+```

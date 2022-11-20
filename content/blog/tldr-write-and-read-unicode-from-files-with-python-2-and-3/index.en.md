@@ -17,15 +17,15 @@ I hope it can help someone that is trying to work with texts that contain [Unico
 
 On Python 2 there's no distinction between **byte** and **string**. It leads us to eventually not correctly encode/decode the data when we deal with input and output. That kind of mistake can cause runtime errors like that:
 
-{{< highlight console >}}
+```console
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 1: ordinal not in range(128)
-{{< / highlight >}}
+```
 
 Changing to Python 3, where **byte** and **string** are distinct types, the code in most cases stop working or presents weird behaviors like mixing text with their textual representation of the codification:
 
-{{< highlight python >}}
+```python
 'ol\xc3\xa1'
-{{< / highlight >}}
+```
 
 The solution to write a code that runs across both versions is to follow the [zen of python](https://www.python.org/dev/peps/pep-0020/) where it says that "Explicit is better than implicit" and always define what is **byte** from what is **string**:
 
@@ -33,7 +33,7 @@ The solution to write a code that runs across both versions is to follow the [ze
 
 The following code opens a temporary file to write in **byte**  mode and writes the content of a **string** that was encoded into **byte** using the [utf-8](https://en.wikipedia.org/wiki/UTF-8) encoding. Then, the inverse process is done, opening the file for reading in **byte** and decoded to **string** to print to the terminal:
 
-{{< highlight python >}}
+```python
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function, unicode_literals
@@ -49,7 +49,7 @@ with open(unicode_file, 'wb') as f:
 # leitura
 with open(unicode_file, 'rb') as f:
     print(f.read().decode('utf-8'))
-{{< / highlight >}}
+```
 
 The result is a code that runs in Python 2 and also in Python 3:
 

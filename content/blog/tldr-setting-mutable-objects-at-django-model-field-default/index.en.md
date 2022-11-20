@@ -25,7 +25,7 @@ That said, let's go to the tip:
 
 If you want to use them as default, use the callable instead:
 
-{{< highlight python >}}
+```python
 # Wrong
 class SomeClass(models.Model):
     custom_data = JSONField(default={})
@@ -33,7 +33,7 @@ class SomeClass(models.Model):
 # Right
 class SomeClass(models.Model):
     custom_data = JSONField(default=dict)
-{{< / highlight >}}
+```
 
 The bigger problem with this kind of mistake is that it causes at most cases a silent bug that will come back to haunt you when you least expect. So check your default parameters!
 
