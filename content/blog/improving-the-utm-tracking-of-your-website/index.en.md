@@ -57,29 +57,29 @@ With it, I can propagate the UTMs through the user navigation even if it happens
 
 To use the **utmkeeper** you can download the package from its repository [https://github.com/humrochagf/utmkeeper/releases](https://github.com/humrochagf/utmkeeper/releases) or installs it from npm:
 
-{{< highlight console >}}
+```console
 npm install utmkeeper
-{{< / highlight >}}
+```
 
 After that, add the following script at the end of the HTML before the `</body>` closing tag:
 
-{{< highlight html >}}
+```html
 <script src="path/to/utmkeeper.js" charset="utf-8"></script>
 <script charset="utf-8">
   utmkeeper.load();
 </script>
-{{< / highlight >}}
+```
 
 The function `load` is responsible for loading the library and persisting the UTM through navigation. At the function we can pass a configuration **object**:
 
-{{< highlight javascript >}}
+```javascript
 {
   forceOriginUTM: true,
   fillForms: true,
   utmObject: {},
   postLoad: null,
 }
-{{< / highlight >}}
+```
 
 - **forceOriginUTM**: receives a **boolean** that indicates if you want to override any UTM that can be at some link inside the page. Its default value is `true`
 - **fillForms**: receives a **boolean** to indicate if you want to add the UTMs at the page forms. In case the UTM fields already exist in the form, it only fills it. Otherwise, it creates the fields as `hidden`. Its default value is `true`
@@ -88,7 +88,7 @@ The function `load` is responsible for loading the library and persisting the UT
 
 Check the following example with all the parameters passed to the `load` function:
 
-{{< highlight javascript >}}
+```javascript
 utmkeeper.load({
   forceOriginUTM: true,
   fillForms: true,
@@ -97,7 +97,7 @@ utmkeeper.load({
   },
   postLoad: function(utms){console.log(utms);}
 });
-{{< / highlight >}}
+```
 
 ## Result
 

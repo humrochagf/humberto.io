@@ -47,52 +47,52 @@ There are many ways to do it, and it depends on your authentication method. In o
 
 **JWT** stands for **JSON Web Token**, and it is an encoded **JSON** object defined by the [RFC 7519](https://tools.ietf.org/html/rfc7519) to perform access information exchange between two ends. It is encoded and signed with the following format:
 
-{{< highlight text >}}
+```text
 header.payload.signature
-{{< / highlight >}}
+```
 
 At the **header** it is stored the metadata about the **token**, the type of algorithm used for the signature:
 
-{{< highlight json >}}
+```json
 {
   "alg": "HS256",
   "typ": "JWT"
 }
-{{< / highlight >}}
+```
 
 On the **payload**, there are the user information and metadata about the access grant like the **token expiration**:
 
-{{< highlight json >}}
+```json
 {
   "sub": "1234567890",
   "name": "John Doe",
   "iat": 1516239022
 }
-{{< / highlight >}}
+```
 
 Finally, the **signature** is the concatenation of the **header**, and the **payload**, both in **base 64** and united by a '.' (dot) hashed with the algorithm defined in the **header**, and a secret key defined by the server:
 
-{{< highlight text >}}
+```text
 HMACSHA256(
   base64UrlEncode(header) + "." +
   base64UrlEncode(payload),
   secret
 )
-{{< / highlight >}}
+```
 
 With the signature, it is possible to check if the **token** doesn't change during the exchange. It ensures its integrity and proves the authenticity of the source.
 
 These three blocks joined by '.' (dot), each one encoded in **base 64** composes the **JWT Token**:
 
-{{< highlight text >}}
+```text
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A
-{{< / highlight >}}
+```
 
 After confirming the user data and receiving the **JWT**, it should be stored, usually at **local storage** to use at the authenticated requests with the header scheme `JWT`:
 
-{{< highlight text >}}
+```text
 Authorization: JWT <token>
-{{< / highlight >}}
+```
 
 This authentication mechanism is **stateless** and does not require session registration at the server database.
 
@@ -106,13 +106,13 @@ So for that, we use as starting point the application created at the previous po
 
 The first thing to do is to install `djangorestframework-jwt` package:
 
-{{< highlight console >}}
+```console
 $ pip install djangorestframework-jwt
-{{< / highlight >}}
+```
 
 Following, add its configuration at the `settings.py` file:
 
-{{< highlight python >}}
+```python
 from datetime import timedelta
 
 # REST Framework settings
@@ -135,11 +135,11 @@ JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
     'JWT_EXPIRATION_DELTA': timedelta(days=2),
 }
-{{< / highlight >}}
+```
 
 After that add the login routes at the `urls.py`:
 
-{{< highlight python >}}
+```python
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
 urlpatterns = [
@@ -148,7 +148,7 @@ urlpatterns = [
     path('auth/login/', obtain_jwt_token),
     path('auth/refresh-token/', refresh_jwt_token),
 ]
-{{< / highlight >}}
+```
 
 The default permission to the resources changed at the `settings.py` to `IsAuthenticated`, so if you try to access the shopping list you get the following result:
 
@@ -160,7 +160,7 @@ Now that the resource access is allowed to logged users only let's implement the
 
 Our first task on the **frontend** is to move the content of `app.component.ts` to a separate component named `list.component.ts` and to add its routes, so we can create a second component to place the login:
 
-{{< highlight typescript >}}
+```typescript
 // list.component.ts
 
 import { Component, OnInit } from '@angular/core';
@@ -357,21 +357,21 @@ import { SignupComponent } from './signup.component';
   ...
 })
 export class AppModule { }
-{{< / highlight >}}
+```
 
 To help us with the frontend implementation, we'll use two libraries:
 
-{{< highlight console >}}
+```console
 $ npm install -s moment
 $ npm install -s jwt-decode
 $ npm install -s @types/jwt-decode
-{{< / highlight >}}
+```
 
 The [moment](https://momentjs.com/) library helps us with the task of handling time since we'll need to control the **token** expiration and renewal while the [jwt-decode](https://github.com/auth0/jwt-decode) library handles the **token** manipulation.
 
 Now that we have them installed, let's start with the authentication **service** code:
 
-{{< highlight typescript >}}
+```typescript
 // auth.service.ts
 
 import { Injectable } from '@angular/core';
@@ -496,7 +496,7 @@ interface JWTPayload {
   email: string;
   exp: number;
 }
-{{< / highlight >}}
+```
 
 The created service has three classes and one interface with the following responsibilities:
 
@@ -510,7 +510,7 @@ Also, the `JWTPayload` interface is a TypeScript structure to define the **paylo
 
 After the service creation, let's add it to the app and define the guarded routes so we can finally call the authentication at the login:
 
-{{< highlight typescript >}}
+```typescript
 // app.module.ts
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -566,7 +566,7 @@ export class LoginComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 
 With the app running, we can see the login process working \o/
@@ -583,13 +583,13 @@ The libraries are [django-rest-auth](https://django-rest-auth.readthedocs.io/en/
 
 To include it at out app let's install it to the backend:
 
-{{< highlight console >}}
+```console
 $ pip install django-rest-auth django-allauth
-{{< / highlight >}}
+```
 
 Then we add the following to the `settings.py`:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = [
     ...,
     'django.contrib.sites',
@@ -607,7 +607,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # JWT settings
 
 REST_USE_JWT = True
-{{< / highlight >}}
+```
 
 We disabled the `ACCOUNT_EMAIL_VERIFICATION` at this post so we can focus on the  JWT process, but on "real world" solutions the account verification step is essential to reduce cases of abuse on the system.
 
@@ -615,7 +615,7 @@ The variable `REST_USE_JWT` tells `rest_auth` to use JWT instead of a standard t
 
 Added the configuration its time to set the routes to the `urls.py`:
 
-{{< highlight python >}}
+```python
 urlpatterns = [
     ...,
     path('auth/login/', obtain_jwt_token), #  remove this line
@@ -623,7 +623,7 @@ urlpatterns = [
     path('auth/signup/', include('rest_auth.registration.urls')),
     path('auth/refresh-token/', refresh_jwt_token),
 ]
-{{< / highlight >}}
+```
 
 We remove the `auth/login/` because it already exists at the `rest_auth`.
 
@@ -631,7 +631,7 @@ Another point that worth mention is that the login and the signup views at `rest
 
 Now that we have the signup ready at the backend its time to change the frontend:
 
-{{< highlight typescript >}}
+```typescript
 // auth.service.ts
 
 ...
@@ -671,7 +671,7 @@ export class SignupComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 With this little change, we can signup on the system. You can access `/sinup` at the frontend to check it.
 

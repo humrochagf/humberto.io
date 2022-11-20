@@ -54,13 +54,13 @@ Now that we have the responsibilities divided, let's start by writing the backen
 
 First, install Django and create a new project:
 
-{{< highlight console >}}
+```console
 $ pip install django
 $ django-admin startproject backend
 $ cd backend
 $ python manage.py migrate
 $ python manage.py runserver
-{{< / highlight >}}
+```
 
 Then we start the browser at [localhost:8000](http://localhost:8000) to see the Django new application success screen.
 
@@ -68,29 +68,29 @@ Then we start the browser at [localhost:8000](http://localhost:8000) to see the 
 
 The next step is to install the Django Rest Framework:
 
-{{< highlight console >}}
+```console
 $ pip install djangorestframework
-{{< / highlight >}}
+```
 
 After that we edit the `settings.py` file to plug it:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = (
     ...
     'rest_framework',
 )
-{{< / highlight >}}
+```
 
 At `urls.py` we add the framework authentication URLs to get access to the API interactive navigation.
 
-{{< highlight python >}}
+```python
 from django.urls import include, path
 
 urlpatterns = [
     ...
     path('api-auth/', include('rest_framework.urls')),
 ]
-{{< / highlight >}}
+```
 
 Now it is possible to log in by accessing [localhost:8000/api-auth/login/](http://localhost:8000/api-auth/login/).
 
@@ -98,13 +98,13 @@ Now it is possible to log in by accessing [localhost:8000/api-auth/login/](http:
 
 With the authentication ready, let's start the shopping list app:
 
-{{< highlight console >}}
+```console
 python manage.py startapp shopping
-{{< / highlight >}}
+```
 
 The application will be pretty straight forward with a single **model** that will represent the shopping list at the database, a **serializer** that will transform the data from the Python object into **JSON** and handle validation, and a **view** that will receive parse and answer the incoming requests:
 
-{{< highlight python >}}
+```python
 # settings .py
 
 INSTALLED_APPS = (
@@ -166,14 +166,14 @@ urlpatterns = [
     ...
     path('', include(router.urls)),
 ]
-{{< / highlight >}}
+```
 
 Now, we need to create the database migrations and apply that to our database:
 
-{{< highlight console >}}
+```console
 $ python manage.py makemigrations
 $ python manage.py migrate
-{{< / highlight >}}
+```
 
 And voilá, our backend is working:
 
@@ -184,12 +184,12 @@ And voilá, our backend is working:
 
 To start the frontend, let's install the CLI tools to create an **Angular** project:
 
-{{< highlight console >}}
+```console
 $ npm install -g @angular/cli
 $ ng new frontend
 $ cd frontend
 $ ng serve
-{{< / highlight >}}
+```
 
 Now we can access the frontend at [localhost:4200](http://localhost:4200) to see the Angular new project page.
 
@@ -197,7 +197,7 @@ Now we can access the frontend at [localhost:4200](http://localhost:4200) to see
 
 Then we create a **service** to access the API and a **view** to list the items at the shopping list:
 
-{{< highlight typescript >}}
+```typescript
 // shopping-item.interface.ts
 
 export interface ShoppingItem {
@@ -289,7 +289,7 @@ import { AppComponent } from './app.component';
   ],
 })
 export class AppModule { }
-{{< / highlight >}}
+```
 
 Accessing [localhost:4200](http://localhost:4200) we can see our beautiful shopping lis...
 
@@ -315,13 +315,13 @@ The mechanism operates by adding new **HTTP** headers on the request to describe
 
 The browser (by consequence our frontend too) is ready to deal with CORS. We only need to implement the backend part.
 
-{{< highlight console >}}
+```console
 $ pip install django-cors-headers
-{{< / highlight >}}
+```
 
 After the installation we need to add its configuration at the `settings.py`:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = (
     ...
     'corsheaders',
@@ -335,7 +335,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
 )
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Remember to place the `CorsMiddleware` the higher as possible at the middleware list so it can add the header before the backend parses it.
@@ -349,7 +349,7 @@ With that done, we can go to the browser and see the communication between the f
 
 Then, to make it even cooler, let's add some interactivity to our shopping list:
 
-{{< highlight typescript >}}
+```typescript
 // api.service.ts
 
 import { Injectable } from '@angular/core';
@@ -435,7 +435,7 @@ export class AppComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 Now we have our shopping list done:
 

@@ -56,13 +56,13 @@ Definidas as responsabilidades vamos implementar nossa aplicação, partindo do 
 
 Começamos com a instalação do django seguido da criação do projeto:
 
-{{< highlight console >}}
+```console
 $ pip install django
 $ django-admin startproject backend
 $ cd backend
 $ python manage.py migrate
 $ python manage.py runserver
-{{< / highlight >}}
+```
 
 Ao iniciar o navegador em [localhost:8000](http://localhost:8000) veremos a nova tela de sucesso de criação de aplicação do Django 2 mostrando que a inicialização da sua nova aplicação foi um sucesso (muito bonita a nova tela né?!).
 
@@ -70,29 +70,29 @@ Ao iniciar o navegador em [localhost:8000](http://localhost:8000) veremos a nova
 
 O próximo passo é instalar o Django Rest Framework, para montar a api do nosso backend:
 
-{{< highlight console >}}
+```console
 $ pip install djangorestframework
-{{< / highlight >}}
+```
 
 Em seguida editamos o `settings.py` para habilitá-lo:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = (
     ...
     'rest_framework',
 )
-{{< / highlight >}}
+```
 
 No `urls.py` registramos as urls de autenticação para acessar a interface de navegação de api
 
-{{< highlight python >}}
+```python
 from django.urls import include, path
 
 urlpatterns = [
     ...
     path('api-auth/', include('rest_framework.urls')),
 ]
-{{< / highlight >}}
+```
 
 Agora podemos visualizar a tela de login acessando [localhost:8000/api-auth/login/](http://localhost:8000/api-auth/login/)
 
@@ -100,13 +100,13 @@ Agora podemos visualizar a tela de login acessando [localhost:8000/api-auth/logi
 
 Com isso, daremos inicio a nossa aplicação de lista de compras:
 
-{{< highlight console >}}
+```console
 python manage.py startapp shopping
-{{< / highlight >}}
+```
 
 A aplicação será bem direta ao ponto com um único **model** que é quem representa a lista de compras no banco de dados, um **serializer** que transforma os dados de objeto para **json** e vice versa, além de e validar os dados da requisição e uma **view** que recebe, encaminha e responde a estas requisições:
 
-{{< highlight python >}}
+```python
 # settings .py
 
 INSTALLED_APPS = (
@@ -168,14 +168,14 @@ urlpatterns = [
     ...
     path('', include(router.urls)),
 ]
-{{< / highlight >}}
+```
 
 Para finalizar criamos o arquivo de migração do banco de dados seguido da migração do mesmo:
 
-{{< highlight console >}}
+```console
 $ python manage.py makemigrations
 $ python manage.py migrate
-{{< / highlight >}}
+```
 
 E voilá, nosso backend está funcionando:
 
@@ -186,12 +186,12 @@ E voilá, nosso backend está funcionando:
 
 Para iniciar a implementação do frontend vamos instalar a ferramenta de linha de comando do **Angular** e criar um novo projeto:
 
-{{< highlight console >}}
+```console
 $ npm install -g @angular/cli
 $ ng new frontend
 $ cd frontend
 $ ng serve
-{{< / highlight >}}
+```
 
 Se tudo tiver corrido como esperado ao acessar [localhost:4200](http://localhost:4200) veremos a página inicial de um novo projeto Angular.
 
@@ -199,7 +199,7 @@ Se tudo tiver corrido como esperado ao acessar [localhost:4200](http://localhost
 
 Agora criaremos um **service** para acessar nossa api e uma **view** para listar os itens da nossa lista de compras:
 
-{{< highlight typescript >}}
+```typescript
 // shopping-item.interface.ts
 
 export interface ShoppingItem {
@@ -291,7 +291,7 @@ import { AppComponent } from './app.component';
   ],
 })
 export class AppModule { }
-{{< / highlight >}}
+```
 
 Acessando [localhost:4200](http://localhost:4200) veremos nossa belíssima lista de comp...
 
@@ -317,13 +317,13 @@ O mecanismo opera adicionando novos cabeçalhos **HTTP** que permitem que o serv
 
 O navegador (por consequência nosso frontend também) já está pronto para lidar com este mecanismo, nos resta agora implementá-lo em no backend.
 
-{{< highlight console >}}
+```console
 $ pip install django-cors-headers
-{{< / highlight >}}
+```
 
 Após instalado, basta adicionar as configurações no `settings.py`:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = (
     ...
     'corsheaders',
@@ -337,7 +337,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
 )
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Lembre-se de colocar o `CorsMiddleware` o mais a cima o possível na lista de middlewares para que ele consiga adicionar o cabeçalho na requisição antes que ela seja tratada pelo backend.
@@ -351,7 +351,7 @@ Feito isso agora podemos ver que a comunicação entre frontend e backend está 
 
 Agora para finalizar vamos adicionar um pouco de interatividade em nossa lista de compras:
 
-{{< highlight typescript >}}
+```typescript
 // api.service.ts
 
 import { Injectable } from '@angular/core';
@@ -437,7 +437,7 @@ export class AppComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 E agora sim, temos a lista de compras completa e funcionando:
 

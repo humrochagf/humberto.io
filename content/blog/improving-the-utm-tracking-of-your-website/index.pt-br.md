@@ -59,29 +59,29 @@ Com ele eu consigo propagar as **utms** na navegação do usuário mesmo que ela
 
 Para usar o **utmkeeper** basta baixar o pacote pelo repositório [https://github.com/humrochagf/utmkeeper/releases](https://github.com/humrochagf/utmkeeper/releases)  ou instalar através do npm:
 
-{{< highlight console >}}
+```console
 npm install utmkeeper
-{{< / highlight >}}
+```
 
 Em seguida adicionar o script ao final do **html** antes da tag de fechamento `</body>`:
 
-{{< highlight html >}}
+```html
 <script src="path/to/utmkeeper.js" charset="utf-8"></script>
 <script charset="utf-8">
   utmkeeper.load();
 </script>
-{{< / highlight >}}
+```
 
 A função `load` é responsável por carregar a biblioteca e persistir a **utm** pela navegação. Nela podemos passar um **objeto** de configuração:
 
-{{< highlight javascript >}}
+```javascript
 {
   forceOriginUTM: true,
   fillForms: true,
   utmObject: {},
   postLoad: null,
 }
-{{< / highlight >}}
+```
 
 - **forceOriginUTM**: recebe um **booleano** que indica se você quer ou não sobrescrever qualquer **utm** que já estiver em algum link da página. Seu valor padrão é `true`
 - **fillForms**: recebe um **booleano** que indica se você deseja adicionar as **utms** nos formulários da página. Caso já exista um campo para ele seu valor será preenchido, caso contrário um campo do tipo `hidden` será adicionado no formulário para cada **utm**. Seu valor padrão é `true`
@@ -90,7 +90,7 @@ A função `load` é responsável por carregar a biblioteca e persistir a **utm*
 
 Um exemplo da função `load` com todos os parâmetros é o seguinte:
 
-{{< highlight javascript >}}
+```javascript
 utmkeeper.load({
   forceOriginUTM: true,
   fillForms: true,
@@ -99,7 +99,7 @@ utmkeeper.load({
   },
   postLoad: function(utms){console.log(utms);}
 });
-{{< / highlight >}}
+```
 
 ## Resultado
 

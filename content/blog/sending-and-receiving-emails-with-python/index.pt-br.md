@@ -34,7 +34,7 @@ Simple Mail Transfer Protocol ou **SMTP** é um protocolo da camada de aplicaç�
 
 Python já vem com baterias, por isso não precisaremos instalar nenhum pacote para fazer o envio de mensagens **SMTP**, para isso utilizaremos uma biblioteca interna do python chamada `smtplib`:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import smtplib
 
 mail_from = 'origin@mail.com'
@@ -55,7 +55,7 @@ Subject: {mail_subject}
 server = smtplib.SMTP('localhost')
 server.sendmail(mail_from, mail_to, mail_subject, mail_message)
 server.quit()
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Para enviar emails como **localhost** você precisa ter um servidor de emails instalado na máquina em que o código está rodando
@@ -67,7 +67,7 @@ Uma outra questão do código acima é que estamos enviando o email de um servid
 
 Para resolver estas questões e garantir que nossa mensagem chegue corretamente vamos mudar um pouco o código e usar o gmail para facilitar a garantia da entrega da nossa mensagem:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import smtplib
 from email.mime.text import MIMEText
 
@@ -97,7 +97,7 @@ server = smtplib.SMTP_SSL(smtp_ssl_host, smtp_ssl_port)
 server.login(username, password)
 server.sendmail(from_addr, to_addrs, message.as_string())
 server.quit()
-{{< / highlight >}}
+```
 
 Caso esteja enfrentando problemas para se conectar ao google será preciso liberar o "Acesso a app menos seguro".
 
@@ -119,7 +119,7 @@ Além do **IMAP**, podemos também receber emails através do protocolo **POP** 
 
 O processo de recebimento é mais complexo que o envio, pois dentro dele está incluso a busca pela mensagem que você deseja ler e sua decodificação. No código a seguir tentarei comentar todas estas etapas:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import email
 import imaplib
 
@@ -203,7 +203,7 @@ for i in mail_ids:
             print(f'From: {mail_from}')
             print(f'Subject: {mail_subject}')
             print(f'Content: {mail_content}')
-{{< / highlight >}}
+```
 
 Neste código extraímos somente o conteúdo em texto puro do email, porém há muito mais coisas que podem ser tratadas como conteúdo em **html** e extração de anexos mas estes casos ficaram para uma próxima postagem.
 
@@ -213,7 +213,7 @@ Recentemente minha caixa de emails lotou e eu precisei dar uma faxina para liber
 
 Para isso é possível utilizar o Python para nos ajudar com esta questão:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import imaplib
 
 # caso sua caixa de emails esteja muito cheia
@@ -258,7 +258,7 @@ mail.expunge()
 mail.close()
 # encerrando a conexão
 mail.logout()
-{{< / highlight >}}
+```
 
 Caso o volume de emails seja muito grande é possível também fazer um loop agrupando a remoção em blocos de remoção menores.
 

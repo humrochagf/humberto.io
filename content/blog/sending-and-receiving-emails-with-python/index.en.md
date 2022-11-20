@@ -31,7 +31,7 @@ Simple Mail Transfer Protocol or **SMTP** is a protocol from the application lay
 
 Python comes with batteries included, so we don't need to install any external package to deal with **SMTP**. We use a library called `smtplib`:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import smtplib
 
 mail_from = 'origin@mail.com'
@@ -52,7 +52,7 @@ Subject: {mail_subject}
 server = smtplib.SMTP('localhost')
 server.sendmail(mail_from, mail_to, mail_subject, mail_message)
 server.quit()
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 To send emails as **localhost**, you need to have an email server installed at the machine where the code is running.
@@ -64,7 +64,7 @@ We are sending the email from a **local server**, and it can be an issue because
 
 To solve these questions, and to grant its delivery, let's change the code a little to use Gmail as our gateway:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import smtplib
 from email.mime.text import MIMEText
 
@@ -94,7 +94,7 @@ server = smtplib.SMTP_SSL(smtp_ssl_host, smtp_ssl_port)
 server.login(username, password)
 server.sendmail(from_addr, to_addrs, message.as_string())
 server.quit()
-{{< / highlight >}}
+```
 
 In case you have problems to connect at Google, you need to enable the "Less secure app access".
 
@@ -116,7 +116,7 @@ Another protocol that works for this task is **POP** Post Office Protocol, but *
 
 The process of receiving emails is more complicated than sending because you also have to search for the message and decode it:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import email
 import imaplib
 
@@ -194,7 +194,7 @@ for i in mail_ids:
             print(f'From: {mail_from}')
             print(f'Subject: {mail_subject}')
             print(f'Content: {mail_content}')
-{{< / highlight >}}
+```
 
 On this code, we extracted only the plain text of the email, but there's much more you can extract, like the **HTML** content and the annexed files, but this can be a topic for a next post.
 
@@ -204,7 +204,7 @@ Recently, my mailbox got bloated, and I had to do a clean up to get some space, 
 
 So, to solve that, and also for automating this tedious manual task, I wrote this:
 
-{{< highlight python "linenos=table" >}}
+```python {linenos=table}
 import imaplib
 
 # caso sua caixa de emails esteja muito cheia
@@ -250,7 +250,7 @@ mail.expunge()
 mail.close()
 # close the connection
 mail.logout()
-{{< / highlight >}}
+```
 
 In case the number of messages is too big, you can make a loop to group it into smaller chunks to remove.
 

@@ -50,52 +50,52 @@ Para nos auxiliar com estes problemas utilizaremos o **JWT**.
 
 **JWT** ou **JSON Web Token** nada mais é que um objeto **JSON** definido na [RFC 7519](https://tools.ietf.org/html/rfc7519) para realizar transferência informação de permissões de acesso entre duas pontas. Ele é codificado e assinado e possuí o seguinte formato:
 
-{{< highlight text >}}
+```text
 header.payload.signature
-{{< / highlight >}}
+```
 
 No **header** (cabeçalho) ficam os dados do **token**, que informam seu tipo e o algoritmo utilizado em sua assinatura:
 
-{{< highlight json >}}
+```json
 {
   "alg": "HS256",
   "typ": "JWT"
 }
-{{< / highlight >}}
+```
 
 No **payload** (carga) ficam os dados do usuário e alguns metadados como a expiração do **token**:
 
-{{< highlight json >}}
+```json
 {
   "sub": "1234567890",
   "name": "John Doe",
   "iat": 1516239022
 }
-{{< / highlight >}}
+```
 
 Finalmente na **signature** (assinatura) os dados de **header** e **payload** codificados em **base 64** e unidos por `.` (ponto) para serem assinados usando o algoritmo definido no **header**:
 
-{{< highlight text >}}
+```text
 HMACSHA256(
   base64UrlEncode(header) + "." +
   base64UrlEncode(payload),
   secret
 )
-{{< / highlight >}}
+```
 
 Com a assinatura é possível verificar se o **token** não foi alterado no caminho, garantindo sua integridade. Com ela também é possível confirmar a autenticidade de sua fonte.
 
 Estes três blocos unidos por `.` (ponto) cada um codificado em **base 64** compõem o **JWT Token**:
 
-{{< highlight text >}}
+```text
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A
-{{< / highlight >}}
+```
 
 Após confirmar os dados de usuário e receber o **JWT** ele deve ser armazenado, normalmente em **local storage** para ser utilizado nas requisições autenticadas usando o esquema de cabeçalho `JWT`:
 
-{{< highlight text >}}
+```text
 Authorization: JWT <token>
-{{< / highlight >}}
+```
 
 Este é um mecanismo de autenticação que não guarda estado, ou seja, não requer armazenamento de dados de sessão no banco de dados do servidor.
 
@@ -109,13 +109,13 @@ E para isso, utilizaremos como base a aplicação desenvolvida na postagem anter
 
 A primeira coisa que faremos é instalar o pacote `djangorestframework-jwt`:
 
-{{< highlight console >}}
+```console
 $ pip install djangorestframework-jwt
-{{< / highlight >}}
+```
 
 Em seguida iremos adicionar suas configurações no `settings.py`:
 
-{{< highlight python >}}
+```python
 from datetime import timedelta
 
 # REST Framework settings
@@ -138,11 +138,11 @@ JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
     'JWT_EXPIRATION_DELTA': timedelta(days=2),
 }
-{{< / highlight >}}
+```
 
 Seguido das rotas de login e atualização de **token jwt** em `urls.py`:
 
-{{< highlight python >}}
+```python
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
 urlpatterns = [
@@ -151,7 +151,7 @@ urlpatterns = [
     path('auth/login/', obtain_jwt_token),
     path('auth/refresh-token/', refresh_jwt_token),
 ]
-{{< / highlight >}}
+```
 
 Como foi alterada a permissão padrão do sistema no `settings.py` para `IsAuthenticated` ao tentar acessar a lista de compra nos deparamos com a seguinte mensagem:
 
@@ -163,7 +163,7 @@ Agora que o acesso está sendo restrito a usuários logados chegou a hora de imp
 
 A primeira tarefa a ser executada no **frontend** é a de mover o conteúdo de `app.component.ts` para um componente separado nomeado como `list.component.ts` e adicionar rotas na aplicação, criando um segundo componente para o login:
 
-{{< highlight typescript >}}
+```typescript
 // list.component.ts
 
 import { Component, OnInit } from '@angular/core';
@@ -360,21 +360,21 @@ import { SignupComponent } from './signup.component';
   ...
 })
 export class AppModule { }
-{{< / highlight >}}
+```
 
 Para auxiliar na implementação do **frontend** utilizaremos duas bibliotecas:
 
-{{< highlight console >}}
+```console
 $ npm install -s moment
 $ npm install -s jwt-decode
 $ npm install -s @types/jwt-decode
-{{< / highlight >}}
+```
 
 A biblioteca [moment](https://momentjs.com/) facilitará o trabalho com tempo, já que precisamos controlar a expiração do **token** e sua renovação enquanto a biblioteca [jwt-decode](https://github.com/auth0/jwt-decode) cuidará do **token** em si.
 
 Com as bibliotecas em mãos iniciaremos pelo **service** de autênticação:
 
-{{< highlight typescript >}}
+```typescript
 // auth.service.ts
 
 import { Injectable } from '@angular/core';
@@ -499,7 +499,7 @@ interface JWTPayload {
   email: string;
   exp: number;
 }
-{{< / highlight >}}
+```
 
 O **service** criado possuí 3 classes e 1 interface das quais suas funções são as seguintes:
 
@@ -513,7 +513,7 @@ E por fim a interface `JWTPayload` que serve somente para definirmos o formato d
 
 Após a criação do **service** vamos adicioná-lo na aplicação, definir as rotas protegidas e finalmente realizar a chamada de autenticação no componente de **login**:
 
-{{< highlight typescript >}}
+```typescript
 // app.module.ts
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -569,7 +569,7 @@ export class LoginComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 Com a aplicação rodando agora podemos visualizar processo de login funcionando \o/:
 
@@ -585,13 +585,13 @@ Estas bibliotecas são [django-rest-auth](https://django-rest-auth.readthedocs.i
 
 Para incluir o processo de cadastro em nossa aplicação vamos instalar as bibliotecas no backend:
 
-{{< highlight console >}}
+```console
 $ pip install django-rest-auth django-allauth
-{{< / highlight >}}
+```
 
 Em seguida adicionamos as seguintes configurações no `settings.py`:
 
-{{< highlight python >}}
+```python
 INSTALLED_APPS = [
     ...,
     'django.contrib.sites',
@@ -609,7 +609,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # JWT settings
 
 REST_USE_JWT = True
-{{< / highlight >}}
+```
 
 Desabilitamos o `ACCOUNT_EMAIL_VERIFICATION` nesta postagem pois estamos focados nos fluxos que envolvem a manipulação do JWT Token no processo de autenticação, em aplicações no "mundo real" processos de verificação de conta são importantes para mitigar abusos em seu sistema.
 
@@ -617,7 +617,7 @@ A variável `REST_USE_JWT` informa ao `rest_auth` que utilizaremos o JWT ao inv�
 
 Adicionadas as configurações é hora de configurar as rotas do backend em `urls.py`:
 
-{{< highlight python >}}
+```python
 urlpatterns = [
     ...,
     path('auth/login/', obtain_jwt_token), #  remova esta linha
@@ -625,7 +625,7 @@ urlpatterns = [
     path('auth/signup/', include('rest_auth.registration.urls')),
     path('auth/refresh-token/', refresh_jwt_token),
 ]
-{{< / highlight >}}
+```
 
 Nesta configuração removemos a rota `auth/login/` pois ela já existe nas rotas do `rest_auth`.
 
@@ -633,7 +633,7 @@ Um outro ponto interesante é que tanto o login quanto o cadastro no `rest_auth`
 
 Agora que temos a funcionalidade de cadastro pronta no backend, vamos às alterações de frontend:
 
-{{< highlight typescript >}}
+```typescript
 // auth.service.ts
 
 ...
@@ -673,7 +673,7 @@ export class SignupComponent implements OnInit {
     );
   }
 }
-{{< / highlight >}}
+```
 
 Com essa pequena alteração agora é possível realizar cadastros no sistema acessando o `/signup` do seu frontend.
 

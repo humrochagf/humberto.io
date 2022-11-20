@@ -17,7 +17,7 @@ The first step is to create an account on the [Python Package Index (PyPI)](http
 
 After that, you need to create a file called `setup.py` on the root folder of the Python code that you will publish with the following content, changing the values were is needed:
 
-{{< highlight python >}}
+```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -43,7 +43,7 @@ setup(
         'Programming Language :: Python :: 3',
     ],
 )
-{{< / highlight >}}
+```
 
 The `find_packages` function is an excellent tool to discover the files that compose your package automatically. You can check its [docs right here](http://setuptools.readthedocs.io/en/latest/setuptools.html#using-find-packages).
 
@@ -53,9 +53,9 @@ The `classifiers` are used to help users to find your package by indexing it int
 
 Before publishing your package, you need to package it first, and the easiest way to do that is running:
 
-{{< highlight console >}}
+```console
 $ python setup.py sdist
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 This packaging model creates a source distribution with everything that you need to build/compile your code at any platform. You will have a build phase every time you install it.
@@ -63,9 +63,9 @@ This packaging model creates a source distribution with everything that you need
 
 To package it with a pre-compiled code you need to run:
 
-{{< highlight console >}}
+```console
 $ python setup.py bdist_wheel
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 This command packages a built distribution for the architecture that you run the command. For example, if your code supports Python 2 and 3 you need to run it on both Python versions.
@@ -77,15 +77,15 @@ Done that, you will have everything packed up inside the folder `dist/`.
 
 To publish your package, you will need to install [twine](https://github.com/pypa/twine). It is a tool to publish packages at the PyPI:
 
-{{< highlight console >}}
+```console
 $ pip install twine
-{{< / highlight >}}
+```
 
 After installed run the following command:
 
-{{< highlight console >}}
+```console
 $ twine upload --username pypi-username dist/my-package-1.0.0.tar.gz dist/my-package-1.0.0-py2-none-any.whl dist/my-package-1.0.0-py3-none-any.whl
-{{< / highlight >}}
+```
 
 {{< tip class="warning" >}}
 Don't forget to replace the username and the file names with your username and file names.
@@ -97,15 +97,15 @@ The command will ask for your password, and then, it will upload it to the PyPI.
 
 A common practice is to keep the package version and another package information inside the `__init__.py` file like this:
 
-{{< highlight python >}}
+```python
 __author__ = 'My Name'
 __email__ = 'my@email.com'
 __version__ = '1.0.0'
-{{< / highlight >}}
+```
 
 You can add the following code at the `setup.py` to use this info from the `__init__.py` at your package:
 
-{{< highlight python >}}
+```python
 import os
 import re
 
@@ -132,13 +132,13 @@ setup(
     author_email=email,
     ...
 )
-{{< / highlight >}}
+```
 
 ## Bonus - README.md as long_description
 
 If you use [github](https://github.com) you probably write a **readme** file to describe your package. You can use it as your `long_description`, so you don't need to repeat yourself:
 
-{{< highlight python >}}
+```python
 with open('README.md', 'rb') as f:
     readme = f.read().decode('utf-8')
 
@@ -148,4 +148,4 @@ setup(
     long_description_content_type="text/markdown",
     ...
 )
-{{< / highlight >}}
+```

@@ -17,17 +17,17 @@ This **TLDR** is a quick reminder of how to generate a secret key locally, witho
 
 Django generates a secret key every time that you create a new project, so this function already exists at its code, and you can access it in this way:
 
-{{< highlight python >}}
+```python
 from django.core.management.utils import get_random_secret_key
 
 print(get_random_secret_key())
-{{< / highlight >}}
+```
 
 If you don't even want to have the work of stating the Python shell, you can execute this command on the terminal:
 
-{{< highlight console >}}
+```console
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 Remember that you need Django installed at the environment to run this command.
@@ -39,23 +39,23 @@ Thanks to [@ChristianHeimes](https://twitter.com/ChristianHeimes) and [@pauloxne
 
 Its a cool **batteries included** solution to generate your `SECRET_KEY` without Django dependency:
 
-{{< highlight python >}}
+```python
 import secrets
 
 print(secrets.token_urlsafe())
-{{< / highlight >}}
+```
 
 You can also do it from terminal command:
 
-{{< highlight console >}}
+```console
 python -c "import secrets; print(secrets.token_urlsafe())"
-{{< / highlight >}}
+```
 
 And in case you got curious on how Django does that nowadays guess what? They are using it as well. 🎉
 
 Starting from tag version 3.1.3 this is what `get_random_secret_key` do on background:
 
-{{< highlight python >}}
+```python
 import secrets
 
 length = 50
@@ -64,4 +64,4 @@ chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
 secret_key = ''.join(secrets.choice(chars) for i in range(length))
 
 print(secret_key)
-{{< / highlight >}}
+```

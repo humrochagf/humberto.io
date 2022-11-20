@@ -15,6 +15,6 @@ So on search/replace patterns to match a linebreak you should look for `\n` whil
 
 Example:
 
-```regex
+```text
 %s/\n/\r/g
 ```

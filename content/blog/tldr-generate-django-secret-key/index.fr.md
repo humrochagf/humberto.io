@@ -20,17 +20,17 @@ Ce **TLDR** est un rappel rapide de comment créer une clé secrète, sans utili
 
 Django toujours crée une clé quand on commence un nouveau projet, donc cette fonction est déjà là et on va l'utiliser de cette façon:
 
-{{< highlight python >}}
+```python
 from django.core.management.utils import get_random_secret_key
 
 print(get_random_secret_key())
-{{< / highlight >}}
+```
 
 Si on ne veut pas ouvrir une session Python, il est possible de l'exécuter directement avec la ligne de commande:
 
-{{< highlight console >}}
+```console
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
-{{< / highlight >}}
+```
 
 {{< tip class="info" >}}
 N'oubliez pas qu'il faut avoir installé Django dans votre environnement après exécuter l'opération.
@@ -42,23 +42,23 @@ Grâce à interaction de [@ChristianHeimes](https://twitter.com/ChristianHeimes)
 
 C'est une bonne solution qui utilise le concept de **piles fournies** de Python et on peut l'utiliser pour créer la `SECRET_KEY` sans avoir Django installé:
 
-{{< highlight python >}}
+```python
 import secrets
 
 print(secrets.token_urlsafe())
-{{< / highlight >}}
+```
 
 Vous pouvez aussi utiliser la ligne de commande:
 
-{{< highlight console >}}
+```console
 python -c "import secrets; print(secrets.token_urlsafe())"
-{{< / highlight >}}
+```
 
 Et, si vous vous êtes déjà demandé comment Django fait ça désormais? Bon, ils l'utilisent aussi. 🎉
 
 En commençant par la version 3.1.3 la fonction `get_random_secret_key` marche comme ça:
 
-{{< highlight python >}}
+```python
 import secrets
 
 length = 50
@@ -67,4 +67,4 @@ chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
 secret_key = ''.join(secrets.choice(chars) for i in range(length))
 
 print(secret_key)
-{{< / highlight >}}
+```
