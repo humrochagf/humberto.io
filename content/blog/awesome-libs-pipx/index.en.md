@@ -27,17 +27,17 @@ You can also easily upgrade the installed packages without having a conflict bet
 
 To install pipx you have to run:
 
-{{< highlight console >}}
+```console
 $ python3 -m pip install --user pipx
 $ python3 -m pipx ensurepath
-{{< / highlight >}}
+```
 
 The second command is to ensure that you'll have CLI access to run the programs installed with pipx.
 
 Now, you can install your favorite Python tools in isolated environments and have fun \\o/
 
-{{< highlight lang >}}
+```console
 $ pipx install pyjokes
 $ pyjoke
 There are two ways to write error-free programs; only the third one works.
-{{< / highlight >}}
+```

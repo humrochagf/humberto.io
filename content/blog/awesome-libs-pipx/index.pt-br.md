@@ -31,17 +31,17 @@ Com isso você pode manter tudo atualizado com facilidade sem ter conflitos entr
 
 Para instalar o pipx você precisa rodar os seguintes comandos:
 
-{{< highlight console >}}
+```console
 $ python3 -m pip install --user pipx
 $ python3 -m pipx ensurepath
-{{< / highlight >}}
+```
 
 O segundo comando garante que o caminho dos executáveis estejam disponíveis para acesso via linha de comando.
 
 Agora você pode instalar sua ferramenta favorita em um ambiente exclusivo e se divertir \\o/
 
-{{< highlight lang >}}
+```console
 $ pipx install pyjokes
 $ pyjoke
 There are two ways to write error-free programs; only the third one works.
-{{< / highlight >}}
+```

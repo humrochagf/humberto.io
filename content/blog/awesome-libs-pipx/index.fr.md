@@ -30,17 +30,17 @@ Vous pouvez aussi mettre à niveau les paquets installés sans conflit entre les
 
 Pour installer pipx vous pouvez exécuter la commande:
 
-{{< highlight console >}}
+```console
 $ python3 -m pip install --user pipx
 $ python3 -m pipx ensurepath
-{{< / highlight >}}
+```
 
 La deuxième commande est pour vous assurer que le chemin d'utilisation des programmes est disponible avec pipx.
 
 Désormais, vous pouvez installer votre outils Python préférés dans les environnements isolés \\o/
 
-{{< highlight lang >}}
+```console
 $ pipx install pyjokes
 $ pyjoke
 There are two ways to write error-free programs; only the third one works.
-{{< / highlight >}}
+```
