@@ -9,7 +9,7 @@ tags:
 
 ---
 
-Éditez le fichier `/etc/systemd/logind.conf` et changez les lignes suivantes:
+Modifiez le fichier `/etc/systemd/logind.conf` et changez les lignes suivantes:
 
 ```ini
 HandleLidSwitch=ignore

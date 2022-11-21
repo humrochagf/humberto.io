@@ -6,7 +6,7 @@ tags:
 
 ---
 
-When you have a list of child folders and need to pull latest from all of them:
+A tip for when you have a list of git repositories to update:
 
 ```shell
 find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git pull && cd .." \;
