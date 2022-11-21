@@ -1,4 +1,5 @@
 ---
+title: Tags
 menu:
   main:
     identifier: tags

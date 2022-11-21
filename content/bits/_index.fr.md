@@ -1,4 +1,5 @@
 ---
+title: Bits
 menu:
   main:
     identifier: bits
