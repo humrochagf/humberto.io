@@ -3,8 +3,7 @@ title: $ whoami
 linkTitle: Sobre
 slug: sobre
 weight: 1
-menu:
-  main: {}
+menu: main
 
 ---
 

@@ -23,19 +23,6 @@ taxonomies:
   tag: tags
 
 menu:
-  main:
-    - identifier: blog
-      name: Blog
-      url: blog/
-      weight: 2
-    - identifier: bits
-      name: Bits
-      url: bits/
-      weight: 3
-    - identifier: tags
-      name: Tags
-      url: tags/
-      weight: 4
   footer:
     - identifier: mastodon
       name: mastodon
