@@ -12,7 +12,7 @@ tags:
 Modifique o arquivo `/etc/default/grub` e adicione o seguinte conteúdo na variável `GRUB_CMDLINE_LINUX`:
 
 ```ini
-GRUB_CMDLINE_LINUX="consoleblank=300"  # éteindre l'écran après 5 minutes
+GRUB_CMDLINE_LINUX="consoleblank=300"  # desliga a tela após 5 minutos
 ```
 
 Em seguida atualize o grub:
