@@ -9,6 +9,6 @@ tags:
 
 De vez enquanto nós precisamos fazer um commit vazio só para ativar o CI ou para ativar uma web.
 
-```shell
+```console
 git commit --allow-empty -m "Trigger CI"
 ```

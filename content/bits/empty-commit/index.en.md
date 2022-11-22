@@ -8,6 +8,6 @@ tags:
 
 Sometimes you just need to make an empty commit to trigger a CI pipeline or a webhook.
 
-```shell
+```console
 git commit --allow-empty -m "Trigger CI"
 ```

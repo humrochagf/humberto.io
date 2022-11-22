@@ -8,25 +8,25 @@ tags:
 
 Create the `docker` group.
 
-```shell
+```console
 sudo groupadd docker
 ```
 
 Add your user to the `docker` group.
 
-```shell
+```console
 sudo usermod -aG docker $USER
 ```
 
 Apply the changes to the group.
 
-```shell
+```console
 newgrp docker
 ```
 
 Verify if you can run `docker`.
 
-```shell
+```console
 docker version
 ```
 

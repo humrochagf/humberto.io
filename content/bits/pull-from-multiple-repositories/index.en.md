@@ -8,7 +8,7 @@ tags:
 
 A tip for when you have a list of git repositories to update:
 
-```shell
+```console
 find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git pull && cd .." \;
 ```
 

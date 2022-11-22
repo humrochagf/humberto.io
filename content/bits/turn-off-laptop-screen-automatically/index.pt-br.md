@@ -17,6 +17,6 @@ GRUB_CMDLINE_LINUX="consoleblank=300"  # desliga a tela após 5 minutos
 
 Em seguida atualize o grub:
 
-```shell
+```console
 sudo update-grub
 ```

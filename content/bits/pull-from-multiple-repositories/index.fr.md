@@ -9,7 +9,7 @@ tags:
 
 Une astuce pour quand on a une liste de dépôts git à mettre a jour:
 
-```shell
+```console
 find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git pull && cd .." \;
 ```
 

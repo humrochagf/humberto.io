@@ -19,6 +19,6 @@ HandleLidSwitchDocked=ignore
 
 Depois, reinicie o serviço:
 
-```shell
+```console
 sudo systemctl restart systemd-logind.service
 ```

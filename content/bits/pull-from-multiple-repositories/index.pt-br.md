@@ -9,7 +9,7 @@ tags:
 
 Uma dica para quando temos uma lista de repositórios para atualizar:
 
-```shell
+```console
 find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git pull && cd .." \;
 ```
 
