@@ -10,6 +10,12 @@ markup:
     renderer:
       unsafe: true
 
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
 author:
   name: Humberto Rocha
   job: Developer
