@@ -28,7 +28,7 @@ Também é possível abrir uma sessão shell:
 kubectl exec --stdin --tty <nome do pod> -n <namespace> -- /bin/sh
 ```
 
-Algumas vezes é preciso rodar um novo Pod diretamente de um imagem com as ferramentas necessárias para inspecionar algo.
+Algumas vezes é preciso rodar um novo Pod a partir de uma imagem com as ferramentas necessárias para inspecionar algo.
 
 ```console
 kubectl run -i --tty <nome do pod> --image=<image> -- /bin/bash
