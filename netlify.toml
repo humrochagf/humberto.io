@@ -28,3 +28,21 @@
 
 [context.next.environment]
   HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://takahe.humberto.io/.well-known/webfinger"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.well-known/host-meta"
+  to = "https://takahe.humberto.io/.well-known/host-meta"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.well-known/nodeinfo"
+  to = "https://takahe.humberto.io/.well-known/nodeinfo"
+  status = 200
+  force = true
