@@ -13,17 +13,102 @@ images:
 
 ---
 
-Recently, I started to run my own [ActivityPub](https://activitypub.rocks/) instance with [Takahē](https://jointakahe.org/) and also to contribute to the project.
+After starting to run my own [ActivityPub](https://activitypub.rocks/) instance with [Takahē](https://jointakahe.org/) I got interested in contributing to it. 
 
-While contributing to the implementation of a Mastodon compatible version of the Poll functionality, I noticed that the information on how does the services perform the poll related operations is kind of scattered through multiple places.
+One of Takahē's features it to be compatible to Mastodon, so to add a feature we must to not only understand ActivityPub but also how Mastodon handles things in its side too.
 
-For me to remember it and maybe to help someone looking for the same information I made this article to summarize things a bit.
+While adding support to the Poll functionality, I noticed that the information about it is kind of scattered through multiple places.
+
+For me to remember how it works, and maybe to help someone looking for the same information I decided to write this article.
 
 {{< tip class="info" >}}
 These are my findings while first implementing the feature. It may contain incomplete or not so precise information about how things really work in Mastodon side.
 
 If you find something that needs correction, feel free to send me a toot at `@humrochagf@humberto.io` from your ActivityPub account 🙂
 {{< /tip >}}
+
+## Poll or Question? How ActivityPub handles it?
+
+The first thing we need to know is that ActivityPub does not support Poll as a native type in it's protocol definition.
+
+The closest type that we get is **Question**, that is used to represent any kind of question, including open-ended question and that is an important information to have in mind.
+
+Looking in the [ActivityPub documentation on how to represent questions](https://www.w3.org/TR/activitystreams-vocabulary/#questions) we can see right the way how to represent one:
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "http://polls.example.org/question/1",
+  "type": "Question",
+  "content": "What is the answer to life the universe and everything?"
+}
+```
+
+The question above is an open-ended question, but you can have a single-choice question using the `oneOf` property:
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "http://polls.example.org/question/2",
+  "type": "Question",
+  "content": "What is the answer to life the universe and everything?",
+  "oneOf":[
+    { "name":"123" },
+    { "name":"42" },
+    { "name":"666" }
+  ]
+}
+```
+
+You can also have a multiple-choice question using the `anyOf` property:
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "http://polls.example.org/question/3",
+  "type": "Question",
+  "content": "Which are your favorite seasons?",
+  "anyOf":[
+    { "name":"Spring" },
+    { "name":"Summer" },
+    { "name":"Autumn" },
+    { "name":"Winter" }
+  ]
+}
+```
+
+When you don't want to receive any more answer you can indicate it by closing your question with the `closed` property indicating the `DateTime` of when it was closed:
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "http://polls.example.org/question/4",
+  "type": "Question",
+  "content": "Fast before it's too late, who wants a slice of cake?",
+  "closed": "2023-01-01T00:00:00Z"
+}
+```
+
+Those are the base properties of an ActivityPub question. Further down this article we'll be able to see what Mastodon adds to it.
+
+## Answering to a Question
+
+The answer to a question in ActivityPub is a bit vague. It doesn't have an specific type, but rather required properties:
+
+```json
+{
+ "@context": "https://www.w3.org/ns/activitystreams",
+ "attributedTo": "http://bob.example.org",
+ "inReplyTo": "http://polls.example.org/question/2",
+ "name": "42"
+}
+```
+
+The property `attributedTo` indicates who is answering to the question, while the property `inReplyTo` points to the URI of the question you are answering to.
+
+Although it's not mentioned in the documentation we can infer that the `name` property is the answer to the question and in questions where we have choices to select. The answer text must be the same from one of the given choices.
+
+Now that we know what ActivityPub has to say about it, we need to take a look on how Mastodon decided to implement it.
 
 ## The poll in Mastodon
 
@@ -39,19 +124,19 @@ At the moment I'm writing this article an entity that represents a poll in Masto
 
 ```json
 {
-    "id": "12345",
-    "expires_at": "2023-01-01T23:04:45.000Z",
-    "expired": true,
-    "multiple": false,
-    "votes_count": 10,
-    "voters_count": null,
-    "options": [
-        {"title": "Option 1", "votes_count": 6},
-        {"title": "Option 2", "votes_count": 4},
-    ],
-    "emojis": [],
-    "voted": false,
-    "own_votes": [],
+  "id": "12345",
+  "expires_at": "2023-01-01T23:04:45.000Z",
+  "expired": true,
+  "multiple": false,
+  "votes_count": 10,
+  "voters_count": null,
+  "options": [
+    {"title": "Option 1", "votes_count": 6},
+    {"title": "Option 2", "votes_count": 4},
+  ],
+  "emojis": [],
+  "voted": false,
+  "own_votes": [],
 }
 ```
 
@@ -59,112 +144,99 @@ The actual text asking the question to be answered by the poll is located at the
 
 You can check [the poll entity documentation](https://docs.joinmastodon.org/entities/Poll/) to know more about it.
 
-## Poll in ActivityPub
+## Mastodon Poll in ActivityPub
 
-In ActivityPub side the poll is represented by the core type `Question` that is defined at [the Activity Types docs](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question) with a `toot` extension that adds `votersCount` to compose the type and you can find it's definition at [the Mastodon ActivityPub docs](https://docs.joinmastodon.org/spec/activitypub/#poll-specific-properties).
-
-Looking it's representation it should look like this:
+Going back to ActivityPub the Mastodon poll indeed uses type `Question` provided by ActivityPub, but it also adds some other fields to be able to property represent the object that we get in Mastodon API. The `toot` [Mastodon extension](https://docs.joinmastodon.org/spec/activitypub/#poll-specific-properties) is also used to add the `votersCount` property.
 
 ```json
 {
-   "@context":[
-      "https://www.w3.org/ns/activitystreams",
-      {
-         "Emoji":"toot:Emoji",
-         "Hashtag":"as:Hashtag",
-         "Public":"as:Public",
-         "sensitive":"as:sensitive",
-         "toot":"http://joinmastodon.org/ns#",
-         "votersCount":"toot:votersCount"
-      },
-      "https://w3id.org/security/v1"
-   ],
-   "id":"https://ap.example.com/users/postcreator/statuses/1234",
-   "type":"Question",
-   "votersCount":10,
-   "attachment":[
-   ],
-   "attributedTo":"https://ap.example.com/users/postcreator",
-   "cc":"https://ap.example.com/users/postcreator/followers",
-   "closed":"2023-01-01T20:04:45Z",
-   "content":"<p>Example Poll</p>",
-   "contentMap":{
-      "en":"<p>Example Poll</p>"
-   },
-   "endTime":"2023-01-01T20:04:45Z",
-   "oneOf":[
-      {
-         "type":"Note",
-         "name":"Option 1",
-         "replies":{
-            "type":"Collection",
-            "totalItems":6
-         }
-      },
-      {
-         "type":"Note",
-         "name":"Option 2",
-         "replies":{
-            "type":"Collection",
-            "totalItems":4
-         }
+  "@context":[
+    "https://www.w3.org/ns/activitystreams",
+    {
+      "toot":"http://joinmastodon.org/ns#",
+      "votersCount":"toot:votersCount"
+    },
+    "https://w3id.org/security/v1"
+  ],
+  "id":"https://polls.example.org/users/sally/statuses/1234",
+  "type":"Question",
+  "votersCount":10,
+  "attributedTo":"https://polls.example.org/users/sally",
+  "closed":"2023-01-01T20:04:45Z",
+  "content":"<p>What is your favorite starter pokemon?</p>",
+  "endTime":"2023-01-01T20:04:45Z",
+  "oneOf":[
+    {
+      "type":"Note",
+      "name":"Charmander",
+      "replies":{
+        "type":"Collection",
+        "totalItems":5
       }
-   ],
-   "published":"2023-01-01T01:00:00Z",
-   "replies":{
-      "id":"https://ap.example.com/users/postcreator/statuses/1234/replies",
-      "type":"Collection",
-      "first":{
-         "type":"CollectionPage",
-         "items":[
-         ],
-         "next":"https://ap.example.com/users/postcreator/statuses/1234/replies?only_other_accounts=true&page=true",
-         "partOf":"https://ap.example.com/users/postcreator/statuses/1234/replies"
+    },
+    {
+      "type":"Note",
+      "name":"Bulbasaur",
+      "replies":{
+        "type":"Collection",
+        "totalItems":2
       }
-   },
-   "sensitive":false,
-   "tag":[
-   ],
-   "to":"as:Public",
-   "url":"https://ap.example.com/@postcreator/1234"
+    },
+    {
+      "type":"Note",
+      "name":"Squirtle",
+      "replies":{
+        "type":"Collection",
+        "totalItems":3
+      }
+    }
+  ],
+  "published":"2023-01-01T01:00:00Z",
+  "url":"https://polls.example.org/@sally/1234"
 }
 ```
 
-In short Mastodon submits a **single-choice** poll by adding the choices in the `oneOf` attribute, and submits a **multiple-choice** poll by adding them to the `anyOf` attribute.
+The `endTime` is used to add an expiration time counter to he poll while the `closed` will be present only when the poll was closed. Both should have the same value.
 
-The `endTime` keeps the expiration time of the poll while the `closed` will be present only when the poll was closed and in general will have the same value of `endTime` in Mastodon, but in broader use it seems to be also used to close the poll earlier if needed.
+The Mastodon extension of `votersCount` was an addition that is useful in the multiple-choice case, where the sum of votes can be different of the number of participants in the poll.
 
-Another point that worth mentioning is that Mastodon extension of `votersCount` becomes useful in the multiple-choice case scenario, where the sum of all votes can differ of the number of participants in the poll.
-
-## Replying to a Poll
-
-Looking further down to ActivityPub docs about [how to represent questions](https://www.w3.org/TR/activitystreams-vocabulary/#questions) the doc statement about how to reply to it is a bit vague:
-
-> Responses to questions are expressed as **Objects** containing an **inReplyto** property referencing the **Question**.
-
-Looking to the example JSON it's not clear what is the kind of activity used in this case, but inspecting Mastodon communication I found that the activity type used to represent it is `Create` targeting an object of type `Note` and it looks like this:
+It also made an adaptation to the choices in order to keep track of the number of votes per choice:
 
 ```json
 {
-   "id":"https://anotherinstance.com/users/postvoter#votes/389574/activity",
-   "to":"https://ap.example.com/@postcreator@ap.example.com/",
+  "type":"Note",
+  "name":"Charmander",
+  "replies":{
+    "type":"Collection",
+    "totalItems":5
+  }
+}
+```
+
+The choices got transformed into objects of `Note` type that inherit all properties of `Object` so it was possible to use the `replies` property to store the total of votes a choice got.
+
+## Mastodon vote in ActivityPub
+
+To cast a vote in a poll, Mastodon uses the flow indicated in ActivityPub, but with a small difference:
+
+```json
+{
+   "id":"https://answer.example.org/users/bob#votes/389574/activity",
+   "to":"https://polls.example.org/@sally@polls.example.org/",
    "type":"Create",
-   "actor":"https://anotherinstance.com/users/postvoter",
+   "actor":"https://answer.example.org/users/bob",
    "object":{
-      "id":"https://anotherinstance.com/users/postvoter#votes/389574",
-      "to":"https://ap.example.com/@postcreator@ap.example.com/",
-      "name":"Option 1",
+      "id":"https://answer.example.org/users/bob#votes/389574",
+      "to":"https://polls.example.org/@sally@polls.example.org/",
+      "name":"Charmander",
       "type":"Note",
-      "inReplyTo":"https://ap.example.com/@postcreator@ap.example.com/posts/145144397271001760/",
-      "attributedTo":"https://anotherinstance.com/users/postvoter"
+      "inReplyTo":"https://polls.example.org/@sally@polls.example.org/posts/1234/",
+      "attributedTo":"https://answer.example.org/users/bob"
    },
    "@context":[
       "https://www.w3.org/ns/activitystreams",
       {
          "toot":"http://joinmastodon.org/ns#",
-         "Emoji":"toot:Emoji",
-         "Public":"as:Public",
-         "Hashtag":"as:Hashtag",
          "votersCount":"toot:votersCount",
       },
       "https://w3id.org/security/v1"
@@ -172,9 +244,9 @@ Looking to the example JSON it's not clear what is the kind of activity used in 
 }
 ```
 
-The attribute `inReplyto` points to the activity that contains the question/poll while the `name` matches the exact content of the question being voted.
+The type of the created object is `Note` to match the type of the options.
 
-Looking to a [discussion in ActivityPub discuss](https://socialhub.activitypub.rocks/t/votes-on-question-activities/2880) I found a nice description of the fields present in the object:
+Looking to a [discussion in ActivityPub forum](https://socialhub.activitypub.rocks/t/votes-on-question-activities/2880) about Mastodon implementation of a vote we have a summary about the object's fields:
 
 ```text
 id: ...
@@ -185,7 +257,15 @@ attributedTo: <you>
 to: <the poll creator>
 ```
 
-Also, different from a normal post the poll answer doesn't have a content among its attributes.
+This confirms the that Mastodon decided to go with our inference about the `name` property.
+
+When dealing with multiple-choice polls, Mastodon didn't changed anything in the object format, instead they just send more than one `Create` message from the same sender targeting the same poll, but with an answer to another choice.
+
+So at the end, to be sure that the message you got is an answer to a poll and not a regular post or reply you need to check some things:
+
+- The target to the `inReplyTo` property must be a `Question` 
+- The type of the object is `Note` but with no `content` property
+- The answer is located in the `name` property
 
 ## Conclusion
 
