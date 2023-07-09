@@ -100,7 +100,7 @@ The answer to a question in ActivityPub is a bit vague. It doesn't have an speci
 
 The property `attributedTo` indicates who is answering to the question, while the property `inReplyTo` points to the URI of the question you are answering to.
 
-Although it's not mentioned in the documentation we can infer that the `name` property is the answer to the question and in questions where we have choices to select. The answer text must be the same from one of the given choices.
+Although it's not mentioned in the documentation we can infer that the `name` property is the answer to the question and in questions where we have choices to select, the answer text must match one of the given choices.
 
 Now that we know what ActivityPub has to say about it, we need to take a look on how Mastodon decided to implement it.
 
@@ -140,7 +140,9 @@ You can check [the poll entity documentation](https://docs.joinmastodon.org/enti
 
 ## Mastodon Poll in ActivityPub
 
-Going back to ActivityPub the Mastodon poll indeed uses type `Question` provided by ActivityPub, but it also adds some other fields to be able to property represent the object that we get in Mastodon API. The `toot` [Mastodon extension](https://docs.joinmastodon.org/spec/activitypub/#poll-specific-properties) is also used to add the `votersCount` property.
+Going back to ActivityPub, the Mastodon poll indeed uses type `Question` provided by ActivityPub, but it also adds some other fields to be able to properly represent the object that we get in Mastodon API.
+
+The `toot` [Mastodon extension](https://docs.joinmastodon.org/spec/activitypub/#poll-specific-properties) is also used to add the `votersCount` property.
 
 ```json
 {
@@ -190,7 +192,7 @@ Going back to ActivityPub the Mastodon poll indeed uses type `Question` provided
 }
 ```
 
-The `endTime` is used to add an expiration time counter to he poll while the `closed` will be present only when the poll was closed. Both should have the same value.
+The `endTime` is used to add an expiration time counter to he poll while the `closed` will be present only when the poll was closed. Both, when filled should have the same value.
 
 The Mastodon extension of `votersCount` was an addition that is useful in the multiple-choice case, where the sum of votes can be different of the number of participants in the poll.
 
