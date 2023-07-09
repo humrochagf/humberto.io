@@ -13,19 +13,13 @@ images:
 
 ---
 
-After starting to run my own [ActivityPub](https://activitypub.rocks/) instance with [Takahē](https://jointakahe.org/) I got interested in contributing to it. 
+I started running my own [ActivityPub](https://activitypub.rocks/) instance with [Takahē](https://jointakahe.org/).
 
-One of Takahē's features it to be compatible to Mastodon, so to add a feature we must to not only understand ActivityPub but also how Mastodon handles things in its side too.
+I got interested in contributing to the [project](https://github.com/jointakahe/takahe) and one of my first implemented features was the poll support.
 
-While adding support to the Poll functionality, I noticed that the information about it is kind of scattered through multiple places.
+While implementing it I noticed that the informations about this topic were scattered throughout multiple places.
 
-For me to remember how it works, and maybe to help someone looking for the same information I decided to write this article.
-
-{{< tip class="info" >}}
-These are my findings while first implementing the feature. It may contain incomplete or not so precise information about how things really work in Mastodon side.
-
-If you find something that needs correction, feel free to send me a toot at `@humrochagf@humberto.io` from your ActivityPub account 🙂
-{{< /tip >}}
+So, for me to remember how it works, and maybe to help someone looking for the same information I decided to write this article.
 
 ## Poll or Question? How ActivityPub handles it?
 
