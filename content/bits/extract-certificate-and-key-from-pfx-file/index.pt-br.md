@@ -15,13 +15,13 @@ tags:
 Extraia o certificado do arquivo `.pfx`:
 
 ```shell
-openssl pkcs12 -in <DOT_PFX_CERTIFICATE> -clcerts -nokeys -chain -out certificate.crt
+openssl pkcs12 -in <ARQUIVO_PONTO_PFX> -clcerts -nokeys -chain -out certificate.crt
 ```
 
 Extraia a chave privada no formato `.pem` sem cifragem do arquivo `.pfx`:
 
 ```shell
-openssl pkcs12 -in <DOT_PFX_CERTIFICATE> -nocerts -nodes -out private_key.pem
+openssl pkcs12 -in <ARQUIVO_PONTO_PFX> -nocerts -nodes -out private_key.pem
 ```
 
 Converta o `.pem` no formato de chave `RSA`:
