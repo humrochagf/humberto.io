@@ -45,6 +45,10 @@ params:
   themeInverseColor: "#ffffff"
   siteLogo: img/me.png
 
+  tracking:
+    domain: https://u.humberto.io
+    websiteId: "0236bfe6-0441-47dd-a266-4054efab6a70"
+
   author:
     name: Humberto Rocha
     job: Developer
