@@ -3,7 +3,6 @@ DefaultContentLanguage: en
 title: Humberto Rocha
 theme: colordrop
 enableRobotsTXT: true
-googleAnalytics: G-88XLSX9H17
 
 markup:
   goldmark:
@@ -15,14 +14,6 @@ outputs:
     - "HTML"
     - "RSS"
     - "JSON"
-
-author:
-  name: Humberto Rocha
-  job: Developer
-  gender: male
-  image: img/me.png
-  github: humrochagf
-  linkedin: humrochagf
 
 taxonomies:
   tag: tags
@@ -53,6 +44,14 @@ params:
   themeColor: "#000000"
   themeInverseColor: "#ffffff"
   siteLogo: img/me.png
+
+  author:
+    name: Humberto Rocha
+    job: Developer
+    gender: male
+    image: img/me.png
+    github: humrochagf
+    linkedin: humrochagf
 
   license:
     name: Attribuition-ShareAlike
