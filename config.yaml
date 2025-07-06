@@ -5,6 +5,8 @@ theme: colordrop
 enableRobotsTXT: true
 
 markup:
+  highlight:
+    style: catppuccin-mocha
   goldmark:
     renderer:
       unsafe: true
@@ -46,8 +48,9 @@ params:
   siteLogo: img/me.png
 
   tracking:
-    domain: https://u.humberto.io
-    websiteId: "0236bfe6-0441-47dd-a266-4054efab6a70"
+    rybbit:
+      src: "https://t.humberto.io/api/script.js"
+      dataSiteId: "1"
 
   author:
     name: Humberto Rocha
