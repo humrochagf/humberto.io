@@ -24,7 +24,7 @@ menu:
   footer:
     - identifier: mastodon
       name: mastodon
-      url: https://takahe.humberto.io/@humrochagf@humberto.io
+      url: https://go.rocha.social/@humberto
       weight: 1
     - identifier: github
       name: github
