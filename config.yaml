@@ -50,7 +50,7 @@ params:
   tracking:
     rybbit:
       src: "https://t.humberto.io/api/script.js"
-      dataSiteId: "1"
+      dataSiteId: "e5e62f119c36"
 
   author:
     name: Humberto Rocha
