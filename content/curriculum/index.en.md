@@ -7,7 +7,7 @@ locationName: Quebec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    I'm a Software Developer with a solid background in architecture, development, support and automation of online solutions. I'm passionate about software development and always looking for ways to expand my knowledge.
+    I'm a Software Developer with a solid background in infrastructure, backend development, and automation. I'm passionate about software development and always looking for ways to expand my knowledge.
 
 contact:
   - identifier: email
@@ -32,11 +32,23 @@ employment: |
     ### Ubisoft Quebec City
     *Online Programmer | October 2019 to present*
 
-    As an Online Programmer I'm responsible for creating, debugging, maintaining, and optimizing the online services for the game client, the servers, and also for its related tools.
+    As an Online Programmer I'm responsible for creating, debugging, maintaining, and optimizing the online services that are used by the game client, the servers, and also for its related tools.
+
+    At engine level I take care of implementing the connectors with the online services as well as interfacing with UI and Gameplay to provide the APIs required by them. I also work integrating the first parties sdks and their online requirements for the publishing process.
+
+    At backend level I implement micro services used by the game client that are designed to be hosted in k8s and to work under high load and high availability scenarios.
+
+    At infrastructure level I design and write the charts and recipes to deploy our services into k8s, write observability dashboards and setup alerts to monitor our stack.
+
+    At operations level I write automation pipelines, and create tools to empower the operations team that works in partnership with us.
 
     Worked on:
 
+    - Assassin's Creed: Shadows | Online Team (Released in 2025)
+    - Assassin's Creed: Mirage | Online Team (Released in 2023)
     - Immortals Fenyx Rising | Online Team (Released in 2020)
+    - Assassin's Creed: Valhalla | Back catalog support (Released in 2020)
+    - Assassin's Creed: Odyssey | Back catalog support (Released in 2018)
 
     ### Configr.com
     *February 2015 to August 2019*
@@ -87,57 +99,68 @@ languages: |
 
     - Portuguese (Native)
     - English (Fluent)
-    - French (Conversational)
+    - French (Fluent)
 
 techSkills: |
-
-    Ordered by proficiency
 
     **Languages**
 
     - Python
     - C/C++
+    - C#
     - JavaScript
     - TypeScript
-    - C#
-    - Rust
+    - Bash
     - Go
+    - Zig
+    - Rust
     - Elm
     - Haskell
 
     **Frameworks**
 
-    - Django
-    - Django REST
     - FastAPI
     - .NETCore
-    - Angular
+    - Django
     - Flask
+    - Vue
+    - Angular
+    - Gin
 
     **Databases**
 
-    - PostgreSQL
     - MongoDB
+    - PostgreSQL
+    - SQLite
+    - Redis
     - MySQL
     - SQL Server
 
     **Server / Deployment**
 
-    - Fabric
-    - Nginx
+    - k8s
+    - Helm
     - Docker
-    - Bind
-    - Upstart/Systemd
-    - Puppet
-    - Exim
+    - Terraform
+    - Proxmox
+    - Traefik
+    - Vault
+    - Nginx
 
-    **Others**
+    **Providers**
 
-    - Linux
-    - ImGui
-    - Webpack
-    - RabbitMQ
-    - Lets Encrypt
+    - AWS
+    - GCP
+    - Azure
+    - Linode
+
+    **CI/CD**
+
+    - GitLab
+    - Github
+    - Forgejo
+    - Argo CD
+    - TeamCity
 
 softSkills: |
 
@@ -150,13 +173,9 @@ softSkills: |
 
 openSource: |
 
+    - [wheke](https://wheke.humberto.io)
     - [revelation](https://github.com/humrochagf/revelation)
-    - [thoth](https://github.com/humrochagf/thoth.git)
-    - [utmkeeper](https://github.com/humrochagf/utmkeeper)
-    - [python.org.br](https://python.org.br)
-    - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
-    - [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
-    - [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
+    - [colordrop](https://github.com/humrochagf/colordrop)
     - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
 
 ---

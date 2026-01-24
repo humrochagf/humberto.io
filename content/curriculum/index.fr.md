@@ -7,7 +7,7 @@ locationName: Québec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Je suis un Développeur de Logiciels avec une solide expérience d'architecture, développement, support et automation de solutions en ligne. Je suis passionné par le développement de logiciel et je suis toujours à la recherche des moyens d'augmenter mes connaissances.
+    Je suis un Développeur de Logiciels avec de l'expertise d'infrastructure, développement backend et automation. Je suis passionné par le développement de logiciel et je suis toujours à la recherche des moyens d'augmenter mes connaissances.
 
 contact:
   - identifier: email
@@ -32,11 +32,23 @@ employment: |
     ### Ubisoft Quebec City
     *Programmeur Online | Octobre 2019 au présent*
 
-    En tant Programeur Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services Online du jeu, ainsi que des outils associés.
+    En tant Programmeur Online, je suis responsable de la création, du débogage, de la maintenance et de l'optimisation des services en ligne utilisés par le jeu, ainsi que des outils associés.
+
+    Dans le niveau de l'engin, je prends soin de l'implémentation des connecteurs avec les services en ligne, bien comme de faire l'interface avec UI et Gameplay pour offrir les APIs y demandés. Je travaille aussi dans l'intégration des sdks des first parties et les exigences en ligne de l'étape de publication du jeu.
+
+    Dans le niveau backend, je fais l'implémentation des micro services utilisés par le client du jeu, conçus pour être hébergé dans k8s et travailler dans des circonstances de haute charge et disponibilité.
+
+    Dans le niveau de infrastructure, j'écris des charts et recettes pour déployer nos services dans k8s, j'éscris aussi des tableaux d'observabilité et je configure des alertes pour surveiller notre stack.
+
+    Dans le niveau d'opérations, je fait l'automation de pipelines, et je crée des outils pour donner plus de pouvoir à l'équipe d'opérations qui travaille en partenariat avec nous.
 
     J'ai travaillé sur:
 
+    - Assassin's Creed: Shadows | Online Team (Sorti en 2025)
+    - Assassin's Creed: Mirage | Online Team (Sorti en 2023)
     - Immortals Fenyx Rising | Online Team (Sorti en 2020)
+    - Assassin's Creed: Valhalla | Support de back catalogue (Sorti en 2020)
+    - Assassin's Creed: Odyssey | Support de back catalogue (Sorti en 2018)
 
     ### Configr.com
     *Février 2015 au Août 2019*
@@ -86,58 +98,69 @@ community: |
 languages: |
 
     - Portugais (Natif)
-    - Anglais (Avancé)
-    - Français (Intermédiaire)
+    - Anglais (Fluent)
+    - Français (Fluent)
 
 techSkills: |
-
-    Ordonné par compétence
 
     **Langages de programmation**
 
     - Python
     - C/C++
+    - C#
     - JavaScript
     - TypeScript
-    - C#
-    - Rust
+    - Bash
     - Go
+    - Zig
+    - Rust
     - Elm
     - Haskell
 
     **Frameworks**
 
-    - Django
-    - Django REST
     - FastAPI
     - .NETCore
-    - Angular
+    - Django
     - Flask
+    - Vue
+    - Angular
+    - Gin
 
     **Databases**
 
-    - PostgreSQL
     - MongoDB
+    - PostgreSQL
+    - SQLite
+    - Redis
     - MySQL
     - SQL Server
 
     **Server / Deployment**
 
-    - Fabric
-    - Nginx
+    - k8s
+    - Helm
     - Docker
-    - Bind
-    - Upstart/Systemd
-    - Puppet
-    - Exim
+    - Terraform
+    - Proxmox
+    - Traefik
+    - Vault
+    - Nginx
 
-    **Autres**
+    **Providers**
 
-    - Linux
-    - ImGui
-    - Webpack
-    - RabbitMQ
-    - Lets Encrypt
+    - AWS
+    - GCP
+    - Azure
+    - Linode
+
+    **CI/CD**
+
+    - GitLab
+    - Github
+    - Forgejo
+    - Argo CD
+    - TeamCity
 
 softSkills: |
 
@@ -150,13 +173,9 @@ softSkills: |
 
 openSource: |
 
+    - [wheke](https://wheke.humberto.io)
     - [revelation](https://github.com/humrochagf/revelation)
-    - [thoth](https://github.com/humrochagf/thoth.git)
-    - [utmkeeper](https://github.com/humrochagf/utmkeeper)
-    - [python.org.br](https://python.org.br)
-    - [lektor-creative-commons](https://github.com/humrochagf/lektor-creative-commons)
-    - [tapioca-trello](https://github.com/humrochagf/tapioca-trello)
-    - [tapioca-discourse](https://github.com/humrochagf/tapioca-discourse)
+    - [colordrop](https://github.com/humrochagf/colordrop)
     - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
 
 ---
