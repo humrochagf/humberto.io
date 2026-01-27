@@ -174,6 +174,7 @@ softSkills: |
 openSource: |
 
     - [wheke](https://wheke.humberto.io)
+    - [capsule](https://github.com/humrochagf/capsule)
     - [revelation](https://github.com/humrochagf/revelation)
     - [colordrop](https://github.com/humrochagf/colordrop)
     - [pyxel-lander](https://github.com/humrochagf/pyxel-lander)
