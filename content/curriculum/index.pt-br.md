@@ -112,6 +112,7 @@ techSkills: |
     - JavaScript
     - TypeScript
     - Bash
+    - Powershell
     - Go
     - Zig
     - Rust
