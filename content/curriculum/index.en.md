@@ -2,12 +2,12 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Online Programmer
+jobTitle: Software Engineer
 locationName: Quebec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    I'm a Software Developer with a solid background in infrastructure, backend development, and automation. I'm passionate about software development and always looking for ways to expand my knowledge.
+    I'm a Software Engineer with a solid background in infrastructure, backend development, and automation. I'm passionate about software development and always looking for ways to expand my knowledge.
 
 contact:
   - identifier: email

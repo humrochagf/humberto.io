@@ -2,7 +2,7 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Online Programmer
+jobTitle: Programador de Software
 locationName: Québec, Canadá
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |

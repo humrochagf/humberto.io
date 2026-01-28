@@ -2,12 +2,12 @@
 type: curriculum
 title: Curriculum
 name: Humberto Rocha
-jobTitle: Programmeur Online
+jobTitle: Développeur de Logiciel
 locationName: Québec, Canada
 locationLink: https://goo.gl/maps/Bi2kz38XiEqjWDbv6
 profile: |
 
-    Je suis un Développeur de Logiciels avec de l'expertise d'infrastructure, développement backend et automation. Je suis passionné par le développement de logiciel et je suis toujours à la recherche des moyens d'augmenter mes connaissances.
+    Je suis un Développeur de Logiciel avec de l'expertise d'infrastructure, développement backend et automation. Je suis passionné par le développement de logiciel et je suis toujours à la recherche des moyens d'augmenter mes connaissances.
 
 contact:
   - identifier: email
