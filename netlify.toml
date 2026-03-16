@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify && npx pagefind --source 'public'"
 
 [context.production.environment]
   HUGO_VERSION = "0.147.9"
@@ -8,20 +8,20 @@
   HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-  command = "hugo --gc --minify --enableGitInfo"
+  command = "hugo --gc --minify --enableGitInfo && npx pagefind --source 'public'"
 
 [context.split1.environment]
   HUGO_VERSION = "0.147.9"
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.147.9"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "ç"

@@ -15,7 +15,6 @@ outputs:
   home:
     - "HTML"
     - "RSS"
-    - "JSON"
 
 taxonomies:
   tag: tags
