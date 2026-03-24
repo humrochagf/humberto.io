@@ -3,7 +3,7 @@ title: "Installing HomeAssistant OS in a Proxmox VM"
 description: "A quick guide on how to manually deploy HomeAssistant OS in a Proxmox VM"
 publishDate: 2026-03-23
 tags:
-  - selfhosting
+  - self-hosting
   - proxmox
   - homeassistant
 images:
