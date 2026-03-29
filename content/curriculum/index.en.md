@@ -72,9 +72,7 @@ employment: |
     ### Caixa Econômica Federal
     *Intern |  August 2013 to August 2014*
 
-    At Brazil's federal bank I worked as an Intern developing a desktop application with C# to parse large amounts of data from the phone bills of all its agencies feeding the internal system responsible to run the internal validations.
-
-    I also worked maintaining some of the SQL Servers procedures and views of the internal system and then I was invited to work making the ETL process of a data migration project using Pentaho.
+    At Brazil's federal bank I worked as an Intern developing C# data processing solutions to automate the ingestion of large amounts of data to produce reports as well as feeding new systems replacing legacy solutions that were too coupled with the DB relying on complex and slow SQL Server stored procedures.
 
 education: |
 
