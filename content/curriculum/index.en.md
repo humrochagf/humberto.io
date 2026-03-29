@@ -59,9 +59,7 @@ employment: |
 
     **Chief Technology Officer | September 2017 to July 2019**
 
-    By becoming CTO, I was encharged of all the company's tech stack and manage the team. I lead the process of migrating the main product the newer version of Django and to transform its architecture into an API architecture with Django REST Framework as Backend and Angular as Frontend.
-
-    I also designed the new, billing system and the white-label system to the reseller business model. Now I ahead of the splitting of the main product intro independent services.
+    By becoming CTO, I was encharged of all the company's tech stack and management of the dev team. I lead the process of modernizing the product towards an API based architecture with Django REST Framework as Backend and Angular as Frontend to fullfill the scalability needs of the platform.
 
     **FullStack Developer | February 2015 to September 2017**
 
