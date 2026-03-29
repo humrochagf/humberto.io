@@ -65,9 +65,9 @@ employment: |
 
     **FullStack Developer | February 2015 to September 2017**
 
-    At Configr I started as FullStack Developer working with Django as Backend and Django Template Engine and Bootstrap for the Frontend of the main product. My first task was to build ground up the company DNS manager by parsing the [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) into a user-friendly and automated tool that talks with the other products and builds the right DNS rules without the user having to understand DNS.
+    At Configr I started as FullStack Developer working with the Django Backend of their main product. There I implemented many solutions there I'm proud of as the company DNS manager, by parsing the [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) into a user-friendly and automated tool designed to make DNS configuration accessible to non technical people.
 
-    Also, I worked with the cloud automation by building, maintaining and fixing the automation and the deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd among others.
+    Also, I worked with infrastructure automation, maintaining and evolving their deployment processes working with Puppet, Fabric, Nginx, Bind, Uwsgi, PHP-FPM, Upstart, Systemd among others.
 
     ### Caixa Econômica Federal
     *Intern |  August 2013 to August 2014*
