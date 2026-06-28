@@ -68,10 +68,10 @@ params:
 
 languages:
   en:
-    languageName: English
+    label: English
     weight: 1
   pt-br:
-    languageName: Português Brasileiro
+    label: Português Brasileiro
     weight: 2
     params:
       description: Um blog onde eu coloco em palavras um pouco do meu conhecimento sobre programação, tecnologia e muito mais. Espero que você encontre aqui algo que possa lhe ajudar, assim como esse conhecimento já me ajudou um dia 😊
@@ -82,7 +82,7 @@ languages:
         locale: pt_BR
         size: 88x31
   fr:
-    languageName: Français
+    label: Français
     weight: 3
     params:
       description: Un blog ou je mets en mots une partie de mon savoir à propos de la programmation, de la technologie et plus encore. J'espère que vous trouvez des choses qui pourront vous aider comme ça m'a déjà aidé 😊
